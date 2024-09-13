@@ -16,19 +16,25 @@ Ensure you have a decompression tool installed on your system, such as `unzip` f
 
 1. Clone this repository to your local machine using:
 
-`git clone URL_OF_REPOSITORY`
+```bash
+git clone URL_OF_REPOSITORY
+```
 
 Replace `URL_OF_REPOSITORY` with the actual URL of this repository.
 
 2. Navigate to the repository directory:
 
-`cd REPOSITORY_NAME`
+```bash
+cd REPOSITORY_NAME
+```
 
 3. Place your compressed file `HMS1000.zip` in the repository directory.
 
 4. Unzip the file into the `data` folder with the following command:
 
-`unzip HMS1000.zip -d data/`
+```bash
+unzip HMS1000.zip -d data/
+```
 
 You should now have all the uncompressed data in the `data/` folder within your repository directory.
 
