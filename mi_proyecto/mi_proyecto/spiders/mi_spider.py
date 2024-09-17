@@ -1,13 +1,16 @@
 import scrapy
 import os
 import re
+from scrapy_splash import SplashRequest
 
 class MiSpider(scrapy.Spider):
     name = 'mi_spider'
-    
-    # URL que deseas comenzar a rastrear
-    start_urls = ['https://www.coches.net/fichas_tecnicas/opel/corsa/berlina/5-puertas/13_cdti_business_55kw_75cv_75cv_diesel/81428/358061320171201/']
+    start_urls = ['https://www.coches.net/fichas_tecnicas/seat/leon/berlina/5-puertas/10_ecotsi_85kw_stsp_reference_115cv_gasolina/87315/800558320181220/']
 
+    def start_requests(self):
+        for url in self.start_urls:
+            yield SplashRequest(url, self.parse, args={'wait': 10})
+    
     def parse(self, response):
         # Extraer el título de la página
         titulo = response.xpath('//title/text()').get()
