@@ -26,7 +26,7 @@ class MiSpider(scrapy.Spider):
             os.makedirs(output_dir)
 
         # Nombre del archivo basado en la fecha y hora del scraping
-        filename = f'{output_dir}/coches.net_{current_time}.html'
+        filename = f'{output_dir}/{self.start_urls + current_time}.html'
 
         # Guardar el contenido HTML de la página en un archivo
         with open(filename, 'wb') as f:
