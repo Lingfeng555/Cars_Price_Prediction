@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Txuklador",
+    "version": "1.0",
+    "permissions": [
+      "webNavigation",
+      "activeTab",
+      "tabs",
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://www.coches.net/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.coches.net/*"],
+        "js": ["content_script.js"]
+      }
+    ]
+  }
+  
