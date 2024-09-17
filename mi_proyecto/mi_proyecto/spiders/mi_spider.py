@@ -1,17 +1,20 @@
 import scrapy
+import time
 import os
 import re
 from scrapy_splash import SplashRequest
 
 class MiSpider(scrapy.Spider):
     name = 'mi_spider'
-    start_urls = ['https://www.coches.net/fichas_tecnicas/seat/leon/berlina/5-puertas/10_ecotsi_85kw_stsp_reference_115cv_gasolina/87315/800558320181220/']
+    start_urls = ['https://www.coches.net/fichas_tecnicas/ford/focus/berlina/5-puertas/15_ecoblue_88kw_trend_edition_120cv_diesel/88177/699750020181107/']
 
     def start_requests(self):
         for url in self.start_urls:
-            yield SplashRequest(url, self.parse, args={'wait': 10})
+            yield SplashRequest(url, self.parse, args={'wait': 5})
     
     def parse(self, response):
+        # Espera 5 segundos
+        time.sleep(5)
         # Extraer el título de la página
         titulo = response.xpath('//title/text()').get()
         self.log(f'Título de la página: {titulo}')
