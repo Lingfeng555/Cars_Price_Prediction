@@ -6,7 +6,7 @@ class MiSpider(scrapy.Spider):
     name = 'mi_spider'
     
     # URL que deseas comenzar a rastrear
-    start_urls = ['https://www.coches.net/']
+    start_urls = ['https://www.coches.net/fichas_tecnicas/opel/corsa/berlina/5-puertas/13_cdti_business_55kw_75cv_75cv_diesel/81428/358061320171201/']
 
     def parse(self, response):
         # Extraer el título de la página
