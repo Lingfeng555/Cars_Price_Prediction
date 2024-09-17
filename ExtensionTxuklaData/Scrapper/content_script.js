@@ -1,6 +1,6 @@
 // content_script.js
 
-let descargar = false;
+let descargar = true;
 
 
 function actualizarDescarga() {
@@ -100,8 +100,8 @@ function pasarDePagina() {
 
 function scrollDownSimulado() {
     const totalScroll = 1000; // Total de píxeles a desplazar
-    const scrollStep = 130;    // Paso del desplazamiento en píxeles
-    const scrollDelay = 100;  // Retraso entre cada paso en milisegundos
+    const scrollStep = 214;    // Paso del desplazamiento en píxeles
+    const scrollDelay = 50;  // Retraso entre cada paso en milisegundos
 
     let scrolled = 0;
 
@@ -110,7 +110,7 @@ function scrollDownSimulado() {
             window.scrollBy(0, scrollStep);
             scrolled += scrollStep;
 
-            setTimeout(scroll, scrollDelay + Math.random() * 200); // Agrega un poco de variabilidad en el retraso
+            setTimeout(scroll, scrollDelay + Math.random() * 200); 
         }
     }
 
@@ -119,14 +119,14 @@ function scrollDownSimulado() {
 
 
 
-setInterval(scrollDownSimulado, 1000);
+setInterval(scrollDownSimulado, 750);
 
 
 
-setInterval(extraerLinks, 7000);
+setInterval(extraerLinks, 5200);
 
 
-let countdown = 8;
+let countdown = 5.5;
 
 function goNextPage() {
   if (countdown > 0) {
