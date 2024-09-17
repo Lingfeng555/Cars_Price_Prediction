@@ -1,8 +1,8 @@
 // content_script.js
-// Variable booleana que controla si se debe descargar o no
+
 let descargar = false;
 
-// Función para actualizar el booleano y activar la descarga si corresponde
+
 function actualizarDescarga() {
     if (descargar) {
         descargarDatos();
@@ -31,8 +31,7 @@ function descargarDatos() {
     });
 }
 
-// Llama a `actualizarDescarga(true)` para iniciar la descarga
-// Puedes hacerlo basándote en eventos, condiciones, etc.
+
 actualizarDescarga(true);
 
 
@@ -99,11 +98,35 @@ function pasarDePagina() {
     
 }
 
+function scrollDownSimulado() {
+    const totalScroll = 1000; // Total de píxeles a desplazar
+    const scrollStep = 130;    // Paso del desplazamiento en píxeles
+    const scrollDelay = 100;  // Retraso entre cada paso en milisegundos
+
+    let scrolled = 0;
+
+    function scroll() {
+        if (scrolled < totalScroll) {
+            window.scrollBy(0, scrollStep);
+            scrolled += scrollStep;
+
+            setTimeout(scroll, scrollDelay + Math.random() * 200); // Agrega un poco de variabilidad en el retraso
+        }
+    }
+
+    scroll();
+}
 
 
-extraerLinks();
 
-let countdown = 4;
+setInterval(scrollDownSimulado, 1000);
+
+
+
+setInterval(extraerLinks, 7000);
+
+
+let countdown = 8;
 
 function goNextPage() {
   if (countdown > 0) {
