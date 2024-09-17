@@ -1,4 +1,4 @@
-# Scrapy settings for mi_proyecto project
+# Scrapy settings for SpiderMans project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "mi_proyecto"
+BOT_NAME = "SpiderMans"
 
-SPIDER_MODULES = ["mi_proyecto.spiders"]
-NEWSPIDER_MODULE = "mi_proyecto.spiders"
+SPIDER_MODULES = ["SpiderMans.spiders"]
+NEWSPIDER_MODULE = "SpiderMans.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -71,7 +71,7 @@ HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "mi_proyecto.pipelines.MiProyectoPipeline": 300,
+#    "SpiderMans.pipelines.MiProyectoPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

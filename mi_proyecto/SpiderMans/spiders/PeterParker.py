@@ -5,7 +5,7 @@ import re
 from scrapy_splash import SplashRequest
 
 class MiSpider(scrapy.Spider):
-    name = 'mi_spider'
+    name = 'PeterParker'
     start_urls = ['https://www.coches.net/fichas_tecnicas/ford/focus/berlina/5-puertas/15_ecoblue_88kw_trend_edition_120cv_diesel/88177/699750020181107/']
 
     def start_requests(self):
