@@ -6,11 +6,11 @@ from scrapy_splash import SplashRequest
 
 class MiSpider(scrapy.Spider):
     name = 'PeterParker'
-    start_urls = ['https://www.coches.net/segunda-mano/']
+    start_urls = ['https://www.coches.net/fichas_tecnicas/ford/focus/berlina/5-puertas/10_ecoboost_92kw_trend_125cv_gasolina/84821/637923020181107/']
 
     def start_requests(self):
         for url in self.start_urls:
-            yield SplashRequest(url, self.parse, args={'wait': 5})
+            yield SplashRequest(url, self.parse, args={'wait': 7})
     
     def saveFile (self, response, output_dir):
         url_cleaned = re.sub(r'[^\w\-_]', '_', response.url)
@@ -23,7 +23,7 @@ class MiSpider(scrapy.Spider):
     
     def parse(self, response):
         # Espera 5 segundos
-        time.sleep(5)
+        time.sleep(3)
         # Extraer el título de la página
         titulo = response.xpath('//title/text()').get()
         self.log(f'Título de la página: {titulo}')
@@ -31,6 +31,10 @@ class MiSpider(scrapy.Spider):
         # Ejemplo: extraer todos los enlaces de la página
         for enlace in response.xpath('//a/@href').getall():
             self.log(f'Enlace encontrado: {enlace}')
+            #if(enlace == '/segunda-mano/') : 
+                #time.sleep(15)
+                #self.log(f'Entrando {self.start_urls[0] + 'segunda-mano/'}')
+                #yield SplashRequest(self.start_urls[0] + 'segunda-mano/', self.parse, args={'wait': 7})
 
         #Save the html File
         self.saveFile (response, 'data/html')
