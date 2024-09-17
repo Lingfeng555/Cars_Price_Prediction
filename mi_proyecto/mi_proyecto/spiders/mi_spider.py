@@ -1,6 +1,6 @@
 import scrapy
 import os
-from datetime import datetime
+import re
 
 class MiSpider(scrapy.Spider):
     name = 'mi_spider'
@@ -17,16 +17,16 @@ class MiSpider(scrapy.Spider):
         for enlace in response.xpath('//a/@href').getall():
             self.log(f'Enlace encontrado: {enlace}')
 
-        # Obtener la fecha y hora actual para el nombre del archivo
-        current_time = datetime.now().strftime('%Y%m%d_%H%M%S')
+        # Limpieza de la URL para que sea un nombre de archivo válido
+        url_cleaned = re.sub(r'[^\w\-_]', '_', response.url)  # Reemplazar caracteres no válidos
 
         # Crear la carpeta "data/html" si no existe
         output_dir = 'data/html'
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
 
-        # Nombre del archivo basado en la fecha y hora del scraping
-        filename = f'{output_dir}/{self.start_urls + current_time}.html'
+        # Nombre del archivo basado en la URL limpia
+        filename = f'{output_dir}/{url_cleaned}.html'
 
         # Guardar el contenido HTML de la página en un archivo
         with open(filename, 'wb') as f:
