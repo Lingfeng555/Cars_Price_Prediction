@@ -12,7 +12,7 @@ if (chrome.scripting) {
 chrome.webNavigation.onCompleted.addListener(async function(details) {
   console.log("Navigation completed:", details);
 
-  if (details.url.startsWith("https://www.coches.net")) {
+  if (details.url.startsWith("https://www.coches.net/segunda-mano/?pg=")) {
     try {
       await chrome.scripting.executeScript({
         target: { tabId: details.tabId },
@@ -23,4 +23,17 @@ chrome.webNavigation.onCompleted.addListener(async function(details) {
       console.error("Error al inyectar el script:", error);
     }
   }
+  else (details.url.startsWith("https://www.coches.net/*.aspx")) {
+    try {
+      await chrome.scripting.executeScript({
+        target: { tabId: details.tabId },
+        files: ['primaryDataScraper.js']
+      });
+      console.log("Script inyectado correctamente.");
+    } catch (error) {
+      console.error("Error al inyectar el script:", error);
+    }
+  }
+
+
 }, { url: [{ urlMatches: 'https://www.coches.net/*' }] });
