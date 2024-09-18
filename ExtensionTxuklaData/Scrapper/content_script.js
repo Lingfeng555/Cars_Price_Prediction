@@ -1,6 +1,6 @@
 // content_script.js
 
-let descargar = false;
+let descargar = true;
 
 let borrarLocalStorage = false;
 

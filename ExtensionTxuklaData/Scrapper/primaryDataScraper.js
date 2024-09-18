@@ -18,7 +18,8 @@ fetch(chrome.runtime.getURL('data/enlaces1070.json'))
   })
   .catch(error => {
     console.error('Error cargando el JSON:', error);
-  });
+});
+
 
 
 if (descargar) {
