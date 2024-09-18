@@ -2,11 +2,20 @@
 
 let descargar = false;
 
+let borrarLocalStorage = false;
+
 
 function actualizarDescarga() {
     if (descargar) {
         descargarDatos();
     }
+}
+
+if (borrarLocalStorage) {
+   //borrar enlaces de local storage
+    chrome.storage.local.remove('enlaces', () => {
+        console.log("Enlaces eliminados del almacenamiento local.");
+    });
 }
 
 function descargarDatos() {
