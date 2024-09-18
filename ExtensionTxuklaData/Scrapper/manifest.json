@@ -17,8 +17,13 @@
     },
     "content_scripts": [
       {
-        "matches": ["*://www.coches.net/*"],
+        "resources": ["data/enlaces1070.json"],
+        "matches": ["*://www.coches.net/segunda-mano/?pg=*"],
         "js": ["content_script.js"]
+      },
+      {
+        "matches": ["*://www.coches.net/*.aspx"],
+        "js": ["primaryDataScraper.js"]
       }
     ]
   }

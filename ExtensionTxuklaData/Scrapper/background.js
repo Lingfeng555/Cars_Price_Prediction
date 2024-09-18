@@ -18,7 +18,7 @@ chrome.webNavigation.onCompleted.addListener(async function(details) {
         target: { tabId: details.tabId },
         files: ['content_script.js']
       });
-      console.log("Script inyectado correctamente.");
+      console.log("Script [content_script] inyectado correctamente.");
     } catch (error) {
       console.error("Error al inyectar el script:", error);
     }
@@ -29,7 +29,7 @@ chrome.webNavigation.onCompleted.addListener(async function(details) {
         target: { tabId: details.tabId },
         files: ['primaryDataScraper.js']
       });
-      console.log("Script inyectado correctamente.");
+      console.log("Script [primaryDataScraper] inyectado correctamente.");
     } catch (error) {
       console.error("Error al inyectar el script:", error);
     }
