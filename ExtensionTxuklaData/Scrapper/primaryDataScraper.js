@@ -17,7 +17,8 @@ fetch(chrome.runtime.getURL('data/enlaces1070.json'))
   })
   .catch(error => {
     console.error('Error cargando el JSON:', error);
-  });
+});
+
 
 
 if (descargar) {
@@ -62,7 +63,6 @@ function extraerData() {
     console.log("Extrayendo datos de la página...");
 
     {/* TITULO */}
-
 
     const titleDiv = document.querySelector('.mt-PanelAdInfo-title');
     const title = titleDiv.querySelector('h1').innerText;
