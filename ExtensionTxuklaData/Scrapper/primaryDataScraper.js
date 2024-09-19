@@ -1,5 +1,5 @@
 
-descargar = false
+descargar = true
 
 borrarLocalStorage = false
 
