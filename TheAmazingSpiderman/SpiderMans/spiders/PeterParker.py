@@ -4,6 +4,7 @@ import os
 import re
 import random
 import json
+from scrapy.http import Response
 from scrapy_splash import SplashRequest
 
 class MiSpider(scrapy.Spider):
@@ -19,8 +20,8 @@ class MiSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            time.sleep(random.uniform(5, 10))
-            yield SplashRequest(url, self.parse)
+            time.sleep(random.uniform(15, 20))
+            yield scrapy.Request(url, self.parse)
     
     def saveFile (self, response, output_dir):
         url_cleaned = re.sub(r'[^\w\-_]', '_', response.url)
@@ -39,16 +40,33 @@ class MiSpider(scrapy.Spider):
             return resultado[0]
         else:
             return "No se encontró el precio"
+        
+    def _obtener_provincia(self, titulo):
+        patron = r'\d+\s€\s*en\s*(.*?)\s*\|'
+        resultado = re.search(patron, titulo)
     
+        if resultado:
+            return resultado.group(1)
+        else:
+            return "No se encontró el municipio"
+
+    def _parse_ficha_tecnica (self, response):
+        
+        pass
+
     def parse(self, response):
         # Extraer el título de la página
         titulo = response.xpath('//title/text()').get()
-        
+
         self.log(f'Título de la página: {titulo}')
         self.log(f'Precio: {self._getPrice(titulo)} €')
+        self.log(f'Provincia: {self._obtener_provincia(titulo)}')
 
-        enlace = response.xpath('//a[contains(@class, "sui-AtomButton sui-AtomButton--primary sui-AtomButton--outline sui-AtomButton--center sui-AtomButton--link sui-AtomButton--circular")]/@href').get()
-        self.log(f'Ficha tecnica: {enlace}')
-        if(enlace == None): return
+        ficha_tecnica = response.xpath('//a[contains(@class, "sui-AtomButton sui-AtomButton--primary sui-AtomButton--outline sui-AtomButton--center sui-AtomButton--link sui-AtomButton--circular")]/@href').get()
+        self.log(f'Ficha tecnica: {ficha_tecnica}')
+        if(ficha_tecnica == None): 
+            self.saveFile (response, 'data/html')
+            return
+        yield scrapy.Request(self.base_url + ficha_tecnica, self._parse_ficha_tecnica)
 
-        #self.saveFile (response, 'data/html') _getPrice("Título de la página: KIA Rio (2021) - 11.800 € en Castellón | Coches.net")
+        self.saveFile (response, 'data/html')

@@ -11,8 +11,17 @@ def obtener_precio(titulo):
         return resultado[0] + " €"
     else:
         return "No se encontró el precio"
+    
+def obtener_municipio(titulo):
+        patron = r'\d+\s€\s*en\s*(.*?)\s*\|'
+        resultado = re.search(patron, titulo)
+    
+        if resultado:
+            return resultado.group(1)
+        else:
+            return "No se encontró el municipio"
 
 # Ejemplo de uso
 titulo = "Título de la página: KIA Rio (2021) - 11.800 € en Castellón | Coches.net"
-precio = obtener_precio(titulo)
+precio = obtener_municipio(titulo)
 print(f"El precio es: {precio}")
