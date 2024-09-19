@@ -63,23 +63,27 @@ function descargarDatos() {
 }
 
 
-date = ""
-km = ""
-location = ""
-vehicleType = ""
-cambio = ""
-numPuertas = ""
-plazas = ""
-potencia = ""
-cv = ""
-cc = ""
-color = ""
-grkm = ""
-combustible = ""
-garantia = ""
-etiqueta = ""
+let date = ""
+let km = ""
+let loc = ""
+let vehicleType = ""
+let cambio = ""
+let numPuertas = ""
+let plazas = ""
+let cv = ""
+let cc = ""
+let color = ""
+let grkm = ""
+let combustible = ""
+let garantia = ""
+let etiqueta = ""
 
 function extraerData() {
+
+    if (document.querySelector(".sui-MoleculeNotification--system")){
+        
+        goNextPage();
+    }
 
     console.log("Extrayendo datos de la página...");
 
@@ -97,91 +101,51 @@ function extraerData() {
 
     const tableData = document.querySelectorAll('.mt-PanelAdDetails-data li');
 
-    {/* FECHA */}
+    //ASUMIMOS QUE EL PRIMER ELEMENTO SIEMPRE ES LA FECHA
+    dateInner = tableData[0].querySelector('strong');
+    locInner = tableData[2].querySelector('strong');
+    vehicleType = tableData[3].querySelector('strong');
 
-    const dateData = tableData[0].querySelector('strong');
-    const data1 = dateData ? dateData.innerText : 'N/A';
+    if (dateInner && dateInner.innerText.length == 4){
+        date = dateInner.innerText;
+        
+    }
+    if (locInner){
+        loc = locInner.innerText;
+    }
 
-    {/* KILOMETROS */}
-
-    const kmData = tableData[1].querySelector('strong');
-    const data2 = kmData ? kmData.innerText : 'N/A';
-
-    checkDataType(data2);
-
-    {/* LOCALIDAD */}
-
-    const locationData = tableData[2].querySelector('strong');
-    const data3 = locationData ? locationData.innerText : 'N/A';
-
-
-    {/* vehicleType */}
-
-    const vehicleTypeData = tableData[3].querySelector('strong');
-    const data4 = vehicleTypeData ? vehicleTypeData.innerText : 'N/A';
+    if (vehicleType){
+        vehicleType = vehicleType.innerText
+    }
 
 
-    {/* CAMBIO */}
-
-    const cambioData = tableData[4].querySelector('strong');
-    const data5 = cambioData ? cambioData.innerText : 'N/A';
+   
 
 
 
-    {/* NUM PUERTAS */}
+    checkDataType(tableData[1]);
+    //checkDataType(tableData[2]);
+    //checkDataType(tableData[3]);
+    checkDataType(tableData[4]);
+    checkDataType(tableData[5]);
+    checkDataType(tableData[6]);
+    checkDataType(tableData[7]);
+    checkDataType(tableData[8]);
+    checkDataType(tableData[9]);
+    checkDataType(tableData[10]);
+    checkDataType(tableData[11]);
+    checkDataType(tableData[12]);
+    checkDataType(tableData[13]);
 
-    const numPuertasData = tableData[5].querySelector('strong');
-    const data6 = numPuertasData ? numPuertasData.innerText : 'N/A';
 
-
-    {/* PLAZAS */}
-
-    const plazasData = tableData[4].querySelector('strong');
-    const data7 = plazasData ? plazasData.innerText : 'N/A';
-
-    //EL RESTO PUEDE QUE NO ESTE
-
-
-
-    {/* POTENCIA cc */}
-
-    const potenciaData = tableData[7].querySelector('strong');
-    const data8 = potenciaData ? potenciaData.innerText : 'N/A';
-
-    {/*POTENCIA cv */}
-
-    const cvData = tableData[8].querySelector('strong');
-    const data9 = cvData ? cvData.innerText : 'N/A';
-
-    {/* COLOR */}
-
-    const colorData = tableData[9].querySelector('strong');
-    const data10 = colorData ? colorData.innerText : 'N/A';
-
-    {/* gr/km */}
-
-    const grkmData = tableData[10].querySelector('strong');
-    const data11 = grkmData ? grkmData.innerText : 'N/A';
-
-    {/* COMBUSTIBLE */}
-
-    const combustibleData = tableData[11].querySelector('strong');
-    const data12 = combustibleData ? combustibleData.innerText : 'N/A';
-
-    {/* Garantía */}
-
-    const garantiaData = tableData[12].querySelector('strong');
-    const data13 = garantiaData ? garantiaData.innerText : 'N/A';
-
-    {/* EtiquetaType  */}
-
-    const etiquetaData = tableData[13].querySelector('strong');
-    const data14 = etiquetaData ? etiquetaData.innerText : 'N/A';
-    
 
     {/* URL FICHA TÉCNICA */}
+
     const urlDiv = document.querySelector('.mt-PanelEquipment-cta');
-    const data15 = urlDiv.querySelector('a').href;
+    let url = "N/A";
+    if (urlDiv){
+        url = urlDiv.querySelector('a').href;
+    }
 
 
     
@@ -191,25 +155,55 @@ function extraerData() {
 }
 
 const checkDataType = (data) => {
-    if (data === 'N/A') {
-        return null;
+    if (!data) {
+        return;
+    }
+    const inner = data.querySelector('strong');
+    const cleanData = inner ? inner.innerText : 'N/A';
+    const combustibles = ['Gasolina', 'Diésel', 'Híbrido', 'Eléctrico', 'Híbrido enchufable','Gas licuado (GLP)','Gas natural (CNG)']
+
+    data = data.textContent;
+
+    if (data.includes('gr/km')) {
+        console.log("GR/KM:",cleanData);
+        grkm = cleanData;
     }
     else if (data.includes('km')) {
-        console.log("KM: ", data);
-        km = data;
+        km = cleanData;
     }
     else if (data.includes('cv')) {
-        cv = data;
+        cv = cleanData;
     } 
     else if (data.includes('cc')) {
-        cc = data;
+        cc = cleanData;
     }
-    else if (data.includes('gr/km')) {
-        grkm = data;
+    else if (data.includes('Puertas')) {
+        numPuertas = cleanData;
+    }
+    else if (data.includes('Plazas')) {
+        plazas = cleanData;
+    }
+    else if (data.includes('Cambio')) {
+        cambio = cleanData;
+    }
+    else if (data.includes('Garantía')) {
+        garantia = cleanData;
+    }
+    else if (data.includes('Etiqueta')) {
+        etiqueta = cleanData;
+    }
+    else if (combustibles.includes(cleanData)) {
+        combustible = cleanData;
     }
     else {
-        return data;
+        //ASUMO QUE ES EL COLOR
+        color = cleanData;
+        console.log("No se ha encontrado el tipo de dato.");
     }
+
+
+
+
 };
 
 
@@ -223,12 +217,12 @@ const saveData = (title, price,url) => {
             price,
             date,
             km,
-            location,
+            loc,
             vehicleType,
             cambio,
             numPuertas,
-            potencia,
             cv,
+            cc,
             color,
             grkm,
             combustible,
@@ -242,6 +236,9 @@ const saveData = (title, price,url) => {
         chrome.storage.local.set({ carDataPrimary: carDataArray }, () => {
             console.log("Datos actualizados y guardados en el almacenamiento local.");
             console.log("Datos guardados:", carDataArray );
+            
+           
+            setTimeout(goNextPage, 1000);
         });
 
   
@@ -256,8 +253,6 @@ const goNextPage = () => {
 
         if (currentPage < fase1URLS.length) {
             chrome.storage.local.set({ currentPage }, () => {
-                console.log("Página actualizada:", currentPage);
-                
                 //insert <a> tag with the next URL and click it 
 
                 const a = document.createElement('a');
@@ -275,6 +270,9 @@ const goNextPage = () => {
     });
 }
 
+if (!descargar && !borrarLocalStorage) {
+    
+     //cuando la página se termine de lodear
+    window.addEventListener('load', extraerData);           
+}
 
-//cuando la página se termine de lodear
-window.addEventListener('load', extraerData);

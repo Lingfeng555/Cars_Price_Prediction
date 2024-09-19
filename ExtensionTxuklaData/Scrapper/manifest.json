@@ -24,6 +24,7 @@
       "matches": ["*://www.coches.net/*.aspx"],
       "js": ["primaryDataScraper.js"]
     }
+    
   ],
   "web_accessible_resources": [
     {

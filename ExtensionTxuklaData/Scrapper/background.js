@@ -23,7 +23,7 @@ chrome.webNavigation.onCompleted.addListener(async function(details) {
       console.error("Error al inyectar el script:", error);
     }
   }
-  else (details.url.startsWith("https://www.coches.net/*.aspx")) {
+  else if (details.url.startsWith("https://www.coches.net/*.aspx")) {
     try {
       await chrome.scripting.executeScript({
         target: { tabId: details.tabId },
