@@ -3,6 +3,8 @@ descargar = false
 
 borrarLocalStorage = false
 
+fase1URLS = []
+
 fetch(chrome.runtime.getURL('data/enlaces1070.json'))
   .then(response => {
     if (!response.ok) {
@@ -12,12 +14,12 @@ fetch(chrome.runtime.getURL('data/enlaces1070.json'))
     return response.json();
   })
   .then(data => {
-    console.log("Datos cargados correctamente:");
-    console.log(data);
+    fase1URLS = data;
   })
   .catch(error => {
     console.error('Error cargando el JSON:', error);
-  });
+});
+
 
 
 if (descargar) {
@@ -27,6 +29,11 @@ if (descargar) {
 if (borrarLocalStorage) {
     chrome.storage.local.remove('carDataPrimary', () => {
         console.log("carDataPrimary eliminado del almacenamiento local.");
+    });
+
+    // Eliminar la clave currentPage
+    chrome.storage.local.remove('currentPage', () => {
+        console.log("currentPage eliminado del almacenamiento local.");
     });
 }
 
@@ -56,14 +63,27 @@ function descargarDatos() {
 }
 
 
+date = ""
+km = ""
+location = ""
+vehicleType = ""
+cambio = ""
+numPuertas = ""
+plazas = ""
+potencia = ""
+cv = ""
+cc = ""
+color = ""
+grkm = ""
+combustible = ""
+garantia = ""
+etiqueta = ""
 
 function extraerData() {
 
     console.log("Extrayendo datos de la página...");
 
     {/* TITULO */}
-
-
     const titleDiv = document.querySelector('.mt-PanelAdInfo-title');
     const title = titleDiv.querySelector('h1').innerText;
 
@@ -71,96 +91,130 @@ function extraerData() {
     const carDiv = document.querySelector('.mt-CardAdPrice-cashAmount');
     const price = carDiv.querySelector('h3').innerText;
 
+    //--------------------------------------
     {/* TABLA DE DATOS */}
+    //--------------------------------------
 
     const tableData = document.querySelectorAll('.mt-PanelAdDetails-data li');
 
     {/* FECHA */}
 
     const dateData = tableData[0].querySelector('strong');
-    const date = dateData ? dateData.innerText : 'N/A';
+    const data1 = dateData ? dateData.innerText : 'N/A';
 
     {/* KILOMETROS */}
 
     const kmData = tableData[1].querySelector('strong');
-    const km = kmData ? kmData.innerText : 'N/A';
+    const data2 = kmData ? kmData.innerText : 'N/A';
+
+    checkDataType(data2);
 
     {/* LOCALIDAD */}
 
     const locationData = tableData[2].querySelector('strong');
-    const location = locationData ? locationData.innerText : 'N/A';
+    const data3 = locationData ? locationData.innerText : 'N/A';
 
 
     {/* vehicleType */}
 
     const vehicleTypeData = tableData[3].querySelector('strong');
-    const vehicleType = vehicleTypeData ? vehicleTypeData.innerText : 'N/A';
+    const data4 = vehicleTypeData ? vehicleTypeData.innerText : 'N/A';
 
 
     {/* CAMBIO */}
 
     const cambioData = tableData[4].querySelector('strong');
-    const cambio = cambioData ? cambioData.innerText : 'N/A';
+    const data5 = cambioData ? cambioData.innerText : 'N/A';
 
-    {/* PLAZAS */}
 
-    const plazasData = tableData[5].querySelector('strong');
-    const plazas = plazasData ? plazasData.innerText : 'N/A';
 
     {/* NUM PUERTAS */}
 
-    const numPuertasData = tableData[6].querySelector('strong');
-    const numPuertas = numPuertasData ? numPuertasData.innerText : 'N/A';
+    const numPuertasData = tableData[5].querySelector('strong');
+    const data6 = numPuertasData ? numPuertasData.innerText : 'N/A';
+
+
+    {/* PLAZAS */}
+
+    const plazasData = tableData[4].querySelector('strong');
+    const data7 = plazasData ? plazasData.innerText : 'N/A';
+
+    //EL RESTO PUEDE QUE NO ESTE
+
+
 
     {/* POTENCIA cc */}
 
     const potenciaData = tableData[7].querySelector('strong');
-    const potencia = potenciaData ? potenciaData.innerText : 'N/A';
+    const data8 = potenciaData ? potenciaData.innerText : 'N/A';
 
     {/*POTENCIA cv */}
 
     const cvData = tableData[8].querySelector('strong');
-    const cv = cvData ? cvData.innerText : 'N/A';
+    const data9 = cvData ? cvData.innerText : 'N/A';
 
     {/* COLOR */}
 
     const colorData = tableData[9].querySelector('strong');
-    const color = colorData ? colorData.innerText : 'N/A';
+    const data10 = colorData ? colorData.innerText : 'N/A';
 
     {/* gr/km */}
 
     const grkmData = tableData[10].querySelector('strong');
-    const grkm = grkmData ? grkmData.innerText : 'N/A';
+    const data11 = grkmData ? grkmData.innerText : 'N/A';
 
     {/* COMBUSTIBLE */}
 
     const combustibleData = tableData[11].querySelector('strong');
-    const combustible = combustibleData ? combustibleData.innerText : 'N/A';
+    const data12 = combustibleData ? combustibleData.innerText : 'N/A';
 
     {/* Garantía */}
 
     const garantiaData = tableData[12].querySelector('strong');
-    const garantia = garantiaData ? garantiaData.innerText : 'N/A';
+    const data13 = garantiaData ? garantiaData.innerText : 'N/A';
 
     {/* EtiquetaType  */}
 
     const etiquetaData = tableData[13].querySelector('strong');
-    const etiqueta = etiquetaData ? etiquetaData.innerText : 'N/A';
+    const data14 = etiquetaData ? etiquetaData.innerText : 'N/A';
     
 
     {/* URL FICHA TÉCNICA */}
     const urlDiv = document.querySelector('.mt-PanelEquipment-cta');
-    const url = urlDiv.querySelector('a').href;
+    const data15 = urlDiv.querySelector('a').href;
 
 
     
-    saveData(title, price, date, km, location, vehicleType, cambio, numPuertas, potencia, cv, color, grkm, combustible, garantia, etiqueta,url);
+    saveData(title, price,url);
 
 
 }
 
+const checkDataType = (data) => {
+    if (data === 'N/A') {
+        return null;
+    }
+    else if (data.includes('km')) {
+        console.log("KM: ", data);
+        km = data;
+    }
+    else if (data.includes('cv')) {
+        cv = data;
+    } 
+    else if (data.includes('cc')) {
+        cc = data;
+    }
+    else if (data.includes('gr/km')) {
+        grkm = data;
+    }
+    else {
+        return data;
+    }
+};
 
-const saveData = (title, price, date, km, location, vehicleType, cambio, numPuertas, potencia, cv, color, grkm, combustible, garantia, etiqueta,url) => {
+
+
+const saveData = (title, price,url) => {
     chrome.storage.local.get('carDataPrimary', (result) => {
        let carDataArray = result.carDataPrimary || [];
 
@@ -189,8 +243,37 @@ const saveData = (title, price, date, km, location, vehicleType, cambio, numPuer
             console.log("Datos actualizados y guardados en el almacenamiento local.");
             console.log("Datos guardados:", carDataArray );
         });
+
+  
     });
 };
+
+
+const goNextPage = () => {
+    chrome.storage.local.get('currentPage', (result) => {
+        let currentPage = result.currentPage || 0;
+        currentPage++;
+
+        if (currentPage < fase1URLS.length) {
+            chrome.storage.local.set({ currentPage }, () => {
+                console.log("Página actualizada:", currentPage);
+                
+                //insert <a> tag with the next URL and click it 
+
+                const a = document.createElement('a');
+                a.href = fase1URLS[currentPage];
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+
+
+            });
+        } 
+        else {
+            console.log("Todos los datos han sido extraídos.");
+        }
+    });
+}
 
 
 //cuando la página se termine de lodear
