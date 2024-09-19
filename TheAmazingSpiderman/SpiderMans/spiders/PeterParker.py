@@ -13,6 +13,9 @@ class MiSpider(scrapy.Spider):
     base_url = 'https://www.coches.net'
     start_urls = []
     current_url = ""
+    current_ficha = ""
+    scraped = []
+    car = {}
 
     def __init__(self):
         with open('data/JSON/prueba.js', 'r') as archivo:
@@ -66,8 +69,15 @@ class MiSpider(scrapy.Spider):
 
     def _parse_ficha_tecnica (self, response):
 
+        ficha = {}
+
         titulo = response.xpath('//title/text()').get()
         self.log(f'Título de la página: {titulo}')
+
+        if ( (titulo == None) or (titulo == "Ups! Parece que algo no va bien...") ) : 
+            self.changeStatus()
+            yield from self.request(self.current_ficha, self._parse_ficha_tecnica)
+            return
 
         values = response.xpath('//p[contains(@class, "mt-ListModelDetails-listItemValue") and contains(@class, "mt-ListModelDetails-listItemValue--blackBold")]/text()').getall()
         key = response.xpath('//p[@class="mt-ListModelDetails-listItemValue"]/text()').getall()
@@ -75,11 +85,15 @@ class MiSpider(scrapy.Spider):
         for i in range(len(key)):
             self.log(f'{key[i]} : {values[i].strip()}')
 
+        ficha["General"] = dict(zip(key, values))
+
         key_tables = response.xpath('//div[contains(concat(" ", normalize-space(@class), " "), " mt-ListModelDetails mt-ListModelDetails--paddingless ")]//span[@class="mt-ListModelDetails-tableItem"]/text()').getall()
         values_tables = response.xpath('//div[contains(concat(" ", normalize-space(@class), " "), " mt-ListModelDetails mt-ListModelDetails--paddingless ")]//span[@class="mt-ListModelDetails-tableItem--strong"]/text()').getall()
 
         for i in range(len(key_tables)):
             self.log(f'{key_tables[i]}: {values_tables[i].strip()}')
+
+        ficha["General_2"] = dict(zip(key_tables, values_tables))
 
         text = response.xpath('//div[contains(@class, "mt-PanelEquipment-accordion")]//span[contains(@class, "mt-PanelEquipment-tableItem")]/text()').getall()
     
@@ -87,33 +101,70 @@ class MiSpider(scrapy.Spider):
         for x in text:
             self.log(f'Texto encontrado: {x.strip()}')
 
+        ficha["Descripciones"] = text
+
+        self.car["ficha_tecnica"] = ficha
+
+        url_cleaned = re.sub(r'[^\w\-_]', '_', self.current_url)
+        with open('data/JSON/' + url_cleaned + '.json', 'w') as file:
+            # Escribir la lista de diccionarios en formato JSON
+            json.dump(self.scraped, file, indent=4)
+
     def parse(self, response):
         # Extraer el título de la página
-        titulo = response.xpath('//title/text()').get()
+        try:
+            titulo = response.xpath('//title/text()').get()
 
-        self.log(f'Título de la página: {titulo}')
+            self.log(f'Título de la página: {titulo}')
 
-        if ( (titulo == None) or (titulo == "Ups! Parece que algo no va bien...") ) : 
-            self.changeStatus()
-            yield from self.request(self.current_url, self.parse)
+            if ( (titulo == None) or (titulo == "Ups! Parece que algo no va bien...") ) : 
+                self.changeStatus()
+                yield from self.request(self.current_url, self.parse)
+                return
+            
+            Nombre = response.xpath('//h1[contains(concat(" ", normalize-space(@class), " "), " mt-TitleBasic-title ") and contains(concat(" ", normalize-space(@class), " "), " mt-TitleBasic-title--s ") and contains(concat(" ", normalize-space(@class), " "), " mt-TitleBasic-title--black ")]/text()').get()
+            
+
+            self.log(f'Nombre: {Nombre}')
+            self.log(f'Precio: {self._getPrice(titulo)} €')
+            self.log(f'Provincia: {self._obtener_provincia(titulo)}')
+
+            datos = response.xpath('//li[contains(@class, "mt-PanelAdDetails-dataItem")]//strong/text()').getall()
+        
+            self.log(f'Anio: {datos[0]}')
+            self.log(f'Kilometraje: {datos[1]}')
+            self.log(f'Tipo: {datos[3]}')
+
+            ficha_tecnica = response.xpath('//a[contains(@class, "sui-AtomButton sui-AtomButton--primary sui-AtomButton--outline sui-AtomButton--center sui-AtomButton--link sui-AtomButton--circular")]/@href').get()
+            self.log(f'Ficha tecnica: {ficha_tecnica}')
+
+            if(ficha_tecnica == None): 
+                #self.saveFile (response, 'data/html')
+                return
+            
+            self.car['Link'] = self.current_url
+            self.car['Nombre'] = Nombre
+            self.car['Precio'] = self._getPrice(titulo)
+            self.car['Provincia'] = self._obtener_provincia(titulo)
+            self.car['Anio'] = datos[0]
+            self.car['Kilometraje'] = datos[1]
+            self.car['Tipo'] = datos[3]
+
+
+            self.current_ficha = self.base_url + ficha_tecnica
+
+            yield from self.request(self.current_ficha, self._parse_ficha_tecnica)
+
+            self.scraped.append(self.car.copy())
+        except:
             return
         
-        Nombre = response.xpath('//h1[contains(concat(" ", normalize-space(@class), " "), " mt-TitleBasic-title ") and contains(concat(" ", normalize-space(@class), " "), " mt-TitleBasic-title--s ") and contains(concat(" ", normalize-space(@class), " "), " mt-TitleBasic-title--black ")]/text()').get()
-        
-        self.log(f'Nombre: {Nombre}')
-        self.log(f'Precio: {self._getPrice(titulo)} €')
-        self.log(f'Provincia: {self._obtener_provincia(titulo)}')
+    def closed(self, reason):
 
-        datos = response.xpath('//li[contains(@class, "mt-PanelAdDetails-dataItem")]//strong/text()').getall()
-    
-        self.log(f'Anio: {datos[0]}')
-        self.log(f'Kilometraje: {datos[1]}')
-        self.log(f'Tipo: {datos[3]}')
-
-        ficha_tecnica = response.xpath('//a[contains(@class, "sui-AtomButton sui-AtomButton--primary sui-AtomButton--outline sui-AtomButton--center sui-AtomButton--link sui-AtomButton--circular")]/@href').get()
-        self.log(f'Ficha tecnica: {ficha_tecnica}')
-        if(ficha_tecnica == None): 
-            self.saveFile (response, 'data/html')
-            return
-        
-        yield from self.request(self.base_url + ficha_tecnica, self._parse_ficha_tecnica)
+        self.log(f'SCRAPEO TERMINADO: {len(self.scraped)} EN TOTAL')
+        if hasattr(self, 'scraped'):
+            with open('data/JSON/datosPrueba_5.json', 'w') as file:
+                # Escribir la lista de diccionarios en formato JSON
+                json.dump(self.scraped, file, indent=4)
+        else:
+            self.log('No hay datos para escribir.')

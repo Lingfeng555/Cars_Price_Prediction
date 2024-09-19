@@ -59,9 +59,11 @@ DOWNLOADER_MIDDLEWARES = {
 SPLASH_URL = 'http://localhost:8050'
 
 # Evitar duplicados
-DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+#DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+DUPEFILTER_CLASS = 'scrapy.dupefilters.BaseDupeFilter'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
+DUPEFILTER_DEBUG = False
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {

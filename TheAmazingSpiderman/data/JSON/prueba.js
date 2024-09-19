@@ -1,3 +1,3 @@
 [
-    "/kia-rio-1.2-dpi-62kw-84cv-concept-5p-gasolina-2021-en-castellon-58532642-covo.aspx"
+    "/ford-focus-gasolina-2008-en-barcelona-58737175-covo.aspx"
 ]
