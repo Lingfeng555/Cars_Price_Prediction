@@ -2,16 +2,24 @@ import scrapy
 import time
 import os
 import re
-from scrapy_splash import SplashRequest
 import random
+import json
+from scrapy_splash import SplashRequest
 
 class MiSpider(scrapy.Spider):
     name = 'PeterParker'
-    start_urls = ['https://www.coches.net/segunda-mano/']
+    base_url = 'https://www.coches.net'
+    start_urls = []
+
+    def __init__(self):
+        with open('data/JSON/prueba.js', 'r') as archivo:
+            cars = json.load(archivo)
+        for car in cars:
+            self.start_urls.append(self.base_url + car)
 
     def start_requests(self):
         for url in self.start_urls:
-            time.sleep(random.uniform(10, 20))
+            time.sleep(random.uniform(5, 10))
             yield SplashRequest(url, self.parse)
     
     def saveFile (self, response, output_dir):
@@ -23,20 +31,24 @@ class MiSpider(scrapy.Spider):
         self.log(f'Archivo guardado: {filename}')
         f.close()
     
+    def _getPrice(self, title):
+        patron = r'(\d{1,3}(?:\.\d{3})*|\d+)\s?€'
+        resultado = re.findall(patron, title)
+    
+        if resultado:
+            return resultado[0]
+        else:
+            return "No se encontró el precio"
+    
     def parse(self, response):
-        # Espera 5 segundos
-        time.sleep(8)
         # Extraer el título de la página
         titulo = response.xpath('//title/text()').get()
+        
         self.log(f'Título de la página: {titulo}')
+        self.log(f'Precio: {self._getPrice(titulo)} €')
 
-        # Ejemplo: extraer todos los enlaces de la página
-        for enlace in response.xpath('//a[contains(@class, "mt-CardBasic-titleLink")]/@href').getall():
-            self.log(f'Enlace encontrado: {enlace}')
-            #if(enlace == '/segunda-mano/') : 
-                #time.sleep(15)
-                #self.log(f'Entrando {self.start_urls[0] + 'segunda-mano/'}')
-                #yield SplashRequest(self.start_urls[0] + 'segunda-mano/', self.parse, args={'wait': 7})
+        enlace = response.xpath('//a[contains(@class, "sui-AtomButton sui-AtomButton--primary sui-AtomButton--outline sui-AtomButton--center sui-AtomButton--link sui-AtomButton--circular")]/@href').get()
+        self.log(f'Ficha tecnica: {enlace}')
+        if(enlace == None): return
 
-        #Save the html File
-        self.saveFile (response, 'data/html')
+        #self.saveFile (response, 'data/html') _getPrice("Título de la página: KIA Rio (2021) - 11.800 € en Castellón | Coches.net")
