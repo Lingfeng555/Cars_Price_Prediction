@@ -1,9 +1,9 @@
 
-descargar = false
+descargar = true
 
 borrarLocalStorage = false
 
-startPoint = 0
+startPoint = 8000
 
 fase1URLS = []
 
