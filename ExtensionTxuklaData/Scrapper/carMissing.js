@@ -57,6 +57,6 @@ const goNextPage = () => {
 }
 
 
-
-window.addEventListener('load', carMissing);
+carMissing();
+//window.addEventListener('load', carMissing);
 
