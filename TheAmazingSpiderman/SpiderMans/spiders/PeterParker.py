@@ -11,17 +11,16 @@ class MiSpider(scrapy.Spider):
     status = True
     name = 'PeterParker'
     base_url = 'https://www.coches.net'
-    start_urls = []
+    cars_links = []
     current_url = ""
     current_ficha = ""
     scraped = []
     car = {}
+    index = 0
 
     def __init__(self):
         with open('data/JSON/prueba.js', 'r') as archivo:
-            cars = json.load(archivo)
-        for car in cars:
-            self.start_urls.append(self.base_url + car)
+            self.cars_links = json.load(archivo)
 
     def request (self, url, func):
         if self.status:
@@ -30,10 +29,8 @@ class MiSpider(scrapy.Spider):
             yield SplashRequest(url, callback=func)
 
     def start_requests(self):
-        for url in self.start_urls:
-            time.sleep(random.uniform(15, 20))
-            self.current_url = url
-            yield from self.request(url, self.parse)
+        self.current_url = self.base_url + self.cars_links[self.index]
+        yield from self.request(self.current_url, self.parse)
     
     def changeStatus(self):
         self.status = not self.status
@@ -96,19 +93,24 @@ class MiSpider(scrapy.Spider):
         ficha["General_2"] = dict(zip(key_tables, values_tables))
 
         text = response.xpath('//div[contains(@class, "mt-PanelEquipment-accordion")]//span[contains(@class, "mt-PanelEquipment-tableItem")]/text()').getall()
-    
-        # Iterar sobre los textos extraídos y procesarlos
+
         for x in text:
             self.log(f'Texto encontrado: {x.strip()}')
 
         ficha["Descripciones"] = text
 
         self.car["ficha_tecnica"] = ficha
+        #print(self.car)
 
         url_cleaned = re.sub(r'[^\w\-_]', '_', self.current_url)
         with open('data/JSON/' + url_cleaned + '.json', 'w') as file:
             # Escribir la lista de diccionarios en formato JSON
-            json.dump(self.scraped, file, indent=4)
+            json.dump(self.car, file, indent=4)
+        
+        self.index = self.index + 1
+        if(self.index >= len(self.cars_links)): return
+        self.current_url = self.base_url + self.cars_links[self.index]
+        yield from self.request(self.current_url, self.parse)
 
     def parse(self, response):
         # Extraer el título de la página
@@ -139,7 +141,10 @@ class MiSpider(scrapy.Spider):
             self.log(f'Ficha tecnica: {ficha_tecnica}')
 
             if(ficha_tecnica == None): 
-                #self.saveFile (response, 'data/html')
+                self.index = self.index + 1
+                if(self.index >= len(self.cars_links)): return
+                self.current_url = self.base_url + self.cars_links[self.index]
+                yield from self.request(self.current_url, self.parse)
                 return
             
             self.car['Link'] = self.current_url
@@ -154,10 +159,9 @@ class MiSpider(scrapy.Spider):
             self.current_ficha = self.base_url + ficha_tecnica
 
             yield from self.request(self.current_ficha, self._parse_ficha_tecnica)
-
             self.scraped.append(self.car.copy())
         except:
-            return
+            self.log("HA OCURRIDO UN ERROR ")
         
     def closed(self, reason):
 
@@ -165,6 +169,7 @@ class MiSpider(scrapy.Spider):
         if hasattr(self, 'scraped'):
             with open('data/JSON/datosPrueba_5.json', 'w') as file:
                 # Escribir la lista de diccionarios en formato JSON
+                print(self.scraped)
                 json.dump(self.scraped, file, indent=4)
         else:
             self.log('No hay datos para escribir.')
