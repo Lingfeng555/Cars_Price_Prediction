@@ -22,10 +22,12 @@ fetch(chrome.runtime.getURL('data/urlsClean.json'))
 
 
 function carMissing() {
-    if (document.querySelector(".sui-MoleculeNotification--system")){   
+    if (document.querySelector(".sui-MoleculeNotification--system")){ 
+        console.log("[DEBUG] Coche no encontrado , saltando de URL.");  
         goNextPage();
     }
     goNextPage();
+    console.log("[DEBUG] TIPO DE PÁGINA NO RECONOCIDA, SALTANDO DE URL.");
 
 }
 
