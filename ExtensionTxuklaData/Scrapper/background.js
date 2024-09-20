@@ -34,6 +34,32 @@ chrome.webNavigation.onCompleted.addListener(async function(details) {
       console.error("Error al inyectar el script:", error);
     }
   }
+  else if (details.url.startsWith("https://www.coches.net/*/*/segunda-mano/")) {
+    try {
+      await chrome.scripting.executeScript({
+        target: { tabId: details.tabId },
+        files: ['carMissing.js']
+      });
+      console.log("Script [carMissing] inyectado correctamente.");
+    } catch (error) {
+      console.error("Error al inyectar el script:", error);
+    }
+  }
+  else if (details.url.startsWith("https://www.coches.net/renting/")) {
+    try {
+      await chrome.scripting.executeScript({
+        target: { tabId: details.tabId },
+        files: ['carMissing.js']
+      });
+      console.log("Script [carMissing] inyectado correctamente.");
+    } catch (error) {
+      console.error("Error al inyectar el script:", error);
+    }
+  }
+
+
+
+  
 
 
 }, { url: [{ urlMatches: 'https://www.coches.net/*' }] });

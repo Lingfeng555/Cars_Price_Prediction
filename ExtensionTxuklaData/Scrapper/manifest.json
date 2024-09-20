@@ -23,6 +23,14 @@
     {
       "matches": ["*://www.coches.net/*.aspx"],
       "js": ["primaryDataScraper.js"]
+    },
+    {
+      "matches": ["*://www.coches.net/*/*/segunda-mano/"],
+      "js": ["carMissing.js"]
+    },
+    {
+      "matches": ["*://www.coches.net/renting/"],
+      "js": ["carMissing.js"]
     }
     
   ],

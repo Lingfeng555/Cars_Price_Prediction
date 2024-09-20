@@ -1,5 +1,5 @@
 
-descargar = false
+descargar = true
 
 borrarLocalStorage = false
 
@@ -79,11 +79,6 @@ let garantia = ""
 let etiqueta = ""
 
 function extraerData() {
-
-    if (document.querySelector(".sui-MoleculeNotification--system")){
-        
-        goNextPage();
-    }
 
     console.log("Extrayendo datos de la página...");
 
@@ -238,7 +233,7 @@ const saveData = (title, price,url) => {
             console.log("Datos guardados:", carDataArray );
             
            
-            setTimeout(goNextPage, 1000);
+            setTimeout(goNextPage, 50);
         });
 
   
@@ -254,7 +249,6 @@ const goNextPage = () => {
         if (currentPage < fase1URLS.length) {
             chrome.storage.local.set({ currentPage }, () => {
                 //insert <a> tag with the next URL and click it 
-
                 const a = document.createElement('a');
                 a.href = fase1URLS[currentPage];
                 document.body.appendChild(a);
@@ -271,8 +265,7 @@ const goNextPage = () => {
 }
 
 if (!descargar && !borrarLocalStorage) {
-    
-     //cuando la página se termine de lodear
+    //cuando la página se termine de lodear
     window.addEventListener('load', extraerData);           
 }
 
