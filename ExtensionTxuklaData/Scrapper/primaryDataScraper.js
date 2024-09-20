@@ -1,7 +1,9 @@
 
-descargar = true
+descargar = false
 
 borrarLocalStorage = false
+
+startPoint = 0
 
 fase1URLS = []
 
@@ -31,10 +33,11 @@ if (borrarLocalStorage) {
         console.log("carDataPrimary eliminado del almacenamiento local.");
     });
 
-    // Eliminar la clave currentPage
-    chrome.storage.local.remove('currentPage', () => {
-        console.log("currentPage eliminado del almacenamiento local.");
+    // Setear la currentPage en startpoint
+    chrome.storage.local.set({ currentPage: startPoint }, () => {
+        console.log("currentPage seteado en StartPoint:", startPoint);
     });
+    
 }
 
 function descargarDatos() {
