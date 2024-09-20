@@ -36,7 +36,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["data/enlaces1070.json"],
+      "resources": ["data/urlsClean.json"],
       "matches": ["*://www.coches.net/*"]
     }
   ]

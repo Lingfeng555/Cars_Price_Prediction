@@ -5,7 +5,7 @@ borrarLocalStorage = false
 
 fase1URLS = []
 
-fetch(chrome.runtime.getURL('data/enlaces1070.json'))
+fetch(chrome.runtime.getURL('data/urlsClean.json'))
   .then(response => {
     if (!response.ok) {
       throw new Error(`Error al cargar el archivo: ${response.statusText}`);
@@ -155,7 +155,7 @@ const checkDataType = (data) => {
     }
     const inner = data.querySelector('strong');
     const cleanData = inner ? inner.innerText : 'N/A';
-    const combustibles = ['Gasolina', 'Diésel', 'Híbrido', 'Eléctrico', 'Híbrido enchufable','Gas licuado (GLP)','Gas natural (CNG)']
+    const combustibles = ['Gasolina', 'Diésel','Diesel', 'Híbrido', 'Eléctrico', 'Híbrido enchufable','Gas licuado (GLP)','Gas natural (CNG)']
 
     data = data.textContent;
 

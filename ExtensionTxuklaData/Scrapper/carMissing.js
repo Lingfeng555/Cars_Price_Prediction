@@ -4,7 +4,7 @@
 
 fase1URLS = []
 
-fetch(chrome.runtime.getURL('data/enlaces1070.json'))
+fetch(chrome.runtime.getURL('data/urlsClean.json'))
   .then(response => {
     if (!response.ok) {
       throw new Error(`Error al cargar el archivo: ${response.statusText}`);
