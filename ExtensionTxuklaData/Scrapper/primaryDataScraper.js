@@ -274,6 +274,7 @@ const goNextPage = () => {
 
 if (!descargar && !borrarLocalStorage) {
     //cuando la página se termine de lodear
-    window.addEventListener('load', extraerData);           
+    //window.addEventListener('load', extraerData);  
+    extraerData();         
 }
 
