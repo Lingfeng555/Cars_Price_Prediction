@@ -83,6 +83,7 @@ let etiqueta = ""
 
 function extraerData() {
 
+    console.log("URL Nº:", currentPage);
     console.log("Extrayendo datos de la página...");
 
     {/* TITULO */}
