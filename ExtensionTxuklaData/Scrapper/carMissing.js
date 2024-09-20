@@ -26,7 +26,7 @@ function carMissing() {
         console.log("[DEBUG] Coche no encontrado , saltando de URL.");  
         goNextPage();
     }
-    goNextPage();
+    setTimeout(1000,goNextPage());
     console.log("[DEBUG] TIPO DE PÁGINA NO RECONOCIDA, SALTANDO DE URL.");
 
 }
@@ -57,6 +57,6 @@ const goNextPage = () => {
 }
 
 
-
+//carMissing();
 window.addEventListener('load', carMissing);
 
