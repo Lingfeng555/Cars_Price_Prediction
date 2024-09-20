@@ -12,7 +12,7 @@ fetch(chrome.runtime.getURL('data/urlsClean.json'))
     if (!response.ok) {
       throw new Error(`Error al cargar el archivo: ${response.statusText}`);
     }
-    console.log("Archivo JSON encontrado.");
+    console.log("[DEBUG] Archivo JSON encontrado.");
     return response.json();
   })
   .then(data => {
@@ -30,12 +30,12 @@ if (descargar) {
 
 if (borrarLocalStorage) {
     chrome.storage.local.remove('carDataPrimary', () => {
-        console.log("carDataPrimary eliminado del almacenamiento local.");
+        console.log("[DEBUG] carDataPrimary eliminado del almacenamiento local.");
     });
 
     // Setear la currentPage en startpoint
     chrome.storage.local.set({ currentPage: startPoint }, () => {
-        console.log("currentPage seteado en StartPoint:", startPoint);
+        console.log("[DEBUG] currentPage seteado en StartPoint:", startPoint);
     });
     
 }
@@ -83,8 +83,12 @@ let etiqueta = ""
 
 function extraerData() {
 
-    console.log("URL Nº:", currentPage);
-    console.log("Extrayendo datos de la página...");
+    chrome.storage.local.get('currentPage', (result) => {
+        let currentPage = result.currentPage || 0;
+        console.log("[DEBUG] URL Nº:", currentPage);
+    });
+    
+    console.log("[DEBUG] Extrayendo datos de la página...");
 
     {/* TITULO */}
     const titleDiv = document.querySelector('.mt-PanelAdInfo-title');
@@ -164,7 +168,7 @@ const checkDataType = (data) => {
     data = data.textContent;
 
     if (data.includes('gr/km')) {
-        console.log("GR/KM:",cleanData);
+        console.log("[DEBUG] GR/KM:",cleanData);
         grkm = cleanData;
     }
     else if (data.includes('km')) {
@@ -197,7 +201,7 @@ const checkDataType = (data) => {
     else {
         //ASUMO QUE ES EL COLOR
         color = cleanData;
-        console.log("No se ha encontrado el tipo de dato.");
+        console.log("[DEBUG] No se ha encontrado el tipo de dato.");
     }
 
 
@@ -233,8 +237,8 @@ const saveData = (title, price,url) => {
         carDataArray.push(newCarData);
 
         chrome.storage.local.set({ carDataPrimary: carDataArray }, () => {
-            console.log("Datos actualizados y guardados en el almacenamiento local.");
-            console.log("Datos guardados:", carDataArray );
+            console.log("[DEBUG] Datos actualizados y guardados en el almacenamiento local.");
+            console.log("[DEBUG] Datos guardados:", carDataArray );
             
            
             setTimeout(goNextPage, 50);
@@ -263,7 +267,7 @@ const goNextPage = () => {
             });
         } 
         else {
-            console.log("Todos los datos han sido extraídos.");
+            console.log("[DEBUG] Todos los datos han sido extraídos.");
         }
     });
 }
