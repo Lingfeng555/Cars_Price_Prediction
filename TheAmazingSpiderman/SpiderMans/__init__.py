@@ -3,7 +3,7 @@ import subprocess
 def ejecutar_mitmproxy():
     try:
         # Comando para ejecutar mitmproxy en modo regular y escuchar en el puerto 8080
-        comando = ['mitmproxy', '--mode', 'regular', '--listen-port', '8080', '-s', 'bloqueador_js.py']
+        comando = ['mitmproxy', '--mode', 'regular', '--listen-port', '8080', '-s', 'bloqueador_js.py', 'rotate_proxies.py']
 
         # Ejecuta el comando en una subproceso
         proceso = subprocess.Popen(comando, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

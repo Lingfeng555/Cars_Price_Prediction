@@ -53,8 +53,7 @@ SPIDER_MIDDLEWARES = {
 DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
-    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
-    'mi_proyecto.middlewares.RandomDelayMiddleware': 100,
+    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810
 }
 
 # Usa el servidor Splash para procesar las páginas
