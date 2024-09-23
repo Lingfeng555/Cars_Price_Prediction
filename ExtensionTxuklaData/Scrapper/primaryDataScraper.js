@@ -1,9 +1,9 @@
 
-descargar = true
+descargar = false
 
 borrarLocalStorage = false
 
-startPoint = 8500
+startPoint = 14000
 
 
 fetch(chrome.runtime.getURL('data/urlsClean.json'))
@@ -240,7 +240,7 @@ const saveData = (title, price,url) => {
             console.log("[DEBUG] Datos guardados:", carDataArray );
             
            
-            setTimeout(goNextPage, 50);
+            setTimeout(goNextPage, 2000);
         });
 
   
