@@ -5,7 +5,6 @@ borrarLocalStorage = false
 
 startPoint = 8000
 
-fase1URLS = []
 
 fetch(chrome.runtime.getURL('data/urlsClean.json'))
   .then(response => {
