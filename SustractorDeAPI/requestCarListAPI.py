@@ -90,14 +90,19 @@ def scrap_full_page(page: int) -> list:
 
 def sendQuery(start: int, end: int) -> None:
     result = []
-    try:
-        for i in range (start, end-1):
+
+    for i in range (start, end-1):
+        try:
             cars = scrap_full_page(i)
             cars.pop()
             result = result + cars
-        result = result + scrap_full_page(i)
+        except:
+            print(f'ERROR AL SCRAPEAR LA PAGINA {i}')
+    try:
+        result = result + scrap_full_page(end)
     except:
-        print(f'El error ha ocurrido con la pagina {i}')
+        print(f'ERROR AL SCRAPEAR LA ULTIMA PAGINA')
+
     with open(f'cars{start}_{end}.json', 'w') as f:
         json.dump(result, f)
 
