@@ -56,6 +56,17 @@ chrome.webNavigation.onCompleted.addListener(async function(details) {
       console.error("Error al inyectar el script:", error);
     }
   }
+  else if (details.url.startsWith("https://www.coches.net/fichas_tecnicas/")) {
+    try {
+      await chrome.scripting.executeScript({
+        target: { tabId: details.tabId },
+        files: ['fichaScraper.js']
+      });
+      console.log("Script [fichaScraper] inyectado correctamente.");
+    } catch (error) {
+      console.error("Error al inyectar el script:", error);
+    }
+  }
 
 
 

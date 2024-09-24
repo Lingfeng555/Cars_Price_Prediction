@@ -29,14 +29,18 @@
       "js": ["carMissing.js"]
     },
     {
-      "matches": ["*://www.coches.net/renting/"],
+      "matches": ["*://www.coches.net/renting/*"],
       "js": ["carMissing.js"]
+    },
+    {
+      "matches": ["*://www.coches.net/fichas_tecnicas/*"],
+      "js": ["fichaScraper.js"]
     }
     
   ],
   "web_accessible_resources": [
     {
-      "resources": ["data/urlsClean.json"],
+      "resources": ["data/urlsClean.json","data/phase1Clean.json","data/finalData.json"],
       "matches": ["*://www.coches.net/*"]
     }
   ]
