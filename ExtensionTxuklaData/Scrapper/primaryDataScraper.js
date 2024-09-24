@@ -1,9 +1,9 @@
 
-descargar = true
+descargar = false
 
 borrarLocalStorage = false
 
-startPoint = 21000
+startPoint = 25000
 
 
 fetch(chrome.runtime.getURL('data/urlsClean.json'))
