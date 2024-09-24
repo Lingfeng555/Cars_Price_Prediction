@@ -8,8 +8,8 @@ limite_inferio = 1.5
 limite_superior = 2.5
 
 #Must be intergers
-start = 0
-end = 1
+start = 1 #inclusive
+end = 4 #inclusive
 
 url_primary_data = "https://ms-mt--api-mobile.spain.advgo.net/search"
 
@@ -91,7 +91,7 @@ def scrap_full_page(page: int) -> list:
 def sendQuery(start: int, end: int) -> None:
     result = []
 
-    for i in range (start, end-1):
+    for i in range (start, end):
         try:
             cars = scrap_full_page(i)
             cars.pop()
