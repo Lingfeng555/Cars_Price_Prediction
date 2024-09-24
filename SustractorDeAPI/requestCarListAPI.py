@@ -3,9 +3,11 @@ import time
 import random
 import json
 
+#The random delay between request of details
 limite_inferio = 1.5
 limite_superior = 2.5
 
+#Must be intergers
 start = 0
 end = 1
 
@@ -80,18 +82,23 @@ def request_details(id: str) -> dict:
 def scrap_full_page(page: int) -> list:
     cars = request_primary_data(page)
     for car in cars:
-        car["detail"] = request_details(car["id"])
+        try:
+            car["detail"] = request_details(car["id"])
+        except:
+            print(f'ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: {car["id"]}')
     return cars
 
 def sendQuery(start: int, end: int) -> None:
     result = []
-    for i in range (start, end-1):
-        cars = scrap_full_page(i)
-        cars.pop()
-        result = result + cars
-    result = result + scrap_full_page(i)
+    try:
+        for i in range (start, end-1):
+            cars = scrap_full_page(i)
+            cars.pop()
+            result = result + cars
+        result = result + scrap_full_page(i)
+    except:
+        print(f'El error ha ocurrido con la pagina {i}')
     with open(f'cars{start}_{end}.json', 'w') as f:
         json.dump(result, f)
-
 
 sendQuery(start, end)
