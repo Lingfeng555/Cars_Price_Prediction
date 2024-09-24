@@ -26,6 +26,8 @@ headers = {
 
 response = requests.get(url, headers=headers, cookies=cookies)
 
+with open(f'details.json', 'w') as f:
+    f.write(response.text)
 
 print(response.status_code)
 print(response.json())  
