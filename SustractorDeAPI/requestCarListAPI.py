@@ -178,8 +178,8 @@ if (__name__ == '__main__') and scrap:
     start_time = time.time()
     NUMERO_DE_HILOS = 50
     hilos = []
-    start = 1501 #inclusive
-    end = 2000 #inclusive
+    start = 2000 #inclusive
+    end = 2800 #inclusive
     
     print("TOTAL ESTIMADO DE COCHES A SCRAPEAR: ", (end - start) * 100)
     
