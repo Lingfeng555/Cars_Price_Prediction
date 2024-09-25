@@ -176,16 +176,16 @@ if __name__ == '__main__':
     start_time = time.time()
     NUMERO_DE_HILOS = 50
     hilos = []
-    start = 1 #inclusive
-    end = 500 #inclusive
+    start = 501 #inclusive
+    end = 1000 #inclusive
     
     print("TOTAL ESTIMADO DE COCHES A SCRAPEAR: ", (end - start) * 100)
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
     change_tor_ip()
 
-    x = 1
-    y = BATCH
+    x = start
+    y = start + BATCH
     for i in range(NUMERO_DE_HILOS):
         t = threading.Thread(target=tarea, args=(f"Thread-{i+1}", x, y))
         hilos.append(t)
