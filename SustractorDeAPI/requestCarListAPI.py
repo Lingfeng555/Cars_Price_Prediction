@@ -174,10 +174,10 @@ if __name__ == '__main__':
     start_time = time.time()
     NUMERO_DE_HILOS = 30
     hilos = []
-    start = 1 #inclusive
-    end = 30 #inclusive
+    start = 1001 #inclusive
+    end = 1500 #inclusive
     
-
+    print("TOTAL ESTIMADO DE COCHES A SCRAPEAR: ", (end - start) * 100)
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
     change_tor_ip()
