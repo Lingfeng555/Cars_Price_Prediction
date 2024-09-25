@@ -172,7 +172,7 @@ if __name__ == '__main__':
     NUMERO_DE_HILOS = 5
     hilos = []
     start = 1 #inclusive
-    end = 5 #inclusive
+    end = 1 #inclusive
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
     #change_tor_ip()
