@@ -31,6 +31,7 @@ logger.addHandler(console_handler)
 
 url_primary_data = "https://ms-mt--api-mobile.spain.advgo.net/search"
 
+#The random delay between requests of details
 proxies = {
     'http': 'socks5h://127.0.0.1:9050',
     'https': 'socks5h://127.0.0.1:9050'
@@ -83,7 +84,6 @@ def request_primary_data (page: int) -> list :
             "includingPaidItems": False
         }
     }
-    time.sleep(random.uniform(0.1, 0.5))
     response = requests.post(url_primary_data, headers=headers_primary_data, cookies=cookies_primary_data, json=data, proxies=proxies)
     logger.info(f'REQUEST PAGE: {page} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
@@ -97,7 +97,6 @@ def request_primary_data (page: int) -> list :
 def request_details(id: str) -> dict: 
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
     response = requests.get(url_details, headers=headers_details, cookies=cookies_details, proxies=proxies)
-    time.sleep(random.uniform(limite_inferio, limite_superior))
     logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
     ret = response.json()
@@ -131,7 +130,7 @@ def sendQuery(start: int, end: int) -> None:
 
     logger.info(f'TOTAL DE COCHES REGISTRADOS: {len(result)} ------------------------------------------------------')
 
-    with open(f'data/raw/JSON/cars_{start}_{end}.json', 'w') as f:
+    with open(f'data/cars_{start}_{end}.json', 'w') as f:
         json.dump(result, f)
 
 def get_public_ip():
@@ -157,11 +156,6 @@ def change_tor_ip():
         except Exception as e:
             # Captura cualquier otro tipo de excepción
             logger.info(f"Ocurrió un error inesperado: {e}")
-
-#The random delay between requests of details
-limite_inferio = 0.1
-limite_superior = 0.1
-
 #Must be intergers
 start = 1 #inclusive
 end = 1 #inclusive
