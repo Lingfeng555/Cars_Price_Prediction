@@ -4,12 +4,12 @@ import random
 import json
 
 #The random delay between request of details
-limite_inferio = 1.5
-limite_superior = 2.5
+limite_inferio = 1
+limite_superior = 1.5
 
 #Must be intergers
 start = 1 #inclusive
-end = 4 #inclusive
+end = 1 #inclusive
 
 url_primary_data = "https://ms-mt--api-mobile.spain.advgo.net/search"
 
@@ -52,7 +52,7 @@ headers_details = {
 
 def request_primary_data (page: int) -> list :
     data = {
-        "pagination": {"page": page, "size": 5},
+        "pagination": {"page": page, "size": 100},
         "sort": {"order": "desc", "term": "relevance"},
         "experiments": {"tops": "V2"},
         "filters": {
@@ -100,12 +100,16 @@ def sendQuery(start: int, end: int) -> None:
             result = result + cars
         except:
             print(f'ERROR AL SCRAPEAR LA PAGINA {i}')
+        print(f'TOTAL DE COCHES REGISTRADOS HASTA AHORA: {len(result)}')
     try:
         result = result + scrap_full_page(end)
     except:
         print(f'ERROR AL SCRAPEAR LA ULTIMA PAGINA')
 
+    print(f'TOTAL DE COCHES REGISTRADOS: {len(result)}')
+
     with open(f'cars{start}_{end}.json', 'w') as f:
         json.dump(result, f)
 
-sendQuery(start, end)
+if __name__ == '__main__':
+    sendQuery(start, end)
