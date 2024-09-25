@@ -156,10 +156,9 @@ def change_tor_ip():
         except Exception as e:
             # Captura cualquier otro tipo de excepción
             logger.info(f"Ocurrió un error inesperado: {e}")
-#Must be intergers
-start = 1 #inclusive
-end = 1 #inclusive
 
 if __name__ == '__main__':
+    start = 1 #inclusive
+    end = 1 #inclusive
     change_tor_ip()
     sendQuery(start, end)
