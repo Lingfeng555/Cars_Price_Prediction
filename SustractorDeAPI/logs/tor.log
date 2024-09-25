@@ -58,3 +58,6 @@ Sep 25 19:35:50.000 [notice] New control connection opened from 127.0.0.1.
 Sep 25 19:36:15.000 [notice] New control connection opened from 127.0.0.1.
 Sep 25 19:36:48.000 [notice] New control connection opened from 127.0.0.1.
 Sep 25 19:37:36.000 [notice] New control connection opened from 127.0.0.1.
+Sep 25 19:52:07.000 [notice] New control connection opened from 127.0.0.1.
+Sep 25 19:55:47.000 [notice] Owning controller connection has closed -- exiting now.
+Sep 25 19:55:47.000 [notice] Catching signal TERM, exiting cleanly.

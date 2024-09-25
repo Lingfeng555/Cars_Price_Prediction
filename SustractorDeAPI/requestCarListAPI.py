@@ -126,12 +126,14 @@ def scrap_full_page(page: int) -> list:
 
 def sendQuery(name: str, start: int, end: int) -> None:
     result = []
+    global total_scrapped 
 
     for i in range (start, end):
         try:
             cars = scrap_full_page(i)
             cars.pop()
             result = result + cars
+            total_scrapped += len(cars)
         except:
             logger.info(f'ERROR AL SCRAPEAR LA PAGINA {i}')
         logger.info(f'TOTAL DE COCHES REGISTRADOS HASTA AHORA: {len(result)}')
@@ -187,6 +189,9 @@ if __name__ == '__main__':
 
     x = start
     y = x+BATCH
+    total_scrapped = 0
+    total_cars = (end - start) * 100
+     
     for i in range(NUMERO_DE_HILOS):
         t = threading.Thread(target=tarea, args=(f"Thread-{i+1}", x, y))
         hilos.append(t)
