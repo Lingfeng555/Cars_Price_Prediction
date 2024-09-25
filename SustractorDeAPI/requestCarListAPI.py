@@ -107,7 +107,7 @@ def request_primary_data (page: int) -> list :
 def request_details(id: str) -> dict: 
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
     response = requests.get(url_details, headers=headers_details, cookies=cookies_details, proxies=proxies)
-    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
+    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code} LEFT : ?')
     if(response.status_code != 200): return None
     ret = response.json()
     ret["ad"].pop("photos")
@@ -173,13 +173,13 @@ def change_tor_ip():
 def tarea(name, start, end):
     sendQuery(name, start, end)
 
-scrap = True
+scrap = False
 if (__name__ == '__main__') and scrap:
     start_time = time.time()
-    NUMERO_DE_HILOS = 100
+    NUMERO_DE_HILOS = 50
     hilos = []
-    start = 1 #inclusive
-    end = 500 #inclusive
+    start = 501 #inclusive
+    end = 1000 #inclusive
     
     print("TOTAL ESTIMADO DE COCHES A SCRAPEAR: ", (end - start) * 100)
     
@@ -187,7 +187,7 @@ if (__name__ == '__main__') and scrap:
     change_tor_ip()
 
     x = start
-    y = start + BATCH
+    y = x + BATCH
     for i in range(NUMERO_DE_HILOS):
         t = threading.Thread(target=tarea, args=(f"Thread-{i+1}", x, y))
         hilos.append(t)
