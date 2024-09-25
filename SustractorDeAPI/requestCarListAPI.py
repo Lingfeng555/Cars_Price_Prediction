@@ -7,20 +7,26 @@ from stem.control import Controller
 from stem.connection import AuthenticationFailure
 import logging
 
-logging.basicConfig(
-    filename="api.log",  # Guardar los logs en un archivo
-    filemode="a",  # Modo de apertura del archivo (a = append, w = overwrite)
-    format="%(asctime)s - %(levelname)s - %(message)s",  # Formato de los mensajes
-    level=logging.DEBUG  # Nivel de logging
-)
+# Crear el logger
+logger = logging.getLogger(f"SCRAPER")
+logger.setLevel(logging.DEBUG)  # Configurar el nivel mínimo de logging para el logger
 
-#The random delay between request of details
-limite_inferio = 1
-limite_superior = 1.5
+# Crear un handler para archivo
+file_handler = logging.FileHandler(f"logs/{input("Introduce tu nombre: ")}.log")
+file_handler.setLevel(logging.DEBUG)  # Guardar todos los niveles en el archivo
 
-#Must be intergers
-start = 1 #inclusive
-end = 1 #inclusive
+# Crear un handler para la consola (terminal)
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)  # Imprimir todos los niveles en la consola
+
+# Crear un formato para los logs
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
+
+# Añadir los handlers al logger
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
 
 url_primary_data = "https://ms-mt--api-mobile.spain.advgo.net/search"
 
@@ -71,9 +77,9 @@ def request_primary_data (page: int) -> list :
             "includingPaidItems": False
         }
     }
-    time.sleep(random.uniform(1.5, 2.5))
+    time.sleep(random.uniform(0.1, 0.5))
     response = requests.post(url_primary_data, headers=headers_primary_data, cookies=cookies_primary_data, json=data)
-    print(f'REQUEST PAGE: {page} ESTATUS CODE: {response.status_code}')
+    logger.info(f'REQUEST PAGE: {page} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
     ret = response.json()["items"]
     for car in ret:
@@ -86,7 +92,7 @@ def request_details(id: str) -> dict:
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
     response = requests.get(url_details, headers=headers_details, cookies=cookies_details)
     time.sleep(random.uniform(limite_inferio, limite_superior))
-    print(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
+    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
     ret = response.json()
     ret["ad"].pop("photos")
@@ -98,7 +104,7 @@ def scrap_full_page(page: int) -> list:
         try:
             car["detail"] = request_details(car["id"])
         except:
-            print(f'ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: {car["id"]}')
+            logger.info(f'ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: {car["id"]}')
     return cars
 
 def sendQuery(start: int, end: int) -> None:
@@ -110,16 +116,16 @@ def sendQuery(start: int, end: int) -> None:
             cars.pop()
             result = result + cars
         except:
-            print(f'ERROR AL SCRAPEAR LA PAGINA {i}')
-        print(f'TOTAL DE COCHES REGISTRADOS HASTA AHORA: {len(result)}')
+            logger.info(f'ERROR AL SCRAPEAR LA PAGINA {i}')
+        logger.info(f'TOTAL DE COCHES REGISTRADOS HASTA AHORA: {len(result)}')
     try:
         result = result + scrap_full_page(end)
     except:
-        print(f'ERROR AL SCRAPEAR LA ULTIMA PAGINA')
+        logger.info(f'ERROR AL SCRAPEAR LA ULTIMA PAGINA')
 
-    print(f'TOTAL DE COCHES REGISTRADOS: {len(result)}')
+    logger.info(f'TOTAL DE COCHES REGISTRADOS: {len(result)} ------------------------------------------------------')
 
-    with open(f'cars{start}_{end}.json', 'w') as f:
+    with open(f'data/raw/JSON/cars_{start}_{end}.json', 'w') as f:
         json.dump(result, f)
 
 def get_public_ip():
@@ -131,26 +137,32 @@ def get_public_ip():
     return response.json()["origin"]
 
 def change_tor_ip():
-    print(f'IP INICIAL: {get_public_ip()}')
+    logger.info(f'IP INICIAL: {get_public_ip()}')
     with Controller.from_port(port=9051) as controller:
         password = input("Introduce la contraseña de Tor: ")
         try:
             # Intentar autenticarse con la contraseña proporcionada
             controller.authenticate(password=password) #Por defecto duende_verde
-            print("Autenticación exitosa")
+            logger.info("Autenticación exitosa")
             # Si la autenticación es exitosa, se puede cambiar el circuito
             controller.signal(Signal.NEWNYM)
-            print("IP cambiada a través de Tor")
-            print(f'IP CAMBIADO: {get_public_ip()}')
+            logger.info("IP cambiada a través de Tor")
+            logger.info(f'IP CAMBIADO: {get_public_ip()}')
         except AuthenticationFailure:
             # Si la autenticación falla, muestra un mensaje y no permite la conexión
-            print("Error: La contraseña es incorrecta. No se puede conectar al ControlPort.")
+            logger.info("Error: La contraseña es incorrecta. No se puede conectar al ControlPort.")
         except Exception as e:
             # Captura cualquier otro tipo de excepción
-            print(f"Ocurrió un error inesperado: {e}")
+            logger.info(f"Ocurrió un error inesperado: {e}")
+
+#The random delay between requests of details
+limite_inferio = 0.1
+limite_superior = 0.1
+
+#Must be intergers
+start = 1 #inclusive
+end = 1 #inclusive
 
 if __name__ == '__main__':
-
     change_tor_ip()
-
-    #sendQuery(start, end)
+    sendQuery(start, end)
