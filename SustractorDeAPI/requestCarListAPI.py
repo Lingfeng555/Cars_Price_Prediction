@@ -172,12 +172,10 @@ def tarea(name, start, end):
 
 if __name__ == '__main__':
     start_time = time.time()
-    NUMERO_DE_HILOS = 30
+    NUMERO_DE_HILOS = 50
     hilos = []
     start = 1 #inclusive
-    end = 30 #inclusive
-    
-
+    end = 500 #inclusive
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
     change_tor_ip()
