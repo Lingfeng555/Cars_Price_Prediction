@@ -19,6 +19,8 @@ logger.setLevel(logging.DEBUG)  # Configurar el nivel mínimo de logging para el
 
 if not os.path.exists("logs"):
     os.makedirs("logs")
+if not os.path.exists("data"):
+    os.makedirs("data")
     
 # Crear un handler para archivo
 file_handler = logging.FileHandler(f"logs/{input("Introduce tu nombre: ")}.log")
@@ -176,6 +178,8 @@ if __name__ == '__main__':
     hilos = []
     start = 1 #inclusive
     end = 500 #inclusive
+    
+    print("TOTAL ESTIMADO DE COCHES A SCRAPEAR: ", (end - start) * 100)
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
     change_tor_ip()
