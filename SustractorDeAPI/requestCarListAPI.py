@@ -19,6 +19,8 @@ logger.setLevel(logging.DEBUG)  # Configurar el nivel mínimo de logging para el
 
 if not os.path.exists("logs"):
     os.makedirs("logs")
+if not os.path.exists("data"):
+    os.makedirs("data")
     
 # Crear un handler para archivo
 file_handler = logging.FileHandler(f"logs/{input("Introduce tu nombre: ")}.log")
@@ -172,7 +174,7 @@ def tarea(name, start, end):
 
 if __name__ == '__main__':
     start_time = time.time()
-    NUMERO_DE_HILOS = 30
+    NUMERO_DE_HILOS = 50
     hilos = []
     start = 1001 #inclusive
     end = 1500 #inclusive
