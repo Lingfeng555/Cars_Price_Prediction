@@ -168,10 +168,10 @@ def tarea(name, start, end):
     sendQuery(name, start, end)
 
 if __name__ == '__main__':
-    NUMERO_DE_HILOS = 5
+    NUMERO_DE_HILOS = 30
     hilos = []
     start = 1 #inclusive
-    end = 1 #inclusive
+    end = 30 #inclusive
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
     change_tor_ip()
