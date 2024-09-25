@@ -131,8 +131,9 @@ def sendQuery(name: str, start: int, end: int) -> None:
         logger.info(f'TOTAL DE COCHES REGISTRADOS HASTA AHORA: {len(result)}')
     try:
         result = result + scrap_full_page(end)
-    except:
+    except Exception as e:
         logger.info(f'ERROR AL SCRAPEAR LA ULTIMA PAGINA')
+        print(f"Ocurrió un error: {e}")
 
     logger.info(f'TOTAL DE COCHES REGISTRADOS: {len(result)} ------------------------------------------------------')
 
@@ -173,7 +174,7 @@ if __name__ == '__main__':
     end = 5 #inclusive
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
-    #change_tor_ip()
+    change_tor_ip()
 
     x = 1
     y = BATCH
