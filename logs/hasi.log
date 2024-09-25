@@ -1,0 +1,486 @@
+2024-09-25 20:20:28,575 - SCRAPER - INFO - IP INICIAL: 195.176.3.23
+2024-09-25 20:20:29,717 - SCRAPER - INFO - Autenticación exitosa
+2024-09-25 20:20:29,733 - SCRAPER - INFO - IP cambiada a través de Tor
+2024-09-25 20:20:31,110 - SCRAPER - INFO - IP CAMBIADO: 51.38.225.46
+2024-09-25 20:20:32,162 - SCRAPER - INFO - REQUEST PAGE: 11 ESTATUS CODE: 200
+2024-09-25 20:20:32,167 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 11 SCRAPEADA
+2024-09-25 20:20:32,227 - SCRAPER - INFO - REQUEST PAGE: 21 ESTATUS CODE: 200
+2024-09-25 20:20:32,233 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 21 SCRAPEADA
+2024-09-25 20:20:32,302 - SCRAPER - INFO - REQUEST PAGE: 71 ESTATUS CODE: 200
+2024-09-25 20:20:32,306 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 71 SCRAPEADA
+2024-09-25 20:20:32,372 - SCRAPER - INFO - REQUEST PAGE: 491 ESTATUS CODE: 200
+2024-09-25 20:20:32,377 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 491 SCRAPEADA
+2024-09-25 20:20:32,391 - SCRAPER - INFO - REQUEST PAGE: 61 ESTATUS CODE: 200
+2024-09-25 20:20:32,396 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 61 SCRAPEADA
+2024-09-25 20:20:32,399 - SCRAPER - INFO - REQUEST PAGE: 481 ESTATUS CODE: 200
+2024-09-25 20:20:32,399 - SCRAPER - INFO - REQUEST PAGE: 91 ESTATUS CODE: 200
+2024-09-25 20:20:32,404 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 481 SCRAPEADA
+2024-09-25 20:20:32,409 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 91 SCRAPEADA
+2024-09-25 20:20:32,412 - SCRAPER - INFO - REQUEST PAGE: 51 ESTATUS CODE: 200
+2024-09-25 20:20:32,418 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 51 SCRAPEADA
+2024-09-25 20:20:32,424 - SCRAPER - INFO - REQUEST PAGE: 431 ESTATUS CODE: 200
+2024-09-25 20:20:32,429 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 431 SCRAPEADA
+2024-09-25 20:20:32,449 - SCRAPER - INFO - REQUEST PAGE: 441 ESTATUS CODE: 200
+2024-09-25 20:20:32,455 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 441 SCRAPEADA
+2024-09-25 20:20:32,468 - SCRAPER - INFO - REQUEST PAGE: 411 ESTATUS CODE: 200
+2024-09-25 20:20:32,473 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 411 SCRAPEADA
+2024-09-25 20:20:32,474 - SCRAPER - INFO - REQUEST PAGE: 101 ESTATUS CODE: 200
+2024-09-25 20:20:32,482 - SCRAPER - INFO - REQUEST PAGE: 471 ESTATUS CODE: 200
+2024-09-25 20:20:32,482 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 101 SCRAPEADA
+2024-09-25 20:20:32,486 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 471 SCRAPEADA
+2024-09-25 20:20:32,561 - SCRAPER - INFO - REQUEST PAGE: 121 ESTATUS CODE: 200
+2024-09-25 20:20:32,566 - SCRAPER - INFO - REQUEST PAGE: 151 ESTATUS CODE: 200
+2024-09-25 20:20:32,570 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 121 SCRAPEADA
+2024-09-25 20:20:32,576 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 151 SCRAPEADA
+2024-09-25 20:20:32,582 - SCRAPER - INFO - REQUEST PAGE: 181 ESTATUS CODE: 200
+2024-09-25 20:20:32,587 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 181 SCRAPEADA
+2024-09-25 20:20:32,589 - SCRAPER - INFO - REQUEST PAGE: 161 ESTATUS CODE: 200
+2024-09-25 20:20:32,589 - SCRAPER - INFO - REQUEST PAGE: 211 ESTATUS CODE: 200
+2024-09-25 20:20:32,595 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 161 SCRAPEADA
+2024-09-25 20:20:32,601 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 211 SCRAPEADA
+2024-09-25 20:20:32,603 - SCRAPER - INFO - REQUEST PAGE: 241 ESTATUS CODE: 200
+2024-09-25 20:20:32,609 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 241 SCRAPEADA
+2024-09-25 20:20:32,877 - SCRAPER - INFO - REQUEST PAGE: 461 ESTATUS CODE: 200
+2024-09-25 20:20:32,877 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:32,884 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 461 SCRAPEADA
+2024-09-25 20:20:32,885 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57797101
+2024-09-25 20:20:32,886 - SCRAPER - INFO - REQUEST PAGE: 31 ESTATUS CODE: 200
+2024-09-25 20:20:32,895 - SCRAPER - INFO - REQUEST PAGE: 1 ESTATUS CODE: 200
+2024-09-25 20:20:32,895 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 31 SCRAPEADA
+2024-09-25 20:20:32,905 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 1 SCRAPEADA
+2024-09-25 20:20:32,920 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:32,921 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58601673
+2024-09-25 20:20:33,078 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,078 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,079 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58753893
+2024-09-25 20:20:33,079 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,079 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,080 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58445791
+2024-09-25 20:20:33,081 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57719306
+2024-09-25 20:20:33,082 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58531773
+2024-09-25 20:20:33,097 - SCRAPER - INFO - REQUEST PAGE: 321 ESTATUS CODE: 200
+2024-09-25 20:20:33,102 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 321 SCRAPEADA
+2024-09-25 20:20:33,151 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,152 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57249497
+2024-09-25 20:20:33,211 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,212 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,212 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58415473
+2024-09-25 20:20:33,212 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,212 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,213 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 56947945
+2024-09-25 20:20:33,215 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 56517472
+2024-09-25 20:20:33,215 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58077001
+2024-09-25 20:20:33,255 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,255 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58475501
+2024-09-25 20:20:33,285 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,285 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58731643
+2024-09-25 20:20:33,299 - SCRAPER - INFO - REQUEST PAGE: 111 ESTATUS CODE: 200
+2024-09-25 20:20:33,300 - SCRAPER - INFO - REQUEST PAGE: 281 ESTATUS CODE: 200
+2024-09-25 20:20:33,300 - SCRAPER - INFO - REQUEST PAGE: 221 ESTATUS CODE: 200
+2024-09-25 20:20:33,305 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 111 SCRAPEADA
+2024-09-25 20:20:33,310 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,310 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 281 SCRAPEADA
+2024-09-25 20:20:33,316 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 221 SCRAPEADA
+2024-09-25 20:20:33,317 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,318 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57803521
+2024-09-25 20:20:33,320 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58726188
+2024-09-25 20:20:33,324 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,324 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58799784
+2024-09-25 20:20:33,350 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,350 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58738195
+2024-09-25 20:20:33,391 - SCRAPER - INFO - REQUEST PAGE: 41 ESTATUS CODE: 200
+2024-09-25 20:20:33,399 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 41 SCRAPEADA
+2024-09-25 20:20:33,405 - SCRAPER - INFO - REQUEST PAGE: 351 ESTATUS CODE: 200
+2024-09-25 20:20:33,406 - SCRAPER - INFO - REQUEST PAGE: 361 ESTATUS CODE: 200
+2024-09-25 20:20:33,411 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 351 SCRAPEADA
+2024-09-25 20:20:33,419 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 361 SCRAPEADA
+2024-09-25 20:20:33,420 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,420 - SCRAPER - INFO - REQUEST PAGE: 341 ESTATUS CODE: 200
+2024-09-25 20:20:33,421 - SCRAPER - INFO - REQUEST PAGE: 381 ESTATUS CODE: 200
+2024-09-25 20:20:33,422 - SCRAPER - INFO - REQUEST PAGE: 251 ESTATUS CODE: 200
+2024-09-25 20:20:33,425 - SCRAPER - INFO - REQUEST PAGE: 371 ESTATUS CODE: 200
+2024-09-25 20:20:33,425 - SCRAPER - INFO - REQUEST PAGE: 201 ESTATUS CODE: 200
+2024-09-25 20:20:33,427 - SCRAPER - INFO - REQUEST PAGE: 231 ESTATUS CODE: 200
+2024-09-25 20:20:33,428 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58395589
+2024-09-25 20:20:33,429 - SCRAPER - INFO - REQUEST PAGE: 391 ESTATUS CODE: 200
+2024-09-25 20:20:33,434 - SCRAPER - INFO - REQUEST PAGE: 191 ESTATUS CODE: 200
+2024-09-25 20:20:33,435 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 341 SCRAPEADA
+2024-09-25 20:20:33,436 - SCRAPER - INFO - REQUEST PAGE: 401 ESTATUS CODE: 200
+2024-09-25 20:20:33,441 - SCRAPER - INFO - REQUEST PAGE: 311 ESTATUS CODE: 200
+2024-09-25 20:20:33,441 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 381 SCRAPEADA
+2024-09-25 20:20:33,445 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 251 SCRAPEADA
+2024-09-25 20:20:33,446 - SCRAPER - INFO - REQUEST PAGE: 301 ESTATUS CODE: 200
+2024-09-25 20:20:33,447 - SCRAPER - INFO - REQUEST PAGE: 291 ESTATUS CODE: 200
+2024-09-25 20:20:33,447 - SCRAPER - INFO - REQUEST PAGE: 131 ESTATUS CODE: 200
+2024-09-25 20:20:33,454 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,455 - SCRAPER - INFO - REQUEST PAGE: 261 ESTATUS CODE: 200
+2024-09-25 20:20:33,456 - SCRAPER - INFO - REQUEST PAGE: 331 ESTATUS CODE: 200
+2024-09-25 20:20:33,456 - SCRAPER - INFO - REQUEST PAGE: 271 ESTATUS CODE: 200
+2024-09-25 20:20:33,457 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 371 SCRAPEADA
+2024-09-25 20:20:33,463 - SCRAPER - INFO - REQUEST PAGE: 171 ESTATUS CODE: 200
+2024-09-25 20:20:33,464 - SCRAPER - INFO - REQUEST PAGE: 421 ESTATUS CODE: 200
+2024-09-25 20:20:33,469 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 201 SCRAPEADA
+2024-09-25 20:20:33,470 - SCRAPER - INFO - REQUEST PAGE: 451 ESTATUS CODE: 200
+2024-09-25 20:20:33,470 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 231 SCRAPEADA
+2024-09-25 20:20:33,470 - SCRAPER - INFO - REQUEST PAGE: 141 ESTATUS CODE: 200
+2024-09-25 20:20:33,477 - SCRAPER - INFO - REQUEST PAGE: 81 ESTATUS CODE: 200
+2024-09-25 20:20:33,477 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 391 SCRAPEADA
+2024-09-25 20:20:33,481 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 191 SCRAPEADA
+2024-09-25 20:20:33,487 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 401 SCRAPEADA
+2024-09-25 20:20:33,492 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 311 SCRAPEADA
+2024-09-25 20:20:33,500 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 301 SCRAPEADA
+2024-09-25 20:20:33,504 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 291 SCRAPEADA
+2024-09-25 20:20:33,510 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 131 SCRAPEADA
+2024-09-25 20:20:33,510 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57636504
+2024-09-25 20:20:33,515 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 261 SCRAPEADA
+2024-09-25 20:20:33,519 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 331 SCRAPEADA
+2024-09-25 20:20:33,528 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 271 SCRAPEADA
+2024-09-25 20:20:33,563 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 171 SCRAPEADA
+2024-09-25 20:20:33,564 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 421 SCRAPEADA
+2024-09-25 20:20:33,570 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 451 SCRAPEADA
+2024-09-25 20:20:33,577 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 141 SCRAPEADA
+2024-09-25 20:20:33,583 - SCRAPER - INFO - GETEANDO COCHES DE LA PÁGINA 81 SCRAPEADA
+2024-09-25 20:20:33,655 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,655 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58791022
+2024-09-25 20:20:33,658 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,660 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57156032
+2024-09-25 20:20:33,665 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,666 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58242836
+2024-09-25 20:20:33,682 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,682 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58765204
+2024-09-25 20:20:33,696 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,697 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58751430
+2024-09-25 20:20:33,854 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,855 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58392182
+2024-09-25 20:20:33,867 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,868 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58621274
+2024-09-25 20:20:33,870 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,871 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 56706402
+2024-09-25 20:20:33,881 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,882 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58631039
+2024-09-25 20:20:33,886 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,886 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58674209
+2024-09-25 20:20:33,894 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,895 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58597890
+2024-09-25 20:20:33,904 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,905 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58737762
+2024-09-25 20:20:33,908 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,908 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58600443
+2024-09-25 20:20:33,920 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,921 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58777525
+2024-09-25 20:20:33,925 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,925 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57774451
+2024-09-25 20:20:33,934 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,935 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58609334
+2024-09-25 20:20:33,937 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,938 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58684647
+2024-09-25 20:20:33,940 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,940 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58524195
+2024-09-25 20:20:33,942 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,942 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57181656
+2024-09-25 20:20:33,957 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,957 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58276223
+2024-09-25 20:20:33,971 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,972 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58160450
+2024-09-25 20:20:33,975 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,975 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58292722
+2024-09-25 20:20:33,984 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:33,985 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58310342
+2024-09-25 20:20:34,043 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,044 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58758695
+2024-09-25 20:20:34,163 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,164 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58783323
+2024-09-25 20:20:34,221 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,224 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57201524
+2024-09-25 20:20:34,225 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,226 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,226 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,226 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,228 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,230 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,230 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,230 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,231 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,231 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,231 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,232 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57866474
+2024-09-25 20:20:34,233 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58538774
+2024-09-25 20:20:34,233 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58748249
+2024-09-25 20:20:34,234 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58761833
+2024-09-25 20:20:34,235 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,235 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57795493
+2024-09-25 20:20:34,236 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58701760
+2024-09-25 20:20:34,236 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58449868
+2024-09-25 20:20:34,236 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58742145
+2024-09-25 20:20:34,237 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58009871
+2024-09-25 20:20:34,237 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58450068
+2024-09-25 20:20:34,237 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 56440565
+2024-09-25 20:20:34,242 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58706257
+2024-09-25 20:20:34,253 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,255 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58718809
+2024-09-25 20:20:34,268 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,268 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,269 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58700541
+2024-09-25 20:20:34,269 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58795790
+2024-09-25 20:20:34,285 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,286 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58584176
+2024-09-25 20:20:34,411 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,412 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58772319
+2024-09-25 20:20:34,804 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,804 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 52753741
+2024-09-25 20:20:34,810 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,810 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58228011
+2024-09-25 20:20:34,871 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,871 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,871 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57772910
+2024-09-25 20:20:34,872 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58605518
+2024-09-25 20:20:34,879 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,879 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58789637
+2024-09-25 20:20:34,922 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,922 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,922 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:34,923 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57386067
+2024-09-25 20:20:34,923 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58730888
+2024-09-25 20:20:34,923 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58372688
+2024-09-25 20:20:35,024 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,025 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,027 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,035 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58615232
+2024-09-25 20:20:35,035 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,036 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,037 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57845881
+2024-09-25 20:20:35,037 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58761995
+2024-09-25 20:20:35,038 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,039 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58042885
+2024-09-25 20:20:35,039 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58787505
+2024-09-25 20:20:35,040 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58409126
+2024-09-25 20:20:35,278 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,279 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58692505
+2024-09-25 20:20:35,310 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,311 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58071431
+2024-09-25 20:20:35,336 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,336 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58783197
+2024-09-25 20:20:35,373 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,374 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58735837
+2024-09-25 20:20:35,377 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,377 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58751310
+2024-09-25 20:20:35,389 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,390 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58544211
+2024-09-25 20:20:35,391 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,392 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58795786
+2024-09-25 20:20:35,395 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,395 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57695002
+2024-09-25 20:20:35,403 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,403 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58785853
+2024-09-25 20:20:35,409 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,409 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58373255
+2024-09-25 20:20:35,416 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,417 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58068920
+2024-09-25 20:20:35,419 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,419 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58643605
+2024-09-25 20:20:35,423 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,423 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58309838
+2024-09-25 20:20:35,432 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,433 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57722063
+2024-09-25 20:20:35,438 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,438 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58786874
+2024-09-25 20:20:35,473 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,473 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58689391
+2024-09-25 20:20:35,581 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,582 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58764959
+2024-09-25 20:20:35,588 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,589 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58734160
+2024-09-25 20:20:35,600 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,601 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58709970
+2024-09-25 20:20:35,603 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,604 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58272166
+2024-09-25 20:20:35,609 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,610 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58759713
+2024-09-25 20:20:35,613 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,613 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,614 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58096163
+2024-09-25 20:20:35,614 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58650240
+2024-09-25 20:20:35,624 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,624 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58746331
+2024-09-25 20:20:35,662 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,663 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58564556
+2024-09-25 20:20:35,700 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,700 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58697737
+2024-09-25 20:20:35,708 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,708 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58693961
+2024-09-25 20:20:35,719 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,720 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58657494
+2024-09-25 20:20:35,722 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,723 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58612593
+2024-09-25 20:20:35,757 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,758 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58790799
+2024-09-25 20:20:35,803 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,803 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,803 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58539258
+2024-09-25 20:20:35,804 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58784628
+2024-09-25 20:20:35,810 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,810 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 56768349
+2024-09-25 20:20:35,813 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,814 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58764129
+2024-09-25 20:20:35,814 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,815 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58665695
+2024-09-25 20:20:35,820 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,820 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,821 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58309902
+2024-09-25 20:20:35,821 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58062537
+2024-09-25 20:20:35,825 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,826 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58761767
+2024-09-25 20:20:35,830 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,830 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,830 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58659215
+2024-09-25 20:20:35,832 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58737840
+2024-09-25 20:20:35,833 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,835 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58748131
+2024-09-25 20:20:35,839 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,840 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58742318
+2024-09-25 20:20:35,851 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,851 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58601534
+2024-09-25 20:20:35,879 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,880 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58714313
+2024-09-25 20:20:35,939 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,939 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,940 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58251073
+2024-09-25 20:20:35,940 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58635687
+2024-09-25 20:20:35,944 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:35,944 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58760349
+2024-09-25 20:20:36,037 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,038 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,048 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58174455
+2024-09-25 20:20:36,048 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,050 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,050 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,051 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,053 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,054 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,054 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,054 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,054 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58774965
+2024-09-25 20:20:36,055 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,055 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,056 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,056 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,057 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,057 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,057 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58506877
+2024-09-25 20:20:36,057 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,058 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58637192
+2024-09-25 20:20:36,059 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58631255
+2024-09-25 20:20:36,059 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58777291
+2024-09-25 20:20:36,059 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58707695
+2024-09-25 20:20:36,060 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58697413
+2024-09-25 20:20:36,060 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58730741
+2024-09-25 20:20:36,060 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58800574
+2024-09-25 20:20:36,061 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58645751
+2024-09-25 20:20:36,062 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58755075
+2024-09-25 20:20:36,063 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58776859
+2024-09-25 20:20:36,063 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58738161
+2024-09-25 20:20:36,063 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58664741
+2024-09-25 20:20:36,064 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57696120
+2024-09-25 20:20:36,065 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58761996
+2024-09-25 20:20:36,072 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,090 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58585588
+2024-09-25 20:20:36,235 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,236 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58381333
+2024-09-25 20:20:36,239 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,240 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,240 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58731888
+2024-09-25 20:20:36,241 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58659920
+2024-09-25 20:20:36,244 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,244 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58777884
+2024-09-25 20:20:36,247 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,247 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58549173
+2024-09-25 20:20:36,250 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,251 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57752579
+2024-09-25 20:20:36,254 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,255 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58790777
+2024-09-25 20:20:36,259 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,259 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58428741
+2024-09-25 20:20:36,265 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,265 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58767259
+2024-09-25 20:20:36,423 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,423 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,424 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58209486
+2024-09-25 20:20:36,424 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58783569
+2024-09-25 20:20:36,428 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,429 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,429 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58461005
+2024-09-25 20:20:36,429 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58605810
+2024-09-25 20:20:36,434 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,434 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58763809
+2024-09-25 20:20:36,437 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,437 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58740434
+2024-09-25 20:20:36,441 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,442 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58710232
+2024-09-25 20:20:36,478 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,478 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,478 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 54466835
+2024-09-25 20:20:36,479 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58356519
+2024-09-25 20:20:36,481 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,481 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,482 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57656124
+2024-09-25 20:20:36,483 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58576192
+2024-09-25 20:20:36,484 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,486 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58691383
+2024-09-25 20:20:36,490 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,491 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58746847
+2024-09-25 20:20:36,509 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,510 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58226685
+2024-09-25 20:20:36,548 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,549 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58086899
+2024-09-25 20:20:36,597 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,597 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58751259
+2024-09-25 20:20:36,604 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,605 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58622762
+2024-09-25 20:20:36,616 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,616 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,616 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,616 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58568469
+2024-09-25 20:20:36,617 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58784737
+2024-09-25 20:20:36,617 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58535045
+2024-09-25 20:20:36,697 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,702 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,705 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,705 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,705 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,707 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58708129
+2024-09-25 20:20:36,708 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,708 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,708 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,709 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,709 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,710 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,710 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,710 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,711 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,711 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,712 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58613966
+2024-09-25 20:20:36,712 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,712 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,712 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58714284
+2024-09-25 20:20:36,713 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58737925
+2024-09-25 20:20:36,713 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58733926
+2024-09-25 20:20:36,714 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58675169
+2024-09-25 20:20:36,716 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58501873
+2024-09-25 20:20:36,716 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,716 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58231406
+2024-09-25 20:20:36,717 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 56230990
+2024-09-25 20:20:36,717 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,717 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58761999
+2024-09-25 20:20:36,717 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58431081
+2024-09-25 20:20:36,718 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58664365
+2024-09-25 20:20:36,718 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 57462294
+2024-09-25 20:20:36,719 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58606339
+2024-09-25 20:20:36,719 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58407311
+2024-09-25 20:20:36,719 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58753394
+2024-09-25 20:20:36,720 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58552530
+2024-09-25 20:20:36,726 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58770518
+2024-09-25 20:20:36,731 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58782805
+2024-09-25 20:20:36,735 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,745 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58475927
+2024-09-25 20:20:36,771 - SCRAPER - INFO - Ocurrió un error inesperado: cannot access local variable 'totleft' where it is not associated with a value
+2024-09-25 20:20:36,771 - SCRAPER - INFO - ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: 58761195
