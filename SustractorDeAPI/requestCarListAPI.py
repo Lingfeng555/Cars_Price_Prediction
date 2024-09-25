@@ -2,6 +2,17 @@ import requests
 import time
 import random
 import json
+from stem import Signal
+from stem.control import Controller
+from stem.connection import AuthenticationFailure
+import logging
+
+logging.basicConfig(
+    filename="api.log",  # Guardar los logs en un archivo
+    filemode="a",  # Modo de apertura del archivo (a = append, w = overwrite)
+    format="%(asctime)s - %(levelname)s - %(message)s",  # Formato de los mensajes
+    level=logging.DEBUG  # Nivel de logging
+)
 
 #The random delay between request of details
 limite_inferio = 1
@@ -111,5 +122,35 @@ def sendQuery(start: int, end: int) -> None:
     with open(f'cars{start}_{end}.json', 'w') as f:
         json.dump(result, f)
 
+def get_public_ip():
+    proxies = {
+        'http': 'socks5h://127.0.0.1:9050',
+        'https': 'socks5h://127.0.0.1:9050'
+    }
+    response = requests.get('https://httpbin.org/ip', proxies=proxies)
+    return response.json()["origin"]
+
+def change_tor_ip():
+    print(f'IP INICIAL: {get_public_ip()}')
+    with Controller.from_port(port=9051) as controller:
+        password = input("Introduce la contraseña de Tor: ")
+        try:
+            # Intentar autenticarse con la contraseña proporcionada
+            controller.authenticate(password=password) #Por defecto duende_verde
+            print("Autenticación exitosa")
+            # Si la autenticación es exitosa, se puede cambiar el circuito
+            controller.signal(Signal.NEWNYM)
+            print("IP cambiada a través de Tor")
+            print(f'IP CAMBIADO: {get_public_ip()}')
+        except AuthenticationFailure:
+            # Si la autenticación falla, muestra un mensaje y no permite la conexión
+            print("Error: La contraseña es incorrecta. No se puede conectar al ControlPort.")
+        except Exception as e:
+            # Captura cualquier otro tipo de excepción
+            print(f"Ocurrió un error inesperado: {e}")
+
 if __name__ == '__main__':
-    sendQuery(start, end)
+
+    change_tor_ip()
+
+    #sendQuery(start, end)
