@@ -17,6 +17,7 @@ logger = logging.getLogger(f"SCRAPER")
 logger.setLevel(logging.DEBUG)  # Configurar el nivel mínimo de logging para el logger
 
 
+
 if not os.path.exists("logs"):
     os.makedirs("logs")
 if not os.path.exists("data"):
