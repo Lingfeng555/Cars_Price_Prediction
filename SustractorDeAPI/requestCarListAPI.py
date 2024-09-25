@@ -6,6 +6,7 @@ from stem import Signal
 from stem.control import Controller
 from stem.connection import AuthenticationFailure
 import logging
+import sys
 
 # Crear el logger
 logger = logging.getLogger(f"SCRAPER")
@@ -29,6 +30,11 @@ logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
 url_primary_data = "https://ms-mt--api-mobile.spain.advgo.net/search"
+
+proxies = {
+    'http': 'socks5h://127.0.0.1:9050',
+    'https': 'socks5h://127.0.0.1:9050'
+}
 
 cookies_primary_data = {
     '_csrf': 'KwunAV/Whw4ECYWIgsypO7l8PKLKo4F5VVtUGYLd5GGP/mucf9v62/JC0/UqvsUsJyL+QM2cQvWkB4kLJora1LeR81WitLZ+TbJz+qaD7bg='
@@ -78,7 +84,7 @@ def request_primary_data (page: int) -> list :
         }
     }
     time.sleep(random.uniform(0.1, 0.5))
-    response = requests.post(url_primary_data, headers=headers_primary_data, cookies=cookies_primary_data, json=data)
+    response = requests.post(url_primary_data, headers=headers_primary_data, cookies=cookies_primary_data, json=data, proxies=proxies)
     logger.info(f'REQUEST PAGE: {page} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
     ret = response.json()["items"]
@@ -90,7 +96,7 @@ def request_primary_data (page: int) -> list :
 
 def request_details(id: str) -> dict: 
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
-    response = requests.get(url_details, headers=headers_details, cookies=cookies_details)
+    response = requests.get(url_details, headers=headers_details, cookies=cookies_details, proxies=proxies)
     time.sleep(random.uniform(limite_inferio, limite_superior))
     logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
@@ -129,10 +135,6 @@ def sendQuery(start: int, end: int) -> None:
         json.dump(result, f)
 
 def get_public_ip():
-    proxies = {
-        'http': 'socks5h://127.0.0.1:9050',
-        'https': 'socks5h://127.0.0.1:9050'
-    }
     response = requests.get('https://httpbin.org/ip', proxies=proxies)
     return response.json()["origin"]
 
@@ -151,6 +153,7 @@ def change_tor_ip():
         except AuthenticationFailure:
             # Si la autenticación falla, muestra un mensaje y no permite la conexión
             logger.info("Error: La contraseña es incorrecta. No se puede conectar al ControlPort.")
+            sys.exit()
         except Exception as e:
             # Captura cualquier otro tipo de excepción
             logger.info(f"Ocurrió un error inesperado: {e}")
