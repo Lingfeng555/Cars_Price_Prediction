@@ -87,3 +87,12 @@ Sep 25 20:05:03.000 [notice] Opened Socks listener connection (ready) on 127.0.0
 Sep 25 20:05:03.000 [notice] Opening Socks listener on 127.0.0.1:9150
 Sep 25 20:05:03.000 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9150
 Sep 25 20:05:03.000 [notice] Tor 0.4.8.12 (git-2beaa7557c3c93ec) opening log file.
+Sep 25 20:05:04.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Sep 25 20:05:04.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Sep 25 20:05:04.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Sep 25 20:05:04.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Sep 25 20:05:04.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Sep 25 20:05:04.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Sep 25 20:05:04.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Sep 25 20:05:04.000 [notice] Bootstrapped 100% (done): Done
+Sep 25 20:06:01.000 [notice] New control connection opened from 127.0.0.1.
