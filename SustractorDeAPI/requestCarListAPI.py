@@ -163,14 +163,8 @@ def change_tor_ip():
             # Captura cualquier otro tipo de excepción
             logger.info(f"Ocurrió un error inesperado: {e}")
 
-#The random delay between requests of details
-limite_inferio = 0.1
-limite_superior = 0.1
-
-#Must be intergers
-start = 1 #inclusive
-end = 1 #inclusive
-
 if __name__ == '__main__':
+    start = 1 #inclusive
+    end = 1 #inclusive
     change_tor_ip()
     sendQuery(start, end)
