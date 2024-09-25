@@ -11,6 +11,7 @@ import threading
 import math
 import os
 
+
 # Crear el logger
 logger = logging.getLogger(f"SCRAPER")
 logger.setLevel(logging.DEBUG)  # Configurar el nivel mínimo de logging para el logger
@@ -103,14 +104,16 @@ def request_primary_data (page: int) -> list :
 def request_details(id: str) -> dict: 
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
     response = requests.get(url_details, headers=headers_details, cookies=cookies_details, proxies=proxies)
-    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
+    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code} LEFT: {totalLeft}')
     if(response.status_code != 200): return None
     ret = response.json()
     ret["ad"].pop("photos")
+    totalLeft-=1
     return ret
 
 def scrap_full_page(page: int) -> list:
     cars = request_primary_data(page)
+    logger.info(f'GETEANDO COCHES DE LA PÁGINA {page} SCRAPEADA')
     for car in cars:
         try:
             car["detail"] = request_details(car["id"])
@@ -168,10 +171,15 @@ def tarea(name, start, end):
     sendQuery(name, start, end)
 
 if __name__ == '__main__':
+    start_time = time.time()
     NUMERO_DE_HILOS = 30
     hilos = []
     start = 1 #inclusive
     end = 30 #inclusive
+    
+    global totalLeft
+    totalLeft = (end-start)*100
+    logger.info(f'COCHES ESTIMADOS A SCRAPPEAR : {totalLeft}')
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
     change_tor_ip()
@@ -188,3 +196,7 @@ if __name__ == '__main__':
 
     for t in hilos:
         t.join()
+        
+    end_time = time.time()  # Captura el tiempo al final
+    elapsed_time = end_time - start_time  # Calcula el tiempo transcurrido
+    logger.info(f'Tiempo total transcurrido: {elapsed_time:.2f} segundos') 
