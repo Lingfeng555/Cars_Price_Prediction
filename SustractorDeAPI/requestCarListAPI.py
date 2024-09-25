@@ -7,6 +7,8 @@ from stem.control import Controller
 from stem.connection import AuthenticationFailure
 import logging
 import sys
+import threading
+import math
 
 # Crear el logger
 logger = logging.getLogger(f"SCRAPER")
@@ -112,7 +114,7 @@ def scrap_full_page(page: int) -> list:
             logger.info(f'ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: {car["id"]}')
     return cars
 
-def sendQuery(start: int, end: int) -> None:
+def sendQuery(name: str, start: int, end: int) -> None:
     result = []
 
     for i in range (start, end):
@@ -130,7 +132,7 @@ def sendQuery(start: int, end: int) -> None:
 
     logger.info(f'TOTAL DE COCHES REGISTRADOS: {len(result)} ------------------------------------------------------')
 
-    with open(f'data/cars_{start}_{end}.json', 'w') as f:
+    with open(f'data/{name}cars_{start}_{end}.json', 'w') as f:
         json.dump(result, f)
 
 def get_public_ip():
@@ -157,8 +159,27 @@ def change_tor_ip():
             # Captura cualquier otro tipo de excepción
             logger.info(f"Ocurrió un error inesperado: {e}")
 
+def tarea(name, start, end):
+    sendQuery(name, start, end)
+
 if __name__ == '__main__':
+    NUMERO_DE_HILOS = 5
+    hilos = []
     start = 1 #inclusive
-    end = 1 #inclusive
-    change_tor_ip()
-    sendQuery(start, end)
+    end = 5 #inclusive
+    
+    BATCH = round((end - start)/NUMERO_DE_HILOS)
+    #change_tor_ip()
+
+    x = 1
+    y = BATCH
+    for i in range(NUMERO_DE_HILOS):
+        t = threading.Thread(target=tarea, args=(f"Thread-{i+1}", x, y))
+        hilos.append(t)
+        t.start()
+        print(f"x: {x}  y: {y}")
+        x = y + 1
+        y = y + BATCH
+
+    for t in hilos:
+        t.join()
