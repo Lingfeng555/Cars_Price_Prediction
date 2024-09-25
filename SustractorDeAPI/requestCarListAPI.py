@@ -173,7 +173,8 @@ def change_tor_ip():
 def tarea(name, start, end):
     sendQuery(name, start, end)
 
-if __name__ == '__main__':
+scrap = False
+if (__name__ == '__main__') and scrap:
     start_time = time.time()
     NUMERO_DE_HILOS = 50
     hilos = []
@@ -186,7 +187,7 @@ if __name__ == '__main__':
     change_tor_ip()
 
     x = start
-    y = BATCH
+    y = x + BATCH
     for i in range(NUMERO_DE_HILOS):
         t = threading.Thread(target=tarea, args=(f"Thread-{i+1}", x, y))
         hilos.append(t)
