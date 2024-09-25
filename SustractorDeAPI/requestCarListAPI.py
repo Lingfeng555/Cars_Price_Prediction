@@ -9,11 +9,16 @@ import logging
 import sys
 import threading
 import math
+import os
 
 # Crear el logger
 logger = logging.getLogger(f"SCRAPER")
 logger.setLevel(logging.DEBUG)  # Configurar el nivel mínimo de logging para el logger
 
+
+if not os.path.exists("logs"):
+    os.makedirs("logs")
+    
 # Crear un handler para archivo
 file_handler = logging.FileHandler(f"logs/{input("Introduce tu nombre: ")}.log")
 file_handler.setLevel(logging.DEBUG)  # Guardar todos los niveles en el archivo
@@ -33,7 +38,6 @@ logger.addHandler(console_handler)
 
 url_primary_data = "https://ms-mt--api-mobile.spain.advgo.net/search"
 
-#The random delay between requests of details
 proxies = {
     'http': 'socks5h://127.0.0.1:9050',
     'https': 'socks5h://127.0.0.1:9050'
@@ -86,6 +90,7 @@ def request_primary_data (page: int) -> list :
             "includingPaidItems": False
         }
     }
+    time.sleep(random.uniform(0.1, 0.5))
     response = requests.post(url_primary_data, headers=headers_primary_data, cookies=cookies_primary_data, json=data, proxies=proxies)
     logger.info(f'REQUEST PAGE: {page} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
@@ -99,6 +104,7 @@ def request_primary_data (page: int) -> list :
 def request_details(id: str) -> dict: 
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
     response = requests.get(url_details, headers=headers_details, cookies=cookies_details, proxies=proxies)
+    time.sleep(random.uniform(limite_inferio, limite_superior))
     logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
     ret = response.json()
