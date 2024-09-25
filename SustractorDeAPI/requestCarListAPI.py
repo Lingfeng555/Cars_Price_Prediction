@@ -90,7 +90,6 @@ def request_primary_data (page: int) -> list :
             "includingPaidItems": False
         }
     }
-    time.sleep(random.uniform(0.1, 0.5))
     response = requests.post(url_primary_data, headers=headers_primary_data, cookies=cookies_primary_data, json=data, proxies=proxies)
     logger.info(f'REQUEST PAGE: {page} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
@@ -104,7 +103,6 @@ def request_primary_data (page: int) -> list :
 def request_details(id: str) -> dict: 
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
     response = requests.get(url_details, headers=headers_details, cookies=cookies_details, proxies=proxies)
-    time.sleep(random.uniform(limite_inferio, limite_superior))
     logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
     ret = response.json()
