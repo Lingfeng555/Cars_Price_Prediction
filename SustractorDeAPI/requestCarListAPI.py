@@ -177,8 +177,8 @@ if __name__ == '__main__':
     start_time = time.time()
     NUMERO_DE_HILOS = 50
     hilos = []
-    start = 1001 #inclusive
-    end = 1500 #inclusive
+    start = 1 #inclusive
+    end = 500 #inclusive
     
     print("TOTAL ESTIMADO DE COCHES A SCRAPEAR: ", (end - start) * 100)
     
