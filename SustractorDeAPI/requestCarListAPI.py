@@ -176,7 +176,7 @@ def tarea(name, start, end):
 scrap = True
 if (__name__ == '__main__') and scrap:
     start_time = time.time()
-    NUMERO_DE_HILOS = 50
+    NUMERO_DE_HILOS = 100
     hilos = []
     start = 1501 #inclusive
     end = 2000 #inclusive
