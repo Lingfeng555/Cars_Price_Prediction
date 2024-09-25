@@ -107,7 +107,7 @@ def request_primary_data (page: int) -> list :
 def request_details(id: str) -> dict: 
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
     response = requests.get(url_details, headers=headers_details, cookies=cookies_details, proxies=proxies)
-    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
+    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code} LEFT : {AQUIQUIEROSABERCUANToSLEFT}')
     if(response.status_code != 200): return None
     ret = response.json()
     ret["ad"].pop("photos")
@@ -126,14 +126,12 @@ def scrap_full_page(page: int) -> list:
 
 def sendQuery(name: str, start: int, end: int) -> None:
     result = []
-    global total_scrapped 
 
     for i in range (start, end):
         try:
             cars = scrap_full_page(i)
             cars.pop()
             result = result + cars
-            total_scrapped += len(cars)
         except:
             logger.info(f'ERROR AL SCRAPEAR LA PAGINA {i}')
         logger.info(f'TOTAL DE COCHES REGISTRADOS HASTA AHORA: {len(result)}')
@@ -188,10 +186,7 @@ if __name__ == '__main__':
     change_tor_ip()
 
     x = start
-    y = x+BATCH
-    total_scrapped = 0
-    total_cars = (end - start) * 100
-     
+    y = BATCH
     for i in range(NUMERO_DE_HILOS):
         t = threading.Thread(target=tarea, args=(f"Thread-{i+1}", x, y))
         hilos.append(t)
