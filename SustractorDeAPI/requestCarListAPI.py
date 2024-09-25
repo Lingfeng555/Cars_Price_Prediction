@@ -104,11 +104,10 @@ def request_primary_data (page: int) -> list :
 def request_details(id: str) -> dict: 
     url_details = 'https://ms-mt--api-mobile.spain.advgo.net/details/' + str(id)
     response = requests.get(url_details, headers=headers_details, cookies=cookies_details, proxies=proxies)
-    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code} LEFT: {totalLeft}')
+    logger.info(f'\tREQUEST CAR ID: {id} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
     ret = response.json()
     ret["ad"].pop("photos")
-    totalLeft-=1
     return ret
 
 def scrap_full_page(page: int) -> list:
@@ -117,7 +116,8 @@ def scrap_full_page(page: int) -> list:
     for car in cars:
         try:
             car["detail"] = request_details(car["id"])
-        except:
+        except Exception as e:
+            logger.info(f"Ocurrió un error inesperado: {e}")
             logger.info(f'ERROR AL INTENTAR LEER LA FICHA TECNICA DEL COCHE: {car["id"]}')
     return cars
 
@@ -177,9 +177,7 @@ if __name__ == '__main__':
     start = 1 #inclusive
     end = 30 #inclusive
     
-    global totalLeft
-    totalLeft = (end-start)*100
-    logger.info(f'COCHES ESTIMADOS A SCRAPPEAR : {totalLeft}')
+
     
     BATCH = round((end - start)/NUMERO_DE_HILOS)
     change_tor_ip()
