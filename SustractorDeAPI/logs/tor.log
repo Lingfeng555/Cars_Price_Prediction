@@ -137,3 +137,5 @@ Sep 25 20:27:34.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough di
 Sep 25 20:27:34.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
 Sep 25 20:27:34.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
 Sep 25 20:27:36.000 [notice] Bootstrapped 100% (done): Done
+Sep 25 21:13:18.000 [notice] Owning controller connection has closed -- exiting now.
+Sep 25 21:13:18.000 [notice] Catching signal TERM, exiting cleanly.
