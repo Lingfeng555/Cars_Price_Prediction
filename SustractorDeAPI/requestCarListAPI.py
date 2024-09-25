@@ -67,6 +67,8 @@ def request_primary_data (page: int) -> list :
     ret = response.json()["items"]
     for car in ret:
         car.pop("resources")
+        car.pop("phone")
+        
     return ret
 
 def request_details(id: str) -> dict: 
