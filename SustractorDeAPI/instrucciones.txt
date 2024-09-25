@@ -1,0 +1,23 @@
+INSTRUCCIONES:
+1 - INSTALAR TOR.
+
+2 - AÑADIR TOR A VARIABLES DE ENTORNO.
+    - Puedes buscar el ejecutable de Tor en el explorador de archivos. Debe estar en un path parecido al ejemplo:
+        Ejemplo: "C:\Users\lingf\OneDrive\Escritorio\Tor Browser\Browser\TorBrowser\Tor\"
+    - Introduce el path de la carpeta que contiene la aplicación tor.
+
+3 - Generar una contraseña en el cmd con:
+        tor --hash-password "your_password"
+    - Esto generará un hashcode.
+
+4 - Añadir las siguientes líneas al archivo torrc (está en la carpeta de Tor).
+    - Puedes buscar el archivo torrc directamente en la barra de búsqueda.
+    - La contraseña que hay por defecto es "duende_verde":
+        ControlPort 9051
+        HashedControlPassword 16:38FCAAD6CADFEAD16058AB8B0132487417701EB3ECF0D2E9D9A0E1E1E9
+        SocksPort 9050
+        CookieAuthentication 0
+    - Recomendable (pero opcional):
+        Log notice file C:\Users\lingf\OneDrive\Escritorio\Tor Browser\Browser\TorBrowser\Data\Tor\logs\tor.log
+
+5 - Ejecutar el script e introducir la contraseña cuando te lo pida (no el hashcode generado).
