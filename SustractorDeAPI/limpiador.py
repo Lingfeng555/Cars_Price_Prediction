@@ -27,8 +27,10 @@ def extraer_datos_relevantes(json_data):
         "co2EmissionsGramsPerKm": json_data.get("detail", {}).get("vehicleSpecs", {}).get("co2EmissionsGramsPerKm"),
         "consumption": json_data.get("detail", {}).get("vehicleSpecs", {}).get("consumption"),
         "dimensions": json_data.get("detail", {}).get("vehicleSpecs", {}).get("dimensionsInMillimeters"),
+        "trunkCapacityInLiters": json_data.get("detail", {}).get("vehicleSpecs", {}).get("trunkCapacityInLiters"),
         "maxSpeed": json_data.get("detail", {}).get("vehicleSpecs", {}).get("maxSpeed"),
-        "acceleration": json_data.get("detail", {}).get("vehicleSpecs", {}).get("acceleration")
+        "acceleration": json_data.get("detail", {}).get("vehicleSpecs", {}).get("acceleration"),
+        "vehicleStandardEquipmentGroup": json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup"),
         
     }
     
