@@ -17,6 +17,7 @@ def extraer_datos_relevantes(json_data):
         "version":json_data.get("detail", {}).get("ad", {}).get("vehicle", {}).get("specs", {}).get("version"),
         "car_id":json_data.get("detail", {}).get("ad", {}).get("vehicle", {}).get("specs", {}).get("uniqueVehicleId"),
         "fuelType": json_data.get("fuelType"),
+        "bodyTypeId": json_data.get("bodyTypeId"),
         "transmissionTypeId": json_data.get("transmissionTypeId"),
         "doors": json_data.get("detail", {}).get("ad", {}).get("vehicle", {}).get("specs", {}).get("doors"),
         "seatingCapacity": json_data.get("detail", {}).get("ad", {}).get("vehicle", {}).get("specs", {}).get("seatingCapacity"),
@@ -30,10 +31,12 @@ def extraer_datos_relevantes(json_data):
         "trunkCapacityInLiters": json_data.get("detail", {}).get("vehicleSpecs", {}).get("trunkCapacityInLiters"),
         "maxSpeed": json_data.get("detail", {}).get("vehicleSpecs", {}).get("maxSpeed"),
         "acceleration": json_data.get("detail", {}).get("vehicleSpecs", {}).get("acceleration"),
-        "vehicleStandardEquipmentGroup": json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup"),
-        
+        #"vehicleStandardEquipmentGroup": json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup"),
+        #"Ficha_Tecnica" : json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup", [])[0].get("equipment", []),
+        #"Multimedia": json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup", [])[1].get("equipment", []),
     }
-    
+    for dic in json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup", []):
+        nuevo_json[dic["description"]] = dic["equipment"]
     return nuevo_json
 
 # Función para recorrer los archivos en la carpeta "data"
@@ -65,7 +68,7 @@ def procesar_archivos_json(carpeta_entrada, carpeta_salida, max_archivos):
             coches_filtrados = extraer_datos_relevantes(datos)
         
         # Guardar el nuevo archivo JSON con los datos filtrados
-        nuevo_nombre = f"filtrado_{archivo}"
+        nuevo_nombre = f"cleaned_{archivo}"
         ruta_nueva = os.path.join(carpeta_salida, nuevo_nombre)
         
         with open(ruta_nueva, 'w', encoding='utf-8') as outfile:
@@ -76,6 +79,6 @@ def procesar_archivos_json(carpeta_entrada, carpeta_salida, max_archivos):
 
 # Ejemplo de uso: Procesar hasta 3 archivos JSON en la carpeta "data" y guardar en "data_limpia"
 carpeta_entrada = 'data'
-carpeta_salida = 'data_limpia'
-max_archivos = 3  # Cambia este valor para controlar cuántos archivos quieres procesar
+carpeta_salida = 'data_cleaned'
+max_archivos = 20  # Cambia este valor para controlar cuántos archivos quieres procesar
 procesar_archivos_json(carpeta_entrada, carpeta_salida, max_archivos)
