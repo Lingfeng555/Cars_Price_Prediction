@@ -85,5 +85,5 @@ def procesar_archivos_json(carpeta_entrada, carpeta_salida, max_archivos):
 # Ejemplo de uso: Procesar hasta 3 archivos JSON en la carpeta "data" y guardar en "data_limpia"
 carpeta_entrada = 'data'
 carpeta_salida = 'data_cleaned'
-max_archivos = 20  # Cambia este valor para controlar cuántos archivos quieres procesar
+max_archivos = len(os.listdir("data"))  # Cambia este valor para controlar cuántos archivos quieres procesar
 procesar_archivos_json(carpeta_entrada, carpeta_salida, max_archivos)
