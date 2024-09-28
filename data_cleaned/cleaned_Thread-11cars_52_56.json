@@ -112,7 +112,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 3,7 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.163 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57881230",
@@ -227,7 +228,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto) y 1.100 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58689280",
@@ -340,7 +342,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 4,2 l/100km (extraurbano), 4,7 l/100km (mixto), 17,9 km/l (urbano), 23,8 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,5, 6,1, 6,3, 6,8, 5,2, 5,6, 4,8, 5,3, 6,0 y 6,7"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58768031",
@@ -445,7 +448,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 3,9 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.282 Km de autonomía (combinado) (fuente: Euro6Dtemp ), consumo de combustible ( WLTP ICE ): 4,8 l/100km (mixto), 20,8 km/l  (mixto), 1.042 Km de autonomía (combinado), 4,9, 20,4, 4,3, 23,3, 4,1, 24,4, 5,6 y 17,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58664622",
@@ -473,7 +477,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58436141",
@@ -501,7 +506,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58785916",
@@ -610,7 +616,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.310 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58754618",
@@ -638,7 +645,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "54076301",
@@ -750,7 +758,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,6 l/100km (mixto), 17,5 km/l (urbano), 25,6 km/l  (extraurbano), 21,7 km/l  (mixto) y 1.196 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58765468",
@@ -866,7 +875,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 4,2 l/100km (extraurbano), 4,7 l/100km (mixto), 17,9 km/l (urbano), 23,8 km/l  (extraurbano), 21,3 km/l  (mixto) y 851 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57007547",
@@ -973,7 +983,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,4 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,4 l/100km (mixto), 18,5 km/l  (mixto), 833 Km de autonomía (combinado), 5,2, 5,8, 19,2 y 17,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58746306",
@@ -1077,7 +1088,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,1 l/100km (urbano), 4,4 l/100km (extraurbano), 5,4 l/100km (mixto) y 833 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58497534",
@@ -1189,7 +1201,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,4 l/100km (urbano), 4,0 l/100km (extraurbano), 4,9 l/100km (mixto) y 918 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58651871",
@@ -1302,7 +1315,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 3,9 l/100km (extraurbano), 4,5 l/100km (mixto), 18,5 km/l (urbano), 25,6 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.178 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto) y 964 Km de autonomía (combinado) (fuente: Manufacturer ) 5,4, 6,7, 18,5 y 14,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58756993",
@@ -1409,7 +1423,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,9 l/100km (urbano), 3,3 l/100km (extraurbano), 3,5 l/100km (mixto), 25,6 km/l (urbano), 30,3 km/l  (extraurbano), 28,6 km/l  (mixto) y 1.286 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58654861",
@@ -1517,7 +1532,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,4 l/100km (urbano), 4,3 l/100km (extraurbano), 5,1 l/100km (mixto), 15,6 km/l (urbano), 23,3 km/l  (extraurbano), 19,6 km/l  (mixto) y 882 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58271489",
@@ -1629,7 +1645,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ):"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58703280",
@@ -1744,7 +1761,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,9 l/100km (urbano), 3,4 l/100km (extraurbano), 3,6 l/100km (mixto), 25,6 km/l (urbano), 29,4 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.667 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58255780",
@@ -1855,7 +1873,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,7 l/100km (urbano), 5,0 l/100km (extraurbano), 5,6 l/100km (mixto), 14,9 km/l (urbano), 20,0 km/l  (extraurbano), 17,9 km/l  (mixto) y 893 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58043596",
@@ -1968,7 +1987,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,2 l/100km (urbano), 4,7 l/100km (extraurbano), 5,6 l/100km (mixto), 13,9 km/l (urbano), 21,3 km/l  (extraurbano), 17,9 km/l  (mixto) y 804 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58730605",
@@ -2081,7 +2101,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,9 l/100km (extraurbano), 4,4 l/100km (mixto), 19,2 km/l (urbano), 25,6 km/l  (extraurbano), 22,7 km/l  (mixto) y 1.409 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 4,9 l/100km (mixto), 20,4 km/l  (mixto), 1.265 Km de autonomía (combinado), 4,9 y 5,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58780138",
@@ -2185,7 +2206,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,4 l/100km (extraurbano), 5,1 l/100km (mixto) y 882 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58751882",
@@ -2300,7 +2322,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58751828",
@@ -2415,7 +2438,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58555176",
@@ -2527,7 +2551,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto) y 1.216 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58751676",
@@ -2639,7 +2664,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,1 l/100km (extraurbano), 3,3 l/100km (mixto), 28,6 km/l (urbano), 32,3 km/l  (extraurbano), 30,3 km/l  (mixto) y 1.364 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58667403",
@@ -2748,7 +2774,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.083 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 4,1, 4,7, 24,4 y 21,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56603771",
@@ -2860,7 +2887,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto), 23,3 km/l (urbano), 28,6 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.395 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58269526",
@@ -2972,7 +3000,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 3,9 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.154 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58801835",
@@ -3076,7 +3105,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto) y 1.108 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58701299",
@@ -3104,7 +3134,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58614160",
@@ -3213,7 +3244,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.216 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58746344",
@@ -3241,7 +3273,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58699913",
@@ -3344,7 +3377,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 m3/100km (LPG/CNG urbano), 4,3 m3/100km (LPG/CNG extraurbano), 5,1 m3/100km (LPG/CNG mixto), 4,3 kg/100km (LPG/CNG urbano), 2,8 kg/100km (LPG/CNG extraurbano) y 3,4 kg/100km (LPG/CNG mixto) (fuente: EU6DG ), consumo de combustible ( WLTP ICE ): 5,7, 6,2, 17,5 y 16,1"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56766295",
@@ -3451,7 +3485,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,6 l/100km (mixto), 18,2 km/l (urbano), 25,0 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto), 755 Km de autonomía (combinado), 5,2, 5,9, 19,2 y 16,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58648083",
@@ -3566,7 +3601,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 3,9 l/100km (extraurbano), 4,4 l/100km (mixto), 18,9 km/l (urbano), 25,6 km/l  (extraurbano), 22,7 km/l  (mixto) y 1.205 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto), 964 Km de autonomía (combinado), 5,5, 6,6, 18,2 y 15,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56651654",
@@ -3679,7 +3715,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,1 l/100km (extraurbano), 3,3 l/100km (mixto), 28,6 km/l (urbano), 32,3 km/l  (extraurbano), 30,3 km/l  (mixto) y 1.364 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58647767",
@@ -3789,7 +3826,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.167 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58785214",
@@ -3902,7 +3940,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 22,2 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.316 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58739800",
@@ -4018,7 +4057,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,4 l/100km (urbano), 4,6 l/100km (extraurbano), 5,3 l/100km (mixto) y 1.132 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58698964",
@@ -4131,7 +4171,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,5 l/100km (extraurbano), 4,1 l/100km (mixto) y 1.463 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58272227",
@@ -4245,7 +4286,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 22,7 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.667 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57980602",
@@ -4360,7 +4402,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,6 l/100km (mixto), 18,2 km/l (urbano), 25,0 km/l  (extraurbano), 21,7 km/l  (mixto) y 978 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58732645",
@@ -4476,7 +4519,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.579 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58784821",
@@ -4504,7 +4548,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58776347",
@@ -4610,7 +4655,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto), 19,6 km/l (urbano), 26,3 km/l  (extraurbano), 23,3 km/l  (mixto) y 1.047 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58784415",
@@ -4638,7 +4684,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58644830",
@@ -4666,7 +4713,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58205161",
@@ -4779,7 +4827,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 23,3 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.395 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58767296",
@@ -4807,7 +4856,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58764915",
@@ -4918,7 +4968,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto), 21,7 km/l (urbano), 30,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.315 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58781011",
@@ -5024,7 +5075,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,5 l/100km (extraurbano), 3,7 l/100km (mixto), 24,4 km/l (urbano), 28,6 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.351 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58792558",
@@ -5143,7 +5195,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,6 l/100km (extraurbano), 3,8 l/100km (mixto), 23,8 km/l (urbano), 27,8 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.447 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58338242",
@@ -5249,7 +5302,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,3 l/100km (extraurbano), 5,1 l/100km (mixto), 15,4 km/l (urbano), 23,3 km/l  (extraurbano), 19,6 km/l  (mixto) y 980 Km de autonomía (combinado) (fuente: Euro6Dtemp ), consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto), 893 Km de autonomía (combinado), 7,0, 14,3, 5,2, 19,2, 4,8, 20,8, 6,1 y 16,4"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58683166",
@@ -5360,7 +5414,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,4 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto), 818 Km de autonomía (combinado), 5,2, 5,8, 19,2, 17,2, 45 y 41"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58604307",
@@ -5470,7 +5525,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,6 l/100km (mixto), 16,9 km/l (urbano), 26,3 km/l  (extraurbano), 21,7 km/l  (mixto), 7,3 kg/100km (LPG/CNG urbano), 4,7 kg/100km (LPG/CNG extraurbano), 5,7 kg/100km (LPG/CNG mixto) y 913 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 5,4 l/100km (mixto), 18,5 km/l  (mixto), 778 Km de autonomía (combinado), 5,4, 7,7, 18,5, 13,0, 7,4, 13,5, 5,1, 19,6, 4,6, 21,7, 5,5 y 18,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58702146",
@@ -5498,7 +5554,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58453557",
@@ -5609,7 +5666,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 3,9 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.222 Km de autonomía"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58779463",
@@ -5724,7 +5782,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto), 23,3 km/l (urbano), 28,6 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.316 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58723749",
@@ -5837,7 +5896,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,3 l/100km (extraurbano), 3,5 l/100km (mixto), 24,4 km/l (urbano), 30,3 km/l  (extraurbano), 28,6 km/l  (mixto) y 1.257 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58463333",
@@ -5954,7 +6014,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,8 l/100km (extraurbano), 4,1 l/100km (mixto), 21,3 km/l (urbano), 26,3 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58750305",
@@ -6062,7 +6123,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP HEV modo ahorro de la batería ): 5,0 l/100km (mixto), 20,0 km/l  (mixto), 840 Km de autonomía (combinado), 7,3, 13,7, 5,0, 20,0, 4,6, 21,7, 5,4, 18,5, 32, 47, 51 y 44"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58669130",
@@ -6173,7 +6235,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto), 22,2 km/l (urbano), 30,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.842 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58671554",
@@ -6201,7 +6264,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58696119",
@@ -6310,7 +6374,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto), 21,7 km/l (urbano), 30,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58762306",
@@ -6428,7 +6493,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,6 l/100km (extraurbano), 4,1 l/100km (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57398493",
@@ -6543,7 +6609,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,5 l/100km (urbano), 5,3 l/100km (extraurbano), 6,1 l/100km (mixto), 13,3 km/l (urbano), 18,9 km/l  (extraurbano), 16,4 km/l  (mixto) y 1.016 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58554532",
@@ -6658,7 +6725,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,9 l/100km (urbano), 4,1 l/100km (extraurbano), 4,8 l/100km (mixto), 16,9 km/l (urbano), 24,4 km/l  (extraurbano), 20,8 km/l  (mixto) y 1.042 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58800731",
@@ -6770,7 +6838,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto), 19,6 km/l (urbano), 26,3 km/l  (extraurbano), 23,3 km/l  (mixto) y 1.047 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58099830",
@@ -6880,7 +6949,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.083 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto), 929 Km de autonomía (combinado), 4,1, 4,7, 24,4, 21,3, 4,9, 20,4, 4,1, 24,4, 3,6, 27,8, 4,4 y 22,7"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58786141",
@@ -6991,7 +7061,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,7 l/100km (urbano), 5,8 l/100km (extraurbano), 6,9 l/100km (mixto), 11,5 km/l (urbano), 17,2 km/l  (extraurbano), 14,5 km/l  (mixto) y 652 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58701613",
@@ -7103,7 +7174,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 3,9 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.154 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58769698",
@@ -7215,7 +7287,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 4,4 l/100km (extraurbano), 4,9 l/100km (mixto) y 1.327 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58692315",
@@ -7332,7 +7405,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 22,2 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.316 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58401706",
@@ -7360,7 +7434,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58683123",
@@ -7470,7 +7545,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.405 Km de autonomía (combinado) (fuente: Euro 6.2d-Temp )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57401878",
@@ -7584,7 +7660,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto) y 1.100 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58761053",
@@ -7612,7 +7689,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "57629404",
@@ -7716,7 +7794,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto) y 786 Km de autonomía (combinado) (fuente: EU6 E ) 5,6, 5,6, 17,9, 17,9, 42 y 42"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58468120",
@@ -7828,7 +7907,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.297 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58757508",
@@ -7944,7 +8024,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,2 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 851 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58792481",
@@ -8054,7 +8135,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,3 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 23,3 km/l  (extraurbano), 19,2 km/l  (mixto) y 808 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,8, 6,4, 17,2 y 15,6"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58426578",
@@ -8169,7 +8251,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.315 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58641983",
@@ -8277,7 +8360,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,2 l/100km (mixto), 31,2 km/l  (mixto) y 1.312 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ):"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58744872",
@@ -8390,7 +8474,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,8 l/100km (urbano), 5,1 l/100km (extraurbano), 6,1 l/100km (mixto), 12,8 km/l (urbano), 19,6 km/l  (extraurbano), 16,4 km/l  (mixto) y 738 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58686641",
@@ -8418,7 +8503,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58786776",
@@ -8529,7 +8615,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto) y 1.100 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58769132",
@@ -8645,7 +8732,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,7 l/100km (extraurbano), 5,3 l/100km (mixto), 15,4 km/l (urbano), 21,3 km/l  (extraurbano), 18,9 km/l  (mixto) y 1.132 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58594995",
@@ -8752,7 +8840,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,9 l/100km (urbano), 4,0 l/100km (extraurbano), 4,7 l/100km (mixto), 16,9 km/l (urbano), 25,0 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58526785",
@@ -8865,7 +8954,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,2 l/100km (urbano), 4,7 l/100km (extraurbano), 5,6 l/100km (mixto), 13,9 km/l (urbano), 21,3 km/l  (extraurbano), 17,9 km/l  (mixto) y 804 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58404886",
@@ -8973,7 +9063,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,1 l/100km (extraurbano), 4,6 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto) y 714 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58525096",
@@ -9001,7 +9092,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58700033",
@@ -9116,7 +9208,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 1.170 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58692116",
@@ -9228,7 +9321,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 4,0 l/100km (extraurbano), 4,4 l/100km (mixto) y 1.364 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58013905",
@@ -9341,7 +9435,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.270 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58056532",
@@ -9452,7 +9547,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 4,0 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.125 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58302401",
@@ -9556,7 +9652,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,1 l/100km (urbano), 4,4 l/100km (extraurbano), 5,4 l/100km (mixto) y 833 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58670388",
@@ -9671,7 +9768,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,5 l/100km (extraurbano), 4,1 l/100km (mixto) y 1.463 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57790403",
@@ -9783,7 +9881,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto), 19,6 km/l (urbano), 26,3 km/l  (extraurbano), 23,3 km/l  (mixto) y 1.047 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58516702",
@@ -9811,7 +9910,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58766442",
@@ -9927,7 +10027,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 3,8 l/100km (extraurbano), 4,4 l/100km (mixto), 18,5 km/l (urbano), 26,3 km/l  (extraurbano), 22,7 km/l  (mixto) y 1.136 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58426083",
@@ -10044,7 +10145,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.270 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58428782",
@@ -10159,7 +10261,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,8 l/100km (mixto), 20,4 km/l (urbano), 32,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.316 Km de autonomía (combinado) (fuente: EURO 6d–ISC-FCM ), consumo de combustible ( WLTP ICE ): 4,5 l/100km (mixto), 22,2 km/l  (mixto) y 1.111 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58801644",
@@ -10274,7 +10377,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,8 l/100km (extraurbano), 3,9 l/100km (mixto), 24,4 km/l (urbano), 26,3 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.282 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58801648",
@@ -10389,7 +10493,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,8 l/100km (extraurbano), 3,9 l/100km (mixto), 24,4 km/l (urbano), 26,3 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.282 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58801547",
@@ -10499,7 +10604,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 25,6 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.190 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58801137",
@@ -10617,7 +10723,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,5 l/100km (extraurbano), 3,7 l/100km (mixto), 24,4 km/l (urbano), 28,6 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.351 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58800694",
@@ -10729,7 +10836,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,6 l/100km (urbano), 3,8 l/100km (extraurbano), 3,8 l/100km (mixto), 27,8 km/l (urbano), 26,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 947 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58395123",
@@ -10845,7 +10974,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.395 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58395392",
@@ -10961,7 +11091,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.395 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58774914",
@@ -11074,7 +11205,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 4,6 l/100km (mixto)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58649993",
@@ -11188,7 +11320,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,9 l/100km (urbano), 4,0 l/100km (extraurbano), 4,7 l/100km (mixto), 16,9 km/l (urbano), 25,0 km/l  (extraurbano), 21,3 km/l  (mixto) y 1.128 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58278757",
@@ -11297,7 +11430,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.297 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58624874",
@@ -11410,7 +11544,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,8 l/100km (extraurbano), 4,1 l/100km (mixto), 21,3 km/l (urbano), 26,3 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 4,9 l/100km (mixto), 20,4 km/l  (mixto), 1.020 Km de autonomía (combinado), 5,6, 17,9, 4,7, 21,3, 4,3, 23,3, 5,3 y 18,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57550924",
@@ -11521,7 +11656,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 4,0 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.125 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58729243",
@@ -11630,7 +11766,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,5 l/100km (extraurbano), 4,9 l/100km (mixto), 17,5 km/l (urbano), 22,2 km/l  (extraurbano), 20,4 km/l  (mixto) y 1.020 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58760232",
@@ -11740,7 +11877,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.071 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58757337",
@@ -11847,7 +11985,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.263 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58757324",
@@ -11954,7 +12093,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.263 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58784517",
@@ -11982,7 +12122,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58759793",
@@ -12093,7 +12234,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,0 l/100km (urbano), 2,6 l/100km (extraurbano), 3,1 l/100km (mixto) y 1.452 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58536287",
@@ -12208,7 +12350,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.315 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56859333",
@@ -12325,7 +12468,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 894 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58420171",
@@ -12442,7 +12586,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,8 l/100km (urbano), 4,5 l/100km (extraurbano), 5,3 l/100km (mixto), 14,7 km/l (urbano), 22,2 km/l  (extraurbano), 18,9 km/l  (mixto) y 887 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57959649",
@@ -12546,7 +12691,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto) y 786 Km de autonomía (combinado) (fuente: EU6 E ) 5,6, 5,6, 17,9, 17,9, 42 y 42"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58673276",
@@ -12655,7 +12801,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,8 l/100km (urbano), 4,9 l/100km (extraurbano), 5,9 l/100km (mixto) y 949 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58686049",
@@ -12765,7 +12912,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,6 l/100km (extraurbano), 3,7 l/100km (mixto), 28,6 km/l (urbano), 27,8 km/l  (extraurbano), 27,0 km/l  (mixto) y 973 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58728294",
@@ -12872,7 +13041,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,4 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,4 l/100km (mixto), 18,5 km/l  (mixto), 833 Km de autonomía (combinado), 5,2, 5,8, 19,2 y 17,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58677560",
@@ -12900,7 +13070,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58453550",
@@ -13011,7 +13182,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 3,9 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.222 Km de autonomía"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58621050",
@@ -13124,7 +13296,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 23,3 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.395 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58674899",
@@ -13236,7 +13409,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,8 l/100km (extraurbano), 3,9 l/100km (mixto), 24,4 km/l (urbano), 26,3 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.282 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58755577",
@@ -13343,7 +13517,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.263 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58783708",
@@ -13455,7 +13630,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 4,4 l/100km (extraurbano), 4,9 l/100km (mixto) y 1.327 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58783364",
@@ -13574,7 +13750,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,6 l/100km (extraurbano), 3,8 l/100km (mixto), 23,8 km/l (urbano), 27,8 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.447 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58722953",
@@ -13678,7 +13855,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ECE 99/100 : 4,6 l/100km (urbano), 3,2 l/100km (extraurbano), 3,7 l/100km (mixto), 1.216 y 756"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58494120",
@@ -13788,7 +13966,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,8 l/100km (mixto), 20,8 km/l  (mixto) y 1.042 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58560804",
@@ -13903,7 +14082,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,8 l/100km (extraurbano), 4,1 l/100km (mixto), 21,7 km/l (urbano), 26,3 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58765881",
@@ -14016,7 +14196,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 4,4 l/100km (extraurbano), 4,9 l/100km (mixto) y 1.327 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58375853",
@@ -14121,7 +14302,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto) y 943 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58750557",
@@ -14231,7 +14413,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 25,6 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.190 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,0 l/100km (mixto), 20,0 km/l  (mixto), 1.000 Km de autonomía (combinado), 5,7, 17,5, 4,8, 20,8, 4,4, 22,7, 5,4 y 18,5"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58040677",
@@ -14340,7 +14523,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,1 l/100km (urbano), 4,1 l/100km (extraurbano), 4,8 l/100km (mixto), 16,4 km/l (urbano), 24,4 km/l  (extraurbano), 20,8 km/l  (mixto) y 833 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,8 l/100km (mixto), 17,2 km/l  (mixto) y 690 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58796153",
@@ -14453,7 +14637,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 2,9 l/100km (extraurbano), 3,1 l/100km (mixto) y 1.710 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58796146",
@@ -14567,7 +14752,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,6 l/100km (extraurbano), 4,0 l/100km (mixto), 21,3 km/l (urbano), 27,8 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.650 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795871",
@@ -14680,7 +14866,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 2,9 l/100km (extraurbano), 3,1 l/100km (mixto) y 1.710 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795878",
@@ -14794,7 +14981,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,6 l/100km (extraurbano), 4,0 l/100km (mixto), 21,3 km/l (urbano), 27,8 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.650 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58753963",
@@ -14903,7 +15091,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.263 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58475926",
@@ -15012,7 +15201,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.297 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795223",
@@ -15125,7 +15315,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,9 l/100km (mixto), 25,6 km/l  (mixto) y 1.282 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58711010",
@@ -15241,7 +15432,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto), 18,9 km/l (urbano), 25,0 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.111 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,4 l/100km (mixto), 18,5 km/l  (mixto) y 926 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58531599",
@@ -15357,7 +15549,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto), 18,9 km/l (urbano), 25,0 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.111 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795009",
@@ -15470,7 +15663,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,9 l/100km (extraurbano), 4,4 l/100km (mixto), 19,2 km/l (urbano), 25,6 km/l  (extraurbano), 22,7 km/l  (mixto) y 1.136 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58414196",
@@ -15577,7 +15771,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto), 21,7 km/l (urbano), 30,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58506556",
@@ -15684,7 +15879,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,0 l/100km (extraurbano), 3,5 l/100km (mixto), 23,8 km/l (urbano), 33,3 km/l  (extraurbano), 28,6 km/l  (mixto) y 1.286 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58596315",
@@ -15790,7 +15986,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,5 l/100km (extraurbano), 3,7 l/100km (mixto), 24,4 km/l (urbano), 28,6 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.351 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58540155",
@@ -15899,7 +16096,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,7 l/100km (urbano), 5,0 l/100km (extraurbano), 5,6 l/100km (mixto), 14,9 km/l (urbano), 20,0 km/l  (extraurbano), 17,9 km/l  (mixto) y 893 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58765202",
@@ -16014,7 +16212,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,8 l/100km (mixto), 20,4 km/l (urbano), 32,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.316 Km de autonomía (combinado) (fuente: EURO 6d–ISC-FCM ), consumo de combustible ( WLTP ICE ): 4,5 l/100km (mixto), 22,2 km/l  (mixto) y 1.111 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58703066",
@@ -16125,7 +16324,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,9 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.302 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58651385",
@@ -16234,7 +16434,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.333 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58750087",
@@ -16339,7 +16540,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,3 kg/100km (LPG/CNG urbano), 4,7 kg/100km (LPG/CNG extraurbano) y 5,7 kg/100km (LPG/CNG mixto) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 6,7 l/100km (mixto), 14,9 km/l  (mixto), 627 Km de autonomía (combinado), 8,8, 11,4, 6,7, 14,9, 6,1, 16,4, 7,1 y 14,1"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58334678",
@@ -16367,7 +16569,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58223053",
@@ -16476,7 +16679,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,7 l/100km (urbano), 4,8 l/100km (extraurbano), 5,5 l/100km (mixto), 14,9 km/l (urbano), 20,8 km/l  (extraurbano), 18,2 km/l  (mixto) y 818 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58791179",
@@ -16589,7 +16793,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,3 l/100km (extraurbano), 5,1 l/100km (mixto), 15,9 km/l (urbano), 23,3 km/l  (extraurbano), 19,6 km/l  (mixto) y 941 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57890819",
@@ -16702,7 +16907,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.579 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58348279",
@@ -16808,7 +17014,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.071 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795764",
@@ -16921,7 +17128,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 25,6 km/l  (extraurbano), 23,8 km/l  (mixto) y 952 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58343572",
@@ -17026,7 +17234,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 5,2 l/100km (mixto), 19,2 km/l  (mixto) y 808 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58361286",
@@ -17137,7 +17346,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.244 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58565437",
@@ -17244,7 +17454,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto), 15,9 km/l (urbano), 23,8 km/l  (extraurbano), 20,0 km/l  (mixto) y 900 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58637959",
@@ -17354,7 +17565,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.083 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto), 929 Km de autonomía (combinado), 4,1, 4,7, 24,4, 21,3, 4,9, 20,4, 4,1, 24,4, 3,6, 27,8, 4,4 y 22,7"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795725",
@@ -17467,7 +17679,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 25,6 km/l  (extraurbano), 23,8 km/l  (mixto) y 952 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57967673",
@@ -17577,7 +17790,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (mixto), 24,4 km/l  (mixto) y 1.024 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,0 l/100km (mixto), 20,0 km/l  (mixto) y 840 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795672",
@@ -17690,7 +17904,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 25,6 km/l  (extraurbano), 23,8 km/l  (mixto) y 952 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58687697",
@@ -17802,7 +18017,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,0 l/100km (extraurbano), 3,5 l/100km (mixto), 23,8 km/l (urbano), 33,3 km/l  (extraurbano), 28,6 km/l  (mixto) y 1.286 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58538515",
@@ -17917,7 +18133,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto), 23,3 km/l (urbano), 28,6 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.158 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57350404",
@@ -18031,7 +18248,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58609156",
@@ -18147,7 +18365,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,6 l/100km (urbano), 5,1 l/100km (extraurbano), 5,6 l/100km (mixto), 15,2 km/l (urbano), 19,6 km/l  (extraurbano), 17,9 km/l  (mixto) y 982 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58769806",
@@ -18260,7 +18479,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,3 l/100km (extraurbano), 3,6 l/100km (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56880837",
@@ -18369,7 +18589,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 4,0 l/100km (extraurbano), 4,6 l/100km (mixto) y 1.217 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58692328",
@@ -18480,7 +18701,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,5 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 22,2 km/l  (extraurbano), 19,2 km/l  (mixto) y 865 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58734131",
@@ -18588,7 +18810,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58731837",
@@ -18697,7 +18920,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.071 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58781909",
@@ -18810,7 +19034,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 22,7 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.222 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58781881",
@@ -18923,7 +19148,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 22,7 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.222 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58662540",
@@ -19038,7 +19264,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,6 l/100km (extraurbano), 3,9 l/100km (mixto), 23,3 km/l (urbano), 27,8 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.282 Km de autonomía (combinado) (fuente: Euro6d-Temp ), consumo de combustible ( WLTP ICE ): 4,4 l/100km (mixto), 22,7 km/l  (mixto), 1.136 Km de autonomía (combinado), 4,4, 4,6, 22,7, 21,7, 5,3, 18,9, 4,2, 23,8, 3,8, 26,3, 4,7 y 21,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58777834",
@@ -19153,7 +19380,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 4,4 l/100km (extraurbano), 4,9 l/100km (mixto) y 1.327 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58119307",
@@ -19260,7 +19488,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,0 l/100km (urbano), 4,3 l/100km (extraurbano), 4,9 l/100km (mixto), 16,7 km/l (urbano), 23,3 km/l  (extraurbano), 20,4 km/l  (mixto) y 816 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58088181",
@@ -19372,7 +19601,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto), 19,6 km/l (urbano), 26,3 km/l  (extraurbano), 23,3 km/l  (mixto) y 1.047 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58788928",
@@ -19400,7 +19630,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58579584",
@@ -19509,7 +19740,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,4 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,4 l/100km (mixto), 18,5 km/l  (mixto) y 833 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56826450",
@@ -19615,7 +19847,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,4 l/100km (extraurbano), 5,1 l/100km (mixto) y 882 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58760032",
@@ -19728,7 +19961,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,8 l/100km (urbano), 3,8 l/100km (extraurbano), 4,1 l/100km (mixto), 20,8 km/l (urbano), 26,3 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58759968",
@@ -19841,7 +20075,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,8 l/100km (urbano), 3,8 l/100km (extraurbano), 4,1 l/100km (mixto), 20,8 km/l (urbano), 26,3 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58609096",
@@ -19952,7 +20187,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,9 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 16,9 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 851 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58627970",
@@ -20055,7 +20291,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto) y 943 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58776189",
@@ -20165,7 +20402,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto) y 1.100 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58787132",
@@ -20278,7 +20516,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,2 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 851 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58598426",
@@ -20388,7 +20627,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,9 l/100km (urbano), 3,5 l/100km (extraurbano), 3,7 l/100km (mixto), 25,6 km/l (urbano), 28,6 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.514 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58556440",
@@ -20498,7 +20738,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.209 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58640216",
@@ -20613,7 +20854,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.190 Km de autonomía (combinado) (fuente: EU6DG ), consumo de combustible ( WLTP ICE ): 4,6, 5,3, 21,7 y 18,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58709370",
@@ -20721,7 +20963,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,1 l/100km (extraurbano), 4,6 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,4 l/100km (mixto), 18,5 km/l  (mixto) y 741 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58439403",
@@ -20833,7 +21076,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 4,0 l/100km (extraurbano), 4,4 l/100km (mixto) y 1.364 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58413761",
@@ -20943,7 +21187,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.209 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58512691",
@@ -21050,7 +21295,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,9 l/100km (urbano), 4,2 l/100km (extraurbano), 5,2 l/100km (mixto), 14,5 km/l (urbano), 23,8 km/l  (extraurbano), 19,2 km/l  (mixto) y 864 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58200217",
@@ -21160,7 +21406,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.297 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57526159",
@@ -21270,7 +21517,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,1 l/100km (urbano), 4,2 l/100km (extraurbano), 4,9 l/100km (mixto), 16,4 km/l (urbano), 23,8 km/l  (extraurbano), 20,4 km/l  (mixto) y 918 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58606224",
@@ -21381,7 +21629,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,3 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 23,3 km/l  (extraurbano), 19,2 km/l  (mixto) y 808 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,8, 6,4, 17,2 y 15,6"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58796076",
@@ -21493,7 +21742,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 3,9 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.111 Km de autonomía"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57628903",
@@ -21605,7 +21855,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,1 l/100km (urbano), 4,5 l/100km (extraurbano), 5,5 l/100km (mixto) y 945 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57420580",
@@ -21715,7 +21966,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 3,9 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.156 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58574116",
@@ -21817,7 +22069,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,5 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 22,2 km/l  (extraurbano), 19,2 km/l  (mixto) y 962 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795517",
@@ -21929,7 +22182,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 3,9 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.156 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58792305",
@@ -22039,7 +22293,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV Factor de Utilidad ponderado ): 4,7 y 5,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58792218",
@@ -22149,7 +22425,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV modo ahorro de la batería ): 4,7, 5,0, 21,3 y 20,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58792086",
@@ -22260,7 +22558,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV Factor de Utilidad ponderado ): 4,7 y 5,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58752748",
@@ -22370,7 +22690,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 3,8 l/100km (extraurbano), 4,6 l/100km (mixto) y 1.239 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58244513",
@@ -22477,7 +22798,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,0 l/100km (urbano), 3,1 l/100km (extraurbano), 3,4 l/100km (mixto), 25,0 km/l (urbano), 32,3 km/l  (extraurbano), 29,4 km/l  (mixto) y 1.324 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58748246",
@@ -22592,7 +22914,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,6 l/100km (extraurbano), 4,1 l/100km (mixto), 20,0 km/l (urbano), 27,8 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58751370",
@@ -22694,7 +23017,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.071 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58790574",
@@ -22808,7 +23132,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.472 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58790451",
@@ -22922,7 +23247,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.472 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58722210",
@@ -23031,7 +23357,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto), 21,7 km/l (urbano), 30,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58641882",
@@ -23143,7 +23470,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto), 15,9 km/l (urbano), 23,8 km/l  (extraurbano), 20,0 km/l  (mixto) y 900 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58330202",
@@ -23249,7 +23577,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,3 l/100km (extraurbano), 5,1 l/100km (mixto), 15,4 km/l (urbano), 23,3 km/l  (extraurbano), 19,6 km/l  (mixto) y 980 Km de autonomía (combinado) (fuente: Euro6Dtemp ), consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto), 893 Km de autonomía (combinado), 7,0, 14,3, 5,2, 19,2, 4,8, 20,8, 6,1 y 16,4"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58747342",
@@ -23351,7 +23680,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,5 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 22,2 km/l  (extraurbano), 19,2 km/l  (mixto) y 962 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58594353",
@@ -23465,7 +23795,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,1 l/100km (extraurbano), 3,3 l/100km (mixto), 28,6 km/l (urbano), 32,3 km/l  (extraurbano), 30,3 km/l  (mixto) y 1.364 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58761161",
@@ -23581,7 +23912,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,8 l/100km (mixto), 20,4 km/l (urbano), 32,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): (fuente: Manufacturer ) 4,1, 4,7, 24,4 y 21,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58671790",
@@ -23690,7 +24022,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58800868",
@@ -23805,7 +24138,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,2 l/100km (extraurbano), 3,9 l/100km (mixto), 20,0 km/l (urbano), 31,2 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.154 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: Manufacturer ) 4,1, 4,7, 24,4, 21,3, 57 y 50"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58265686",
@@ -23913,7 +24247,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.297 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58675636",
@@ -24025,7 +24360,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto), 15,9 km/l (urbano), 23,8 km/l  (extraurbano), 20,0 km/l  (mixto) y 900 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57639704",
@@ -24134,7 +24470,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 3,6 l/100km (extraurbano), 4,3 l/100km (mixto), 17,9 km/l (urbano), 27,8 km/l  (extraurbano), 23,3 km/l  (mixto) y 977 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 5,2 l/100km (mixto), 19,2 km/l  (mixto), 808 Km de autonomía (combinado), 5,0, 5,8, 20,0, 17,2, 6,9, 14,5, 4,9, 20,4, 4,5, 22,2, 5,4 y 18,5"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58601865",
@@ -24245,7 +24582,42 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 300 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "iones de litio",
+                "batteryVoltage": {
+                    "value": "323",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "35.8",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "136",
+                    "unit": "CV"
+                }
+            },
+            "chargingInformation": {
+                "standardMode": {
+                    "scenario": "modo 2",
+                    "duration": {
+                        "value": "1020",
+                        "unit": "minutos"
+                    }
+                },
+                "fastMode": {
+                    "scenario": "modo 4",
+                    "duration": {
+                        "value": "45",
+                        "unit": "minutos"
+                    }
+                }
+            }
+        }
     },
     {
         "id": "58745708",
@@ -24350,7 +24722,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto) y 893 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58600666",
@@ -24457,7 +24830,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,7 l/100km (extraurbano), 5,0 l/100km (mixto), 15,4 km/l (urbano), 21,3 km/l  (extraurbano), 20,0 km/l  (mixto) y 1.000 Km de autonomía (combinado) (fuente: Euro6Dtemp ), consumo de combustible ( WLTP ICE ): 6,0 l/100km (mixto), 16,7 km/l  (mixto), 833 Km de autonomía (combinado), 7,1, 14,1, 5,2, 19,2, 5,0, 20,0, 6,7 y 14,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58731702",
@@ -24571,7 +24945,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,0 l/100km (mixto), 16,7 km/l  (mixto) y 700 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 7,1 l/100km (mixto), 14,1 km/l  (mixto) y 592 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58798903",
@@ -24599,7 +24974,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "57675859",
@@ -24712,7 +25088,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,9 l/100km (extraurbano), 4,4 l/100km (mixto), 19,2 km/l (urbano), 25,6 km/l  (extraurbano), 22,7 km/l  (mixto) y 1.136 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,2 l/100km (mixto), 19,2 km/l  (mixto) y 962 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58768801",
@@ -24821,7 +25198,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58768796",
@@ -24930,7 +25308,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58623250",
@@ -25031,7 +25410,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,0 l/100km (urbano), 4,8 l/100km (extraurbano), 5,3 l/100km (mixto), 16,7 km/l (urbano), 20,8 km/l  (extraurbano), 18,9 km/l  (mixto) y 943 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58498366",
@@ -25141,7 +25521,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto), 18,5 km/l (urbano), 25,0 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.244 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58709809",
@@ -25169,7 +25550,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58273722",
@@ -25279,7 +25661,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV Factor de Utilidad ponderado ): 4,7 y 5,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58743940",
@@ -25307,7 +25711,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58797961",
@@ -25422,7 +25827,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,1 l/100km (extraurbano), 4,5 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.111 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58493441",
@@ -25529,7 +25935,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 4,0 l/100km (extraurbano), 4,6 l/100km (mixto) y 1.217 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58768120",
@@ -25639,7 +26046,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 23,3 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.432 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58400973",
@@ -25750,7 +26158,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV Factor de Utilidad ponderado ): 4,7 y 5,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58716684",
@@ -25861,7 +26291,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV Factor de Utilidad ponderado ): 4,7 y 5,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58797730",
@@ -25977,7 +26429,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,0 l/100km (urbano), 4,6 l/100km (extraurbano), 5,5 l/100km (mixto), 14,3 km/l (urbano), 21,7 km/l  (extraurbano), 18,2 km/l  (mixto) y 1.000 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58579314",
@@ -26086,7 +26539,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.368 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58671964",
@@ -26198,7 +26652,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,6 l/100km (urbano), 5,8 l/100km (extraurbano), 6,9 l/100km (mixto), 11,6 km/l (urbano), 17,2 km/l  (extraurbano), 14,5 km/l  (mixto) y 652 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58754885",
@@ -26316,7 +26771,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,4 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 22,7 km/l  (extraurbano), 19,2 km/l  (mixto) y 962 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58079712",
@@ -26432,7 +26888,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.216 Km de autonomía (combinado) (fuente: EU6DG ), consumo de combustible ( WLTP ICE ): (fuente: Manufacturer ) 4,3, 5,0, 23,3 y 20,0"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58576689",
@@ -26540,7 +26997,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto) y 755 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58425123",
@@ -26645,7 +27103,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto) y 893 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58411251",
@@ -26673,7 +27132,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58692339",
@@ -26784,7 +27244,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.270 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58560920",
@@ -26899,7 +27360,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,8 l/100km (mixto), 20,4 km/l (urbano), 32,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: Manufacturer ) 4,1, 4,7, 24,4 y 21,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57019193",
@@ -27015,7 +27477,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,0 l/100km (urbano), 4,6 l/100km (extraurbano), 5,5 l/100km (mixto), 14,3 km/l (urbano), 21,7 km/l  (extraurbano), 18,2 km/l  (mixto) y 1.000 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58531394",
@@ -27130,7 +27593,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.315 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58531360",
@@ -27245,7 +27709,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.315 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58451373",
@@ -27359,7 +27824,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,1 l/100km (extraurbano), 3,3 l/100km (mixto), 28,6 km/l (urbano), 32,3 km/l  (extraurbano), 30,3 km/l  (mixto) y 1.364 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58725243",
@@ -27466,7 +27932,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58764571",
@@ -27577,7 +28044,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,4 l/100km (urbano), 4,0 l/100km (extraurbano), 4,9 l/100km (mixto), 15,6 km/l (urbano), 25,0 km/l  (extraurbano), 20,4 km/l  (mixto) y 918 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58531639",
@@ -27692,7 +28160,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto), 20,0 km/l (urbano), 26,3 km/l  (extraurbano), 23,3 km/l  (mixto) y 1.163 Km de autonomía (combinado) (fuente: EU6DG ), consumo de combustible ( WLTP ICE ): 5,0 l/100km (mixto), 20,0 km/l  (mixto), 1.000 Km de autonomía (combinado), 5,0, 5,8, 20,0 y 17,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58633450",
@@ -27808,7 +28277,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto), 20,0 km/l (urbano), 26,3 km/l  (extraurbano), 23,3 km/l  (mixto) y 1.163 Km de autonomía (combinado) (fuente: EU6DG ), consumo de combustible ( WLTP ICE ): 5,0 l/100km (mixto), 20,0 km/l  (mixto), 1.000 Km de autonomía (combinado), 5,0, 5,8, 20,0 y 17,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58748997",
@@ -27910,7 +28380,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.071 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58280607",
@@ -28022,7 +28493,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.395 Km de autonomía"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58600207",
@@ -28129,7 +28601,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP HEV modo ahorro de la batería ): 5,0 l/100km (mixto), 20,0 km/l  (mixto) y 840 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58752570",
@@ -28245,7 +28718,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,1 l/100km (extraurbano), 3,3 l/100km (mixto), 28,6 km/l (urbano), 32,3 km/l  (extraurbano), 30,3 km/l  (mixto) y 1.364 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58227335",
@@ -28357,7 +28831,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,3 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.405 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57965443",
@@ -28472,7 +28947,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,6 l/100km (extraurbano), 4,1 l/100km (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58778911",
@@ -28585,7 +29061,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,3 l/100km (extraurbano), 3,5 l/100km (mixto), 24,4 km/l (urbano), 30,3 km/l  (extraurbano), 28,6 km/l  (mixto) y 1.257 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56619847",
@@ -28701,7 +29178,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,9 l/100km (extraurbano), 4,3 l/100km (mixto), 19,6 km/l (urbano), 25,6 km/l  (extraurbano), 23,3 km/l  (mixto) y 1.442 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58330917",
@@ -28812,7 +29290,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,7 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.047 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58570902",
@@ -28921,7 +29400,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,7 l/100km (urbano), 4,8 l/100km (extraurbano), 5,5 l/100km (mixto), 14,9 km/l (urbano), 20,8 km/l  (extraurbano), 18,2 km/l  (mixto) y 818 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58751632",
@@ -29036,7 +29516,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 4,1 l/100km (extraurbano), 4,5 l/100km (mixto), 19,2 km/l (urbano), 24,4 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.267 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58789706",
@@ -29149,7 +29630,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.368 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58785272",
@@ -29259,7 +29741,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV Factor de Utilidad ponderado ): 4,7 y 5,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58785260",
@@ -29369,7 +29873,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV modo ahorro de la batería ): 4,7, 5,0, 21,3 y 20,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58785256",
@@ -29479,7 +30005,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,0 l/100km (mixto), 28,6 km/l (urbano), 25,0 km/l  (extraurbano), 25,0 km/l  (mixto) y 900 Km de autonomía (combinado), consumo de combustible ( WLTP HEV modo ahorro de la batería ): 4,7, 5,0, 21,3 y 20,0"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58554821",
@@ -29584,7 +30132,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,8 l/100km (urbano), 4,3 l/100km (extraurbano), 5,2 l/100km (mixto), 14,7 km/l (urbano), 23,3 km/l  (extraurbano), 19,2 km/l  (mixto) y 808 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58629472",
@@ -29696,7 +30245,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto), 19,2 km/l (urbano), 27,8 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.048 Km de autonomía (combinado) (fuente: Euro 6d ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto) y 800 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58659427",
@@ -29806,7 +30356,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,8 l/100km (urbano), 3,3 l/100km (extraurbano), 3,5 l/100km (mixto), 26,3 km/l (urbano), 30,3 km/l  (extraurbano), 28,6 km/l  (mixto) y 1.343 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58470035",
@@ -29834,7 +30385,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58744885",
@@ -29936,7 +30488,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.071 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58787711",
@@ -30049,7 +30602,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto), 19,2 km/l (urbano), 26,3 km/l  (extraurbano), 23,3 km/l  (mixto) y 930 Km de autonomía (combinado) (fuente: Euro 6d-temp )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57670635",
@@ -30158,7 +30712,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto), 21,7 km/l (urbano), 30,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56520204",
@@ -30268,7 +30823,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,9 l/100km (urbano), 4,2 l/100km (extraurbano), 5,2 l/100km (mixto), 14,5 km/l (urbano), 23,8 km/l  (extraurbano), 19,2 km/l  (mixto) y 864 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58710123",
@@ -30380,7 +30936,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 3,9 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.156 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58756028",
@@ -30408,7 +30965,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58532675",
@@ -30519,7 +31077,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto), 19,2 km/l (urbano), 27,8 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.048 Km de autonomía (combinado) (fuente: Euro 6d ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto) y 800 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58743888",
@@ -30630,7 +31189,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,0 l/100km (urbano), 2,6 l/100km (extraurbano), 3,1 l/100km (mixto) y 1.452 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58794235",
@@ -30658,7 +31218,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58786339",
@@ -30770,7 +31331,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,1 l/100km (mixto) y 1.268 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58621785",
@@ -30878,7 +31440,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,6 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.111 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58434003",
@@ -30988,7 +31551,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,8 l/100km (urbano), 3,7 l/100km (extraurbano), 4,1 l/100km (mixto), 20,8 km/l (urbano), 27,0 km/l  (extraurbano), 24,4 km/l  (mixto) y 976 Km de autonomía (combinado) (fuente: Euro 6d ), consumo de combustible ( WLTP ICE ):"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58013384",
@@ -31097,7 +31661,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,0 l/100km (mixto), 16,7 km/l  (mixto) y 700 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 7,1 l/100km (mixto), 14,1 km/l  (mixto) y 592 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58739685",
@@ -31125,7 +31690,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58603130",
@@ -31239,7 +31805,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.267 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58701589",
@@ -31347,7 +31914,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 25,6 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.190 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58767616",
@@ -31455,7 +32023,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.053 Km de autonomía"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58765930",
@@ -31573,7 +32142,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,6 l/100km (extraurbano), 4,1 l/100km (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58776217",
@@ -31686,7 +32256,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 4,0 l/100km (extraurbano), 4,6 l/100km (mixto) y 1.519 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58660818",
@@ -31795,7 +32366,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 3,7 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.178 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58741882",
@@ -31903,7 +32475,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,9 l/100km (urbano), 4,2 l/100km (extraurbano), 5,2 l/100km (mixto), 14,5 km/l (urbano), 23,8 km/l  (extraurbano), 19,2 km/l  (mixto) y 864 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58712008",
@@ -32013,7 +32586,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,5 m3/100km (LPG/CNG urbano), 4,5 m3/100km (LPG/CNG extraurbano) y 5,6 m3/100km (LPG/CNG mixto), consumo de combustible ( WLTP ICE ):"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58527665",
@@ -32120,7 +32694,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto), 792 Km de autonomía (combinado), 5,3, 5,4, 18,9, 18,5, 6,5, 15,4, 5,1, 19,6, 4,6, 21,7, 5,7 y 17,5"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58730705",
@@ -32233,7 +32808,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,4 l/100km (urbano), 5,1 l/100km (extraurbano), 6,3 l/100km (mixto) y 952 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57857026",
@@ -32344,7 +32920,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,5 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 22,2 km/l  (extraurbano), 19,2 km/l  (mixto) y 962 Km de autonomía (combinado) (fuente: Euro6d-Temp ), consumo de combustible ( WLTP ICE ): 5,9 l/100km (mixto), 16,9 km/l  (mixto), 847 Km de autonomía (combinado), 5,9, 6,2, 16,9, 16,1, 7,5, 13,3, 5,7, 17,5, 5,2, 19,2, 6,1 y 16,4"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58692775",
@@ -32459,7 +33036,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,8 l/100km (mixto), 20,4 km/l (urbano), 32,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: Manufacturer ) 4,1, 4,7, 24,4 y 21,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58674564",
@@ -32487,7 +33065,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58760364",
@@ -32600,7 +33179,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 4,0 l/100km (extraurbano), 4,3 l/100km (mixto), 20,4 km/l (urbano), 25,0 km/l  (extraurbano), 23,3 km/l  (mixto) y 930 Km de autonomía (combinado) (fuente: Euro 6d-TEMP-EVAP ), consumo de combustible ( WLTP ICE ): 5,4, 6,1, 18,5 y 16,4"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58651654",
@@ -32710,7 +33290,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 4,6 l/100km (mixto), 21,7 km/l  (mixto) y 978 Km de autonomía (combinado) (fuente: EU6 D ) 4,6, 4,9, 21,7, 20,4, 5,3, 5,6, 18,9, 17,9, 4,5, 5,0, 22,2, 20,0, 4,0, 4,3, 25,0, 23,3, 4,8, 5,1, 20,8 y 19,6"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57789100",
@@ -32821,7 +33402,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,7 l/100km (urbano), 5,8 l/100km (extraurbano), 6,9 l/100km (mixto), 11,5 km/l (urbano), 17,2 km/l  (extraurbano), 14,5 km/l  (mixto) y 652 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58764835",
@@ -32935,7 +33517,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,0 l/100km (urbano), 3,2 l/100km (extraurbano), 3,5 l/100km (mixto), 25,0 km/l (urbano), 31,2 km/l  (extraurbano), 28,6 km/l  (mixto) y 1.514 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 4,6 l/100km (mixto), 21,7 km/l  (mixto), 1.152 Km de autonomía (combinado), 4,6, 5,4, 21,7 y 18,5"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58764793",
@@ -33047,7 +33630,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 4,0 l/100km (extraurbano), 4,6 l/100km (mixto), 17,9 km/l (urbano), 25,0 km/l  (extraurbano), 21,7 km/l  (mixto) y 978 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58335126",
@@ -33075,7 +33659,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58763688",
@@ -33190,7 +33775,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto), 23,3 km/l (urbano), 28,6 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.316 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58431741",
@@ -33293,7 +33879,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 22,2 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.053 Km de autonomía (combinado) (fuente: EU6ZD )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58066363",
@@ -33402,7 +33989,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,4 l/100km (urbano), 4,3 l/100km (extraurbano), 5,1 l/100km (mixto), 15,6 km/l (urbano), 23,3 km/l  (extraurbano), 19,6 km/l  (mixto) y 824 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58787271",
@@ -33512,7 +34100,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 4,3 l/100km (extraurbano), 5,1 l/100km (mixto), 18,2 km/l (urbano), 23,3 km/l  (extraurbano), 19,6 km/l  (mixto) y 824 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57771534",
@@ -33621,7 +34210,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,8 l/100km (urbano), 3,4 l/100km (extraurbano), 3,9 l/100km (mixto) y 1.282 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58556495",
@@ -33726,7 +34316,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 3,9 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.282 Km de autonomía (combinado) (fuente: Euro6Dtemp ), consumo de combustible ( WLTP ICE ): 4,8 l/100km (mixto), 20,8 km/l  (mixto), 1.042 Km de autonomía (combinado), 4,9, 20,4, 4,3, 23,3, 4,1, 24,4, 5,6 y 17,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58453849",
@@ -33834,7 +34425,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,6 l/100km (mixto), 17,5 km/l (urbano), 25,6 km/l  (extraurbano), 21,7 km/l  (mixto) y 978 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto), 818 Km de autonomía (combinado), 5,3, 5,9, 18,9 y 16,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58630977",
@@ -33943,7 +34535,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58669018",
@@ -34054,7 +34647,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto), 19,2 km/l (urbano), 27,8 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.048 Km de autonomía (combinado) (fuente: Euro 6d ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto) y 800 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58790216",
@@ -34168,7 +34762,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,8 l/100km (mixto), 20,4 km/l (urbano), 32,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: Manufacturer ) 4,1, 4,7, 24,4 y 21,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58778901",
@@ -34279,7 +34874,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,6 l/100km (extraurbano), 3,7 l/100km (mixto), 28,6 km/l (urbano), 27,8 km/l  (extraurbano), 27,0 km/l  (mixto) y 973 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58298516",
@@ -34390,7 +35007,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58746594",
@@ -34501,7 +35119,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.316 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57217108",
@@ -34610,7 +35229,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,3 l/100km (extraurbano), 3,6 l/100km (mixto), 24,4 km/l (urbano), 30,3 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58648130",
@@ -34717,7 +35337,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,0 l/100km (urbano), 4,1 l/100km (extraurbano), 4,8 l/100km (mixto), 16,7 km/l (urbano), 24,4 km/l  (extraurbano), 20,8 km/l  (mixto) y 833 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58800303",
@@ -34827,7 +35448,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,1 l/100km (urbano), 4,0 l/100km (extraurbano), 4,8 l/100km (mixto), 16,4 km/l (urbano), 25,0 km/l  (extraurbano), 20,8 km/l  (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58746104",
@@ -34855,7 +35477,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58554274",
@@ -34967,7 +35590,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto), 15,9 km/l (urbano), 23,8 km/l  (extraurbano), 20,0 km/l  (mixto) y 900 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "52691615",
@@ -35079,7 +35703,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,1 l/100km (urbano), 3,2 l/100km (extraurbano) y 3,5 l/100km (mixto)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58592844",
@@ -35192,7 +35817,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,8 l/100km (urbano), 3,4 l/100km (extraurbano), 3,9 l/100km (mixto) y 1.282 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58732981",
@@ -35291,7 +35917,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto) y 943 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58342285",
@@ -35404,7 +36031,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 23,3 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.395 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58776671",
@@ -35499,7 +36127,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,5 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 22,2 km/l  (extraurbano), 19,2 km/l  (mixto) y 962 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58732592",
@@ -35618,7 +36247,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.315 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57636434",
@@ -35730,7 +36360,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,4 l/100km (mixto), 25,6 km/l (urbano), 32,3 km/l  (extraurbano), 29,4 km/l  (mixto) y 1.529 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58217301",
@@ -35841,7 +36472,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,3 l/100km (urbano), 4,6 l/100km (extraurbano), 5,9 l/100km (mixto) y 932 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58784711",
@@ -35953,7 +36585,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,8 l/100km (urbano), 3,5 l/100km (extraurbano), 4,0 l/100km (mixto), 20,8 km/l (urbano), 28,6 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.300 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58784704",
@@ -36058,7 +36691,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,2 l/100km (urbano), 4,8 l/100km (extraurbano), 5,7 l/100km (mixto), 13,9 km/l (urbano), 20,8 km/l  (extraurbano), 17,5 km/l  (mixto) y 789 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58731857",
@@ -36177,7 +36811,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.315 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58776281",
@@ -36287,7 +36922,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,8 l/100km (extraurbano), 4,1 l/100km (mixto), 21,7 km/l (urbano), 26,3 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58776192",
@@ -36402,7 +37038,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,3 l/100km (urbano), 5,2 l/100km (extraurbano), 6,3 l/100km (mixto) y 882 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58449509",
@@ -36512,7 +37149,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,4 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,8 l/100km (mixto), 17,2 km/l  (mixto) y 776 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58756034",
@@ -36626,7 +37264,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,3 l/100km (extraurbano), 5,1 l/100km (mixto), 15,9 km/l (urbano), 23,3 km/l  (extraurbano), 19,6 km/l  (mixto) y 1.020 Km de autonomía (combinado) (fuente: Euro 6.2d-Temp )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58161901",
@@ -36735,7 +37374,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 3,6 l/100km (extraurbano), 4,3 l/100km (mixto), 17,9 km/l (urbano), 27,8 km/l  (extraurbano), 23,3 km/l  (mixto) y 977 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 5,2 l/100km (mixto), 19,2 km/l  (mixto), 808 Km de autonomía (combinado), 5,0, 5,8, 20,0, 17,2, 6,9, 14,5, 4,9, 20,4, 4,5, 22,2, 5,4 y 18,5"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58681115",
@@ -36846,7 +37486,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 4,1 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.244 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58392922",
@@ -36958,7 +37599,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,8 l/100km (urbano), 3,5 l/100km (extraurbano), 4,0 l/100km (mixto), 20,8 km/l (urbano), 28,6 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.300 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58550371",
@@ -37066,7 +37708,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,2 l/100km (urbano), 4,8 l/100km (extraurbano), 5,7 l/100km (mixto), 13,9 km/l (urbano), 20,8 km/l  (extraurbano), 17,5 km/l  (mixto) y 789 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58653146",
@@ -37094,7 +37737,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "57764231",
@@ -37210,7 +37854,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,6 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.667 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58340340",
@@ -37323,7 +37968,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.190 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 4,6 y 5,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58576907",
@@ -37441,7 +38087,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 3,8 l/100km (extraurbano), 4,5 l/100km (mixto), 17,2 km/l (urbano), 26,3 km/l  (extraurbano), 22,2 km/l  (mixto) y 933 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56306658",
@@ -37553,7 +38200,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.333 Km de autonomía (combinado) (fuente: Euro 6d ), consumo de combustible ( WLTP ICE ): 4,3 l/100km (mixto), 23,3 km/l  (mixto) y 1.116 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57608489",
@@ -37663,7 +38311,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto) y 1.514 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58632042",
@@ -37770,7 +38419,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,0 l/100km (urbano), 4,3 l/100km (extraurbano), 4,9 l/100km (mixto), 16,7 km/l (urbano), 23,3 km/l  (extraurbano), 20,4 km/l  (mixto) y 816 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57964567",
@@ -37879,7 +38529,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,3 l/100km (extraurbano), 3,8 l/100km (mixto), 21,7 km/l (urbano), 30,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58765127",
@@ -37995,7 +38646,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,7 l/100km (extraurbano), 5,3 l/100km (mixto), 15,4 km/l (urbano), 21,3 km/l  (extraurbano), 18,9 km/l  (mixto) y 1.132 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58531396",
@@ -38110,7 +38762,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,6 l/100km (extraurbano), 4,1 l/100km (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58531358",
@@ -38225,7 +38878,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,6 l/100km (extraurbano), 4,1 l/100km (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58753469",
@@ -38335,7 +38989,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,4 l/100km (extraurbano), 5,1 l/100km (mixto) y 882 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58772329",
@@ -38447,7 +39102,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,3 l/100km (extraurbano), 5,1 l/100km (mixto), 15,9 km/l (urbano), 23,3 km/l  (extraurbano), 19,6 km/l  (mixto) y 922 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58571363",
@@ -38560,7 +39216,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 3,7 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.209 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58622683",
@@ -38673,7 +39330,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 2,9 l/100km (extraurbano), 3,1 l/100km (mixto), 28,6 km/l (urbano), 34,5 km/l  (extraurbano), 32,3 km/l  (mixto) y 1.710 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58751362",
@@ -38783,7 +39441,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,4 l/100km (extraurbano), 5,1 l/100km (mixto) y 882 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58575893",
@@ -38891,7 +39550,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 9,8 l/100km (urbano), 6,4 l/100km (extraurbano), 7,7 l/100km (mixto), 10,2 km/l (urbano), 15,6 km/l  (extraurbano), 13,0 km/l  (mixto) y 545 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58672505",
@@ -38997,7 +39657,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 22,7 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.108 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58612175",
@@ -39025,7 +39686,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58801838",
@@ -39138,7 +39800,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,3 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.595 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58779341",
@@ -39251,7 +39914,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.368 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58077329",
@@ -39279,7 +39943,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "57950574",
@@ -39388,7 +40053,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,8 l/100km (mixto), 26,3 km/l  (mixto) y 1.053 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ):"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58778199",
@@ -39500,7 +40166,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,3 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.405 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58647736",
@@ -39528,7 +40195,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58777511",
@@ -39638,7 +40306,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 3,8 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.209 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58774642",
@@ -39748,7 +40417,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,8 l/100km (extraurbano), 4,1 l/100km (mixto), 21,7 km/l (urbano), 26,3 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57253997",
@@ -39859,7 +40529,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 3,9 l/100km (extraurbano), 4,6 l/100km (mixto), 17,5 km/l (urbano), 25,6 km/l  (extraurbano), 21,7 km/l  (mixto) y 978 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto), 804 Km de autonomía (combinado), 5,3, 5,9, 18,9 y 16,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58021316",
@@ -39971,7 +40642,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto), 15,9 km/l (urbano), 23,8 km/l  (extraurbano), 20,0 km/l  (mixto) y 900 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58757322",
@@ -40088,7 +40760,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 22,7 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.432 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 4,6 l/100km (mixto), 21,7 km/l  (mixto), 1.152 Km de autonomía (combinado), 4,6, 4,8, 21,7 y 20,8"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58732013",
@@ -40203,7 +40876,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.267 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58731972",
@@ -40318,7 +40992,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.267 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57900229",
@@ -40428,7 +41103,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,0 l/100km (extraurbano), 4,6 l/100km (mixto), 17,5 km/l (urbano), 25,0 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): 5,1 l/100km (mixto), 19,6 km/l  (mixto), 784 Km de autonomía (combinado), 4,9, 5,8, 20,4, 17,2, 6,5, 15,4, 5,0, 20,0, 4,3, 23,3, 5,2 y 19,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58364189",
@@ -40541,7 +41217,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.189 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57839132",
@@ -40644,7 +41321,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,2 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 851 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58694524",
@@ -40749,7 +41427,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ):, consumo de combustible ( WLTP ICE ): 4,1 l/100km (mixto), 24,4 km/l  (mixto), 951 Km de autonomía (combinado), 4,1, 4,7, 24,4, 21,3, 4,8, 20,8, 4,0, 25,0, 3,7, 27,0, 4,3 y 23,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58694485",
@@ -40859,7 +41538,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 3,7 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.178 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58705161",
@@ -40974,7 +41654,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.579 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58527748",
@@ -41089,7 +41770,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,7 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 21,3 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.190 Km de autonomía (combinado) (fuente: EU6DG ), consumo de combustible ( WLTP ICE ): 4,6, 5,3, 21,7 y 18,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58524554",
@@ -41202,7 +41884,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,2 l/100km (urbano), 4,7 l/100km (extraurbano), 5,6 l/100km (mixto), 13,9 km/l (urbano), 21,3 km/l  (extraurbano), 17,9 km/l  (mixto) y 804 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58794133",
@@ -41230,7 +41913,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58797611",
@@ -41346,7 +42030,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,8 l/100km (extraurbano), 4,0 l/100km (mixto), 23,8 km/l (urbano), 26,3 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.250 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57668657",
@@ -41462,7 +42147,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 1.170 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58739794",
@@ -41577,7 +42263,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,1 l/100km (extraurbano), 4,9 l/100km (mixto) y 1.327 Km de autonomía"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58600934",
@@ -41692,7 +42379,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,2 l/100km (urbano), 5,0 l/100km (extraurbano), 5,5 l/100km (mixto) y 1.273 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58306257",
@@ -41800,7 +42488,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,4 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto), 818 Km de autonomía (combinado), 5,2, 5,8, 19,2, 17,2, 45 y 41"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58754900",
@@ -41915,7 +42604,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,9 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.628 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58347659",
@@ -42026,7 +42716,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,1 l/100km (urbano), 4,3 l/100km (extraurbano), 5,0 l/100km (mixto), 16,4 km/l (urbano), 23,3 km/l  (extraurbano), 20,0 km/l  (mixto) y 800 Km de autonomía (combinado) (fuente: EU6AG ), consumo de combustible ( WLTP ICE ): 6,0 y 6,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58493760",
@@ -42136,7 +42827,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,9 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.302 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58589412",
@@ -42242,7 +42934,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 9,8 l/100km (urbano), 6,4 l/100km (extraurbano), 7,7 l/100km (mixto), 10,2 km/l (urbano), 15,6 km/l  (extraurbano), 13,0 km/l  (mixto) y 545 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58794933",
@@ -42361,7 +43054,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (urbano), 3,8 l/100km (extraurbano), 4,1 l/100km (mixto), 21,7 km/l (urbano), 26,3 km/l  (extraurbano), 24,4 km/l  (mixto) y 1.220 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58583759",
@@ -42475,7 +43169,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,8 l/100km (mixto), 20,4 km/l (urbano), 32,3 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: Manufacturer ) 4,1, 4,7, 24,4 y 21,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58592093",
@@ -42585,7 +43280,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.083 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 4,1, 4,7, 24,4 y 21,3"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58728033",
@@ -42696,7 +43392,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,0 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,0 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.190 Km de autonomía (combinado) (fuente: Euro 6d-TEMP-EVAP-ISC ), consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto), 943 Km de autonomía (combinado), 5,1, 5,6, 19,6 y 17,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58624102",
@@ -42810,7 +43507,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto), 15,9 km/l (urbano), 23,8 km/l  (extraurbano), 20,0 km/l  (mixto) y 900 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58527242",
@@ -42926,7 +43624,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,3 l/100km (mixto) y 1.515 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58632686",
@@ -43033,7 +43732,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,4 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto), 818 Km de autonomía (combinado), 5,2, 5,8, 19,2, 17,2, 45 y 41"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58632684",
@@ -43140,7 +43840,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,8 l/100km (extraurbano), 4,2 l/100km (mixto), 20,4 km/l (urbano), 26,3 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.071 Km de autonomía (combinado) (fuente: EU6.d-Temp ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto), 818 Km de autonomía (combinado), 5,2, 5,8, 19,2, 17,2, 45 y 41"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57152053",
@@ -43254,7 +43955,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,6 l/100km (extraurbano), 5,0 l/100km (mixto), 17,5 km/l (urbano), 21,7 km/l  (extraurbano), 20,0 km/l  (mixto) y 800 Km de autonomía (combinado) (fuente: EU6AG ), consumo de combustible ( WLTP ICE ): 5,5 y 6,1"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58393579",
@@ -43369,7 +44071,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.579 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58802186",
@@ -43477,7 +44180,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,1 l/100km (extraurbano), 4,6 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,6 l/100km (mixto), 17,9 km/l  (mixto) y 714 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58594294",
@@ -43595,7 +44299,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 4,0 l/100km (extraurbano), 4,4 l/100km (mixto) y 1.135 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58771910",
@@ -43705,7 +44410,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,6 l/100km (extraurbano), 3,7 l/100km (mixto), 28,6 km/l (urbano), 27,8 km/l  (extraurbano), 27,0 km/l  (mixto) y 973 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58439533",
@@ -43819,7 +44546,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 3,9 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.359 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58399456",
@@ -43934,7 +44662,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 22,2 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado) (fuente: Euro6d-Temp ), consumo de combustible ( WLTP ICE ): 4,5, 4,8, 22,2 y 20,8"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58387178",
@@ -44045,7 +44774,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 3,8 l/100km (extraurbano), 4,4 l/100km (mixto), 18,2 km/l (urbano), 26,3 km/l  (extraurbano), 22,7 km/l  (mixto) y 909 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58734355",
@@ -44158,7 +44888,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,2 l/100km (urbano), 4,7 l/100km (extraurbano), 5,6 l/100km (mixto), 13,9 km/l (urbano), 21,3 km/l  (extraurbano), 17,9 km/l  (mixto) y 804 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58575429",
@@ -44265,7 +44996,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,3 l/100km (urbano), 4,8 l/100km (extraurbano), 5,7 l/100km (mixto) y 787 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58733846",
@@ -44377,7 +45109,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,8 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,2 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 1.106 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58283237",
@@ -44488,7 +45221,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,7 l/100km (urbano), 4,9 l/100km (extraurbano), 6,3 l/100km (mixto), 11,5 km/l (urbano), 20,4 km/l  (extraurbano), 15,9 km/l  (mixto) y 873 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58733615",
@@ -44601,7 +45335,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,2 l/100km (urbano), 4,7 l/100km (extraurbano), 5,6 l/100km (mixto), 13,9 km/l (urbano), 21,3 km/l  (extraurbano), 17,9 km/l  (mixto) y 804 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57849819",
@@ -44714,7 +45449,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 3,9 l/100km (extraurbano), 4,4 l/100km (mixto), 18,9 km/l (urbano), 25,6 km/l  (extraurbano), 22,7 km/l  (mixto) y 1.023 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58478492",
@@ -44824,7 +45560,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,0 l/100km (extraurbano), 4,6 l/100km (mixto), 17,5 km/l (urbano), 25,0 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado) (fuente: EU6AP ), consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto), 755 Km de autonomía (combinado), 5,2, 5,9, 19,2, 16,9, 45 y 40"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58732692",
@@ -44937,7 +45674,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,2 l/100km (urbano), 4,7 l/100km (extraurbano), 5,6 l/100km (mixto), 13,9 km/l (urbano), 21,3 km/l  (extraurbano), 17,9 km/l  (mixto) y 804 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58760607",
@@ -45046,7 +45784,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,0 l/100km (urbano), 4,7 l/100km (extraurbano), 5,9 l/100km (mixto) y 932 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58760589",
@@ -45155,7 +45894,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 8,0 l/100km (urbano), 4,7 l/100km (extraurbano), 5,9 l/100km (mixto) y 932 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58298645",
@@ -45261,7 +46001,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 4,6 l/100km (mixto), 21,7 km/l  (mixto) y 978 Km de autonomía (combinado) (fuente: EU6 D ) 4,6, 4,9, 21,7, 20,4, 5,3, 5,6, 18,9, 17,9, 4,5, 5,0, 22,2, 20,0, 4,0, 4,3, 25,0, 23,3, 4,8, 5,1, 20,8 y 19,6"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58343887",
@@ -45372,7 +46113,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 7,0 l/100km (urbano), 4,4 l/100km (extraurbano), 5,3 l/100km (mixto) y 849 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58271668",
@@ -45480,7 +46222,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.216 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 4,8 l/100km (mixto), 20,8 km/l  (mixto) y 938 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58066758",
@@ -45508,7 +46251,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "57049267",
@@ -45620,7 +46364,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 3,7 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.326 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58321461",
@@ -45731,7 +46476,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,3 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 23,3 km/l  (extraurbano), 19,2 km/l  (mixto) y 808 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,8, 6,4, 17,2 y 15,6"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58442471",
@@ -45848,7 +46594,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.270 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58633795",
@@ -45960,7 +46707,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 9,7 l/100km (urbano), 5,6 l/100km (extraurbano), 7,1 l/100km (mixto) y 845 Km de autonomía"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58798451",
@@ -46068,7 +46816,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,1 l/100km (extraurbano), 4,6 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "56265127",
@@ -46179,7 +46928,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 3,7 l/100km (extraurbano), 4,3 l/100km (mixto) y 1.326 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58400306",
@@ -46287,7 +47037,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,5 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 22,2 km/l  (extraurbano), 19,2 km/l  (mixto) y 865 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57892035",
@@ -46399,7 +47150,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto), 15,9 km/l (urbano), 23,8 km/l  (extraurbano), 20,0 km/l  (mixto) y 900 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58524058",
@@ -46507,7 +47259,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto) y 1.053 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58474919",
@@ -46608,7 +47361,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto) y 943 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58530022",
@@ -46636,7 +47390,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58374149",
@@ -46743,7 +47498,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,6 l/100km (extraurbano), 3,9 l/100km (mixto), 22,2 km/l (urbano), 27,8 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.026 Km de autonomía (combinado) (fuente: EU6DG ), consumo de combustible ( WLTP ICE ): 4,4, 5,2, 22,7 y 19,2"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58106492",
@@ -46854,7 +47610,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto), 19,2 km/l (urbano), 27,8 km/l  (extraurbano), 23,8 km/l  (mixto) y 1.048 Km de autonomía (combinado) (fuente: Euro 6d ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto) y 800 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58726421",
@@ -46967,7 +47724,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.189 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57933468",
@@ -47075,7 +47833,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,1 l/100km (extraurbano), 4,6 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58080753",
@@ -47183,7 +47942,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 4,2 l/100km (extraurbano), 4,7 l/100km (mixto), 17,9 km/l (urbano), 23,8 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,5, 6,1, 6,3, 6,8, 5,2, 5,6, 4,8, 5,3, 6,0 y 6,7"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58741775",
@@ -47297,7 +48057,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,6 l/100km (extraurbano), 4,2 l/100km (mixto) y 1.071 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58796144",
@@ -47404,7 +48165,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,9 l/100km (urbano), 4,2 l/100km (extraurbano), 5,2 l/100km (mixto), 14,5 km/l (urbano), 23,8 km/l  (extraurbano), 19,2 km/l  (mixto) y 864 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795867",
@@ -47511,7 +48273,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,9 l/100km (urbano), 4,2 l/100km (extraurbano), 5,2 l/100km (mixto), 14,5 km/l (urbano), 23,8 km/l  (extraurbano), 19,2 km/l  (mixto) y 864 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58795634",
@@ -47627,7 +48390,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 22,2 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado) (fuente: EURO6d-Temp ), consumo de combustible ( WLTP ICE ): 4,5 l/100km (mixto), 22,2 km/l  (mixto), 1.000 Km de autonomía (combinado), 4,4, 4,9, 22,7 y 20,4"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57424217",
@@ -47738,7 +48502,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,6 l/100km (urbano), 4,2 l/100km (extraurbano), 4,7 l/100km (mixto), 17,9 km/l (urbano), 23,8 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,5, 6,1, 6,3, 6,8, 5,2, 5,6, 4,8, 5,3, 6,0 y 6,7"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58619863",
@@ -47845,7 +48610,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,4 l/100km (extraurbano), 3,7 l/100km (mixto), 22,7 km/l (urbano), 29,4 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.081 Km de autonomía (combinado) (fuente: EU6DG ), consumo de combustible ( WLTP ICE ): 4,6 l/100km (mixto), 21,7 km/l  (mixto), 870 Km de autonomía (combinado), 4,4, 5,3, 22,7 y 18,9"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58724631",
@@ -47873,7 +48639,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58794862",
@@ -47989,7 +48756,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 22,2 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.184 Km de autonomía (combinado) (fuente: EURO6d-Temp ), consumo de combustible ( WLTP ICE ): 4,5 l/100km (mixto), 22,2 km/l  (mixto), 1.000 Km de autonomía (combinado), 4,4, 4,9, 22,7 y 20,4"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58763551",
@@ -48017,7 +48785,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58395821",
@@ -48127,7 +48896,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.333 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 4,3 l/100km (mixto), 23,3 km/l  (mixto) y 1.116 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58716528",
@@ -48238,7 +49008,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 4,0 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.125 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58713132",
@@ -48351,7 +49122,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,1 l/100km (extraurbano), 3,3 l/100km (mixto), 28,6 km/l (urbano), 32,3 km/l  (extraurbano), 30,3 km/l  (mixto) y 1.364 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58794685",
@@ -48467,7 +49239,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,5 l/100km (extraurbano), 3,9 l/100km (mixto), 22,2 km/l (urbano), 28,6 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.154 Km de autonomía (combinado) (fuente: Euro6d-Temp ), consumo de combustible ( WLTP ICE ): 4,5, 4,8, 22,2 y 20,8"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58344515",
@@ -48578,7 +49351,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,5 l/100km (extraurbano), 4,0 l/100km (mixto), 20,4 km/l (urbano), 28,6 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.425 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58732230",
@@ -48696,7 +49470,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,5 l/100km (urbano), 3,4 l/100km (extraurbano), 3,8 l/100km (mixto), 22,2 km/l (urbano), 29,4 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.579 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58794643",
@@ -48803,7 +49578,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,9 l/100km (urbano), 4,2 l/100km (extraurbano), 5,2 l/100km (mixto), 14,5 km/l (urbano), 23,8 km/l  (extraurbano), 19,2 km/l  (mixto) y 864 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58499347",
@@ -48831,7 +49607,8 @@
         "dimensions": null,
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
-        "acceleration": null
+        "acceleration": null,
+        "electricFeatures": {}
     },
     {
         "id": "58802066",
@@ -48950,7 +49727,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,0 l/100km (urbano), 3,5 l/100km (extraurbano), 3,6 l/100km (mixto), 25,0 km/l (urbano), 28,6 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.306 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58747846",
@@ -49065,7 +49843,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,9 l/100km (urbano), 3,2 l/100km (extraurbano), 3,4 l/100km (mixto), 25,6 km/l (urbano), 31,2 km/l  (extraurbano), 29,4 km/l  (mixto) y 1.559 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 4,5 l/100km (mixto), 22,2 km/l  (mixto) y 1.178 Km de autonomía (combinado) (fuente: Manufacturer ) 4,4, 5,1, 22,7 y 19,6"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58747835",
@@ -49180,7 +49959,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,9 l/100km (urbano), 3,5 l/100km (extraurbano), 3,9 l/100km (mixto), 20,4 km/l (urbano), 28,6 km/l  (extraurbano), 25,6 km/l  (mixto) y 1.282 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58801777",
@@ -49294,7 +50074,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,1 l/100km (extraurbano), 4,7 l/100km (mixto), 17,5 km/l (urbano), 24,4 km/l  (extraurbano), 21,3 km/l  (mixto) y 957 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58399790",
@@ -49407,7 +50188,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto), 19,2 km/l (urbano), 25,0 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.111 Km de autonomía (combinado) (fuente: Euro 6d-TEMP-EVAP-ISC ), consumo de combustible ( WLTP ICE ): 5,5 l/100km (mixto), 18,2 km/l  (mixto), 909 Km de autonomía (combinado), 5,3, 6,0, 18,9 y 16,7"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58769811",
@@ -49517,7 +50299,29 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,5 l/100km (urbano), 3,6 l/100km (extraurbano), 3,7 l/100km (mixto), 28,6 km/l (urbano), 27,8 km/l  (extraurbano), 27,0 km/l  (mixto) y 973 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {
+            "powerSource": {
+                "batteryType": "hidruro metálico de níquel",
+                "batteryVoltage": {
+                    "value": "25",
+                    "unit": "V"
+                },
+                "maximumBatteryKWH": {
+                    "value": "0.9",
+                    "unit": "kWh"
+                }
+            },
+            "power": {
+                "maxPower": {
+                    "value": "100",
+                    "unit": "CV"
+                }
+            },
+            "motorType": [
+                "motor síncrono de imanes permanentes CA"
+            ]
+        }
     },
     {
         "id": "58800458",
@@ -49637,7 +50441,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 5,2 l/100km (extraurbano), 5,6 l/100km (mixto), 15,4 km/l (urbano), 19,2 km/l  (extraurbano), 17,9 km/l  (mixto) y 1.161 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58779650",
@@ -49755,7 +50560,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,3 l/100km (urbano), 4,1 l/100km (extraurbano), 4,5 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.111 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58116838",
@@ -49870,7 +50676,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,2 l/100km (urbano), 4,0 l/100km (extraurbano), 4,4 l/100km (mixto) y 1.135 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58789412",
@@ -49984,7 +50791,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 4,2 l/100km (extraurbano), 4,8 l/100km (mixto) y 1.458 Km de autonomía"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58683445",
@@ -50094,7 +50902,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.083 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto), 929 Km de autonomía (combinado), 4,1, 4,7, 24,4, 21,3, 4,9, 20,4, 4,1, 24,4, 3,6, 27,8, 4,4 y 22,7"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57743596",
@@ -50203,7 +51012,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,8 l/100km (mixto), 26,3 km/l  (mixto) y 1.053 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ):"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58721552",
@@ -50317,7 +51127,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,5 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.267 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "57926841",
@@ -50427,7 +51238,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.083 Km de autonomía (combinado) (fuente: Euro6 D Temp ), consumo de combustible ( WLTP ICE ): 4,2 l/100km (mixto), 23,8 km/l  (mixto), 929 Km de autonomía (combinado), 4,1, 4,7, 24,4, 21,3, 4,9, 20,4, 4,1, 24,4, 3,6, 27,8, 4,4 y 22,7"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58300195",
@@ -50538,7 +51350,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,4 l/100km (urbano), 3,6 l/100km (extraurbano), 4,0 l/100km (mixto), 22,7 km/l (urbano), 27,8 km/l  (extraurbano), 25,0 km/l  (mixto) y 1.125 Km de autonomía (combinado) (fuente: Euro 6 c )"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58601160",
@@ -50657,7 +51470,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,9 l/100km (urbano), 4,3 l/100km (extraurbano), 4,9 l/100km (mixto), 16,9 km/l (urbano), 23,3 km/l  (extraurbano), 20,4 km/l  (mixto) y 1.082 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58788418",
@@ -50771,7 +51585,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,4 l/100km (urbano), 4,0 l/100km (extraurbano), 4,5 l/100km (mixto) y 1.556 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58659549",
@@ -50883,7 +51698,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 3,9 l/100km (urbano), 3,1 l/100km (extraurbano), 3,4 l/100km (mixto), 25,6 km/l (urbano), 32,3 km/l  (extraurbano), 29,4 km/l  (mixto) y 1.529 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58699202",
@@ -50998,7 +51814,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,2 l/100km (extraurbano), 3,6 l/100km (mixto), 23,3 km/l (urbano), 31,2 km/l  (extraurbano), 27,8 km/l  (mixto) y 1.167 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58439580",
@@ -51113,7 +51930,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,3 l/100km (urbano), 4,2 l/100km (extraurbano), 5,0 l/100km (mixto) y 1.100 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58350070",
@@ -51226,7 +52044,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,3 l/100km (urbano), 3,5 l/100km (extraurbano), 3,8 l/100km (mixto), 23,3 km/l (urbano), 28,6 km/l  (extraurbano), 26,3 km/l  (mixto) y 1.158 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58596078",
@@ -51336,7 +52155,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,2 l/100km (urbano), 3,3 l/100km (extraurbano), 3,7 l/100km (mixto), 23,8 km/l (urbano), 30,3 km/l  (extraurbano), 27,0 km/l  (mixto) y 1.297 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58673953",
@@ -51450,7 +52270,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,1 l/100km (urbano), 3,9 l/100km (extraurbano), 4,4 l/100km (mixto), 19,6 km/l (urbano), 25,6 km/l  (extraurbano), 22,7 km/l  (mixto) y 1.136 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,0 y 5,8"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58645337",
@@ -51561,7 +52382,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 5,7 l/100km (urbano), 3,8 l/100km (extraurbano), 4,5 l/100km (mixto), 17,5 km/l (urbano), 26,3 km/l  (extraurbano), 22,2 km/l  (mixto) y 1.067 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58046477",
@@ -51669,7 +52491,8 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 4,6 l/100km (mixto), 18,9 km/l (urbano), 24,4 km/l  (extraurbano), 21,7 km/l  (mixto) y 870 Km de autonomía (combinado), consumo de combustible ( WLTP ICE ): 5,3 l/100km (mixto), 18,9 km/l  (mixto) y 755 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     },
     {
         "id": "58205101",
@@ -51771,6 +52594,7 @@
         ],
         "Prestaciones": [
             "Consumo de combustible ( ECE 99/100 ): 6,5 l/100km (urbano), 4,5 l/100km (extraurbano), 5,2 l/100km (mixto), 15,4 km/l (urbano), 22,2 km/l  (extraurbano), 19,2 km/l  (mixto) y 962 Km de autonomía (combinado)"
-        ]
+        ],
+        "electricFeatures": {}
     }
 ]
