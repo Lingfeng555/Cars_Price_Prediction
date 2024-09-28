@@ -26,6 +26,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -55,6 +56,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -92,6 +94,7 @@
         "trunkCapacityInLiters": 285,
         "maxSpeed": 190,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SPORT (clasificación JATO: deportivo S1)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): berlina con portón de 3 puertas",
@@ -201,6 +204,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -230,6 +234,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -259,6 +264,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -296,6 +302,7 @@
         "trunkCapacityInLiters": 405,
         "maxSpeed": 212,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCED (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -403,6 +410,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -436,6 +444,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 145,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo tipo serie, batalla larga normal, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): furgón de 4 puertas",
@@ -529,6 +538,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -566,6 +576,7 @@
         "trunkCapacityInLiters": 400,
         "maxSpeed": 190,
         "acceleration": 10.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado FR PLUS, edición limitada: Edición Limitada (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -671,6 +682,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -708,6 +720,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 238,
         "acceleration": 6.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MRA, carrocería & puertas (local): coupé de 5 puertas",
@@ -817,6 +830,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -854,6 +868,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EVOLUTION (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -972,6 +987,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ORIGIN (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -1084,6 +1100,7 @@
         "trunkCapacityInLiters": 451,
         "maxSpeed": 160,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: E-GMP, carrocería & puertas (local): crossover de 5 puertas",
@@ -1219,6 +1236,7 @@
         "trunkCapacityInLiters": 185,
         "maxSpeed": 160,
         "acceleration": 12.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CULT (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): berlina con portón de 3 puertas",
@@ -1330,6 +1348,7 @@
         "trunkCapacityInLiters": 285,
         "maxSpeed": 164,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EDITION, edición limitada: edición limitada (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): berlina con portón de 3 puertas",
@@ -1444,6 +1463,7 @@
         "trunkCapacityInLiters": 350,
         "maxSpeed": 192,
         "acceleration": 9.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ZENITH (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-B, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -1552,6 +1572,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -1585,6 +1606,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 250,
         "acceleration": 4.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado 100D (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TESLA1, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -1763,6 +1785,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo combi con 4 puertas, techo alto, batalla media regular, volante al lado izquierdo, código de plataforma: NCV3, carrocería & puertas (local): combi de 4 puertas",
@@ -1868,6 +1891,7 @@
         "trunkCapacityInLiters": 355,
         "maxSpeed": 170,
         "acceleration": 11.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TREND (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -1982,6 +2006,7 @@
         "trunkCapacityInLiters": 580,
         "maxSpeed": 189,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado FEEL (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -2094,6 +2119,7 @@
         "trunkCapacityInLiters": 400,
         "maxSpeed": 225,
         "acceleration": 9.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXECUTIVE (clasificación JATO: lujo L1)",
             "Sedán con 4 puertas volante al lado izquierdo, carrocería & puertas (local): sedán 4 p.",
@@ -2204,6 +2230,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -2233,6 +2260,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -2262,6 +2290,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -2299,6 +2328,7 @@
         "trunkCapacityInLiters": 450,
         "maxSpeed": 203,
         "acceleration": 8.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -2408,6 +2438,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -2437,6 +2468,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -2470,6 +2502,7 @@
         "trunkCapacityInLiters": 510,
         "maxSpeed": 202,
         "acceleration": 9.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado FR SPECIAL EDITION, Edición limitada: Edición Limitada (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -2588,6 +2621,7 @@
         "trunkCapacityInLiters": 350,
         "maxSpeed": 200,
         "acceleration": 9.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado 120TH (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SCCS, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -2702,6 +2736,7 @@
         "trunkCapacityInLiters": 426,
         "maxSpeed": 200,
         "acceleration": 9.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TECH (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -2819,6 +2854,7 @@
         "trunkCapacityInLiters": 390,
         "maxSpeed": 210,
         "acceleration": 8.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo coupé de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: F20, carrocería & puertas (local): coupé de 2 puertas",
@@ -2922,6 +2958,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -2951,6 +2988,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -2980,6 +3018,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3017,6 +3056,7 @@
         "trunkCapacityInLiters": 355,
         "maxSpeed": 170,
         "acceleration": 13.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TREND (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -3125,6 +3165,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3154,6 +3195,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3191,6 +3233,7 @@
         "trunkCapacityInLiters": 827,
         "maxSpeed": 172,
         "acceleration": 11.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LAUREATE (clasificación JATO: lujo L1)",
             "Carrocería tipo monovolumen compacto con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: RN B, carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -3292,6 +3335,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3325,6 +3369,7 @@
         "trunkCapacityInLiters": 311,
         "maxSpeed": 150,
         "acceleration": 8.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ACTIVE PACK (clasificación JATO: mediano M2)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMP, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -3519,6 +3564,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 187,
         "acceleration": 10.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -3628,6 +3674,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3657,6 +3704,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3686,6 +3734,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3715,6 +3764,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3744,6 +3794,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3773,6 +3824,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3802,6 +3854,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3831,6 +3884,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3860,6 +3914,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -3893,6 +3948,7 @@
         "trunkCapacityInLiters": 446,
         "maxSpeed": 220,
         "acceleration": 6.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado HSE DYNAMIC (clasificación JATO: mediano M3)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PLA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -4059,6 +4115,7 @@
         "trunkCapacityInLiters": 185,
         "maxSpeed": 167,
         "acceleration": 13.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DOLCEVITA (clasificación JATO: mediano M2)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): berlina con portón de 3 puertas",
@@ -4160,6 +4217,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -4197,6 +4255,7 @@
         "trunkCapacityInLiters": 330,
         "maxSpeed": 182,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado COOPER (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: R56, carrocería & puertas (local): crossover de 3 puertas",
@@ -4309,6 +4368,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 212,
         "acceleration": 8.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: E90, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -4418,6 +4478,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -4455,6 +4516,7 @@
         "trunkCapacityInLiters": 470,
         "maxSpeed": 205,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: UKL2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -4562,6 +4624,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -4591,6 +4654,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -4620,6 +4684,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -4657,6 +4722,7 @@
         "trunkCapacityInLiters": 370,
         "maxSpeed": 250,
         "acceleration": 4.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado M4 (clasificación JATO: base B1)",
             "Carrocería tipo cabrio de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: F20, carrocería & puertas (local): cabrio de 2 puertas",
@@ -4769,6 +4835,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -4806,6 +4873,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 205,
         "acceleration": 8.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -4913,6 +4981,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -4946,6 +5015,7 @@
         "trunkCapacityInLiters": 352,
         "maxSpeed": 183,
         "acceleration": 10.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: GB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -5061,6 +5131,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 154,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo semi-alto, batalla media regular, volante al lado izquierdo, código de plataforma: X62, carrocería & puertas (local): furgón de 4 puertas",
@@ -5154,6 +5225,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TREND (clasificación JATO: lujo L1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo tipo serie, batalla corta regular, volante al lado izquierdo, código de plataforma: V362, carrocería & puertas (local): furgón de 4 puertas",
@@ -5250,6 +5322,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -5279,6 +5352,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -5308,6 +5382,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -5337,6 +5412,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -5374,6 +5450,7 @@
         "trunkCapacityInLiters": 305,
         "maxSpeed": 250,
         "acceleration": 3.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TT RS (clasificación JATO: base B1)",
             "Carrocería tipo coupé de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): coupé de 3 puertas",
@@ -5484,6 +5561,7 @@
         "trunkCapacityInLiters": 448,
         "maxSpeed": 175,
         "acceleration": 10.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado COMFORT (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -5594,6 +5672,7 @@
         "trunkCapacityInLiters": 281,
         "maxSpeed": 145,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EV (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B3, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -5737,6 +5816,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -5766,6 +5846,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -5799,6 +5880,7 @@
         "trunkCapacityInLiters": 345,
         "maxSpeed": 210,
         "acceleration": 7.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado VZ (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -5967,6 +6049,7 @@
         "trunkCapacityInLiters": 355,
         "maxSpeed": 180,
         "acceleration": 11.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ST LINE (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -6085,6 +6168,7 @@
         "trunkCapacityInLiters": 470,
         "maxSpeed": 221,
         "acceleration": 7.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: UKL2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -6199,6 +6283,7 @@
         "trunkCapacityInLiters": 280,
         "maxSpeed": 207,
         "acceleration": 9.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo cabrio de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: F20, carrocería & puertas (local): cabrio de 2 puertas",
@@ -6303,6 +6388,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -6340,6 +6426,7 @@
         "trunkCapacityInLiters": 410,
         "maxSpeed": 201,
         "acceleration": 9.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado INNOVATION (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -6456,6 +6543,7 @@
         "trunkCapacityInLiters": 280,
         "maxSpeed": 207,
         "acceleration": 9.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo cabrio de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: F20, carrocería & puertas (local): cabrio de 2 puertas",
@@ -6560,6 +6648,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -6597,6 +6686,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 188,
         "acceleration": 12.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado AMBIENTE (clasificación JATO: lujo L1)",
             "Carrocería tipo monovolumen con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: NCV2, carrocería & puertas (local): monovolumen de 4 puertas",
@@ -6704,6 +6794,7 @@
         "trunkCapacityInLiters": 448,
         "maxSpeed": 180,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LUXURY (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -6813,6 +6904,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -6850,6 +6942,7 @@
         "trunkCapacityInLiters": 580,
         "maxSpeed": 189,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado C SERIES, Edición limitada: Edición Limitada (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -6958,6 +7051,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -6995,6 +7089,7 @@
         "trunkCapacityInLiters": 178,
         "maxSpeed": 160,
         "acceleration": 15.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado URBAN (clasificación JATO: base B1)",
             "Berlina con portón con 3 puertas volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): berlina con portón 3 p.",
@@ -7101,6 +7196,7 @@
         "trunkCapacityInLiters": 446,
         "maxSpeed": 220,
         "acceleration": 6.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado HSE (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PLA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -7261,6 +7357,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -7294,6 +7391,7 @@
         "trunkCapacityInLiters": 267,
         "maxSpeed": 150,
         "acceleration": 8.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ELEGANCE-E (clasificación JATO: mediano M3)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMP, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -7463,6 +7561,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 202,
         "acceleration": 8.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LIMITED (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: W164, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -7580,6 +7679,7 @@
         "trunkCapacityInLiters": 427,
         "maxSpeed": 181,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LINE (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: X100, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -7681,6 +7781,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -7710,6 +7811,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -7739,6 +7841,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -7776,6 +7879,7 @@
         "trunkCapacityInLiters": 139,
         "maxSpeed": 157,
         "acceleration": 14.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado URBAN (clasificación JATO: mediano M1)",
             "Minicoche con 3 puertas volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): minicoche 3 p.",
@@ -7870,6 +7974,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -7903,6 +8008,7 @@
         "trunkCapacityInLiters": 525,
         "maxSpeed": 285,
         "acceleration": 4.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado M COMPETITION, Edición limitada: Edición Limitada (clasificación JATO: deportivo S9)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CLAR, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -8014,6 +8120,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -8051,6 +8158,7 @@
         "trunkCapacityInLiters": 555,
         "maxSpeed": 205,
         "acceleration": 9.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SUMMUM (clasificación JATO: lujo L1)",
             "Familiar con 5 puertas batalla corta, volante al lado izquierdo, código de plataforma: C1 y carrocería & puertas (local): familiar de 5 puertas",
@@ -8168,6 +8276,7 @@
         "trunkCapacityInLiters": 182,
         "maxSpeed": 167,
         "acceleration": 13.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DOLCEVITA (clasificación JATO: mediano M2)",
             "Carrocería tipo cabrio de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): cabrio de 2 puertas",
@@ -8277,6 +8386,7 @@
         "trunkCapacityInLiters": 537,
         "maxSpeed": 198,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado FEEL (clasificación JATO: mediano M2)",
             "Carrocería tipo monovolumen compacto con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -8394,6 +8504,7 @@
         "trunkCapacityInLiters": 555,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SO CHIC (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -8504,6 +8615,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -8533,6 +8645,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -8570,6 +8683,7 @@
         "trunkCapacityInLiters": 535,
         "maxSpeed": 250,
         "acceleration": 4.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado S7 (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MLB, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -8687,6 +8801,7 @@
         "trunkCapacityInLiters": 510,
         "maxSpeed": 184,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado YOU (clasificación JATO: base B1)",
             "Carrocería tipo sedán con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): sedán de 4 puertas",
@@ -8792,6 +8907,7 @@
         "trunkCapacityInLiters": 510,
         "maxSpeed": 184,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado YOU (clasificación JATO: base B1)",
             "Carrocería tipo sedán con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): sedán de 4 puertas",
@@ -8897,6 +9013,7 @@
         "trunkCapacityInLiters": 520,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado GT (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -9057,6 +9174,7 @@
         "trunkCapacityInLiters": 1030,
         "maxSpeed": 194,
         "acceleration": 11.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado AVANTGARDE (clasificación JATO: deportivo S1)",
             "Carrocería tipo monovolumen con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: NCV2, carrocería & puertas (local): monovolumen de 5 puertas",
@@ -9170,6 +9288,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 158,
         "acceleration": 16.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TREKKING (clasificación JATO: lujo L1)",
             "Carrocería tipo monovolumen compacto con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SCCS, carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -9285,6 +9404,7 @@
         "trunkCapacityInLiters": 525,
         "maxSpeed": 250,
         "acceleration": 4.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: deportivo S9)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CLAR, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -9404,6 +9524,7 @@
         "trunkCapacityInLiters": 519,
         "maxSpeed": 210,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXECUTIVE (clasificación JATO: mediano M3)",
             "Carrocería tipo sedán con 4 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): sedán de 4 puertas",
@@ -9523,6 +9644,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 217,
         "acceleration": 7.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MRA, carrocería & puertas (local): coupé de 5 puertas",
@@ -9634,6 +9756,7 @@
         "trunkCapacityInLiters": 446,
         "maxSpeed": 220,
         "acceleration": 6.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado HSE (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PLA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -9803,6 +9926,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ZENITH (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -9917,6 +10041,7 @@
         "trunkCapacityInLiters": 446,
         "maxSpeed": 220,
         "acceleration": 6.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado HSE DYNAMIC (clasificación JATO: mediano M3)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PLA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -10099,6 +10224,7 @@
         "trunkCapacityInLiters": 480,
         "maxSpeed": 200,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SDRIVE18D (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: E90, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -10202,6 +10328,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -10239,6 +10366,7 @@
         "trunkCapacityInLiters": 526,
         "maxSpeed": 195,
         "acceleration": 9.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXECUTIVE PLUS (clasificación JATO: lujo L1)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: LEGACY II, carrocería & puertas (local): familiar de 5 puertas",
@@ -10356,6 +10484,7 @@
         "trunkCapacityInLiters": 470,
         "maxSpeed": 205,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: UKL2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -10463,6 +10592,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -10496,6 +10626,7 @@
         "trunkCapacityInLiters": 380,
         "maxSpeed": 250,
         "acceleration": 3.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado RS3 (clasificación JATO: deportivo S4)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -10608,6 +10739,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -10641,6 +10773,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 205,
         "acceleration": 8.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LIFE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -10749,6 +10882,7 @@
         "trunkCapacityInLiters": 291,
         "maxSpeed": 160,
         "acceleration": 11.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EDRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -10897,6 +11031,7 @@
         "trunkCapacityInLiters": 351,
         "maxSpeed": 185,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LIMITED (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SCCS, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -11002,6 +11137,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -11039,6 +11175,7 @@
         "trunkCapacityInLiters": 205,
         "maxSpeed": 198,
         "acceleration": 10.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXCELLENCE (clasificación JATO: lujo L1)",
             "Carrocería tipo cabrio de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PQ35, carrocería & puertas (local): cabrio de 2 puertas",
@@ -11150,6 +11287,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -11183,6 +11321,7 @@
         "trunkCapacityInLiters": 640,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DESIGN, Edición limitada: Edición Limitada (clasificación JATO: mediano M1)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): familiar de 5 puertas",
@@ -11295,6 +11434,7 @@
         "trunkCapacityInLiters": 480,
         "maxSpeed": 307,
         "acceleration": 3.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado QUADRIFOGLIO (clasificación JATO: deportivo S2)",
             "Carrocería tipo sedán con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: Giorgio, carrocería & puertas (local): sedán de 4 puertas",
@@ -11407,6 +11547,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -11436,6 +11577,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -11465,6 +11607,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -11502,6 +11645,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ORIGIN (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -11610,6 +11754,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -11643,6 +11788,7 @@
         "trunkCapacityInLiters": 446,
         "maxSpeed": 220,
         "acceleration": 6.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado HSE DYNAMIC (clasificación JATO: mediano M3)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PLA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -11812,6 +11958,7 @@
         "trunkCapacityInLiters": 597,
         "maxSpeed": 172,
         "acceleration": 12.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LIFE EDITION PLUS (clasificación JATO: mediano M2)",
             "Carrocería tipo monovolumen compacto con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: A B, carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -11926,6 +12073,7 @@
         "trunkCapacityInLiters": 350,
         "maxSpeed": 173,
         "acceleration": 10.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LUXURY (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-B, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -12039,6 +12187,7 @@
         "trunkCapacityInLiters": 348,
         "maxSpeed": 168,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CONCEPT (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: E-GMP, carrocería & puertas (local): crossover de 5 puertas",
@@ -12179,6 +12328,7 @@
         "trunkCapacityInLiters": 400,
         "maxSpeed": 193,
         "acceleration": 10.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado FR LIMITED EDITION, Edición limitada: Edición Limitada (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -12282,6 +12432,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -12319,6 +12470,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 170,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado GX (clasificación JATO: base B1)",
             "Carrocería tipo pickup con cabina doble y 4 puertas, techo tipo serie, batalla corta regular, volante al lado izquierdo, carrocería & puertas (local): pickup de 4 puertas",
@@ -12419,6 +12571,7 @@
         "trunkCapacityInLiters": 219,
         "maxSpeed": 135,
         "acceleration": 12.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TECHNO (clasificación JATO: mediano M1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -12590,6 +12743,7 @@
         "trunkCapacityInLiters": 395,
         "maxSpeed": 194,
         "acceleration": 10.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado HIGHLINE (clasificación JATO: lujo L1)",
             "Monovolumen compacto con 5 puertas batalla corta, volante al lado izquierdo, código de plataforma: PQ35 y carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -12705,6 +12859,7 @@
         "trunkCapacityInLiters": 314,
         "maxSpeed": 220,
         "acceleration": 7.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado INSCRIPTION (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SPA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -12819,6 +12974,7 @@
         "trunkCapacityInLiters": 520,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ALLURE PACK (clasificación JATO: mediano M3)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -12981,6 +13137,7 @@
         "trunkCapacityInLiters": 875,
         "maxSpeed": 181,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LIMITED (clasificación JATO: lujo L1)",
             "Carrocería tipo monovolumen con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: W124, carrocería & puertas (local): monovolumen de 5 puertas",
@@ -13097,6 +13254,7 @@
         "trunkCapacityInLiters": 470,
         "maxSpeed": 186,
         "acceleration": 10.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado +MOTION (clasificación JATO: lujo L1)",
             "Todoterreno con 5 puertas batalla corta, volante al lado izquierdo, código de plataforma: PQ35 y carrocería & puertas (local): todoterreno de 5 puertas",
@@ -13212,6 +13370,7 @@
         "trunkCapacityInLiters": 311,
         "maxSpeed": 150,
         "acceleration": 8.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ALLURE (clasificación JATO: mediano M4)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMP, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -13378,6 +13537,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo combi con 4 puertas, techo tipo serie, batalla corta regular, volante al lado izquierdo, código de plataforma: NCV3, carrocería & puertas (local): combi de 4 puertas",
@@ -13471,6 +13631,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -13504,6 +13665,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 145,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado PREMIUM (clasificación JATO: lujo L1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo tipo serie, batalla larga regular, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): furgón de 4 puertas",
@@ -13606,6 +13768,7 @@
         "trunkCapacityInLiters": 410,
         "maxSpeed": 164,
         "acceleration": 11.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): crossover de 5 puertas",
@@ -13735,6 +13898,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -13764,6 +13928,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -13797,6 +13962,7 @@
         "trunkCapacityInLiters": 585,
         "maxSpeed": 200,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado N-CONNECTA (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-CD?, carrocería & puertas (local): crossover de 5 puertas",
@@ -13913,6 +14079,7 @@
         "trunkCapacityInLiters": 320,
         "maxSpeed": 177,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado BUSINESS (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -14044,6 +14211,7 @@
         "trunkCapacityInLiters": 354,
         "maxSpeed": 166,
         "acceleration": 10.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TEKNA (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-B, carrocería & puertas (local): crossover de 5 puertas",
@@ -14170,6 +14338,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -14199,6 +14368,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -14228,6 +14398,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -14261,6 +14432,7 @@
         "trunkCapacityInLiters": 505,
         "maxSpeed": 180,
         "acceleration": 8.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado PLUS DARK (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SPA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -14375,6 +14547,7 @@
         "trunkCapacityInLiters": 468,
         "maxSpeed": 180,
         "acceleration": 5.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado RECHARGE ULTIMATE BRIGHT (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SPA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -14551,6 +14724,7 @@
         "trunkCapacityInLiters": 388,
         "maxSpeed": 140,
         "acceleration": 9.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ICONIC (clasificación JATO: lujo L1) Código:",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: ZOE, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -14689,6 +14863,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -14726,6 +14901,7 @@
         "trunkCapacityInLiters": 775,
         "maxSpeed": 170,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado GT (clasificación JATO: mediano M1)",
             "Carrocería tipo monovolumen compacto con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -14838,6 +15014,7 @@
         "trunkCapacityInLiters": 320,
         "maxSpeed": 177,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado F SPORT (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -14968,6 +15145,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -14997,6 +15175,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -15030,6 +15209,7 @@
         "trunkCapacityInLiters": 395,
         "maxSpeed": 230,
         "acceleration": 6.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MRA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -15202,6 +15382,7 @@
         "trunkCapacityInLiters": 400,
         "maxSpeed": 190,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado XPERIENCE XXL, Edición limitada: Edición Limitada (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -15316,6 +15497,7 @@
         "trunkCapacityInLiters": 521,
         "maxSpeed": 203,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado AMBITION (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -15431,6 +15613,7 @@
         "trunkCapacityInLiters": 352,
         "maxSpeed": 183,
         "acceleration": 10.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CONCEPT (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: GB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -15536,6 +15719,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -15569,6 +15753,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 250,
         "acceleration": 4.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado 100D (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TESLA1, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -15753,6 +15938,7 @@
         "trunkCapacityInLiters": 515,
         "maxSpeed": 250,
         "acceleration": 6.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo sedán con 4 puertas, batalla larga, volante al lado izquierdo, código de plataforma: G11, carrocería & puertas (local): sedán de 4 puertas",
@@ -15870,6 +16056,7 @@
         "trunkCapacityInLiters": 345,
         "maxSpeed": 205,
         "acceleration": 7.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -16037,6 +16224,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 233,
         "acceleration": 6.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MRA, carrocería & puertas (local): coupé de 5 puertas",
@@ -16144,6 +16332,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -16181,6 +16370,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 200,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LUXURY (clasificación JATO: lujo L1)",
             "Todoterreno con 5 puertas batalla corta, volante al lado izquierdo, código de plataforma: CD3 y carrocería & puertas (local): todoterreno de 5 puertas",
@@ -16298,6 +16488,7 @@
         "trunkCapacityInLiters": 291,
         "maxSpeed": 160,
         "acceleration": 11.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EMOTION (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -16451,6 +16642,7 @@
         "trunkCapacityInLiters": 364,
         "maxSpeed": 180,
         "acceleration": 7.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -16609,6 +16801,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -16638,6 +16831,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -16671,6 +16865,7 @@
         "trunkCapacityInLiters": 525,
         "maxSpeed": 285,
         "acceleration": 4.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado M COMPETITION, Edición limitada: Edición Limitada (clasificación JATO: deportivo S9)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CLAR, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -16781,6 +16976,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -16814,6 +17010,7 @@
         "trunkCapacityInLiters": 420,
         "maxSpeed": 156,
         "acceleration": 7.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado N-CONNECTA (clasificación JATO: mediano M1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -17010,6 +17207,7 @@
         "trunkCapacityInLiters": 615,
         "maxSpeed": 195,
         "acceleration": 10.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TIGUAN (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -17120,6 +17318,7 @@
         "trunkCapacityInLiters": 185,
         "maxSpeed": 160,
         "acceleration": 12.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LOUNGE (clasificación JATO: mediano M1)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): berlina con portón de 3 puertas",
@@ -17218,6 +17417,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -17255,6 +17455,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado BASE (clasificación JATO: base B1)",
             "Carrocería tipo furgón derivado de turismo con cabina sencilla de 3 puertas, techo tipo serie, batalla corta regular, volante al lado izquierdo, código de plataforma: A B, carrocería & puertas (local): furgón derivado de turismo de 3 puertas",
@@ -17345,6 +17546,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -17382,6 +17584,7 @@
         "trunkCapacityInLiters": 300,
         "maxSpeed": 163,
         "acceleration": 13.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SEDUCTION (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -17482,6 +17685,7 @@
         "trunkCapacityInLiters": 448,
         "maxSpeed": 175,
         "acceleration": 10.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado COMFORT (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -17592,6 +17796,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TREND (clasificación JATO: lujo L1)",
             "Carrocería tipo combi con cabina doble y 5 puertas, techo tipo serie, batalla corta regular, volante al lado izquierdo, código de plataforma: C1, carrocería & puertas (local): combi de 5 puertas",
@@ -17686,6 +17891,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -17723,6 +17929,7 @@
         "trunkCapacityInLiters": 450,
         "maxSpeed": 204,
         "acceleration": 8.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -17835,6 +18042,7 @@
         "trunkCapacityInLiters": 536,
         "maxSpeed": 196,
         "acceleration": 10.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado KAITEKI (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-B, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -17941,6 +18149,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -17974,6 +18183,7 @@
         "trunkCapacityInLiters": 358,
         "maxSpeed": 180,
         "acceleration": 8.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -18109,6 +18319,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 270,
         "acceleration": 4.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TURBO (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MLB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -18219,6 +18430,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -18256,6 +18468,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 164,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ORIGIN (clasificación JATO: base B1)",
             "Carrocería tipo monovolumen con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: T6, carrocería & puertas (local): monovolumen de 4 puertas",
@@ -18362,6 +18575,7 @@
         "trunkCapacityInLiters": 498,
         "maxSpeed": 170,
         "acceleration": 11.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado KAITEKI (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: GF, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -18544,6 +18758,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 286,
         "acceleration": 4.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado S GRANSPORT (clasificación JATO: deportivo S2)",
             "Carrocería tipo sedán con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: M157, carrocería & puertas (local): sedán de 4 puertas",
@@ -18661,6 +18876,7 @@
         "trunkCapacityInLiters": 270,
         "maxSpeed": 166,
         "acceleration": 15.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado URBAN (clasificación JATO: base B1)",
             "Berlina con portón con 5 puertas volante al lado izquierdo, código de plataforma: PF1 y carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -18760,6 +18976,7 @@
         "trunkCapacityInLiters": 358,
         "maxSpeed": 180,
         "acceleration": 8.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -18887,6 +19104,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -18924,6 +19142,7 @@
         "trunkCapacityInLiters": 417,
         "maxSpeed": 190,
         "acceleration": 12.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado MOMENTUM (clasificación JATO: lujo L1)",
             "Familiar con 5 puertas volante al lado izquierdo, código de plataforma: C1 y carrocería & puertas (local): familiar de 5 puertas",
@@ -19038,6 +19257,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 189,
         "acceleration": 10.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -19144,6 +19364,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -19181,6 +19402,7 @@
         "trunkCapacityInLiters": 438,
         "maxSpeed": 200,
         "acceleration": 9.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LIMITED (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SCCS, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -19298,6 +19520,7 @@
         "trunkCapacityInLiters": 514,
         "maxSpeed": 196,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ULTIMATE (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -19418,6 +19641,7 @@
         "trunkCapacityInLiters": 520,
         "maxSpeed": 225,
         "acceleration": 8.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado GT (clasificación JATO: mediano M5)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -19595,6 +19819,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 189,
         "acceleration": 9.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SPORT (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -19709,6 +19934,7 @@
         "trunkCapacityInLiters": 528,
         "maxSpeed": 210,
         "acceleration": 9.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TREND (clasificación JATO: mediano M1)",
             "Berlina con portón con 5 puertas volante al lado izquierdo, código de plataforma: C1+ EUCD y carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -19820,6 +20046,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 210,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CROSS RIVOLI",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -19931,6 +20158,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ZENITH (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -20049,6 +20277,7 @@
         "trunkCapacityInLiters": 320,
         "maxSpeed": 177,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado BUSINESS (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -20176,6 +20405,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -20213,6 +20443,7 @@
         "trunkCapacityInLiters": 405,
         "maxSpeed": 211,
         "acceleration": 8.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SPORT EDITION (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -20328,6 +20559,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EVOLUTION (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -20441,6 +20673,7 @@
         "trunkCapacityInLiters": 522,
         "maxSpeed": 218,
         "acceleration": 6.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DYNAMIC SE (clasificación JATO: mediano M1) Código:",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado derecho, código de plataforma: MLA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -20558,6 +20791,7 @@
         "trunkCapacityInLiters": 426,
         "maxSpeed": 186,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -20663,6 +20897,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -20700,6 +20935,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 205,
         "acceleration": 8.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE STYLE (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -20816,6 +21052,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 187,
         "acceleration": 10.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE STYLE (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -20933,6 +21170,7 @@
         "trunkCapacityInLiters": 361,
         "maxSpeed": 160,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado KLASS (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -21070,6 +21308,7 @@
         "trunkCapacityInLiters": 361,
         "maxSpeed": 180,
         "acceleration": 10.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado STYLE (clasificación JATO: mediano M4)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -21200,6 +21439,7 @@
         "trunkCapacityInLiters": 422,
         "maxSpeed": 196,
         "acceleration": 9.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ZEN (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-B, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -21312,6 +21552,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 177,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado BUSINESS (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -21440,6 +21681,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -21469,6 +21711,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -21506,6 +21749,7 @@
         "trunkCapacityInLiters": 450,
         "maxSpeed": 180,
         "acceleration": 12.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado BOSE EDITION (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: RN C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -21618,6 +21862,7 @@
         "trunkCapacityInLiters": 345,
         "maxSpeed": 205,
         "acceleration": 7.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -21783,6 +22028,7 @@
         "trunkCapacityInLiters": 505,
         "maxSpeed": 192,
         "acceleration": 11.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXECUTIVE PLUS (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: IMPREZA II, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -21902,6 +22148,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ZENITH (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -22020,6 +22267,7 @@
         "trunkCapacityInLiters": 525,
         "maxSpeed": 215,
         "acceleration": 6.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SPECIALE (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: GIORGIO, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -22134,6 +22382,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -22171,6 +22420,7 @@
         "trunkCapacityInLiters": 520,
         "maxSpeed": 225,
         "acceleration": 8.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ALLURE PACK (clasificación JATO: mediano M3)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -22349,6 +22599,7 @@
         "trunkCapacityInLiters": 410,
         "maxSpeed": 195,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SHINE (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -22459,6 +22710,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -22496,6 +22748,7 @@
         "trunkCapacityInLiters": 590,
         "maxSpeed": 240,
         "acceleration": 6.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: W212, carrocería & puertas (local): familiar de 5 puertas",
@@ -22608,6 +22861,7 @@
         "trunkCapacityInLiters": 380,
         "maxSpeed": 196,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TECH (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -22719,6 +22973,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 189,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -22833,6 +23088,7 @@
         "trunkCapacityInLiters": 468,
         "maxSpeed": 191,
         "acceleration": 9.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ST-LINE X (clasificación JATO: deportivo S2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B3, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -22950,6 +23206,7 @@
         "trunkCapacityInLiters": 525,
         "maxSpeed": 250,
         "acceleration": 4.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado M COMPETITION, edición limitada: Edición Limitada (clasificación JATO: deportivo S9)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CLAR, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -23067,6 +23324,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo alto, batalla media normal, volante al lado izquierdo, carrocería & puertas (local): furgón de 4 puertas",
@@ -23165,6 +23423,7 @@
         "trunkCapacityInLiters": 580,
         "maxSpeed": 195,
         "acceleration": 10.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SHINE (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -23272,6 +23531,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -23309,6 +23569,7 @@
         "trunkCapacityInLiters": 421,
         "maxSpeed": 205,
         "acceleration": 10.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado STYLE (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MFA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -23416,6 +23677,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -23449,6 +23711,7 @@
         "trunkCapacityInLiters": 1050,
         "maxSpeed": 171,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: mediano M1)",
             "Carrocería tipo monovolumen con 4 puertas, batalla larga, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): monovolumen de 4 puertas",
@@ -23560,6 +23823,7 @@
         "trunkCapacityInLiters": 351,
         "maxSpeed": 182,
         "acceleration": 7.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LIMITED (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SCCS, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -23741,6 +24005,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -23778,6 +24043,7 @@
         "trunkCapacityInLiters": 347,
         "maxSpeed": 180,
         "acceleration": 12.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado COSMO (clasificación JATO: mediano M2)",
             "Berlina con portón con 5 puertas volante al lado izquierdo, código de plataforma: GM 3300 y carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -23891,6 +24157,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ZENITH BLACK (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -24001,6 +24268,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -24034,6 +24302,7 @@
         "trunkCapacityInLiters": 395,
         "maxSpeed": 235,
         "acceleration": 5.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: W205, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -24159,6 +24428,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -24192,6 +24462,7 @@
         "trunkCapacityInLiters": 405,
         "maxSpeed": 212,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCED (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -24300,6 +24571,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -24337,6 +24609,7 @@
         "trunkCapacityInLiters": 420,
         "maxSpeed": 207,
         "acceleration": 9.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado BLACK LINE (clasificación JATO: deportivo S2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MBQ, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -24448,6 +24721,7 @@
         "trunkCapacityInLiters": 310,
         "maxSpeed": 202,
         "acceleration": 9.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ULTIMATE (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMP, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -24565,6 +24839,7 @@
         "trunkCapacityInLiters": 450,
         "maxSpeed": 203,
         "acceleration": 8.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -24681,6 +24956,7 @@
         "trunkCapacityInLiters": 470,
         "maxSpeed": 192,
         "acceleration": 10.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXECUTIVE (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: GSP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -24792,6 +25068,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -24829,6 +25106,7 @@
         "trunkCapacityInLiters": 432,
         "maxSpeed": 210,
         "acceleration": 8.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado INSCRIPTION (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -24943,6 +25221,7 @@
         "trunkCapacityInLiters": 533,
         "maxSpeed": 210,
         "acceleration": 6.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado OVERLAND (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: Giorgio, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -25140,6 +25419,7 @@
         "trunkCapacityInLiters": 468,
         "maxSpeed": 200,
         "acceleration": 9.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TITANIUM X (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B3, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -25257,6 +25537,7 @@
         "trunkCapacityInLiters": 420,
         "maxSpeed": 250,
         "acceleration": 4.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado VZ (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -25375,6 +25656,7 @@
         "trunkCapacityInLiters": 432,
         "maxSpeed": 210,
         "acceleration": 8.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado INSCRIPTION (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -25493,6 +25775,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ZENITH (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -25611,6 +25894,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 186,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EVOLUTION (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -25729,6 +26013,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 157,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TRENDLINE (clasificación JATO: base B1)",
             "Carrocería tipo mini bus con 4 puertas, techo tipo serie, batalla corta regular, volante al lado izquierdo, código de plataforma: T6, carrocería & puertas (local): mini bus de 4 puertas",
@@ -25839,6 +26124,7 @@
         "trunkCapacityInLiters": 400,
         "maxSpeed": 190,
         "acceleration": 10.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado XPERIENCE XL, Edición limitada: Edición Limitada (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -25953,6 +26239,7 @@
         "trunkCapacityInLiters": 400,
         "maxSpeed": 190,
         "acceleration": 10.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado FR XM (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -26061,6 +26348,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 189,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -26175,6 +26463,7 @@
         "trunkCapacityInLiters": 314,
         "maxSpeed": 230,
         "acceleration": 5.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado INSCRIPTION (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SPA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -26324,6 +26613,7 @@
         "trunkCapacityInLiters": 430,
         "maxSpeed": 204,
         "acceleration": 8.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ZENITH SAFETY (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-C+, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -26442,6 +26732,7 @@
         "trunkCapacityInLiters": 470,
         "maxSpeed": 187,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ELEGANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: GSP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -26550,6 +26841,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -26587,6 +26879,7 @@
         "trunkCapacityInLiters": 352,
         "maxSpeed": 183,
         "acceleration": 10.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CONCEPT (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: GB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -26700,6 +26993,7 @@
         "trunkCapacityInLiters": 470,
         "maxSpeed": 207,
         "acceleration": 9.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: UKL2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -26806,6 +27100,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -26835,6 +27130,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -26872,6 +27168,7 @@
         "trunkCapacityInLiters": 405,
         "maxSpeed": 212,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SPORT (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -26978,6 +27275,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -27015,6 +27313,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 160,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado COMFORT (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo tipo serie, batalla media regular, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): furgón de 4 puertas",
@@ -27112,6 +27411,7 @@
         "trunkCapacityInLiters": 280,
         "maxSpeed": 183,
         "acceleration": 9.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado HOMURA, Edición limitada: Edición Limitada (clasificación JATO: mediano M1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-B, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -27222,6 +27522,7 @@
         "trunkCapacityInLiters": 835,
         "maxSpeed": 196,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado AMBITION",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -27332,6 +27633,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -27365,6 +27667,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 185,
         "acceleration": 10.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EDITION (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -27470,6 +27773,7 @@
         "trunkCapacityInLiters": 400,
         "maxSpeed": 219,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado STYLE (clasificación JATO: mediano M3)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PQ25, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -27576,6 +27880,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -27605,6 +27910,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -27642,6 +27948,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 172,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado GX (clasificación JATO: base B1)",
             "Carrocería tipo monovolumen compacto con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): combi de 4 puertas",
@@ -27743,6 +28050,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -27772,6 +28080,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -27801,6 +28110,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -27838,6 +28148,7 @@
         "trunkCapacityInLiters": 142,
         "maxSpeed": 205,
         "acceleration": 9.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: HYUNDAI NF, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -27959,6 +28270,7 @@
         "trunkCapacityInLiters": 360,
         "maxSpeed": 205,
         "acceleration": 9.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado COOPER (clasificación JATO: lujo L1)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: UKL1, carrocería & puertas (local): familiar de 5 puertas",
@@ -28074,6 +28386,7 @@
         "trunkCapacityInLiters": 280,
         "maxSpeed": 180,
         "acceleration": 11.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PQ25, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -28173,6 +28486,7 @@
         "trunkCapacityInLiters": 345,
         "maxSpeed": 205,
         "acceleration": 7.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -28338,6 +28652,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 170,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado PRO (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo tipo serie, batalla larga extendida, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): furgón de 4 puertas",
@@ -28432,6 +28747,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TREND (clasificación JATO: lujo L1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo tipo serie, batalla corta regular, volante al lado izquierdo, código de plataforma: V362, carrocería & puertas (local): furgón de 4 puertas",
@@ -28536,6 +28852,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 225,
         "acceleration": 6.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MLB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -28648,6 +28965,7 @@
         "trunkCapacityInLiters": 422,
         "maxSpeed": 196,
         "acceleration": 10.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TECHNO (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-B, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -28760,6 +29078,7 @@
         "trunkCapacityInLiters": 360,
         "maxSpeed": 225,
         "acceleration": 7.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado COOPER S (clasificación JATO: deportivo S1)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: UKL1, carrocería & puertas (local): familiar de 5 puertas",
@@ -28876,6 +29195,7 @@
         "trunkCapacityInLiters": 355,
         "maxSpeed": 180,
         "acceleration": 11.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ACTIVE (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -28991,6 +29311,7 @@
         "trunkCapacityInLiters": 594,
         "maxSpeed": 190,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado GT LINE (clasificación JATO: deportivo S1)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): familiar de 5 puertas",
@@ -29109,6 +29430,7 @@
         "trunkCapacityInLiters": 350,
         "maxSpeed": 192,
         "acceleration": 9.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado LUXURY (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SKYACTIV-B, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -29226,6 +29548,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 177,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado BUSINESS (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: TNGA-C, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -29351,6 +29674,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -29380,6 +29704,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -29417,6 +29742,7 @@
         "trunkCapacityInLiters": 618,
         "maxSpeed": 221,
         "acceleration": 7.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado PLATINUM EDITION, edición limitada: Edición Limitada (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PL72, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -29533,6 +29859,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -29562,6 +29889,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -29591,6 +29919,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -29620,6 +29949,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -29657,6 +29987,7 @@
         "trunkCapacityInLiters": 332,
         "maxSpeed": 199,
         "acceleration": 10.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado S (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: C1+EUCD / D8, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -29777,6 +30108,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 212,
         "acceleration": 8.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: E90, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -29890,6 +30222,7 @@
         "trunkCapacityInLiters": 375,
         "maxSpeed": 170,
         "acceleration": 10.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado KAITEKI+ (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-B, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -30062,6 +30395,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -30099,6 +30433,7 @@
         "trunkCapacityInLiters": 580,
         "maxSpeed": 193,
         "acceleration": 10.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado FEEL PACK (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -30211,6 +30546,7 @@
         "trunkCapacityInLiters": 640,
         "maxSpeed": 222,
         "acceleration": 8.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SELECTION (clasificación JATO: mediano M1)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): familiar de 5 puertas",
@@ -30324,6 +30660,7 @@
         "trunkCapacityInLiters": 550,
         "maxSpeed": 222,
         "acceleration": 7.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: W205, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -30432,6 +30769,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -30469,6 +30807,7 @@
         "trunkCapacityInLiters": 400,
         "maxSpeed": 250,
         "acceleration": 3.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado AMG (clasificación JATO: deportivo S2)",
             "Carrocería tipo coupé de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: W221, carrocería & puertas (local): coupé de 2 puertas",
@@ -30586,6 +30925,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 189,
         "acceleration": 10.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -30700,6 +31040,7 @@
         "trunkCapacityInLiters": 224,
         "maxSpeed": 166,
         "acceleration": 13.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SX (clasificación JATO: mediano M1)",
             "Berlina con portón con 3 puertas volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): berlina con portón 3 p.",
@@ -30803,6 +31144,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -30832,6 +31174,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -30861,6 +31204,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -30890,6 +31234,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -30927,6 +31272,7 @@
         "trunkCapacityInLiters": 610,
         "maxSpeed": 230,
         "acceleration": 8.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado RS (clasificación JATO: deportivo S1)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): familiar de 5 puertas",
@@ -31046,6 +31392,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo furgón derivado de turismo con cabina sencilla y 4 puertas, techo tipo serie, batalla media regular, volante al lado izquierdo, código de plataforma: RN C, carrocería & puertas (local): furgón derivado de turismo de 4 puertas",
@@ -31144,6 +31491,7 @@
         "trunkCapacityInLiters": 130,
         "maxSpeed": 198,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ORIGINS (clasificación JATO: mediano M2)",
             "Carrocería tipo monovolumen con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): monovolumen de 5 puertas",
@@ -31258,6 +31606,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 148,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo semi-alto, batalla media regular, volante al lado izquierdo, código de plataforma: X62, carrocería & puertas (local): furgón de 4 puertas",
@@ -31348,6 +31697,7 @@
         "trunkCapacityInLiters": 426,
         "maxSpeed": 186,
         "acceleration": 11.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -31460,6 +31810,7 @@
         "trunkCapacityInLiters": 350,
         "maxSpeed": 188,
         "acceleration": 10.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SPORT (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: SCCS, carrocería & puertas (local): crossover de 5 puertas",
@@ -31576,6 +31927,7 @@
         "trunkCapacityInLiters": 275,
         "maxSpeed": 186,
         "acceleration": 9.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CDX (clasificación JATO: lujo L1)",
             "Berlina con portón con 5 puertas volante al lado izquierdo, código de plataforma: J200 y carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -31683,6 +32035,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -31720,6 +32073,7 @@
         "trunkCapacityInLiters": 361,
         "maxSpeed": 160,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado KLASS (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: K2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -31857,6 +32211,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 244,
         "acceleration": 6.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: 970, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -31974,6 +32329,7 @@
         "trunkCapacityInLiters": 380,
         "maxSpeed": 206,
         "acceleration": 10.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Cabrio con 2 puertas volante al lado izquierdo, código de plataforma: PQ35, carrocería & puertas (local): cabrio 2 p.",
@@ -32080,6 +32436,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -32117,6 +32474,7 @@
         "trunkCapacityInLiters": 312,
         "maxSpeed": 205,
         "acceleration": 9.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PQ35, carrocería & puertas (local): coupé de 3 puertas",
@@ -32233,6 +32591,7 @@
         "trunkCapacityInLiters": 1030,
         "maxSpeed": 206,
         "acceleration": 9.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado AVANTGARDE (clasificación JATO: deportivo S1)",
             "Carrocería tipo monovolumen con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: NCV2, carrocería & puertas (local): monovolumen de 5 puertas",
@@ -32344,6 +32703,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 187,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -32451,6 +32811,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -32480,6 +32841,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -32513,6 +32875,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: lujo L1)",
             "Carrocería tipo furgón derivado de turismo con cabina sencilla y 4 puertas, techo tipo serie, batalla corta normal, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): furgón derivado de turismo de 4 puertas",
@@ -32605,6 +32968,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -32642,6 +33006,7 @@
         "trunkCapacityInLiters": 530,
         "maxSpeed": 221,
         "acceleration": 8.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -32745,6 +33110,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -32778,6 +33144,7 @@
         "trunkCapacityInLiters": 434,
         "maxSpeed": 203,
         "acceleration": 9.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado GT (clasificación JATO: deportivo S1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP1, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -32890,6 +33257,7 @@
         "trunkCapacityInLiters": 470,
         "maxSpeed": 205,
         "acceleration": 9.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: UKL2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -32997,6 +33365,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -33026,6 +33395,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -33063,6 +33433,7 @@
         "trunkCapacityInLiters": 285,
         "maxSpeed": 214,
         "acceleration": 7.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SPORT (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): berlina con portón de 3 puertas",
@@ -33174,6 +33545,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 187,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EDITION (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -33275,6 +33647,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -33304,6 +33677,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -33337,6 +33711,7 @@
         "trunkCapacityInLiters": 536,
         "maxSpeed": 205,
         "acceleration": 9.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado GT (clasificación JATO: deportivo S1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -33442,6 +33817,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -33475,6 +33851,7 @@
         "trunkCapacityInLiters": 388,
         "maxSpeed": 140,
         "acceleration": 9.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ICONIC (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: ZOE, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -33626,6 +34003,7 @@
         "trunkCapacityInLiters": 555,
         "maxSpeed": 205,
         "acceleration": 9.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado MOMENTUM (clasificación JATO: mediano M1)",
             "Familiar con 5 puertas batalla corta, volante al lado izquierdo, código de plataforma: C1 y carrocería & puertas (local): familiar de 5 puertas",
@@ -33741,6 +34119,7 @@
         "trunkCapacityInLiters": 302,
         "maxSpeed": 250,
         "acceleration": 5.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Berlina con portón con 5 puertas batalla corta, volante al lado izquierdo, código de plataforma: PQ35 y carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -33859,6 +34238,7 @@
         "trunkCapacityInLiters": 520,
         "maxSpeed": 171,
         "acceleration": 12.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ACTIVE (clasificación JATO: lujo L1)",
             "Carrocería tipo monovolumen compacto con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: V408, carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -33968,6 +34348,7 @@
         "trunkCapacityInLiters": 460,
         "maxSpeed": 229,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo sedán con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MFA2, carrocería & puertas (local): coupé de 4 puertas",
@@ -34070,6 +34451,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34099,6 +34481,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34132,6 +34515,7 @@
         "trunkCapacityInLiters": 267,
         "maxSpeed": 150,
         "acceleration": 8.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ELEGANCE-E (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMP, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -34297,6 +34681,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 174,
         "acceleration": 13.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ATTRACTION (clasificación JATO: base B1)",
             "Carrocería tipo monovolumen compacto con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -34388,6 +34773,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34425,6 +34811,7 @@
         "trunkCapacityInLiters": 540,
         "maxSpeed": 204,
         "acceleration": 9.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Todoterreno con 5 puertas batalla corta, volante al lado izquierdo, código de plataforma: MLB y carrocería & puertas (local): todoterreno de 5 puertas",
@@ -34531,6 +34918,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34568,6 +34956,7 @@
         "trunkCapacityInLiters": 555,
         "maxSpeed": 195,
         "acceleration": 10.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado SO CHIC (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -34678,6 +35067,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34707,6 +35097,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34736,6 +35127,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34765,6 +35157,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34794,6 +35187,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34827,6 +35221,7 @@
         "trunkCapacityInLiters": 310,
         "maxSpeed": 190,
         "acceleration": 10.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado BUSINESS ELEGANCE (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMP, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -34935,6 +35330,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -34964,6 +35360,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35001,6 +35398,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 148,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo semi-alto, batalla larga regular, volante al lado izquierdo, código de plataforma: X62, carrocería & puertas (local): furgón de 4 puertas",
@@ -35089,6 +35487,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35118,6 +35517,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35147,6 +35547,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35176,6 +35577,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35205,6 +35607,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35242,6 +35645,7 @@
         "trunkCapacityInLiters": 445,
         "maxSpeed": 259,
         "acceleration": 6.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: 970, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -35354,6 +35758,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35383,6 +35788,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35412,6 +35818,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35449,6 +35856,7 @@
         "trunkCapacityInLiters": 450,
         "maxSpeed": 203,
         "acceleration": 8.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -35565,6 +35973,7 @@
         "trunkCapacityInLiters": 185,
         "maxSpeed": 209,
         "acceleration": 7.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TURISMO (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): berlina con portón de 3 puertas",
@@ -35669,6 +36078,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35698,6 +36108,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35727,6 +36138,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35764,6 +36176,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 182,
         "acceleration": 8.9,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EX1 (clasificación JATO: base B1)",
             "Todoterreno con 5 puertas volante al lado izquierdo, código de plataforma: HYUNDAI HP y carrocería & puertas (local): todoterreno de 5 puertas",
@@ -35873,6 +36286,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -35910,6 +36324,7 @@
         "trunkCapacityInLiters": 553,
         "maxSpeed": 200,
         "acceleration": 10.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado TECNO (clasificación JATO: mediano M2)",
             "Carrocería tipo familiar con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: HYUNDAI YF, carrocería & puertas (local): familiar de 5 puertas",
@@ -36026,6 +36441,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36063,6 +36479,7 @@
         "trunkCapacityInLiters": 610,
         "maxSpeed": 194,
         "acceleration": 11.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado AVANTGARDE (clasificación JATO: deportivo S1)",
             "Carrocería tipo monovolumen con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: NCV2, carrocería & puertas (local): monovolumen de 5 puertas",
@@ -36169,6 +36586,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36206,6 +36624,7 @@
         "trunkCapacityInLiters": 220,
         "maxSpeed": 250,
         "acceleration": 6.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo cabrio de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: F20, carrocería & puertas (local): cabrio de 2 puertas",
@@ -36323,6 +36742,7 @@
         "trunkCapacityInLiters": 275,
         "maxSpeed": 155,
         "acceleration": 14.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ACTIVE (clasificación JATO: base B1)",
             "Berlina con portón con 5 puertas batalla corta, volante al lado izquierdo, código de plataforma: SCCS y carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -36425,6 +36845,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo chasis cabina con cabina sencilla de 2 puertas, techo tipo serie, batalla media regular, volante al lado izquierdo, código de plataforma: X62, carrocería & puertas (local): chasis cabina de 2 puertas",
@@ -36512,6 +36933,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36541,6 +36963,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36574,6 +36997,7 @@
         "trunkCapacityInLiters": 451,
         "maxSpeed": 167,
         "acceleration": 7.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EMOTION (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): crossover de 5 puertas",
@@ -36746,6 +37170,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36775,6 +37200,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36804,6 +37230,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36833,6 +37260,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36862,6 +37290,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -36895,6 +37324,7 @@
         "trunkCapacityInLiters": 281,
         "maxSpeed": 145,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EV (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B3, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -37038,6 +37468,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37071,6 +37502,7 @@
         "trunkCapacityInLiters": 410,
         "maxSpeed": 164,
         "acceleration": 11.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CONCEPT (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): crossover de 5 puertas",
@@ -37201,6 +37633,7 @@
         "trunkCapacityInLiters": 410,
         "maxSpeed": 164,
         "acceleration": 11.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EMOTION (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, carrocería & puertas (local): crossover de 5 puertas",
@@ -37330,6 +37763,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37359,6 +37793,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37388,6 +37823,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37417,6 +37853,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37446,6 +37883,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37475,6 +37913,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37504,6 +37943,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37533,6 +37973,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -37566,6 +38007,7 @@
         "trunkCapacityInLiters": 460,
         "maxSpeed": 229,
         "acceleration": 8.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo sedán con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MFA2, carrocería & puertas (local): coupé de 4 puertas",
@@ -37672,6 +38114,7 @@
         "trunkCapacityInLiters": 270,
         "maxSpeed": 125,
         "acceleration": 19.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXPRESSION (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-A, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -37844,6 +38287,7 @@
         "trunkCapacityInLiters": 537,
         "maxSpeed": 200,
         "acceleration": 10.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado FEEL (clasificación JATO: mediano M2)",
             "Carrocería tipo monovolumen compacto con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): monovolumen compacto de 5 puertas",
@@ -37961,6 +38405,7 @@
         "trunkCapacityInLiters": 522,
         "maxSpeed": 225,
         "acceleration": 7.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado AUTOBIOGRAPHY DYNAMIC (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PLA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -38073,6 +38518,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38106,6 +38552,7 @@
         "trunkCapacityInLiters": 311,
         "maxSpeed": 150,
         "acceleration": 8.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ALLURE (clasificación JATO: mediano M4)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: EMP1, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -38264,6 +38711,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38293,6 +38741,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38322,6 +38771,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38351,6 +38801,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38380,6 +38831,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38417,6 +38869,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 171,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado PRO (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo bajo, batalla corta regular, volante al lado izquierdo, código de plataforma: X83, carrocería & puertas (local): furgón de 4 puertas",
@@ -38517,6 +38970,7 @@
         "trunkCapacityInLiters": 370,
         "maxSpeed": 250,
         "acceleration": 4.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado M4 (clasificación JATO: base B1)",
             "Carrocería tipo cabrio de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: F20, carrocería & puertas (local): cabrio de 2 puertas",
@@ -38629,6 +39083,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38658,6 +39113,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38695,6 +39151,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 145,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado PRO (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo tipo serie, batalla larga regular, volante al lado izquierdo, código de plataforma: EMP2, carrocería & puertas (local): furgón de 4 puertas",
@@ -38781,6 +39238,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38810,6 +39268,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -38843,6 +39302,7 @@
         "trunkCapacityInLiters": 260,
         "maxSpeed": 150,
         "acceleration": 7.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: I01, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -39030,6 +39490,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -39059,6 +39520,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -39096,6 +39558,7 @@
         "trunkCapacityInLiters": 182,
         "maxSpeed": 167,
         "acceleration": 13.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DOLCEVITA (clasificación JATO: mediano M2)",
             "Carrocería tipo cabrio de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): cabrio de 2 puertas",
@@ -39201,6 +39664,7 @@
         "trunkCapacityInLiters": 345,
         "maxSpeed": 205,
         "acceleration": 7.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB-evo, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -39360,6 +39824,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -39393,6 +39858,7 @@
         "trunkCapacityInLiters": 185,
         "maxSpeed": 167,
         "acceleration": 13.8,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DOLCEVITA (clasificación JATO: mediano M2)",
             "Carrocería tipo berlina con portón de 3 puertas, batalla corta, volante al lado izquierdo, código de plataforma: B2, carrocería & puertas (local): berlina con portón de 3 puertas",
@@ -39496,6 +39962,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -39533,6 +40000,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 189,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -39647,6 +40115,7 @@
         "trunkCapacityInLiters": 489,
         "maxSpeed": 210,
         "acceleration": 7.6,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado HSE DYNAMIC (clasificación JATO: mediano M3)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PLA, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -39761,6 +40230,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -39790,6 +40260,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -39827,6 +40298,7 @@
         "trunkCapacityInLiters": 1030,
         "maxSpeed": 206,
         "acceleration": 9.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CLASE V (clasificación JATO: base B1)",
             "Carrocería tipo monovolumen con 4 puertas, batalla corta, volante al lado izquierdo, código de plataforma: NCV2, carrocería & puertas (local): monovolumen de 4 puertas",
@@ -39940,6 +40412,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 225,
         "acceleration": 6.7,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MLB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -40048,6 +40521,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -40077,6 +40551,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -40110,6 +40585,7 @@
         "trunkCapacityInLiters": 352,
         "maxSpeed": 165,
         "acceleration": 13.5,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: GB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -40219,6 +40695,7 @@
         "trunkCapacityInLiters": 270,
         "maxSpeed": 125,
         "acceleration": 19.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXPRESSION (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-A, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -40385,6 +40862,7 @@
         "trunkCapacityInLiters": 270,
         "maxSpeed": 125,
         "acceleration": 19.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado EXPRESSION (clasificación JATO: lujo L1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-A, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -40553,6 +41031,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": 150,
         "acceleration": null,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo furgón con cabina sencilla y 4 puertas, techo alto, batalla media regular, volante al lado izquierdo, código de plataforma: X62, carrocería & puertas (local): furgón de 4 puertas",
@@ -40645,6 +41124,7 @@
         "trunkCapacityInLiters": 300,
         "maxSpeed": 188,
         "acceleration": 10.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado PLUS (clasificación JATO: mediano M1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: PF1, carrocería & puertas (local): berlina con portón de 5 puertas",
@@ -40749,6 +41229,7 @@
         "trunkCapacityInLiters": 455,
         "maxSpeed": 189,
         "acceleration": 11.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCE (clasificación JATO: mediano M1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB A0, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -40858,6 +41339,7 @@
         "trunkCapacityInLiters": 451,
         "maxSpeed": 165,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado CONCEPT (clasificación JATO: base B1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: E-GMP, carrocería & puertas (local): crossover de 5 puertas",
@@ -40986,6 +41468,7 @@
         "trunkCapacityInLiters": 451,
         "maxSpeed": 165,
         "acceleration": 10.4,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado DRIVE (clasificación JATO: mediano M1)",
             "Carrocería tipo berlina con portón con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: E-GMP, carrocería & puertas (local): crossover de 5 puertas",
@@ -41118,6 +41601,7 @@
         "trunkCapacityInLiters": 575,
         "maxSpeed": 180,
         "acceleration": 7.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado N-CONNECTA (clasificación JATO: mediano M2)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: CMF-CD?, carrocería & puertas (local): crossover de 5 puertas",
@@ -41255,6 +41739,7 @@
         "trunkCapacityInLiters": 440,
         "maxSpeed": 240,
         "acceleration": 7.1,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo coupé de 2 puertas, batalla corta, volante al lado izquierdo, código de plataforma: F20, carrocería & puertas (local): coupé de 2 puertas",
@@ -41364,6 +41849,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -41393,6 +41879,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -41422,6 +41909,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -41455,6 +41943,7 @@
         "trunkCapacityInLiters": 510,
         "maxSpeed": 202,
         "acceleration": 9.0,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado X-PERIENCE XXL, Edición limitada: Edición Limitada (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -41573,6 +42062,7 @@
         "trunkCapacityInLiters": 500,
         "maxSpeed": 210,
         "acceleration": 8.3,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado (clasificación JATO: base B1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MRA, carrocería & puertas (local): coupé de 5 puertas",
@@ -41682,6 +42172,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -41711,6 +42202,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -41740,6 +42232,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -41769,6 +42262,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     },
     {
@@ -41806,6 +42300,7 @@
         "trunkCapacityInLiters": 405,
         "maxSpeed": 197,
         "acceleration": 11.2,
+        "hasDetails": true,
         "Ficha Técnica": [
             "Acabado ADVANCED (clasificación JATO: lujo L1)",
             "Carrocería tipo todoterreno con 5 puertas, batalla corta, volante al lado izquierdo, código de plataforma: MQB, carrocería & puertas (local): todoterreno de 5 puertas",
@@ -41914,6 +42409,7 @@
         "trunkCapacityInLiters": null,
         "maxSpeed": null,
         "acceleration": null,
+        "hasDetails": false,
         "electricFeatures": {}
     }
 ]

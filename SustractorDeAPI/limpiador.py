@@ -35,10 +35,13 @@ def extraer_datos_relevantes(json_data):
         #"Ficha_Tecnica" : json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup", [])[0].get("equipment", []),
         #"Multimedia": json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup", [])[1].get("equipment", []),
     }
+    nuevo_json["hasDetails"] = False
     for dic in json_data.get("detail", {}).get("vehicleSpecs", {}).get("vehicleStandardEquipmentGroup", []):
         nuevo_json[dic["description"]] = dic["equipment"]
+        nuevo_json["hasDetails"] = True
     try: nuevo_json["electricFeatures"] = json_data.get("detail", {}).get("vehicleSpecs", {}).get("electricFeatures", {})
     except: nuevo_json["electricFeatures"] = None
+
     return nuevo_json
 
 # Función para recorrer los archivos en la carpeta "data"
