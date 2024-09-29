@@ -1,2 +1,4 @@
 cars1_1.json
 data_processed/test/*
+data/*
+data_cleaned/*
