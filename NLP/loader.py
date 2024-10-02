@@ -24,5 +24,5 @@ def merge_csv_files_from_folder(folder_path):
         return pd.DataFrame()  
 
 data = merge_csv_files_from_folder("NLP/test_data")
-
-for x in data.columns: print(x)
+print(len(data))
+print(data["transmissionTypeId"].value_counts())
