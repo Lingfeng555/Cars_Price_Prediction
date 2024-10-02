@@ -25,4 +25,4 @@ def merge_csv_files_from_folder(folder_path):
 
 data = merge_csv_files_from_folder("NLP/test_data")
 
-print(data)
+for x in data.columns: print(x)
