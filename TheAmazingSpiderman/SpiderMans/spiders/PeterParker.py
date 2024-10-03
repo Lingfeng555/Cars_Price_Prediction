@@ -19,7 +19,7 @@ class MiSpider(scrapy.Spider):
     index = 0
 
     def __init__(self):
-        with open('data/JSON/prueba.js', 'r') as archivo:
+        with open('SpiderMans/spiders/prueba.js', 'r') as archivo:
             self.cars_links = json.load(archivo)
 
     def request (self, url, func):
