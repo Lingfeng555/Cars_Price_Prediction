@@ -2,9 +2,9 @@ import os
 import pandas as pd
 
 class Loader:
-    train_path = "final_data/train"
-    test_path = "final_data/test"
-    original_path = "final_data/original"
+    train_path = "data/final_data/train"
+    test_path = "data/final_data/test"
+    original_path = "data/final_data/original"
 
     def __load_data(self, folder_path):
         # Lista para almacenar los DataFrames
