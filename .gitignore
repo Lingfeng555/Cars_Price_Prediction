@@ -1,4 +1,4 @@
 cars1_1.json
-data_processed/test/*
+initial_data/data_processed/test/*
 data/*
-data_cleaned/*
+initial_data/data_cleaned/*
