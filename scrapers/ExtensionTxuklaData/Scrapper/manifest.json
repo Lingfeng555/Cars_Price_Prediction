@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Txuklador",
+  "version": "1.0",
+  "permissions": [
+    "webNavigation",
+    "activeTab",
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.coches.net/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.coches.net/segunda-mano/?pg=*"],
+      "js": ["content_script.js"]
+    },
+    {
+      "matches": ["*://www.coches.net/*.aspx"],
+      "js": ["primaryDataScraper.js"]
+    },
+    {
+      "matches": ["*://www.coches.net/*/*/segunda-mano/"],
+      "js": ["carMissing.js"]
+    },
+    {
+      "matches": ["*://www.coches.net/renting/*"],
+      "js": ["carMissing.js"]
+    },
+    {
+      "matches": ["*://www.coches.net/fichas_tecnicas/*"],
+      "js": ["fichaScraper.js"]
+    }
+    
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["data/urlsClean.json","data/phase1Clean.json","data/finalData.json"],
+      "matches": ["*://www.coches.net/*"]
+    }
+  ]
+}
