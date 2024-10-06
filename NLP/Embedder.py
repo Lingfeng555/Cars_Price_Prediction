@@ -7,6 +7,13 @@ from gensim.models import Word2Vec
 import re
 import nltk
 from nltk.corpus import stopwords
+import numpy as np
+
+# Descargar la lista de stopwords si no está ya descargada
+nltk.download('stopwords')
+
+# Cargar las stopwords en español
+spanish_stopwords = set(stopwords.words('spanish'))
 
 class Embedder ():
     
@@ -37,29 +44,27 @@ class Embedder ():
         else:
             return np.zeros(model.vector_size)
 
-    def embed(self, column):
+    def __embed(self, column):
         tokens = column.apply(self.preprocess_text)
         model_w2v = Word2Vec(sentences=tokens, vector_size=self.verb_size, window=1, min_count=3, workers=8)
         word_vectors = model_w2v.wv
         return word_vectors
 
-    def __init__(self, verb_size):
+    def __init__(self, verb_size, train):
         self.verb_size = verb_size
         print("Prepare Train Dataframe")
-
-        train = Loader.load_train()
+        
         descriptions = [col for col in train.columns if "description" in col]
         train['full_description'] = train.apply(self.custom_concat, axis=1, args=(descriptions,))
         filtered_columns = ["idx", "price", "km", "fuelType", "full_description"]
         train = train[filtered_columns]
-        train["price_per_kilometer"] = train["price"]/train["km"]
         train.dropna(inplace=True)
 
         print("Start transet Embedding")
-        self.word_vectors = self.embed(train['full_description'])
+        self.word_vectors = self.__embed(train['full_description'])
         print("Embedding finished")
         pass
 
     def embedding_process(self, column):
         tokens = column.apply(self.preprocess_text)
-        return tokens.apply(lambda x: self.get_average_embedding(x, word_vectors))
+        return tokens.apply(lambda x: self.get_average_embedding(x, self.word_vectors))
