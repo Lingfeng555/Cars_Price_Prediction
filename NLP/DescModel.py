@@ -54,7 +54,7 @@ class DescModel:
         input_km = Input(shape=(1,), name='km_input')
 
         # Procesamiento de embeddings
-        x = Dense(201, activation='relu')(input_embeddings)
+        x = Dense(200, activation='relu')(input_embeddings)
         x = BatchNormalization()(x)
         x = Dense(64, activation='relu')(x)
         x = BatchNormalization()(x)
@@ -65,7 +65,7 @@ class DescModel:
         # Combinar embeddings y 'km'
         combined = Concatenate()([x, km_processed])
 
-        z = Dense(16, activation='relu')(combined)
+        z = Dense(16, activation='softplus')(combined)
         z = BatchNormalization()(z)
         z = Dense(1)(z)  # Capa de salida
 
