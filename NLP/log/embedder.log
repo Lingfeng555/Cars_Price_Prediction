@@ -1,0 +1,34 @@
+2024-10-10 16:54:46,988 - Embedder - INFO - Prepare Train Dataframe
+2024-10-10 16:55:51,408 - Embedder - INFO - Prepare Train Dataframe
+2024-10-10 16:55:57,314 - Embedder - INFO - Start trainset Embedding
+2024-10-10 16:56:25,234 - Embedder - INFO - Embedding finished
+2024-10-10 16:57:04,136 - Embedder - INFO - Prepare Train Dataframe
+2024-10-10 16:57:10,035 - Embedder - INFO - Start trainset Embedding
+2024-10-10 16:57:38,393 - Embedder - INFO - Embedding finished
+2024-10-10 18:10:35,065 - Embedder - INFO - Prepare Train Dataframe
+2024-10-10 18:10:41,599 - Embedder - INFO - Description completed
+2024-10-10 18:10:41,607 - Embedder - INFO - Columns filtered
+2024-10-10 18:10:41,640 - Embedder - INFO - NAs filtered
+2024-10-10 18:10:41,648 - Embedder - INFO - Start trainset Embedding
+2024-10-10 18:10:50,122 - Embedder - INFO - Tokenization completed
+2024-10-10 18:11:23,608 - Embedder - INFO - Prepare Train Dataframe
+2024-10-10 18:11:29,276 - Embedder - INFO - Description completed
+2024-10-10 18:11:29,284 - Embedder - INFO - Columns filtered
+2024-10-10 18:11:29,316 - Embedder - INFO - NAs filtered
+2024-10-10 18:11:29,316 - Embedder - INFO - Start trainset Embedding
+2024-10-10 18:11:37,759 - Embedder - INFO - Tokenization completed
+2024-10-10 18:11:58,325 - Embedder - INFO - Embedding finished
+2024-10-10 18:13:37,451 - Embedder - INFO - Prepare Train Dataframe
+2024-10-10 18:13:43,535 - Embedder - INFO - Description completed
+2024-10-10 18:13:43,543 - Embedder - INFO - Columns filtered
+2024-10-10 18:13:43,575 - Embedder - INFO - NAs filtered
+2024-10-10 18:13:43,575 - Embedder - INFO - Start trainset Embedding
+2024-10-10 18:13:51,366 - Embedder - INFO - Tokenization completed
+2024-10-10 18:14:26,954 - Embedder - INFO - Embedding finished
+2024-10-10 18:33:55,561 - Embedder - INFO - Prepare Train Dataframe
+2024-10-10 18:34:00,843 - Embedder - INFO - Description completed
+2024-10-10 18:34:00,849 - Embedder - INFO - Columns filtered
+2024-10-10 18:34:00,878 - Embedder - INFO - NAs filtered
+2024-10-10 18:34:00,879 - Embedder - INFO - Start trainset Embedding
+2024-10-10 18:34:07,670 - Embedder - INFO - Tokenization completed
+2024-10-10 18:34:25,789 - Embedder - INFO - Embedding finished

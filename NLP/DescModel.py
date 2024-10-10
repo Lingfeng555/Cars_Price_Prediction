@@ -1,7 +1,7 @@
 import sys
 sys.path.insert(1, '../') 
 from utils.loader import Loader
-
+from utils.logger import Logger
 import os
 import tensorflow as tf
 import pandas as pd
@@ -15,6 +15,7 @@ import pickle
 from .Embedder import Embedder
 
 class DescModel:
+    logger = Logger("Description_Model", "NLP/log/Description_Model.log").get_logger()
 
     def __init__(self):
         train = Loader.load_train()
@@ -65,7 +66,8 @@ class DescModel:
         # Combinar embeddings y 'km'
         combined = Concatenate()([x, km_processed])
 
-        z = Dense(16, activation='softplus')(combined)
+        z = Dense(16, activation='softplus'
+                  )(combined)
         z = BatchNormalization()(z)
         z = Dense(1)(z)  # Capa de salida
 
@@ -82,33 +84,30 @@ class DescModel:
 
         self.model = self.build_model()
 
-        print("COMIENZA EL ENTRENAMIENTO...")
-        history = self.model.fit(
+        self.logger.info("COMIENZA EL ENTRENAMIENTO...")
+        self.model.fit(
             [x_embeddings_scaled, x_km_scaled],
             y_scaled,
             epochs=200,
             batch_size=32,
             verbose=True
         )
-        print("TERMINA EL ENTRENAMIENTO...")
-        print(self.model.summary())
+        self.logger.info("TERMINA EL ENTRENAMIENTO...")
+        self.logger.info(self.model.summary())
 
         # Evaluación en datos de prueba
         new_embeddings_scaled = self.scaler_embeddings.transform(np.stack(test_df["embedding"].values))
         new_km_scaled = self.scaler_km.transform(test_df['km'].to_numpy().reshape(-1, 1))
 
-        print('Forma de new_embeddings_scaled:', new_embeddings_scaled.shape)
-        print('Forma de new_km_scaled:', new_km_scaled.shape)
-
         prediction = self.model.predict([new_embeddings_scaled, new_km_scaled]).flatten()
         prediction = self.scaler_y.inverse_transform(prediction.reshape(-1, 1)).flatten()
         real_price = test_df['price'].to_numpy()
 
-        result = pd.DataFrame({'Prediction': prediction, 'Real price': real_price})
+        result = pd.DataFrame({'Prediction': prediction, 'Real price': real_price, "km": prediction["km"]})
 
         diff = np.mean(abs((real_price - prediction) / real_price))
-        print(result)
-        print(f"Hay un MAPE de {diff * 100}%")
+        self.logger.info(result)
+        self.logger.info(f"Hay un MAPE de {diff * 100}%")
 
     def load_model(self, path_modelo, train):
         """Intenta cargar el modelo desde un archivo o entrena uno nuevo si no existe."""
@@ -117,10 +116,10 @@ class DescModel:
         if os.path.isfile(path_modelo) and path_modelo.endswith('.keras'):
             try:
                 self.model = tf.keras.models.load_model(path_modelo)
-                print("Modelo cargado exitosamente.")
+                self.logger.info("Modelo cargado exitosamente.")
             except Exception as e:
-                print(f"Error al cargar el modelo: {e}. Entrenando nuevo modelo...")
+                self.logger.error(f"Error al cargar el modelo: {e}. Entrenando nuevo modelo...")
                 self.train_model(train)
         else:
-            print("El archivo no existe o no tiene la extensión '.keras'. Entrenando nuevo modelo...")
+            self.logger.error("El archivo no existe o no tiene la extensión '.keras'. Entrenando nuevo modelo...")
             self.train_model(train)

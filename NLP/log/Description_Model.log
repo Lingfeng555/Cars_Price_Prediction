@@ -1,0 +1,39 @@
+2024-10-10 16:56:25,556 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-10 16:58:42,890 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-10 17:33:59,716 - Description_Model - INFO - TERMINA EL ENTRENAMIENTO...
+2024-10-10 17:33:59,781 - Description_Model - INFO - None
+2024-10-10 17:34:03,543 - Description_Model - INFO -          Prediction  Real price
+0      33254.539062       27400
+1      22282.740234       23700
+2      15309.002930       19590
+3       7340.887695        7290
+4      10960.535156       11800
+...             ...         ...
+23115  29038.808594       23500
+23116  19241.083984       19490
+23117  27653.714844       26800
+23118   5975.430664        6990
+23119  35343.070312       37900
+
+[23120 rows x 2 columns]
+2024-10-10 17:34:03,575 - Description_Model - INFO - Hay un MAPE de 17.31079300607073%
+2024-10-10 18:13:03,793 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-10 18:15:36,972 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-10 18:30:35,858 - Description_Model - INFO - TERMINA EL ENTRENAMIENTO...
+2024-10-10 18:30:35,874 - Description_Model - INFO - None
+2024-10-10 18:30:36,990 - Description_Model - INFO -          Prediction  Real price
+0      29395.845703       27400
+1      21613.062500       23700
+2      14990.644531       19590
+3       7637.096680        7290
+4       9208.203125       11800
+...             ...         ...
+23115  25852.281250       23500
+23116  17907.886719       19490
+23117  25881.710938       26800
+23118   8696.296875        6990
+23119  36422.281250       37900
+
+[23120 rows x 2 columns]
+2024-10-10 18:30:37,001 - Description_Model - INFO - Hay un MAPE de 15.653772653132195%
+2024-10-10 18:35:25,639 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
