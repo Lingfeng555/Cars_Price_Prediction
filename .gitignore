@@ -1,6 +1,7 @@
 cars1_1.json
 data/initial_data/data_processed/test/*
 data/initial_data/data_cleaned/*
+Preprocessing/data_cleaned/*
 cuda/*
 cuda-repo-wsl-ubuntu-12-6-local_12.6.2-1_amd64.deb
 pytorch/*
