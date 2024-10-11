@@ -1,4 +1,6 @@
 import sys
+
+import word2vec
 sys.path.insert(1, '../') 
 from utils.loader import Loader
 from utils.logger import Logger
@@ -12,6 +14,8 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Input, Concatenate, BatchNormalization
 import pickle
 
+from gensim.models import Word2Vec
+
 from .Embedder import Embedder
 
 class DescModel:
@@ -19,7 +23,55 @@ class DescModel:
 
     def __init__(self):
         # Intentar cargar el modelo o entrenar si no existe
-        self.model = self.load_model("models/model_2_text_km_to_price.keras")
+        self.model = self.load_model("NLP/models/model_2_text_km_to_price_2_0.keras")
+    
+    def load_model(self, path_modelo):
+        """Carga el modelo desde un archivo si existe, de lo contrario retorna False para indicar el entrenamiento."""
+        if os.path.isfile(path_modelo) and path_modelo.endswith('.keras'):
+            try:
+                self.model = tf.keras.models.load_model(path_modelo)
+                self.logger.info("Modelo cargado exitosamente.")
+                # Intenta cargar los escaladores también
+                pkl_path = path_modelo.replace('.keras', '.pkl')
+                if os.path.exists(pkl_path):
+                    with open(pkl_path, 'rb') as f:
+                        data = pickle.load(f)
+                        self.embedder = self.load_embedder()
+                        self.scaler_embeddings = data['scaler_embeddings']
+                        self.scaler_km = data['scaler_km']
+                        self.scaler_y = data['scaler_y']
+                return True
+            except Exception as e:
+                self.logger.error(f"Error al cargar el modelo: {e}")
+
+                return False
+        else:
+            self.logger.error("El archivo no existe o no tiene la extensión '.keras'")
+
+            self.logger.error(f"Entrenando el modelo")
+
+            while (self.train_model() > 15): pass
+
+            return False
+    
+    def save_model(self, base_path="NLP/models/"):
+        """Guarda el modelo y los escaladores en el disco."""
+        if not os.path.exists(base_path):
+            os.makedirs(base_path)
+
+        # Guardar el modelo de TensorFlow
+        model_path = os.path.join(base_path, "model_2_text_km_to_price.keras")
+        self.model.save(model_path)
+        self.save_embedder()
+        # Guardar los escaladores y cualquier otro atributo necesario
+        with open(os.path.join(base_path, "desc_model.pkl"), "wb") as f:
+            pickle.dump({
+                "scaler_embeddings": self.scaler_embeddings,
+                "scaler_km": self.scaler_km,
+                "scaler_y": self.scaler_y
+            }, f)
+
+        self.logger.info(f"Estado del modelo guardado en {base_path}")
 
     def preprocess_data(self, train):
         """Preprocesa los datos para obtener las descripciones embebidas y normaliza los valores."""
@@ -112,18 +164,36 @@ class DescModel:
         diff = np.mean(abs((real_price - prediction) / real_price))
         self.logger.info(result)
         self.logger.info(f"Hay un MAPE de {diff * 100}%")
+        self.save_model()
+        return diff * 100
 
-    def load_model(self, path_modelo):
-        """Intenta cargar el modelo desde un archivo o entrena uno nuevo si no existe."""
-        self.train_model()
-        return
-        if os.path.isfile(path_modelo) and path_modelo.endswith('.keras'):
-            try:
-                self.model = tf.keras.models.load_model(path_modelo)
-                self.logger.info("Modelo cargado exitosamente.")
-            except Exception as e:
-                self.logger.error(f"Error al cargar el modelo: {e}. Entrenando nuevo modelo...")
-                self.train_model(train)
-        else:
-            self.logger.error("El archivo no existe o no tiene la extensión '.keras'. Entrenando nuevo modelo...")
-            self.train_model(train)
+    def save_embedder(self, path="NLP/models/"):
+        if not os.path.exists(path):
+            os.makedirs(path)
+        
+        # Guardar el modelo Word2Vec
+        model_path = os.path.join(path, "word2vec.model")
+        self.embedder.word_vectors.save(model_path)
+        
+        # Guardar los demás atributos que no son modelos o no son serializables directamente
+        with open(os.path.join(path, "embedder.pkl"), "wb") as f:
+            # Aquí puedes escoger qué otros atributos necesitas guardar, por ahora sólo `verb_size`
+            pickle.dump({"verb_size": self.embedder.verb_size}, f)
+
+        print(f"Modelo y configuración guardados en {path}")
+
+    def load_embedder(self, path="NLP/models/"):
+        # Cargar el modelo Word2Vec
+        model_path = os.path.join(path, "word2vec.model")
+        word_vectors = Word2Vec.load(model_path)
+        
+        # Cargar los otros atributos guardados
+        with open(os.path.join(path, "embedder.pkl"), "rb") as f:
+            data = pickle.load(f)
+        
+        # Crear una instancia de `Embedder` (ajustar esto según cómo se debería manejar la reinicialización)
+        embedder = Embedder(verb_size=data["verb_size"], train=pd.DataFrame())  # Asumiendo que `train` puede ser un DataFrame vacío aquí
+        embedder.word_vectors = word_vectors
+        
+        print(f"Modelo y configuración cargados desde {path}")
+        return embedder

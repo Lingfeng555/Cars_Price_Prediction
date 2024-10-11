@@ -9,12 +9,14 @@ import re
 import nltk
 from nltk.corpus import stopwords
 import numpy as np
+import pickle
 
 # Descargar la lista de stopwords si no está ya descargada
 nltk.download('stopwords')
 
 # Cargar las stopwords en español
 spanish_stopwords = set(stopwords.words('spanish'))
+
 
 class Embedder:
     
