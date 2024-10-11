@@ -20,8 +20,8 @@ logger.setLevel(logging.DEBUG)  # Configurar el nivel mínimo de logging para el
 
 if not os.path.exists("logs"):
     os.makedirs("logs")
-if not os.path.exists("data"):
-    os.makedirs("data")
+if not os.path.exists("data2"):
+    os.makedirs("data2")
     
 # Crear un handler para archivo
 file_handler = logging.FileHandler(f"logs/{input("Introduce tu nombre: ")}.log")
@@ -98,10 +98,6 @@ def request_primary_data (page: int) -> list :
     logger.info(f'REQUEST PAGE: {page} ESTATUS CODE: {response.status_code}')
     if(response.status_code != 200): return None
     ret = response.json()["items"]
-    for car in ret:
-        car.pop("resources")
-        car.pop("phone")
-        
     return ret
 
 def request_details(id: str) -> dict: 
@@ -143,7 +139,7 @@ def sendQuery(name: str, start: int, end: int) -> None:
 
     logger.info(f'TOTAL DE COCHES REGISTRADOS: {len(result)} ------------------------------------------------------')
 
-    with open(f'data/{name}cars_{start}_{end}.json', 'w') as f:
+    with open(f'data2/{name}cars_{start}_{end}.json', 'w') as f:
         json.dump(result, f)
 
 def get_public_ip():
@@ -173,7 +169,7 @@ def change_tor_ip():
 def tarea(name, start, end):
     sendQuery(name, start, end)
 
-scrap = False
+scrap = True
 if (__name__ == '__main__') and scrap:
     start_time = time.time()
     NUMERO_DE_HILOS = 50
