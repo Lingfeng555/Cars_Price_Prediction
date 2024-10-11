@@ -47,8 +47,11 @@ class Embedder:
         model_w2v = Word2Vec(tokens, vector_size=self.verb_size, window=1, min_count=3, workers=8)
         return model_w2v.wv
 
-    def __init__(self, verb_size, train):
+
+    def __init__(self, verb_size, train = None):
         self.verb_size = verb_size
+        if train == None: return
+        
         self.logger.info("Prepare Train Dataframe")
         
         descriptions = [col for col in train.columns if "description" in col]

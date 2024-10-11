@@ -167,3 +167,44 @@
 [49542 rows x 3 columns]
 2024-10-11 13:06:09,330 - Description_Model - INFO - Hay un MAPE de 14.857590904299892%
 2024-10-11 13:06:09,371 - Description_Model - INFO - Estado del modelo guardado en NLP/models/
+2024-10-11 13:24:43,888 - Description_Model - ERROR - El archivo no existe o no tiene la extensión '.keras'
+2024-10-11 13:24:43,888 - Description_Model - ERROR - Entrenando el modelo
+2024-10-11 13:24:43,888 - Description_Model - INFO - Loading train Data
+2024-10-11 13:24:47,626 - Description_Model - INFO - Loading test Data
+2024-10-11 13:25:44,924 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:40:37,747 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:42:37,407 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:42:59,209 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:44:06,606 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:44:44,149 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:47:10,642 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:48:53,926 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:49:53,067 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:50:43,061 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:51:16,183 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:51:16,186 - Description_Model - ERROR - Error al cargar el modelo: Model of type <class 'gensim.models.keyedvectors.KeyedVectors'> can't be loaded by <class 'gensim.models.word2vec.Word2Vec'>
+2024-10-11 13:51:38,228 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:51:38,231 - Description_Model - ERROR - Error al cargar el modelo: Model of type <class 'gensim.models.keyedvectors.KeyedVectors'> can't be loaded by <class 'gensim.models.word2vec.Word2Vec'>
+2024-10-11 13:52:24,242 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:53:28,291 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:54:15,062 - Description_Model - ERROR - Error al cargar el modelo: Model of type <class 'gensim.models.keyedvectors.KeyedVectors'> can't be loaded by <class 'gensim.models.word2vec.Word2Vec'>
+2024-10-11 13:55:45,053 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:55:56,611 - Description_Model - ERROR - Error al cargar el modelo: "['idx', 'price', 'km', 'fuelType'] not in index"
+2024-10-11 13:57:53,944 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 13:58:19,910 - Description_Model - ERROR - Error al cargar el modelo: Embedder.__init__() missing 1 required positional argument: 'train'
+2024-10-11 13:58:42,394 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 14:00:26,112 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 14:01:20,893 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 14:02:11,240 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 14:07:40,641 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 14:07:40,645 - Description_Model - INFO - Filtering text
+2024-10-11 14:08:12,218 - Description_Model - INFO - Tokenizing text
+2024-10-11 14:12:39,592 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 14:12:39,596 - Description_Model - INFO - Filtering text
+2024-10-11 14:13:00,401 - Description_Model - INFO - Tokenizing text
+2024-10-11 14:14:48,509 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 14:14:48,512 - Description_Model - INFO - Filtering text
+2024-10-11 14:15:09,474 - Description_Model - INFO - Tokenizing text
+2024-10-11 14:17:39,219 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-11 14:17:39,222 - Description_Model - INFO - Filtering text
+2024-10-11 14:18:26,932 - Description_Model - INFO - Tokenizing text

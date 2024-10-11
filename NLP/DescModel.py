@@ -13,7 +13,7 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Input, Concatenate, BatchNormalization
 import pickle
 
-from gensim.models import Word2Vec
+from gensim.models import Word2Vec, KeyedVectors
 
 from .Embedder import Embedder
 
@@ -22,7 +22,7 @@ class DescModel:
 
     def __init__(self):
         # Intentar cargar el modelo o entrenar si no existe
-        self.model = self.load_model("NLP/models/model_2_text_km_to_price_2_0.keras")
+        self.load_model("NLP/models/model_2_text_km_to_price.keras")
     
     def load_model(self, path_modelo):
         """Carga el modelo desde un archivo si existe, de lo contrario retorna False para indicar el entrenamiento."""
@@ -31,11 +31,11 @@ class DescModel:
                 self.model = tf.keras.models.load_model(path_modelo)
                 self.logger.info("Modelo cargado exitosamente.")
                 # Intenta cargar los escaladores también
-                pkl_path = path_modelo.replace('.keras', '.pkl')
+                pkl_path = "NLP/models/desc_model.pkl"
                 if os.path.exists(pkl_path):
+                    self.embedder = self.load_embedder()
                     with open(pkl_path, 'rb') as f:
                         data = pickle.load(f)
-                        self.embedder = self.load_embedder()
                         self.scaler_embeddings = data['scaler_embeddings']
                         self.scaler_km = data['scaler_km']
                         self.scaler_y = data['scaler_y']
@@ -75,7 +75,9 @@ class DescModel:
     def preprocess_data(self, train):
         """Preprocesa los datos para obtener las descripciones embebidas y normaliza los valores."""
         descriptions = [col for col in train.columns if "description" in col]
+        self.logger.info(f"Filtering text")
         train['full_description'] = train.apply(self.embedder.custom_concat, axis=1, args=(descriptions,))
+        self.logger.info(f"Tokenizing text")
         train['embedding'] = self.embedder.embedding_process(train['full_description'])
         return train
 
@@ -184,15 +186,25 @@ class DescModel:
     def load_embedder(self, path="NLP/models/"):
         # Cargar el modelo Word2Vec
         model_path = os.path.join(path, "word2vec.model")
-        word_vectors = Word2Vec.load(model_path)
+        word_vectors = KeyedVectors.load(model_path)
         
         # Cargar los otros atributos guardados
         with open(os.path.join(path, "embedder.pkl"), "rb") as f:
             data = pickle.load(f)
         
         # Crear una instancia de `Embedder` (ajustar esto según cómo se debería manejar la reinicialización)
-        embedder = Embedder(verb_size=data["verb_size"], train=pd.DataFrame())  # Asumiendo que `train` puede ser un DataFrame vacío aquí
+        embedder = Embedder(verb_size=data["verb_size"])  # Asumiendo que `train` puede ser un DataFrame vacío aquí
         embedder.word_vectors = word_vectors
         
         print(f"Modelo y configuración cargados desde {path}")
         return embedder
+    
+    def predict(self, x):
+        x = self.preprocess_data(x)
+        new_embeddings_scaled = self.scaler_embeddings.transform(np.stack(x["embedding"].values))
+        new_km_scaled = self.scaler_km.transform(x['km'].to_numpy().reshape(-1, 1))
+
+        prediction = self.model.predict([new_embeddings_scaled, new_km_scaled]).flatten()
+        prediction = self.scaler_y.inverse_transform(prediction.reshape(-1, 1)).flatten()
+
+        return prediction

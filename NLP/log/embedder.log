@@ -109,3 +109,6 @@
 2024-10-11 12:51:16,308 - Embedder - INFO - Start trainset Embedding
 2024-10-11 12:51:22,830 - Embedder - INFO - Tokenization completed
 2024-10-11 12:51:34,795 - Embedder - INFO - Embedding finished
+2024-10-11 13:24:49,199 - Embedder - INFO - Prepare Train Dataframe
+2024-10-11 13:55:52,685 - Embedder - INFO - Prepare Train Dataframe
+2024-10-11 13:55:52,690 - Embedder - INFO - Description completed
