@@ -172,10 +172,10 @@ def tarea(name, start, end):
 scrap = True
 if (__name__ == '__main__') and scrap:
     start_time = time.time()
-    NUMERO_DE_HILOS = 1
+    NUMERO_DE_HILOS = 500
     hilos = []
-    start = 1 #inclusive
-    end = 2 #inclusive
+    start = 1001 #inclusive
+    end = 2000 #inclusive
     
     print("TOTAL ESTIMADO DE COCHES A SCRAPEAR: ", (end - start) * 100)
     
