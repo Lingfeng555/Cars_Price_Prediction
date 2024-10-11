@@ -169,13 +169,13 @@ def change_tor_ip():
 def tarea(name, start, end):
     sendQuery(name, start, end)
 
-scrap = True
+scrap = False
 if (__name__ == '__main__') and scrap:
     start_time = time.time()
     NUMERO_DE_HILOS = 500
     hilos = []
-    start = 1 #inclusive
-    end = 1000 #inclusive
+    start = 1001 #inclusive
+    end = 2000 #inclusive
     
     print("TOTAL ESTIMADO DE COCHES A SCRAPEAR: ", (end - start) * 100)
     
