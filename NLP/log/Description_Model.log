@@ -118,3 +118,52 @@
 
 [49542 rows x 3 columns]
 2024-10-11 13:45:43,427 - Description_Model - INFO - Hay un MAPE de 16.77597824470989%
+2024-10-11 12:35:42,254 - Description_Model - ERROR - El archivo no existe o no tiene la extensión '.keras'
+2024-10-11 12:35:42,254 - Description_Model - ERROR - Entrenando el modelo
+2024-10-11 12:35:42,255 - Description_Model - INFO - Loading train Data
+2024-10-11 12:35:45,608 - Description_Model - INFO - Loading test Data
+2024-10-11 12:37:20,820 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-11 12:47:01,510 - Description_Model - INFO - TERMINA EL ENTRENAMIENTO...
+2024-10-11 12:47:01,527 - Description_Model - INFO - None
+2024-10-11 12:47:02,952 - Description_Model - INFO -          Prediction  Real price        km
+0      18696.646484       14950  193713.0
+1      18012.371094       14950   85000.0
+2      11567.018555       11490  180200.0
+3      41977.710938       37950   10900.0
+4      49908.449219       32390   62500.0
+...             ...         ...       ...
+49537  29668.703125       28500   88000.0
+49538  19620.138672       18900       3.0
+49539  25456.794922       23990  118900.0
+49540  16723.164062       20900   45040.0
+49541   9493.817383        5200  240000.0
+
+[49542 rows x 3 columns]
+2024-10-11 12:47:02,960 - Description_Model - INFO - Hay un MAPE de 15.843016112708582%
+2024-10-11 12:47:03,006 - Description_Model - INFO - Estado del modelo guardado en NLP/models/
+2024-10-11 12:47:03,125 - Description_Model - INFO - Loading train Data
+2024-10-11 12:47:06,381 - Description_Model - INFO - Loading test Data
+2024-10-11 12:48:40,216 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-11 12:51:06,834 - Description_Model - ERROR - El archivo no existe o no tiene la extensión '.keras'
+2024-10-11 12:51:06,834 - Description_Model - ERROR - Entrenando el modelo
+2024-10-11 12:51:06,834 - Description_Model - INFO - Loading train Data
+2024-10-11 12:51:10,100 - Description_Model - INFO - Loading test Data
+2024-10-11 12:52:45,004 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-11 13:06:07,838 - Description_Model - INFO - TERMINA EL ENTRENAMIENTO...
+2024-10-11 13:06:07,851 - Description_Model - INFO - None
+2024-10-11 13:06:09,322 - Description_Model - INFO -          Prediction  Real price        km
+0      17039.308594       14950  193713.0
+1      14707.508789       14950   85000.0
+2      10955.960938       11490  180200.0
+3      38224.597656       37950   10900.0
+4      42442.957031       32390   62500.0
+...             ...         ...       ...
+49537  30214.351562       28500   88000.0
+49538  18531.042969       18900       3.0
+49539  24564.269531       23990  118900.0
+49540  17939.650391       20900   45040.0
+49541   7806.366211        5200  240000.0
+
+[49542 rows x 3 columns]
+2024-10-11 13:06:09,330 - Description_Model - INFO - Hay un MAPE de 14.857590904299892%
+2024-10-11 13:06:09,371 - Description_Model - INFO - Estado del modelo guardado en NLP/models/

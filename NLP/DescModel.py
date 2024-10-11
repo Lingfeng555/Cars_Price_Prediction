@@ -1,6 +1,5 @@
 import sys
 
-import word2vec
 sys.path.insert(1, '../') 
 from utils.loader import Loader
 from utils.logger import Logger
@@ -144,7 +143,7 @@ class DescModel:
         self.model.fit(
             [x_embeddings_scaled, x_km_scaled],
             y_scaled,
-            epochs=200,
+            epochs=275,
             batch_size=32,
             verbose=True
         )
