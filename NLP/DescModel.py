@@ -18,10 +18,8 @@ class DescModel:
     logger = Logger("Description_Model", "NLP/log/Description_Model.log").get_logger()
 
     def __init__(self):
-        train = Loader.load_train()
-        self.embedder = Embedder(200, train)
         # Intentar cargar el modelo o entrenar si no existe
-        self.model = self.load_model("models/model_2_text_km_to_price.keras", train)
+        self.model = self.load_model("models/model_2_text_km_to_price.keras")
 
     def preprocess_data(self, train):
         """Preprocesa los datos para obtener las descripciones embebidas y normaliza los valores."""
@@ -30,9 +28,16 @@ class DescModel:
         train['embedding'] = self.embedder.embedding_process(train['full_description'])
         return train
 
-    def split_and_scale_data(self, train):
+    def split_and_scale_data(self):
         """Divide el dataset en entrenamiento y prueba, y escala las características."""
-        train_df, test_df = train_test_split(train, test_size=0.2, random_state=42, stratify=train['fuelType'])
+        self.logger.info("Loading train Data")
+        train_df = Loader.load_train()
+        self.logger.info("Loading test Data")
+        test_df = Loader.load_test()
+        
+        self.embedder = Embedder(200, train_df)
+        train_df = self.preprocess_data(train_df)
+        test_df = self.preprocess_data(test_df)
 
         x_embeddings = np.stack(train_df["embedding"].values)
         x_km = train_df['km'].to_numpy().reshape(-1, 1)
@@ -77,10 +82,9 @@ class DescModel:
 
         return model
 
-    def train_model(self, train):
+    def train_model(self):
         """Entrena el modelo con los datos dados."""
-        train = self.preprocess_data(train)
-        train_df, test_df, x_embeddings_scaled, x_km_scaled, y_scaled = self.split_and_scale_data(train)
+        train_df, test_df, x_embeddings_scaled, x_km_scaled, y_scaled = self.split_and_scale_data()
 
         self.model = self.build_model()
 
@@ -103,15 +107,15 @@ class DescModel:
         prediction = self.scaler_y.inverse_transform(prediction.reshape(-1, 1)).flatten()
         real_price = test_df['price'].to_numpy()
 
-        result = pd.DataFrame({'Prediction': prediction, 'Real price': real_price, "km": prediction["km"]})
+        result = pd.DataFrame({'Prediction': prediction, 'Real price': real_price, "km": test_df["km"]})
 
         diff = np.mean(abs((real_price - prediction) / real_price))
         self.logger.info(result)
         self.logger.info(f"Hay un MAPE de {diff * 100}%")
 
-    def load_model(self, path_modelo, train):
+    def load_model(self, path_modelo):
         """Intenta cargar el modelo desde un archivo o entrena uno nuevo si no existe."""
-        self.train_model(train)
+        self.train_model()
         return
         if os.path.isfile(path_modelo) and path_modelo.endswith('.keras'):
             try:

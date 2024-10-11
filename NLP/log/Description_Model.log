@@ -37,3 +37,37 @@
 [23120 rows x 2 columns]
 2024-10-10 18:30:37,001 - Description_Model - INFO - Hay un MAPE de 15.653772653132195%
 2024-10-10 18:35:25,639 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-11 10:14:48,045 - Description_Model - INFO - Loading train Data
+2024-10-11 10:14:59,613 - Description_Model - INFO - Loading test Data
+2024-10-11 10:25:44,066 - Description_Model - INFO - Loading train Data
+2024-10-11 10:25:47,763 - Description_Model - INFO - Loading test Data
+2024-10-11 10:27:31,992 - Description_Model - INFO - Loading train Data
+2024-10-11 10:27:39,452 - Description_Model - INFO - Loading test Data
+2024-10-11 10:29:17,782 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-11 11:05:11,528 - Description_Model - INFO - TERMINA EL ENTRENAMIENTO...
+2024-10-11 11:05:11,577 - Description_Model - INFO - None
+2024-10-11 11:06:30,282 - Description_Model - INFO - Loading train Data
+2024-10-11 11:06:36,028 - Description_Model - INFO - Loading test Data
+2024-10-11 11:09:11,844 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-11 11:32:31,901 - Description_Model - INFO - TERMINA EL ENTRENAMIENTO...
+2024-10-11 11:32:31,922 - Description_Model - INFO - None
+2024-10-11 11:33:18,129 - Description_Model - INFO - Loading train Data
+2024-10-11 11:33:21,596 - Description_Model - INFO - Loading test Data
+2024-10-11 11:35:24,550 - Description_Model - INFO - COMIENZA EL ENTRENAMIENTO...
+2024-10-11 12:05:24,347 - Description_Model - INFO - TERMINA EL ENTRENAMIENTO...
+2024-10-11 12:05:24,365 - Description_Model - INFO - None
+2024-10-11 12:05:26,308 - Description_Model - INFO -          Prediction  Real price        km
+0      18175.794922       14950  193713.0
+1      16832.650391       14950   85000.0
+2      13541.416992       11490  180200.0
+3      39480.675781       37950   10900.0
+4      41878.929688       32390   62500.0
+...             ...         ...       ...
+49537  28256.714844       28500   88000.0
+49538  20140.830078       18900       3.0
+49539  21980.121094       23990  118900.0
+49540  15540.104492       20900   45040.0
+49541   6140.510742        5200  240000.0
+
+[49542 rows x 3 columns]
+2024-10-11 12:05:26,324 - Description_Model - INFO - Hay un MAPE de 16.4459173172251%
