@@ -1,6 +1,7 @@
 import json
 import os 
 import pandas as pd
+import numpy as np
 import urllib.request
 import requests
 import sys
@@ -11,6 +12,8 @@ import shutil
 from stem import Signal
 from stem.control import Controller
 from stem.connection import AuthenticationFailure
+
+import threading
 
 import os
 
@@ -70,7 +73,7 @@ def change_tor_ip():
             # Captura cualquier otro tipo de excepción
             logger.info(f"Ocurrió un error inesperado: {e}")
 
-def compress_image(input_path, output_path, quality=70):
+def compress_image(logger, input_path, output_path, quality=70):
     # Abrir la imagen
     img = Image.open(input_path)
     
@@ -83,17 +86,19 @@ def compress_image(input_path, output_path, quality=70):
     logger.info(f"\tTamaño original: {size_before:.2f} MB")
     logger.info(f"\tTamaño comprimido: {size_after:.2f} MB")
 
-def zip_folder_and_remove(folder_path, output_path):
+def zip_folder_and_remove(logger, folder_path, output_path):
     # Comprimir la carpeta
+    logger.info(f"\tZipping: {output_path}")
     with zipfile.ZipFile(output_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for root, dirs, files in os.walk(folder_path):
             for file in files:
                 file_path = os.path.join(root, file)
                 arcname = os.path.relpath(file_path, folder_path)
                 zipf.write(file_path, arcname)
-    
+    logger.info(f"\tZipped: {output_path}")
     # Eliminar la carpeta original después de comprimirla
     shutil.rmtree(folder_path)
+    logger.info(f"\Removed: unzipped {output_path.removesuffix(".zip")}")
 
 def merge_csv_files_from_folder(folder_path):
     # Lista para almacenar los DataFrames
@@ -117,7 +122,7 @@ def merge_csv_files_from_folder(folder_path):
         print("No se encontraron archivos CSV en la carpeta.")
         return pd.DataFrame()  
 
-def download_image(url, filename):
+def download_image(logger, url, filename):
     logger.info(f"\tDownloading: {url}")
     try:
         response = requests.get(url, proxies=proxies, timeout=30, headers=headers_details, cookies=cookies_details)
@@ -126,7 +131,7 @@ def download_image(url, filename):
         with open(filename, 'wb') as f:
             f.write(response.content)
 
-        compress_image(filename, filename, quality=70)
+        compress_image(logger, filename, filename, quality=70)
     except requests.exceptions.RequestException as e:
         logger.info(f"\tERROR descargando {url}: {e}")
         return
@@ -136,21 +141,26 @@ def download_image(url, filename):
 
     logger.info(f"\tDownloaded: {url} as {filename}")
 
-def download_images_of_car(base_path, id, urls):
+def download_images_of_car(logger, base_path, id, urls):
     logger.info(f"Downloading images of the car: {id}")
     folder_path = os.path.join(base_path, str(id))
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
     for i, url in enumerate(urls):
         filename = os.path.join(folder_path, f"imagen_{i + 1}.jpg")
-        download_image(url, filename)
+        download_image(logger, url, filename)
     
-    zip_folder_and_remove(folder_path, folder_path + ".zip")
+    zip_folder_and_remove(logger, folder_path, folder_path + ".zip")
 
     logger.info(f"Downloaded images of the car in: {folder_path}")
 
-def apply_download_to_row(row, base_path):
-    download_images_of_car(base_path, row['id'], eval(row['images']))
+def apply_download_to_row(logger, row, base_path):
+    download_images_of_car(logger, base_path, row['id'], eval(row['images']))
+
+def task(data, i):
+    logger = Logger(name= f"PHOTOGRAPHER-{i}", log_file=f"scrapers/Photografer/logs/threads/photographer_{i}.log").get_logger()
+
+    data.apply(lambda row: apply_download_to_row(logger , row, base_path), axis=1)
 
 if __name__ == '__main__':
     data = merge_csv_files_from_folder("scrapers/Photografer/photos_urls/")
@@ -166,5 +176,20 @@ if __name__ == '__main__':
     # Ejemplo de uso con el DataFrame 'data'
     base_path = "E:/images"
 
+    NUMBER_OF_THREADS = 500
+    threads = []
+
     # Aplicamos la función para cada fila del DataFrame
-    data.apply(lambda row: apply_download_to_row(row, base_path), axis=1)
+    #data.apply(lambda row: apply_download_to_row(row, base_path), axis=1)
+    chunks = np.array_split(data, 500)  # 'x' es el número de partes
+
+    for i, chunk in enumerate(chunks):
+        print(f"Chunk {i} started with Thread-{i}")
+
+        t = threading.Thread(target=task, args=(chunk, i))
+        threads.append(t)
+        t.start()
+        #print(type(chunk))
+
+    for t in threads:
+        t.join()
