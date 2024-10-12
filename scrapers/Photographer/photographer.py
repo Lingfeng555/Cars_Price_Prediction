@@ -13,7 +13,7 @@ from stem import Signal
 from stem.control import Controller
 from stem.connection import AuthenticationFailure
 
-import threading
+import multiprocessing
 
 import os
 
@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 import logging
 from utils.logger import Logger
 
-logger = Logger(name="PHOTOGRAPHER", log_file="scrapers/Photografer/logs/photographer.log").get_logger()
+logger = Logger(name="PHOTOGRAPHER", log_file="scrapers/Photographer/logs/photographer.log").get_logger()
 
 proxies = {
     'http': 'socks5h://127.0.0.1:9050',
@@ -156,12 +156,14 @@ def download_images_of_car(logger, base_path, id, urls):
 def apply_download_to_row(logger, row, base_path):
     download_images_of_car(logger, base_path, row['id'], eval(row['images']))
 
-def task(data, i, part):
-    logger = Logger(name= f"PHOTOGRAPHER-{i}", log_file=f"scrapers/Photografer/logs/threads/part_{part}/photographer_{i}.log").get_logger()
+def task(data, i, part, base_path):
+    logger = Logger(name= f"PHOTOGRAPHER-{i}", log_file=f"scrapers/Photographer/logs/threads/part_{part}/photographer_{i}.log").get_logger()
 
     data.apply(lambda row: apply_download_to_row(logger , row, base_path), axis=1)
 
 if __name__ == '__main__':
+    
+    print("Ensure that you have install pillow, stem, pysocks, pandas and numpy, besides Tor must be open")
 
     proxy_handler = urllib.request.ProxyHandler(proxies)
     opener = urllib.request.build_opener(proxy_handler)
@@ -169,19 +171,19 @@ if __name__ == '__main__':
     change_tor_ip()
 
     part = input("Introduce your part [1-4]: ")
-    data = merge_csv_files_from_folder(f"scrapers/Photografer/photos_urls/part_{part}")
+    data = merge_csv_files_from_folder(f"scrapers/Photographer/photos_urls/part_{part}")
 
     print(f"You can monitor all your threads in CARS_PRICE_PREDICTION/scrapers/Photographer/logs/part_{part}")
 
     base_path = input("Introduce the absolute path where you want to store the images; it must be already created folder\n(empty for default E:/images): ")
 
-    if (base_path == None) or (base_path == ""):base_path = "E:/images"
+    if base_path == "":  base_path = "E:/images"
 
     print(data["model"].value_counts())
     print(data["brand"].value_counts())
     print(f"Total: {len(data)}")
 
-    NUMBER_OF_THREADS = int(input("Introduce the number of threads you want to use: "))
+    NUMBER_OF_THREADS = int(input("Introduce the number of threads you want to use (recommended 0-100, if you use more than 100 threads the server will start to deny all the request): "))
     threads = []
 
     # Aplicamos la función para cada fila del DataFrame
@@ -191,7 +193,7 @@ if __name__ == '__main__':
     for i, chunk in enumerate(chunks):
         print(f"Chunk {i} started with Thread-{i}")
 
-        t = threading.Thread(target=task, args=(chunk, i, part))
+        t = multiprocessing.Process(target=task, args=(chunk, i, part, base_path))
         threads.append(t)
         t.start()
         #print(type(chunk))
