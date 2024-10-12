@@ -181,12 +181,12 @@ if __name__ == '__main__':
     print(data["brand"].value_counts())
     print(f"Total: {len(data)}")
 
-    NUMBER_OF_THREADS = 100
+    NUMBER_OF_THREADS = int(input("Introduce the number of threads you want to use: "))
     threads = []
 
     # Aplicamos la función para cada fila del DataFrame
     #data.apply(lambda row: apply_download_to_row(row, base_path), axis=1)
-    chunks = np.array_split(data, 500)  # 'x' es el número de partes
+    chunks = np.array_split(data, NUMBER_OF_THREADS)  # 'x' es el número de partes
 
     for i, chunk in enumerate(chunks):
         print(f"Chunk {i} started with Thread-{i}")
