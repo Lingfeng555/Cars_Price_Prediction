@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 import logging
 from utils.logger import Logger
 
-logger = Logger(name="PHOTOGRAPHER", log_file="scrapers/Photografer/photographer.log").get_logger()
+logger = Logger(name="PHOTOGRAPHER", log_file="scrapers/Photografer/logs/photographer.log").get_logger()
 
 proxies = {
     'http': 'socks5h://127.0.0.1:9050',
@@ -191,5 +191,7 @@ if __name__ == '__main__':
         t.start()
         #print(type(chunk))
 
-    for t in threads:
-        t.join()
+    
+    for i in range(len(threads)):
+        threads[i].join()
+        logger.info(f"Thread-{i} completed")
