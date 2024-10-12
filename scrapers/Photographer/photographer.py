@@ -98,7 +98,6 @@ def zip_folder_and_remove(logger, folder_path, output_path):
     logger.info(f"\tZipped: {output_path}")
     # Eliminar la carpeta original después de comprimirla
     shutil.rmtree(folder_path)
-    logger.info(f"\Removed: unzipped {output_path.removesuffix(".zip")}")
 
 def merge_csv_files_from_folder(folder_path):
     # Lista para almacenar los DataFrames
@@ -157,26 +156,32 @@ def download_images_of_car(logger, base_path, id, urls):
 def apply_download_to_row(logger, row, base_path):
     download_images_of_car(logger, base_path, row['id'], eval(row['images']))
 
-def task(data, i):
-    logger = Logger(name= f"PHOTOGRAPHER-{i}", log_file=f"scrapers/Photografer/logs/threads/photographer_{i}.log").get_logger()
+def task(data, i, part):
+    logger = Logger(name= f"PHOTOGRAPHER-{i}", log_file=f"scrapers/Photografer/logs/threads/part_{part}/photographer_{i}.log").get_logger()
 
     data.apply(lambda row: apply_download_to_row(logger , row, base_path), axis=1)
 
 if __name__ == '__main__':
-    data = merge_csv_files_from_folder("scrapers/Photografer/photos_urls/")
-    print(data["model"].value_counts())
-    print(data["brand"].value_counts())
-    print(f"Total: {len(data)}")
 
     proxy_handler = urllib.request.ProxyHandler(proxies)
     opener = urllib.request.build_opener(proxy_handler)
     urllib.request.install_opener(opener)
     change_tor_ip()
 
-    # Ejemplo de uso con el DataFrame 'data'
-    base_path = "E:/images"
+    part = input("Introduce your part [1-4]: ")
+    data = merge_csv_files_from_folder(f"scrapers/Photografer/photos_urls/part_{part}")
 
-    NUMBER_OF_THREADS = 500
+    print(f"You can monitor all your threads in CARS_PRICE_PREDICTION/scrapers/Photographer/logs/part_{part}")
+
+    base_path = input("Introduce the absolute path where you want to store the images; it must be already created folder\n(empty for default E:/images): ")
+
+    if (base_path == None) or (base_path == ""):base_path = "E:/images"
+
+    print(data["model"].value_counts())
+    print(data["brand"].value_counts())
+    print(f"Total: {len(data)}")
+
+    NUMBER_OF_THREADS = 100
     threads = []
 
     # Aplicamos la función para cada fila del DataFrame
@@ -186,7 +191,7 @@ if __name__ == '__main__':
     for i, chunk in enumerate(chunks):
         print(f"Chunk {i} started with Thread-{i}")
 
-        t = threading.Thread(target=task, args=(chunk, i))
+        t = threading.Thread(target=task, args=(chunk, i, part))
         threads.append(t)
         t.start()
         #print(type(chunk))
