@@ -90,7 +90,7 @@ class DescModel:
         self.logger.info("Loading test Data")
         test_df = Loader.load_test()
         
-        self.embedder = Embedder(200, train_df)
+        self.embedder = Embedder(200, train=train_df)
         train_df = self.preprocess_data(train_df)
         test_df = self.preprocess_data(test_df)
 
@@ -126,7 +126,7 @@ class DescModel:
         # Combinar embeddings y 'km'
         combined = Concatenate()([x, km_processed])
 
-        z = Dense(16, activation='softplus'
+        z = Dense(16, activation='relu'
                   )(combined)
         z = BatchNormalization()(z)
         z = Dense(1)(z)  # Capa de salida
@@ -150,7 +150,7 @@ class DescModel:
             epochs=275,
             batch_size=32,
             verbose=True,
-            callbacks=[tensorboard_callback]
+            callbacks=[self.tensorboard_callback]
         )
         self.logger.info("TERMINA EL ENTRENAMIENTO...")
         self.logger.info(self.model.summary())
