@@ -58,4 +58,4 @@ if __name__ == '__main__':
     #tf.saved_model.save(model.model, log_dir)  # Descomentar si deseas guardar sin reentrenar
 
     # Iniciar TensorBoard (puedes hacer esto en un terminal aparte)
-    print("Inicia TensorBoard en la terminal con el comando: tensorboard --logdir=logs/model_visualization")
+    print("Inicia TensorBoard en la terminal con el comando: tensorboard --logdir=logs/model_visualization/train")
