@@ -19,9 +19,11 @@ from .Embedder import Embedder
 
 class DescModel:
     logger = Logger("Description_Model", "NLP/log/Description_Model.log").get_logger()
-
+    log_dir = os.path.join("logs", "NLP")
     def __init__(self):
         # Intentar cargar el modelo o entrenar si no existe
+        os.makedirs(self.log_dir, exist_ok=True)
+        self.tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=self.log_dir, histogram_freq=1)
         self.load_model("NLP/models/model_2_text_km_to_price.keras")
     
     def load_model(self, path_modelo):
@@ -147,7 +149,8 @@ class DescModel:
             y_scaled,
             epochs=275,
             batch_size=32,
-            verbose=True
+            verbose=True,
+            callbacks=[tensorboard_callback]
         )
         self.logger.info("TERMINA EL ENTRENAMIENTO...")
         self.logger.info(self.model.summary())

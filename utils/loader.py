@@ -77,3 +77,23 @@ class Loader:
     @classmethod
     def load_all(cls):
         return {"original": cls.load_original(), "train": cls.load_train(), "test": cls.load_test()}
+    
+    @classmethod
+    def load_api_sample(cls, data):
+        try:
+            df = pd.json_normalize(data)
+            
+            try:
+                df["displacement_liters"] = df["displacement_liters"].apply(Loader.convert_to_float_or_zero)
+                df["bore_diameter"] = df["bore_diameter"].apply(Loader.convert_string_to_float)
+                df["electricFeatures.standardModeChargeStart"] = df["electricFeatures.standardModeChargeStart"].apply(Loader.extract_value)
+                df["electricFeatures.fastModeChargeStart"] = df["electricFeatures.fastModeChargeStart"].apply(Loader.extract_value)
+                df["valves_per_cylinder"] = df["valves_per_cylinder"].apply(Loader.convert_to_float_or_zero)
+            except Exception as e:
+                print(f"Error al convertir los datos: {e}")
+            print(df)
+            return df
+
+        except Exception as e:
+            print(f"Error al cargar los datos de la API: {e}")
+            return pd.DataFrame()
