@@ -328,3 +328,6 @@
 2024-10-14 20:18:26,401 - Description_Model - INFO - Tokenizing text
 2024-10-14 20:18:26,463 - Description_Model - INFO - Filtering text
 2024-10-14 20:18:26,463 - Description_Model - INFO - Tokenizing text
+2024-10-14 21:36:24,256 - Description_Model - INFO - Modelo cargado exitosamente.
+2024-10-14 21:36:24,278 - Description_Model - INFO - Filtering text
+2024-10-14 21:36:28,622 - Description_Model - INFO - Tokenizing text
