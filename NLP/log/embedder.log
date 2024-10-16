@@ -112,3 +112,52 @@
 2024-10-11 13:24:49,199 - Embedder - INFO - Prepare Train Dataframe
 2024-10-11 13:55:52,685 - Embedder - INFO - Prepare Train Dataframe
 2024-10-11 13:55:52,690 - Embedder - INFO - Description completed
+2024-10-14 20:29:10,576 - Embedder - INFO - Prepare Train Dataframe
+2024-10-14 20:29:15,432 - Embedder - INFO - Description completed
+2024-10-14 20:29:15,438 - Embedder - INFO - Columns filtered
+2024-10-14 20:29:15,459 - Embedder - INFO - NAs filtered
+2024-10-14 20:29:15,460 - Embedder - INFO - Start trainset Embedding
+2024-10-14 20:29:21,687 - Embedder - INFO - Tokenization completed
+2024-10-14 20:29:33,571 - Embedder - INFO - Embedding finished
+2024-10-14 20:31:08,372 - Embedder - INFO - Prepare Train Dataframe
+2024-10-14 20:31:13,148 - Embedder - INFO - Description completed
+2024-10-14 20:31:13,153 - Embedder - INFO - Columns filtered
+2024-10-14 20:31:13,174 - Embedder - INFO - NAs filtered
+2024-10-14 20:31:13,174 - Embedder - INFO - Start trainset Embedding
+2024-10-14 20:31:19,294 - Embedder - INFO - Tokenization completed
+2024-10-14 20:31:31,040 - Embedder - INFO - Embedding finished
+2024-10-14 20:49:45,674 - Embedder - INFO - Prepare Train Dataframe
+2024-10-14 20:49:50,598 - Embedder - INFO - Description completed
+2024-10-14 20:49:50,605 - Embedder - INFO - Columns filtered
+2024-10-14 20:49:50,628 - Embedder - INFO - NAs filtered
+2024-10-14 20:49:50,628 - Embedder - INFO - Start trainset Embedding
+2024-10-14 20:49:57,632 - Embedder - INFO - Tokenization completed
+2024-10-14 20:50:10,754 - Embedder - INFO - Embedding finished
+2024-10-14 21:17:44,743 - Embedder - INFO - Prepare Train Dataframe
+2024-10-14 21:17:49,564 - Embedder - INFO - Description completed
+2024-10-14 21:17:49,569 - Embedder - INFO - Columns filtered
+2024-10-14 21:17:49,591 - Embedder - INFO - NAs filtered
+2024-10-14 21:17:49,591 - Embedder - INFO - Start trainset Embedding
+2024-10-14 21:17:55,851 - Embedder - INFO - Tokenization completed
+2024-10-14 21:18:08,069 - Embedder - INFO - Embedding finished
+2024-10-14 21:21:21,994 - Embedder - INFO - Prepare Train Dataframe
+2024-10-14 21:21:26,856 - Embedder - INFO - Description completed
+2024-10-14 21:21:26,861 - Embedder - INFO - Columns filtered
+2024-10-14 21:21:26,886 - Embedder - INFO - NAs filtered
+2024-10-14 21:21:26,887 - Embedder - INFO - Start trainset Embedding
+2024-10-14 21:21:33,141 - Embedder - INFO - Tokenization completed
+2024-10-14 21:21:45,236 - Embedder - INFO - Embedding finished
+2024-10-14 21:37:44,847 - Embedder - INFO - Prepare Train Dataframe
+2024-10-14 21:37:49,708 - Embedder - INFO - Description completed
+2024-10-14 21:37:49,714 - Embedder - INFO - Columns filtered
+2024-10-14 21:37:49,736 - Embedder - INFO - NAs filtered
+2024-10-14 21:37:49,736 - Embedder - INFO - Start trainset Embedding
+2024-10-14 21:37:55,753 - Embedder - INFO - Tokenization completed
+2024-10-14 21:38:07,764 - Embedder - INFO - Embedding finished
+2024-10-14 22:00:24,019 - Embedder - INFO - Prepare Train Dataframe
+2024-10-14 22:00:28,869 - Embedder - INFO - Description completed
+2024-10-14 22:00:28,874 - Embedder - INFO - Columns filtered
+2024-10-14 22:00:28,893 - Embedder - INFO - NAs filtered
+2024-10-14 22:00:28,893 - Embedder - INFO - Start trainset Embedding
+2024-10-14 22:00:35,129 - Embedder - INFO - Tokenization completed
+2024-10-14 22:00:47,736 - Embedder - INFO - Embedding finished

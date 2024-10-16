@@ -50,7 +50,7 @@ class Embedder:
 
     def __init__(self, verb_size, train = None):
         self.verb_size = verb_size
-        if train == None: return
+        #if train == None: return
         
         self.logger.info("Prepare Train Dataframe")
         
