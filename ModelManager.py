@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from NLP import *
+from CART import *
 import requests
 
 
@@ -12,6 +13,9 @@ class ModelManager:
         """Carga un modelo dado su nombre."""
         if model_name == 'desc_model':
             self.models[model_name] = DescModel()
+            print(f'Modelo {model_name} cargado.')
+        elif model_name == 'cart':
+            self.models[model_name] = CartModel()
             print(f'Modelo {model_name} cargado.')
         
         #No hay más modelos por ahora
@@ -62,6 +66,8 @@ if __name__ == '__main__':
     model_manager = ModelManager()
 
     model_manager.load_model('desc_model')
+    model_manager.load_model('cart')
+    
     
     random_car = get_random_sample()["data"]
     random_car2 = get_random_sample()["data"]
