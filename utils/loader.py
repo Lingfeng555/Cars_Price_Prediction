@@ -10,11 +10,13 @@ class Loader:
     train_path = os.path.join(dir_path, "../data/final_data/train")
     test_path = os.path.join(dir_path, "../data/final_data/test")
     original_path = os.path.join(dir_path, "../data/final_data/original")
-    scaler = StandardScaler()
+    
     ordinal_columns = ['brand', 'model', 'color', 'fuelType', 'province', 'environmentalLabel', 'price_class']
     numeric_columns = ['price', 'km', 'year', 'cubicCapacity', 'power_cv', 'co2Emissions', 'maxSpeed']
     
 
+    def __init__(self):
+        self.scaler = StandardScaler()
 
     @staticmethod
     def convert_to_bool(cls, x):
@@ -27,14 +29,26 @@ class Loader:
     
     @staticmethod
     def convert_to_float_or_zero(x):
-        if x == "no tiene": return 0.0
-        if x == "cero": return 0.0
-        if x == "NA": return 0.0
-        return float(x)
+        if x in ["no tiene", "cero", "NA"]:
+            return 0.0
+        if isinstance(x, str):
+            x = x.replace(",", ".")
+            try:
+                return float(x)
+            except ValueError:
+                return 0.0 
+        try:
+            return float(x)
+        except (ValueError, TypeError):
+            return 0.0
+
     
     @staticmethod
     def convert_string_to_float(x):
-        if isinstance(x, str): return pd.to_numeric(x, errors='coerce')
+        if isinstance(x, str): 
+            x = x.replace(",", ".")
+            return pd.to_numeric(x, errors='coerce')
+        return x
 
     @staticmethod
     def extract_value(voltage_string):
@@ -50,16 +64,13 @@ class Loader:
     @staticmethod
     def catecorical_to_numerical(df):
         # Definir clases de precio
-        
         label_encoders = {}
-        
         # Codificar columnas categóricas
         for col in Loader.ordinal_columns:
             if(col in df):
                 le = LabelEncoder()
                 df[col] = le.fit_transform(df[col])
                 label_encoders[col] = le
-            
         return df
 
 
@@ -68,7 +79,7 @@ class Loader:
         # Selecciona solo las columnas numéricas
         numeric_data = df[Loader.numeric_columns]
         # Aplica la transformación solo en esas columnas
-        df[Loader.numeric_columns] = Loader.scaler.transform(numeric_data)
+        df[Loader.numeric_columns] = cls.scaler.transform(numeric_data)
         return df
 
     @staticmethod
@@ -105,11 +116,11 @@ class Loader:
 
     @classmethod
     def load_train(cls):
-        return  Loader.normalize_fit(cls.__load_data(cls.train_path))
+        return  cls.normalize_fit(cls.__load_data(cls.train_path))
 
     @classmethod
     def load_test(cls):
-        return Loader.normalize_data(cls.__load_data(cls.test_path))
+        return cls.normalize_data(cls.__load_data(cls.test_path))
 
     @classmethod
     def load_original(cls):
@@ -123,13 +134,13 @@ class Loader:
     def load_api_sample(cls, data):
         try:
             df = pd.json_normalize(data)
-            
             try:
                 df["displacement_liters"] = df["displacement_liters"].apply(Loader.convert_to_float_or_zero)
                 df["bore_diameter"] = df["bore_diameter"].apply(Loader.convert_string_to_float)
                 df["electricFeatures.standardModeChargeStart"] = df["electricFeatures.standardModeChargeStart"].apply(Loader.extract_value)
                 df["electricFeatures.fastModeChargeStart"] = df["electricFeatures.fastModeChargeStart"].apply(Loader.extract_value)
                 df["valves_per_cylinder"] = df["valves_per_cylinder"].apply(Loader.convert_to_float_or_zero)
+            
             except Exception as e:
                 print(f"Error al convertir los datos: {e}")
             
