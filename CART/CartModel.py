@@ -12,35 +12,41 @@ from utils.loader import Loader
 from utils.logger import Logger
 import sys
 import os
-import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 import joblib  # Importar joblib para guardar y cargar el modelo
-from utils.loader import Loader
 
-class CarPriceClassifier:
-    def __init__(self, train_folder, test_folder):
+
+class CartModel:
+    def __init__(self):
+        # RUTA DE LOS MODELOS Y CARGAR EL MODELO
+        self.models_paths = os.path.join(os.getcwd(), "CART", "models")
+        
+        #EXTRA DEL CART
         self.label_encoders = {}
-        self.scaler = StandardScaler()
         self.cart_model = DecisionTreeClassifier(random_state=42, max_depth=7)
         self.ordinal_columns = ['brand', 'model', 'color', 'fuelType', 'province', 'environmentalLabel']
         self.numeric_columns2 = ['price', 'km', 'year', 'cubicCapacity', 'power_cv', 'co2Emissions', 'maxSpeed']
-        self.models_paths = os.path.join(os.getcwd(), "CART", "models")
+        self.loader = Loader()
+        self.load_model()
 
     def preprocess_data(self, df):
         # Eliminar filas con valores nulos en las columnas numéricas
-        df['price_class'] = pd.qcut(df['price'], q=3, labels=['baja', 'media', 'alta'])
+        if not (df.shape[0] == 1):
+            df['price_class'] = pd.qcut(df['price'], q=3, labels=['baja', 'media', 'alta'])
+        else: 
+            df['price_class'] = 'media' #Da igual, no se va a usar es solo para que no de error
         df = df.dropna(subset=self.numeric_columns2)
-        df = Loader.catecorical_to_numerical(df)
+        df = self.loader.catecorical_to_numerical(df)
         # Seleccionar columnas necesarias
         columns_to_keep = self.numeric_columns2 + self.ordinal_columns + ['price_class']
         return df[columns_to_keep]
 
     def fit(self):
         # Cargar y procesar datos de entrenamiento
-        train_df = Loader.load_train()
+        train_df = self.loader.load_train()
         train_df = self.preprocess_data(train_df)
 
         # Debug: Print shapes
@@ -52,7 +58,7 @@ class CarPriceClassifier:
 
         feature_names = X_train.columns
         # Normalizar características
-        X_train = self.scaler.fit_transform(X_train)
+        X_train = self.loader.scaler.fit_transform(X_train)
 
         # Entrenar modelo
         self.cart_model.fit(X_train, y_train)
@@ -62,31 +68,32 @@ class CarPriceClassifier:
         # Guardar el modelo y el escalador
         joblib.dump({
             'model': self.cart_model,
-            'scaler': self.scaler,
+            'scaler': self.loader.scaler,
             'label_encoders': self.label_encoders
         }, os.path.join(self.models_paths, filename))
         print(f"Modelo guardado en {os.path.join(self.models_paths, filename)}.")
 
     def load_model(self, filename='/car_price_classifier_model.pkl'):
         # Cargar el modelo y el escalador
-        data = joblib.load(os.path.join(self.models_paths, filename))
+        print(f"Cargando modelo desde {os.path.join(self.models_paths, filename)}...")
+        data = joblib.load(self.models_paths+filename)
         self.cart_model = data['model']
-        self.scaler = data['scaler']
+        print(data['scaler'])
+        self.loader.scaler = data['scaler']
         self.label_encoders = data['label_encoders']
-        print(f"Modelo cargado desde {os.path.join(self.models_paths, filename)}.")
+        print(f"Modelo cargado desde {self.models_paths+filename}.")
 
     def predict(self, X):
         X_processed = self.preprocess_data(X)
         X_processed = X_processed.drop(columns=['price', 'price_class'], errors='ignore')  # Asegurarse de que se elimine sin error
-
         # Normalizar las características procesadas
-        X_normalized = self.scaler.transform(X_processed)
+        X_normalized = self.loader.scaler.transform(X_processed)
 
         return self.cart_model.predict(X_normalized)
 
     def evaluate(self):
         # Cargar y procesar datos de prueba
-        test_df = Loader.load_test()
+        test_df = self.loader.load_test()
         test_df = self.preprocess_data(test_df)
 
         # Debug: Print shapes
@@ -109,16 +116,11 @@ class CarPriceClassifier:
 
 
 if __name__ == '__main__':
-    # Uso de la clase
-    train_folder = 'data/final_data/train'
-    test_folder = 'data/final_data/test'
+
 
     # Ejecutar código
-    car_classifier = CarPriceClassifier(train_folder, test_folder)
+    car_classifier = CartModel()
     car_classifier.fit()
-
-    # Guardar modelo
-    car_classifier.save_model()
 
     # Cargar modelo y evaluar
     car_classifier.load_model()
