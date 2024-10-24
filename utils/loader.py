@@ -13,10 +13,8 @@ class Loader:
     
     ordinal_columns = ['brand', 'model', 'color', 'fuelType', 'province', 'environmentalLabel', 'price_class']
     numeric_columns = ['price', 'km', 'year', 'cubicCapacity', 'power_cv', 'co2Emissions', 'maxSpeed']
-    
 
-    def __init__(self):
-        self.scaler = StandardScaler()
+    scaler = StandardScaler()
 
     @staticmethod
     def convert_to_bool(cls, x):
@@ -79,7 +77,7 @@ class Loader:
         # Selecciona solo las columnas numéricas
         numeric_data = df[Loader.numeric_columns]
         # Aplica la transformación solo en esas columnas
-        df[Loader.numeric_columns] = cls.scaler.transform(numeric_data)
+        df[Loader.numeric_columns] = Loader.scaler.transform(numeric_data)
         return df
 
     @staticmethod
