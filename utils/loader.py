@@ -105,7 +105,7 @@ class Loader:
         if df_list:
             merged_df = pd.concat(df_list, ignore_index=True)
             merged_df["valves_per_cylinder"] = merged_df["valves_per_cylinder"].apply(Loader.convert_to_float_or_zero)
-            merged_df = Loader.catecorical_to_numerical(merged_df)
+            #merged_df = Loader.catecorical_to_numerical(merged_df)
            
             return merged_df
         else:
@@ -126,7 +126,7 @@ class Loader:
 
     @classmethod
     def load_all(cls):
-        return {"original": cls.load_original(), "train": cls.load_train(), "test": cls.load_test()}
+        return {"original": cls.load_original()}
     
     @classmethod
     def load_api_sample(cls, data):
