@@ -106,7 +106,7 @@ class Loader:
             merged_df = pd.concat(df_list, ignore_index=True)
             merged_df["valves_per_cylinder"] = merged_df["valves_per_cylinder"].apply(Loader.convert_to_float_or_zero)
             #merged_df = Loader.catecorical_to_numerical(merged_df)
-           
+            merged_df["km"].fillna(0, inplace=True)
             return merged_df
         else:
             print("No se encontraron archivos CSV en la carpeta.")
