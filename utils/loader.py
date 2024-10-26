@@ -107,6 +107,11 @@ class Loader:
             merged_df["valves_per_cylinder"] = merged_df["valves_per_cylinder"].apply(Loader.convert_to_float_or_zero)
             #merged_df = Loader.catecorical_to_numerical(merged_df)
             merged_df["km"].fillna(0, inplace=True)
+
+            for x in merged_df.select_dtypes(include=['object']).columns:
+                merged_df[x] = merged_df[x].astype("category")
+            no_desc  = [x for x in merged_df.columns if not ("description" in x)]
+            merged_df = merged_df[no_desc]
             return merged_df
         else:
             print("No se encontraron archivos CSV en la carpeta.")
