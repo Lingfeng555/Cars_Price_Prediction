@@ -112,7 +112,10 @@ class Loader:
                 merged_df[x] = merged_df[x].astype("category")
             no_desc  = [x for x in merged_df.columns if not ("description" in x)]
             merged_df = merged_df[no_desc]
-            merged_df.set_index("idx")
+            merged_df.set_index("idx", inplace = True)
+
+            merged_df['price_categ'] = pd.cut(merged_df['price'], bins=7, labels=['Bajo', 'Medio-bajo','Medio', 'Medio-alto', 'Alto', "premiun", "luxury"])
+
             return merged_df
         else:
             print("No se encontraron archivos CSV en la carpeta.")
