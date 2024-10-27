@@ -112,6 +112,7 @@ class Loader:
                 merged_df[x] = merged_df[x].astype("category")
             no_desc  = [x for x in merged_df.columns if not ("description" in x)]
             merged_df = merged_df[no_desc]
+            merged_df.set_index("idx")
             return merged_df
         else:
             print("No se encontraron archivos CSV en la carpeta.")
