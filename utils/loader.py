@@ -87,6 +87,18 @@ class Loader:
         # Ajusta y transforma solo en esas columnas
         df[Loader.numeric_columns] = Loader.scaler.fit_transform(numeric_data)
         return df
+    
+    @staticmethod
+    def __assign_price_categ(price:int) -> str:
+        if price < 5000: return "Very low end"
+        elif price < 10000: return "Low end"
+        elif price < 15000: return "Budget"
+        elif price < 25000: return "Middle low range"
+        elif price < 30000: return "Middle range"
+        elif price < 35000: return "Middle high range"
+        elif price < 40000: return "High end"
+        elif price < 50000: return "Premiun"
+        else : return "Luxury"
 
     @staticmethod
     def __load_data(folder_path):
@@ -114,8 +126,8 @@ class Loader:
             merged_df = merged_df[no_desc]
             merged_df.set_index("idx", inplace = True)
 
-            merged_df['price_categ'] = pd.cut(merged_df['price'], bins=7, labels=['Bajo', 'Medio-bajo','Medio', 'Medio-alto', 'Alto', "premiun", "luxury"])
-
+            merged_df['price_categ'] = merged_df["price"].apply(lambda x: Loader.__assign_price_categ(x))
+            merged_df['price_categ'] = merged_df['price_categ'].astype("category")
             return merged_df
         else:
             print("No se encontraron archivos CSV en la carpeta.")
