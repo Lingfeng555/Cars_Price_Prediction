@@ -125,7 +125,7 @@ class Loader:
             else : return 8
 
     @staticmethod
-    def __load_data(folder_path):
+    def __load_data(folder_path, NLP = False):
         df_list = []
         for filename in os.listdir(folder_path):
             if filename.endswith('.csv'):
@@ -146,8 +146,11 @@ class Loader:
 
             for x in merged_df.select_dtypes(include=['object']).columns:
                 merged_df[x] = merged_df[x].astype("category")
-            no_desc  = [x for x in merged_df.columns if not ("description" in x)]
-            merged_df = merged_df[no_desc]
+            
+            if not NLP:
+                no_desc  = [x for x in merged_df.columns if not ("description" in x)]
+                merged_df = merged_df[no_desc]
+
             merged_df.set_index("idx", inplace = True)
 
             merged_df['price_categ'] = merged_df["price"].apply(lambda x: Loader.assign_price_categ(x))
@@ -160,11 +163,11 @@ class Loader:
 
     @classmethod
     def load_train(cls):
-        return  cls.normalize_fit(cls.__load_data(cls.train_path))
+        return  cls.normalize_fit(cls.__load_data(cls.train_path, NLP=True))
 
     @classmethod
     def load_test(cls):
-        return cls.normalize_data(cls.__load_data(cls.test_path))
+        return cls.normalize_data(cls.__load_data(cls.test_path, NLP=True))
 
     @classmethod
     def load_original(cls):
