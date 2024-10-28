@@ -89,7 +89,7 @@ class Loader:
         return df
     
     @staticmethod
-    def __assign_price_categ(price:int) -> str:
+    def assign_price_categ(price:int) -> str:
         if price < 5000: return "Very low end"
         elif price < 10000: return "Low end"
         elif price < 15000: return "Budget"
@@ -99,6 +99,30 @@ class Loader:
         elif price < 40000: return "High end"
         elif price < 50000: return "Premiun"
         else : return "Luxury"
+    
+    @staticmethod
+    def encode_price_categ(price):
+        if(isinstance(price, str)):
+            if price == "Very low end": return 0
+            elif price == "Low end": return 1
+            elif price == "Budget": return 2
+            elif price == "Middle low range": return 3
+            elif price == "Middle range": return 4
+            elif price == "Middle high range": return 5
+            elif price == "High end": return 6
+            elif price == "Premiun": return 7
+            else : return 8
+
+        if (isinstance(price, int)):
+            if price < 5000: return 0
+            elif price < 10000: return 1
+            elif price < 15000: return 2
+            elif price < 25000: return 3
+            elif price < 30000: return 4
+            elif price < 35000: return 5
+            elif price < 40000: return 6
+            elif price < 50000: return 7
+            else : return 8
 
     @staticmethod
     def __load_data(folder_path):
@@ -126,8 +150,9 @@ class Loader:
             merged_df = merged_df[no_desc]
             merged_df.set_index("idx", inplace = True)
 
-            merged_df['price_categ'] = merged_df["price"].apply(lambda x: Loader.__assign_price_categ(x))
+            merged_df['price_categ'] = merged_df["price"].apply(lambda x: Loader.assign_price_categ(x))
             merged_df['price_categ'] = merged_df['price_categ'].astype("category")
+            #merged_df['price_categ_encoded'] = merged_df["price"].apply(lambda x: Loader.encode_price_categ(x))
             return merged_df
         else:
             print("No se encontraron archivos CSV en la carpeta.")
