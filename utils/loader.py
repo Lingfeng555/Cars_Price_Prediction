@@ -125,6 +125,19 @@ class Loader:
             else : return 8
 
     @staticmethod
+    def decode_price_categ(price_categ:int):
+        if price_categ == 0: return "Very low end"
+        elif price_categ == 1: return "Low end"
+        elif price_categ == 2: return "Middle low range"
+        elif price_categ == 3: return "Budget"
+        elif price_categ == 4: return "Middle range"
+        elif price_categ == 5: return "Middle high range"
+        elif price_categ == 6: return "High end"
+        elif price_categ == 7: return "Premiun"
+        else : return "Luxury"
+
+
+    @staticmethod
     def __load_data(folder_path, NLP = False):
         df_list = []
         for filename in os.listdir(folder_path):
