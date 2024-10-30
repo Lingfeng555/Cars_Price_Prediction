@@ -1,12 +1,16 @@
 # Trees
-In this folder we cover the classification and regression techniques that use trees logic, such as CART, RandomForest, BayesianTrees.
+
+This folder contains implementations of tree-based classification and regression techniques, including **CART (Classification and Regression Trees)**, **Random Forests**, and **Bayesian Trees**. These models leverage decision tree logic to improve prediction accuracy and handle non-linear relationships in the dataset.
 
 ## Approach
 
-We want to attack the problem by dividing the dataset into different groups, because the evaluation of the car change in each case, the parameters that are used to evaluate electric cars of combustion cars are different.
+Our goal is to approach the problem by dividing the dataset into targeted groups based on car type, as the evaluation criteria vary significantly across these categories. For example, factors that influence the valuation of electric cars differ from those relevant to combustion engines. This segmentation allows us to tailor models to each car type, enhancing the accuracy and relevance of predictions.
 
-# Authors
-Electric cars/plig-in hybrid -> Lingfeng
-Combustion -> Martin
-Hybrid -> Giovanni
-Gas -> Asier
+### Grouping Strategy:
+
+- **Electric Cars / Plug-in Hybrid**: Evaluated by Lingfeng, focusing on battery capacity, range, and other electric-specific parameters.
+- **Combustion Engine**: Managed by Martin, emphasizing fuel efficiency, emissions, and traditional engine performance metrics.
+- **Hybrid (Non-Plug-in)**: Handled by Giovanni, considering a balance between electric and combustion factors.
+- **Gas-Powered Vehicles**: Covered by Asier, with a focus on gas-specific parameters.
+
+Each author brings expertise in their respective vehicle types, ensuring that the models align with the unique characteristics and evaluation criteria of each car category.
