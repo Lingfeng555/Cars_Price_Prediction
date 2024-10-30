@@ -12,5 +12,3 @@ Our goal is to approach the problem by dividing the dataset into targeted groups
 - **Combustion Engine**: Managed by Martin, emphasizing fuel efficiency, emissions, and traditional engine performance metrics.
 - **Hybrid (Non-Plug-in)**: Handled by Giovanni, considering a balance between electric and combustion factors.
 - **Gas-Powered Vehicles**: Covered by Asier, with a focus on gas-specific parameters.
-
-Each author brings expertise in their respective vehicle types, ensuring that the models align with the unique characteristics and evaluation criteria of each car category.
