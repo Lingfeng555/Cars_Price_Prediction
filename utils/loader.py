@@ -6,6 +6,12 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 
 class Loader:
+    """
+    WARNING: The loaded data is not pre-cleaned or specifically tailored for each task. 
+    Please ensure to preprocess and clean the data appropriately before training each model. 
+    Verify that the data is relevant, consistent, and meaningful for the specific requirements of the task.
+    """
+    
     dir_path = os.path.dirname(os.path.realpath(__file__))
     original_path = os.path.join(dir_path, "../data/final_data/original")
     
