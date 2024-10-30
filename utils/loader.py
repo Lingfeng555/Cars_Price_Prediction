@@ -184,7 +184,6 @@ class Loader:
         ret["Híbrido enchufable"] = data[data["fuelType"] == "Híbrido enchufable"]
         ret["Gas"] = data[(data["fuelType"] == "Gas licuado (GLP)") | (data["fuelType"] == "Gas natural (CNG)")]
         return ret[fuelType]
-
         
 
     @classmethod
