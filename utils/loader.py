@@ -162,12 +162,30 @@ class Loader:
             return pd.DataFrame()
 
     @classmethod
+    @DeprecationWarning
     def load_train(cls):
         return  cls.normalize_fit(cls.__load_data(cls.train_path, NLP=True))
 
     @classmethod
+    @DeprecationWarning
     def load_test(cls):
         return cls.normalize_data(cls.__load_data(cls.test_path, NLP=True))
+    
+    @classmethod
+    def load_NLP(cls): return cls.__load_data(cls.original_path, NLP=True)
+
+    @classmethod
+    def load_by_fueltype(cls, fuelType): 
+        data =  cls.__load_data(cls.original_path)
+        ret={}
+        ret["Eléctrico"] = data[data["fuelType"] == "Eléctrico"]
+        ret["Combustion"] = data[(data["fuelType"] == "Gasolina") | (data["fuelType"] == "Diésel")]
+        ret["Híbrido"] = data[data["fuelType"] == "Híbrido"]
+        ret["Híbrido enchufable"] = data[data["fuelType"] == "Híbrido enchufable"]
+        ret["Gas"] = data[(data["fuelType"] == "Gas licuado (GLP)") | (data["fuelType"] == "Gas natural (CNG)")]
+        return ret[fuelType]
+
+        
 
     @classmethod
     def load_original(cls):

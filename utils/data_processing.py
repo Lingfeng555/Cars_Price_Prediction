@@ -1,17 +1,10 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.tree import DecisionTreeClassifier, plot_tree
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.tree import DecisionTreeClassifier, plot_tree
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder
 from sklearn.decomposition import PCA,TruncatedSVD
 from sklearn.linear_model import LinearRegression
-from sklearn.impute import SimpleImputer
-from sklearn.metrics import mean_absolute_error
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.feature_selection import chi2
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
