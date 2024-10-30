@@ -7,8 +7,6 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 class Loader:
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    train_path = os.path.join(dir_path, "../data/final_data/train")
-    test_path = os.path.join(dir_path, "../data/final_data/test")
     original_path = os.path.join(dir_path, "../data/final_data/original")
     
     ordinal_columns = ['brand', 'model', 'color', 'fuelType', 'province', 'environmentalLabel', 'price_class']
