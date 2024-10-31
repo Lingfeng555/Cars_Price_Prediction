@@ -70,6 +70,8 @@ class evaluator():
         frequencies = evaluator.equal_depth_binning(diff)
         if plot:
             evaluator.plot_bar_chart(data=frequencies, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
+        print(frequencies)
+            
 
     @staticmethod
     def eval_classfication(y_pred, y_true, binary_classification, average='weighted'):
@@ -87,9 +89,15 @@ class evaluator():
             print("ROC AUC:", roc_auc)
 
     @staticmethod
-    def eval_ordinal_classification(diff):
+    def eval_ordinal_classification(diff, plot = True):
         '''
         This function receives a numerical array of the absolute difference between the prediction and the actual value
         '''
-        frequencies = evaluator.equal_depth_binning(diff)
-        evaluator.plot_bar_chart(data=frequencies, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
+        errors = evaluator.equal_depth_binning(diff[diff > 0])
+
+        if plot : evaluator.plot_bar_chart(data=errors, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
+
+        print("Errors:",errors)
+        print("Error mean:", np.mean(diff[diff > 0]))
+        print("Error rate:", len(diff[diff > 0])/len(diff)*100, "%")
+        print("Overall mean:", np.mean(diff))

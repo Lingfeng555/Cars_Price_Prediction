@@ -140,6 +140,9 @@ class Loader:
         elif price_categ == 7: return "Premiun"
         else : return "Luxury"
 
+    @staticmethod
+    def encode_jato_classification(jato:str):
+        pass
 
     @staticmethod
     def __load_data(folder_path, NLP = False):
@@ -201,7 +204,6 @@ class Loader:
         ret["Híbrido enchufable"] = data[data["fuelType"] == "Híbrido enchufable"]
         ret["Gas"] = data[(data["fuelType"] == "Gas licuado (GLP)") | (data["fuelType"] == "Gas natural (CNG)")]
         return ret[fuelType]
-        
 
     @classmethod
     def load_original(cls):
