@@ -1,7 +1,7 @@
 import os
 import numpy as np
 from NLP import *
-from CART import *
+from Trees import *
 import requests
 
 

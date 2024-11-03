@@ -6,9 +6,13 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 
 
 class Loader:
+    """
+    WARNING: The loaded data is not pre-cleaned or specifically tailored for each task. 
+    Please ensure to preprocess and clean the data appropriately before training each model. 
+    Verify that the data is relevant, consistent, and meaningful for the specific requirements of the task.
+    """
+    
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    train_path = os.path.join(dir_path, "../data/final_data/train")
-    test_path = os.path.join(dir_path, "../data/final_data/test")
     original_path = os.path.join(dir_path, "../data/final_data/original")
     
     ordinal_columns = ['brand', 'model', 'color', 'fuelType', 'province', 'environmentalLabel', 'price_class']
@@ -87,9 +91,61 @@ class Loader:
         # Ajusta y transforma solo en esas columnas
         df[Loader.numeric_columns] = Loader.scaler.fit_transform(numeric_data)
         return df
+    
+    @staticmethod
+    def assign_price_categ(price:int) -> str:
+        if price < 5000: return "Very low end"
+        elif price < 10000: return "Low end"
+        elif price < 15000: return "Budget"
+        elif price < 25000: return "Middle low range"
+        elif price < 30000: return "Middle range"
+        elif price < 35000: return "Middle high range"
+        elif price < 40000: return "High end"
+        elif price < 50000: return "Premiun"
+        else : return "Luxury"
+    
+    @staticmethod
+    def encode_price_categ(price):
+        if(isinstance(price, str)):
+            if price == "Very low end": return 0
+            elif price == "Low end": return 1
+            elif price == "Budget": return 2
+            elif price == "Middle low range": return 3
+            elif price == "Middle range": return 4
+            elif price == "Middle high range": return 5
+            elif price == "High end": return 6
+            elif price == "Premiun": return 7
+            else : return 8
+
+        if (isinstance(price, int)):
+            if price < 5000: return 0
+            elif price < 10000: return 1
+            elif price < 15000: return 2
+            elif price < 25000: return 3
+            elif price < 30000: return 4
+            elif price < 35000: return 5
+            elif price < 40000: return 6
+            elif price < 50000: return 7
+            else : return 8
 
     @staticmethod
-    def __load_data(folder_path):
+    def decode_price_categ(price_categ:int):
+        if price_categ == 0: return "Very low end"
+        elif price_categ == 1: return "Low end"
+        elif price_categ == 2: return "Middle low range"
+        elif price_categ == 3: return "Budget"
+        elif price_categ == 4: return "Middle range"
+        elif price_categ == 5: return "Middle high range"
+        elif price_categ == 6: return "High end"
+        elif price_categ == 7: return "Premiun"
+        else : return "Luxury"
+
+    @staticmethod
+    def encode_jato_classification(jato:str):
+        pass
+
+    @staticmethod
+    def __load_data(folder_path, NLP = False):
         df_list = []
         for filename in os.listdir(folder_path):
             if filename.endswith('.csv'):
@@ -107,18 +163,47 @@ class Loader:
             merged_df["valves_per_cylinder"] = merged_df["valves_per_cylinder"].apply(Loader.convert_to_float_or_zero)
             #merged_df = Loader.catecorical_to_numerical(merged_df)
             merged_df["km"].fillna(0, inplace=True)
+
+            for x in merged_df.select_dtypes(include=['object']).columns:
+                merged_df[x] = merged_df[x].astype("category")
+            
+            if not NLP:
+                no_desc  = [x for x in merged_df.columns if not ("description" in x)]
+                merged_df = merged_df[no_desc]
+
+            merged_df.set_index("idx", inplace = True)
+
+            merged_df['price_categ'] = merged_df["price"].apply(lambda x: Loader.assign_price_categ(x))
+            merged_df['price_categ'] = merged_df['price_categ'].astype("category")
+            #merged_df['price_categ_encoded'] = merged_df["price"].apply(lambda x: Loader.encode_price_categ(x))
             return merged_df
         else:
             print("No se encontraron archivos CSV en la carpeta.")
             return pd.DataFrame()
 
     @classmethod
+    @DeprecationWarning
     def load_train(cls):
-        return  cls.normalize_fit(cls.__load_data(cls.train_path))
+        return  cls.normalize_fit(cls.__load_data(cls.train_path, NLP=True))
 
     @classmethod
+    @DeprecationWarning
     def load_test(cls):
-        return cls.normalize_data(cls.__load_data(cls.test_path))
+        return cls.normalize_data(cls.__load_data(cls.test_path, NLP=True))
+    
+    @classmethod
+    def load_NLP(cls): return cls.__load_data(cls.original_path, NLP=True)
+
+    @classmethod
+    def load_by_fueltype(cls, fuelType): 
+        data =  cls.__load_data(cls.original_path)
+        ret={}
+        ret["Eléctrico"] = data[data["fuelType"] == "Eléctrico"]
+        ret["Combustion"] = data[(data["fuelType"] == "Gasolina") | (data["fuelType"] == "Diésel")]
+        ret["Híbrido"] = data[data["fuelType"] == "Híbrido"]
+        ret["Híbrido enchufable"] = data[data["fuelType"] == "Híbrido enchufable"]
+        ret["Gas"] = data[(data["fuelType"] == "Gas licuado (GLP)") | (data["fuelType"] == "Gas natural (CNG)")]
+        return ret[fuelType]
 
     @classmethod
     def load_original(cls):
