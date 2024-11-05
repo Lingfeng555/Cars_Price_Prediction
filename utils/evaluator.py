@@ -104,8 +104,8 @@ class Evaluator():
         mse = Evaluator.mean_squared_error(y_true, y_pred)
         rmse = Evaluator.mean_squared_error(y_true, y_pred, squared=False)
         r2 = r2_score(y_true, y_pred)
-        mape = Evaluator.mean_absolute_percentage_error(y_true, y_pred)
-        print("MAE:", mae, "MSE:", mse, "RMSE:", rmse, "R2:", r2, "MAPE:", mape)
+        mape = evaluator.mean_absolute_percentage_error(y_true, y_pred)
+        print("MAE:", mae, "\n", "MSE:", mse, "\n",  "RMSE:", rmse, "\n", "R2:", r2, "\n", "MAPE:", mape)
 
         diff = np.abs( y_pred - y_true )
         mean, variance, std_dev = Evaluator.calculate_statistics(diff)
@@ -118,13 +118,16 @@ class Evaluator():
 
     @staticmethod
     def eval_classfication(y_pred, y_true, binary_classification, average='weighted'):
+        """
+        Evaluates classification model performance and prints key metrics.
+        """
         accuracy = accuracy_score(y_true, y_pred)
         precision = precision_score(y_true, y_pred, average=average)
         recall = recall_score(y_true, y_pred, average=average)
         f1 = f1_score(y_true, y_pred, average=average)
         conf_matrix = confusion_matrix(y_true, y_pred)
     
-        print("Accuracy:", accuracy, "Precision:", precision, "Recall:", recall, "F1 Score:", f1)
+        print("Accuracy:", accuracy, "\n", "Precision:", precision, "\n", "Recall:", recall, "\n", "F1 Score:", f1)
         print("Confusion Matrix:\n", conf_matrix)
 
         if binary_classification : 
