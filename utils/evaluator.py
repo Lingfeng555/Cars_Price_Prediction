@@ -66,7 +66,8 @@ class evaluator():
         print("Mean:", mean)
         print("Variance:", variance)
         print("Standard Deviation:", std_dev)
-
+        
+        # to do Arreglar el equal dept y sacar el avg error de cada bin
         frequencies = evaluator.equal_depth_binning(diff)
         if plot:
             evaluator.plot_bar_chart(data=frequencies, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
@@ -75,6 +76,9 @@ class evaluator():
 
     @staticmethod
     def eval_classfication(y_pred, y_true, binary_classification, average='weighted'):
+        """
+        Evaluates classification model performance and prints key metrics.
+        """
         accuracy = accuracy_score(y_true, y_pred)
         precision = precision_score(y_true, y_pred, average=average)
         recall = recall_score(y_true, y_pred, average=average)
