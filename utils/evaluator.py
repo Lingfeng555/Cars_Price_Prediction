@@ -104,7 +104,7 @@ class Evaluator():
         mse = Evaluator.mean_squared_error(y_true, y_pred)
         rmse = Evaluator.mean_squared_error(y_true, y_pred, squared=False)
         r2 = r2_score(y_true, y_pred)
-        mape = evaluator.mean_absolute_percentage_error(y_true, y_pred)
+        mape = Evaluator.mean_absolute_percentage_error(y_true, y_pred)
         print("MAE:", mae, "\n", "MSE:", mse, "\n",  "RMSE:", rmse, "\n", "R2:", r2, "\n", "MAPE:", mape)
 
         diff = np.abs( y_pred - y_true )
