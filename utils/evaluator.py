@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-class evaluator():
+class Evaluator():
 
     @staticmethod
     def mean_absolute_percentage_error(y_true, y_pred):
@@ -37,6 +37,52 @@ class evaluator():
         result = {str(bin_range): count for bin_range, count in bin_counts.items()}
         
         return result
+    
+    @staticmethod
+    def regression_error_distribution(y_pred, y_true,  bins: int, plot:bool):
+        lower_limit = min(y_true)
+        upper_limit = max(y_pred)
+
+        data = pd.DataFrame({"pred": y_pred, "true": y_true, "diff": np.abs(y_pred-y_true)})
+
+        bin_depth = (upper_limit - lower_limit)/bins
+
+        result = {"bin_label":[] ,"mean": [], "variance": [], "std_dev": [], "max_error": [], "min_error": [], "n_sample":[]}
+
+        for i in range(1, bins):
+            errors = data["diff"][(data["true"] <= bin_depth * i) & (data["true"] > bin_depth * (i - 1))].to_numpy()
+
+            mean, variance, std_dev = Evaluator.calculate_statistics(errors)
+            result["mean"].append(mean)
+            result["variance"].append(variance)
+            result["std_dev"].append(std_dev)
+
+            result["max_error"].append(np.max(errors))
+            result["min_error"].append(np.min(errors))
+            result["bin_label"].append(f"({bin_depth*i}, {bin_depth*(i-1)}]")
+            result["n_sample"].append(np.size(errors))
+
+        result = pd.DataFrame(result)
+        print(result)
+        
+        if plot : 
+            colnames = result.columns.to_list()
+            colnames.remove("bin_label")
+
+            for col in colnames:
+                Evaluator.plot_bar_chart_key_value(keys = result["bin_label"], values=result[col], title=col, xlabel=col, ylabel="bin_label")
+
+    @staticmethod
+    def plot_bar_chart_key_value(keys: list, values: list, title="Bar Chart", xlabel="Keys", ylabel="Values"):
+        plt.figure(figsize=(10, 5))  # Set the figure size
+        plt.bar(keys, values, color='black')  # Create a bar chart
+        plt.xlabel(xlabel)  # Set the label for the x-axis
+        plt.ylabel(ylabel)  # Set the label for the y-axis
+        plt.title(title)  # Set the title of the chart
+        plt.xticks(rotation=45)  # Rotate x-axis labels for better readability if needed
+        plt.tight_layout()  # Adjust layout to not cut off elements
+        plt.show()
+
 
     @staticmethod
     def plot_bar_chart(data: dict, title="Bar Chart", xlabel="Keys", ylabel="Values"):
@@ -53,24 +99,21 @@ class evaluator():
         plt.show()
 
     @staticmethod
-    def eval_regression(y_pred, y_true, plot: bool = True):
+    def eval_regression(y_pred, y_true, plot: bool = True, bins = 5):
         mae = mean_absolute_error(y_true, y_pred)
-        mse = evaluator.mean_squared_error(y_true, y_pred)
-        rmse = evaluator.mean_squared_error(y_true, y_pred, squared=False)
+        mse = Evaluator.mean_squared_error(y_true, y_pred)
+        rmse = Evaluator.mean_squared_error(y_true, y_pred, squared=False)
         r2 = r2_score(y_true, y_pred)
-        mape = evaluator.mean_absolute_percentage_error(y_true, y_pred)
+        mape = Evaluator.mean_absolute_percentage_error(y_true, y_pred)
         print("MAE:", mae, "MSE:", mse, "RMSE:", rmse, "R2:", r2, "MAPE:", mape)
 
         diff = np.abs( y_pred - y_true )
-        mean, variance, std_dev = evaluator.calculate_statistics(diff)
+        mean, variance, std_dev = Evaluator.calculate_statistics(diff)
         print("Mean:", mean)
         print("Variance:", variance)
         print("Standard Deviation:", std_dev)
-
-        frequencies = evaluator.equal_depth_binning(diff)
-        if plot:
-            evaluator.plot_bar_chart(data=frequencies, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
-        print(frequencies)
+        
+        Evaluator.regression_error_distribution(y_pred, y_true,  bins = bins, plot = plot)
             
 
     @staticmethod
@@ -93,9 +136,9 @@ class evaluator():
         '''
         This function receives a numerical array of the absolute difference between the prediction and the actual value
         '''
-        errors = evaluator.equal_depth_binning(diff[diff > 0])
+        errors = Evaluator.equal_depth_binning(diff[diff > 0])
 
-        if plot : evaluator.plot_bar_chart(data=errors, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
+        if plot : Evaluator.plot_bar_chart(data=errors, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
 
         print("Errors:",errors)
         print("Error mean:", np.mean(diff[diff > 0]))
