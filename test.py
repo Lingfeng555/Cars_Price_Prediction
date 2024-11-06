@@ -1,18 +1,22 @@
+import sys
+sys.path.insert(1, '../') 
 from utils.loader import Loader
-from utils.evaluator import evaluator
+from utils.evaluator import Evaluator
 
 import tensorflow as tf
 import pandas as pd
 import numpy as np
-from gensim.models import Word2Vec
+from gensim.models import KeyedVectors
 import re
+from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from tensorflow.keras.models import Sequential, Model
-from tensorflow.keras.layers import Dense, Dropout, Embedding, Flatten, Input, Concatenate, BatchNormalization, LSTM, Bidirectional, Attention, Flatten
+from tensorflow.keras.layers import Dense, Embedding, Flatten, Input, Concatenate, LSTM, Bidirectional, Attention, Flatten
 from tensorflow.keras import regularizers
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from transformers import TFAutoModel, AutoTokenizer
 import nltk
 from nltk.corpus import stopwords
 import matplotlib.pyplot as plt
@@ -61,6 +65,9 @@ train["price"] = price_scaler.fit_transform(train["price"].to_numpy().reshape(-1
 #Parameters
 verb_size = 150
 
+spanish_model_path = Path("~/resource/w2v/models/complete_vectors.bin").expanduser()
+spanish_model_kv = KeyedVectors.load_word2vec_format(str(spanish_model_path), binary=True)
+
 # Load data (assuming df is your DataFrame containing the required columns)
 texts = train['full_description'].values  # descriptions
 # Tokenization and sequence padding
@@ -69,30 +76,36 @@ tokenizer.fit_on_texts(texts)
 sequences = tokenizer.texts_to_sequences(texts)
 data = pad_sequences(sequences,  maxlen=verb_size, padding='post')
 
-train_data, test_data, train_prices, test_prices, train_km, test_km = train_test_split(
-    data, train['price'], train['km'], test_size=0.2, random_state=42, stratify=train['fuelType'])
+# Load data (assuming df is your DataFrame containing the required columns)
+texts = train['full_description'].values  # descriptions
+# Tokenization and sequence padding
+tokenizer = Tokenizer(num_words=verb_size)
+tokenizer.fit_on_texts(texts)
+sequences = tokenizer.texts_to_sequences(texts)
+data = pad_sequences(sequences,  maxlen=verb_size, padding='post')
 
-train_data = tf.convert_to_tensor(train_data, dtype=tf.int32)
-test_data = tf.convert_to_tensor(test_data, dtype=tf.int32)
-train_prices = tf.convert_to_tensor(train_prices, dtype=tf.float32)
-test_prices = tf.convert_to_tensor(test_prices, dtype=tf.float32)
-train_km = tf.convert_to_tensor(train_km, dtype=tf.float32)
-train_km = tf.convert_to_tensor(train_km, dtype=tf.float32)
+#A integrar
+tokenizer = AutoTokenizer.from_pretrained("dccuchile/bert-base-spanish-wwm-uncased")
+beto_model = TFAutoModel.from_pretrained("dccuchile/bert-base-spanish-wwm-uncased")
 
 # Text input branch
 text_input = Input(shape=(train_data.shape[1],), dtype='int32')
 
 # Capa de Embedding
-text_embed_layer = Embedding(input_dim=train_data.shape[1], output_dim=verb_size, input_length=train_data.shape[1])
+text_embed_layer = Embedding(input_dim=train_data.shape[1], 
+                             output_dim=spanish_model_kv.vector_size, 
+                             input_length=train_data.shape[1],
+                             weights=[embedding_matrix],
+                             trainable=False)
 text_embed = text_embed_layer(text_input)
 
 # Primera capa LSTM bidireccional con 'return_sequences=True' para permitir apilar más capas
 lstm_out = Bidirectional(LSTM(128, return_sequences=True))(text_embed)
-lstm_out = Dropout(0.5)(lstm_out)
+#lstm_out = Dropout(0.5)(lstm_out)
 
 # Segunda capa LSTM
 lstm_out = LSTM(64, return_sequences=True)(lstm_out)
-lstm_out = Dropout(0.5)(lstm_out)
+#lstm_out = Dropout(0.5)(lstm_out)
 
 # Capa de Atención
 attention_out = Attention()([lstm_out, lstm_out])
@@ -124,6 +137,10 @@ history = model.fit([train_data, train_km], train_prices,
           epochs=30, batch_size=128)
 print("TERMINA EL ENTRENAMIENTO...")
 
+plt.xlabel("# Epoca")
+plt.ylabel("Loss magnitude")
+plt.plot(history.history["loss"])
+
 predicted_prices = model.predict([test_data, test_km])
 
 # Assuming test_prices is a 1D array, we can convert it to a DataFrame
@@ -136,5 +153,4 @@ results_df = pd.DataFrame({
 # Display the first few rows of the DataFrame
 print(results_df.head())
 
-evaluator.eval_regression(results_df["Predicted_Price"], results_df["Actual_Price"], plot=False)
-
+Evaluator.eval_regression(results_df["Predicted_Price"], results_df["Actual_Price"], plot=True, bins=5)
