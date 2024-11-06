@@ -63,7 +63,6 @@ class Evaluator():
             result["n_sample"].append(np.size(errors))
 
         result = pd.DataFrame(result)
-        print(result)
         
         if plot : 
             colnames = result.columns.to_list()
@@ -71,6 +70,8 @@ class Evaluator():
 
             for col in colnames:
                 Evaluator.plot_bar_chart_key_value(keys = result["bin_label"], values=result[col], title=col, xlabel=col, ylabel="bin_label")
+
+        return result
 
     @staticmethod
     def plot_bar_chart_key_value(keys: list, values: list, title="Bar Chart", xlabel="Keys", ylabel="Values"):
@@ -113,7 +114,7 @@ class Evaluator():
         print("Variance:", variance)
         print("Standard Deviation:", std_dev)
         
-        Evaluator.regression_error_distribution(y_pred, y_true,  bins = bins, plot = plot)
+        return Evaluator.regression_error_distribution(y_pred, y_true,  bins = bins, plot = plot)
             
 
     @staticmethod
