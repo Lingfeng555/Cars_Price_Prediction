@@ -55,17 +55,21 @@ class Data_processor():
 
     @staticmethod
     def __impute_categorical_mode(df, X, Y):
-        # Agrupar por las columnas X y calcular el valor más común (moda) en la columna Y para cada grupo
-        modes = df.groupby(X,observed=False)[Y].agg(lambda x: x.dropna().mode()[0] if not x.dropna().empty else None, ).reset_index()
-        modes.rename(columns={Y: 'Mode'}, inplace=True)
-        
-        # Unir el DataFrame original con los modos encontrados para facilitar la imputación
-        df = df.merge(modes, on=X, how='left')
-        
-        # Imputar los valores NaN en Y usando el valor más común de su grupo
+        # Group by the columns X and calculate the most common value (mode) in the column Y for each group
+        modes = df.groupby(X, observed=False)[Y].agg(
+            lambda x: x.dropna().mode()[0] if not x.dropna().empty else None
+        )
+
+        # Keep modes as a Series with the group as its index
+        modes.name = 'Mode'
+
+        # Join the original DataFrame with the modes found using the index from groupby
+        df = df.join(modes, on=X, how='left')
+
+        # Impute NaN values in Y using the most common value from its group
         df[Y] = df.apply(lambda row: row['Mode'] if pd.isna(row[Y]) else row[Y], axis=1)
 
-        # Eliminar la columna auxiliar 'Mode' añadida para la imputación
+        # Remove the auxiliary 'Mode' column added for imputation
         df.drop('Mode', axis=1, inplace=True)
         
         return df
