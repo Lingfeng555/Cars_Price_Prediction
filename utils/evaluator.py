@@ -37,7 +37,7 @@ class Evaluator():
         return counts_dict
     
     @staticmethod
-    def regression_error_distribution(y_pred, y_true,  bins: int, plot:bool):
+    def regression_error_distribution(y_pred: np.array, y_true: np.array,  bins: int, plot:bool):
         lower_limit = min(y_true)
         upper_limit = max(y_pred)
 
@@ -54,7 +54,7 @@ class Evaluator():
             result["mean"].append(mean)
             result["variance"].append(variance)
             result["std_dev"].append(std_dev)
-
+            
             result["max_error"].append(np.max(errors))
             result["min_error"].append(np.min(errors))
             result["bin_label"].append(f"({bin_depth*i}, {bin_depth*(i-1)}]")
