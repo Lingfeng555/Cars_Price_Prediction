@@ -26,17 +26,15 @@ class Evaluator():
         return mean, variance, std_dev
     
     @staticmethod
-    def equal_depth_binning(arr: np.array, bins=5, precision=2):
-        # Create 5 equal-depth bins using pd.qcut
-        bins = pd.qcut(arr, q=bins, precision=precision, duplicates='drop')
+    def equal_depth_binning(arr: np.array):
+        # Usando np.unique para obtener los valores únicos y sus conteos
+        values, counts = np.unique(arr, return_counts=True)
+
+        # Combinando los valores y sus conteos en un diccionario
+        counts_dict = dict(zip(values, counts))
+
         
-        # Get the frequency count for each bin
-        bin_counts = bins.value_counts().sort_index()
-        
-        # Create a dictionary with string representations of each range and frequencies
-        result = {str(bin_range): count for bin_range, count in bin_counts.items()}
-        
-        return result
+        return counts_dict
     
     @staticmethod
     def regression_error_distribution(y_pred, y_true,  bins: int, plot:bool):
@@ -143,8 +141,7 @@ class Evaluator():
         errors = Evaluator.equal_depth_binning(diff[diff > 0])
 
         if plot : Evaluator.plot_bar_chart(data=errors, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
-
-        print("Errors:",errors)
+        print(errors)
         print("Error mean:", np.mean(diff[diff > 0]))
         print("Error rate:", len(diff[diff > 0])/len(diff)*100, "%")
         print("Overall mean:", np.mean(diff))
