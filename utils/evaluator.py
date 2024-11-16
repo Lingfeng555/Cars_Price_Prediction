@@ -200,14 +200,16 @@ class Evaluator():
         # Create the 'evaluation' directory if it doesn't exist
         os.makedirs(directory_path, exist_ok=True)
 
-        # Save the regression register
+        # Save the regression register in LaTeX format
         regression_df = pd.DataFrame(Evaluator.regression_register)
-        regression_csv_path = f"{file_path}_regression.csv"
-        regression_df.to_csv(regression_csv_path, index=False)
-        print(f"Regression results saved to: {regression_csv_path}")
+        regression_latex_path = f"{file_path}_regression.tex"
+        with open(regression_latex_path, "w") as f:
+            f.write(regression_df.to_latex(index=False))
+        print(f"Regression results saved to: {regression_latex_path}")
 
-        # Save the classification register
+        # Save the classification register in LaTeX format
         classification_df = pd.DataFrame(Evaluator.classification_register)
-        classification_csv_path = f"{file_path}_classification.csv"
-        classification_df.to_csv(classification_csv_path, index=False)
-        print(f"Classification results saved to: {classification_csv_path}")
+        classification_latex_path = f"{file_path}_classification.tex"
+        with open(classification_latex_path, "w") as f:
+            f.write(classification_df.to_latex(index=False))
+        print(f"Classification results saved to: {classification_latex_path}")
