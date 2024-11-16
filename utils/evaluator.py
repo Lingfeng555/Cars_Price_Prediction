@@ -1,10 +1,14 @@
-from sklearn.metrics import mean_absolute_error, r2_score, accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, roc_auc_score, log_loss
+from sklearn.metrics import mean_absolute_error, r2_score, accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, roc_auc_score
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 
 class Evaluator():
+
+    regression_register = {"Algorithm": [], "mae": [], "mse": [], "mape": [] ,"r2": [], "error_mean": [], "error_std_dev": [], "adjuste_r2": []}
+    classification_register = {"Algorithm": [], "accuracy": [], "precision": [], "recall": [] ,"f1": [], "roc_auc": []}
 
     @staticmethod
     def mean_absolute_percentage_error(y_true, y_pred):
@@ -27,14 +31,16 @@ class Evaluator():
     
     @staticmethod
     def equal_depth_binning(arr: np.array):
-        # Usando np.unique para obtener los valores únicos y sus conteos
         values, counts = np.unique(arr, return_counts=True)
-
-        # Combinando los valores y sus conteos en un diccionario
         counts_dict = dict(zip(values, counts))
-
-        
         return counts_dict
+    
+    @staticmethod
+    def adjustedr2(y_true, y_pred, n_features):
+        n = len(y_true)
+        r2 = r2_score(y_true, y_pred)
+        adjusted_r2 = 1 - ((1 - r2) * (n - 1) / (n - n_features - 1))
+        return adjusted_r2
     
     @staticmethod
     def regression_error_distribution(y_pred: np.array, y_true: np.array,  bins: int, plot:bool):
@@ -98,7 +104,7 @@ class Evaluator():
         plt.show()
 
     @staticmethod
-    def eval_regression(y_pred, y_true, plot: bool = True, bins = 5):
+    def eval_regression(y_pred, y_true, plot: bool = True, bins = 5, n_features = None, regressor_name = None):
         mae = mean_absolute_error(y_true, y_pred)
         mse = Evaluator.mean_squared_error(y_true, y_pred)
         rmse = Evaluator.mean_squared_error(y_true, y_pred, squared=False)
@@ -111,12 +117,32 @@ class Evaluator():
         print("Mean:", mean)
         print("Variance:", variance)
         print("Standard Deviation:", std_dev)
+
+        r2_adjusted = None
+        if (n_features != None): 
+            r2_adjusted = Evaluator.adjustedr2(y_pred=y_pred, y_true=y_true, n_features=n_features)
+            print("r2_adjusted:", r2_adjusted)
+
+        if (regressor_name != None):
+            Evaluator.register_regression(regressor_name, mae, mse, r2, mape, mean, std_dev, r2_adjusted)
         
         return Evaluator.regression_error_distribution(y_pred, y_true,  bins = bins, plot = plot)
+
+    @staticmethod
+    def register_regression(regressor_name, mae, mse, r2, mape, mean, std_dev, r2_adjusted):
+        Evaluator.regression_register["Algorithm"].append(regressor_name)
+        Evaluator.regression_register["mae"].append(round(mae, 4))
+        Evaluator.regression_register["mse"].append(round(mse, 4))
+        Evaluator.regression_register["mape"].append(round(mape, 4))
+        Evaluator.regression_register["r2"].append(round(r2, 4))
+        Evaluator.regression_register["error_mean"].append(round(mean, 4))
+        Evaluator.regression_register["error_std_dev"].append(round(std_dev, 4))
+        Evaluator.regression_register["adjuste_r2"].append(round(r2_adjusted, 4) if r2_adjusted is not None else None)
+
             
 
     @staticmethod
-    def eval_classfication(y_pred, y_true, binary_classification, average='weighted'):
+    def eval_classfication(y_pred, y_true, binary_classification, average='weighted', classifier_name = None):
         """
         Evaluates classification model performance and prints key metrics.
         """
@@ -129,9 +155,23 @@ class Evaluator():
         print("Accuracy:", accuracy, "\n", "Precision:", precision, "\n", "Recall:", recall, "\n", "F1 Score:", f1)
         print("Confusion Matrix:\n", conf_matrix)
 
+        roc_auc = None
         if binary_classification : 
             roc_auc = roc_auc_score(y_true, y_pred)
             print("ROC AUC:", roc_auc)
+
+        if classifier_name != None:
+            Evaluator.register_classification(classifier_name, accuracy, precision, recall, f1, roc_auc)
+
+    @staticmethod
+    def register_classification(classifier_name, accuracy, precision, recall, f1, roc_auc):
+        Evaluator.classification_register["Algorithm"].append(classifier_name)
+        Evaluator.classification_register["accuracy"].append(round(accuracy, 4))
+        Evaluator.classification_register["precision"].append(round(precision, 4))
+        Evaluator.classification_register["recall"].append(round(recall, 4))
+        Evaluator.classification_register["f1"].append(round(f1, 4))
+        Evaluator.classification_register["roc_auc"].append(round(roc_auc, 4) if roc_auc is not None else None)
+
 
     @staticmethod
     def eval_ordinal_classification(diff, plot = True):
@@ -145,3 +185,29 @@ class Evaluator():
         print("Error mean:", np.mean(diff[diff > 0]))
         print("Error rate:", len(diff[diff > 0])/len(diff)*100, "%")
         print("Overall mean:", np.mean(diff))
+    
+    @staticmethod
+    def save(name):
+        """
+        Saves the regression_register and classification_register as CSV files.
+
+        Parameters:
+        - file_path: str - Base file path for saving the results (default is "evaluation_results").
+        """
+        directory_path = "evaluation"
+        file_path = f"{directory_path}/{name}"
+
+        # Create the 'evaluation' directory if it doesn't exist
+        os.makedirs(directory_path, exist_ok=True)
+
+        # Save the regression register
+        regression_df = pd.DataFrame(Evaluator.regression_register)
+        regression_csv_path = f"{file_path}_regression.csv"
+        regression_df.to_csv(regression_csv_path, index=False)
+        print(f"Regression results saved to: {regression_csv_path}")
+
+        # Save the classification register
+        classification_df = pd.DataFrame(Evaluator.classification_register)
+        classification_csv_path = f"{file_path}_classification.csv"
+        classification_df.to_csv(classification_csv_path, index=False)
+        print(f"Classification results saved to: {classification_csv_path}")
