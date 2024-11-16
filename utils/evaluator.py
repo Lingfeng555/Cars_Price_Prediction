@@ -45,10 +45,10 @@ class Evaluator():
     @staticmethod
     def regression_error_distribution(y_pred: np.array, y_true: np.array,  bins: int, plot:bool):
         lower_limit = min(y_true)
-        upper_limit = max(y_pred)
+        upper_limit = max(y_true)
 
         data = pd.DataFrame({"pred": y_pred, "true": y_true, "diff": np.abs(y_pred-y_true)})
-
+        
         bin_depth = (upper_limit - lower_limit)/bins
 
         result = {"bin_label":[] ,"mean": [], "variance": [], "std_dev": [], "max_error": [], "min_error": [], "n_sample":[]}
@@ -56,6 +56,9 @@ class Evaluator():
         for i in range(1, bins):
             errors = data["diff"][(data["true"] <= bin_depth * i) & (data["true"] > bin_depth * (i - 1))].to_numpy()
 
+            if len(errors) == 0:
+                continue
+            
             mean, variance, std_dev = Evaluator.calculate_statistics(errors)
             result["mean"].append(mean)
             result["variance"].append(variance)
@@ -63,6 +66,7 @@ class Evaluator():
             
             result["max_error"].append(np.max(errors))
             result["min_error"].append(np.min(errors))
+
             result["bin_label"].append(f"({bin_depth*i}, {bin_depth*(i-1)}]")
             result["n_sample"].append(np.size(errors))
 
