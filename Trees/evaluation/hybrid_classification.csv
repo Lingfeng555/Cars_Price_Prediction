@@ -1,0 +1,6 @@
+Algorithm,accuracy,precision,recall,f1,roc_auc
+CART,0.806,0.8059,0.806,0.8058,
+RandomForestClassifier,0.8237,0.8237,0.8237,0.8233,
+SVC,0.7867,0.7911,0.7867,0.7845,
+Naive bayes,0.4645,0.6062,0.4645,0.4636,
+ANN,0.7935,0.7945,0.7935,0.7938,
