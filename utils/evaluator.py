@@ -204,16 +204,19 @@ class Evaluator():
         # Create the 'evaluation' directory if it doesn't exist
         os.makedirs(directory_path, exist_ok=True)
 
+        # Define the float format for scientific notation
+        float_format = "{:.4e}".format
+
         # Save the regression register in LaTeX format
         regression_df = pd.DataFrame(Evaluator.regression_register)
         regression_latex_path = f"{file_path}_regression.tex"
         with open(regression_latex_path, "w") as f:
-            f.write(regression_df.to_latex(index=False))
+            f.write(regression_df.to_latex(index=False, float_format=float_format))
         print(f"Regression results saved to: {regression_latex_path}")
 
         # Save the classification register in LaTeX format
         classification_df = pd.DataFrame(Evaluator.classification_register)
         classification_latex_path = f"{file_path}_classification.tex"
         with open(classification_latex_path, "w") as f:
-            f.write(classification_df.to_latex(index=False))
+            f.write(classification_df.to_latex(index=False, float_format=float_format))
         print(f"Classification results saved to: {classification_latex_path}")
