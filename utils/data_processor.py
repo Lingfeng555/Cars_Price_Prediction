@@ -11,12 +11,49 @@ from mpl_toolkits.mplot3d import Axes3D
 import prince
 import numpy as np
 
-'''
-This is an global encoder
-'''
-class Data_processor():
+
+class Data_processor:
+    """
+    A utility class for processing datasets by handling missing data and filtering features.
+
+    Requirements:
+    - Python libraries:
+      - pandas: for data manipulation and analysis.
+      - seaborn, matplotlib: for visualization.
+      - sklearn (preprocessing, decomposition, linear_model, feature_selection): for feature engineering and statistical analysis.
+      - prince: for multiple correspondence analysis (MCA).
+      - numpy: for numerical operations.
+
+    Methods:
+    This class is intended to include static or instance methods for:
+      - Handling missing data: Methods for filling, removing, or analyzing missing values.
+      - Feature filtering: Tools for selecting features based on statistical or model-driven approaches.
+      - Dimensionality reduction: Techniques like PCA and TruncatedSVD.
+      - Label encoding and other preprocessing tasks.
+      - Visualization of data or features in 2D or 3D using matplotlib and seaborn.
+      
+    Intended Usage:
+    - Use this class as a preprocessing step in data pipelines for machine learning projects.
+    - Extend this class by adding more methods tailored to specific use cases.
+    """
+
     @staticmethod
-    def fill_na_with_mode(df, column_name, inplace=False):
+    def fill_na_with_mode(df: pd.DataFrame, column_name: list, inplace=False) -> pd.DataFrame:
+        """
+        Fills missing values in the specified column of a DataFrame with the column's mode.
+
+        Parameters:
+            df (pd.DataFrame): The input DataFrame.
+            column_name (str): The name of the column to process.
+            inplace (bool): Whether to modify the DataFrame in place. Default is False.
+
+        Returns:
+            pd.DataFrame: The DataFrame with missing values filled, or the same DataFrame if inplace=True.
+
+        Notes:
+            - If the column does not exist, a message is printed and no changes are made.
+            - The mode is the most frequently occurring value in the column.
+        """
         if column_name in df.columns:
             mode_value = df[column_name].mode().iloc[0]
             df[column_name] = df[column_name].fillna(mode_value, inplace=inplace)
@@ -25,7 +62,30 @@ class Data_processor():
         return df
 
     @staticmethod
-    def impute_with_linear_regression(data, x_columns, y_column):
+    def impute_with_linear_regression(data: pd.DataFrame, x_columns: list, y_column: str) -> pd.DataFrame:
+        """
+        Imputes missing values in the target column using linear regression based on other columns.
+
+        Parameters:
+            data (pd.DataFrame): The input DataFrame.
+            x_columns (list): List of column names used as predictors (independent variables).
+            y_column (str): The target column (dependent variable) to be imputed.
+
+        Returns:
+            pd.DataFrame: The DataFrame with missing values in the target column imputed.
+
+        Process:
+            1. Splits the data into:
+            - Rows with non-missing target values for training.
+            - Rows with missing target values for prediction.
+            2. Trains a linear regression model using the provided predictors.
+            3. Calculates the Mean Absolute Percentage Error (MAPE) on training data and prints it.
+            4. Predicts and imputes missing values in the target column.
+
+        Notes:
+            - If there are no missing values in `y_column`, no imputation is performed.
+            - Prints the regression MAPE to evaluate model accuracy.
+        """
         df_with_target = data.dropna(subset=[y_column])
         df_without_target = data[data[y_column].isna()]
         
@@ -47,6 +107,23 @@ class Data_processor():
 
     @staticmethod
     def remove_redundand_columns(df:pd.DataFrame )->pd.DataFrame:
+        """
+        Removes columns from a DataFrame that contain only a single unique non-null value.
+
+        Parameters:
+            df (pd.DataFrame): The input DataFrame.
+
+        Returns:
+            pd.DataFrame: The DataFrame with redundant columns removed.
+
+        Process:
+            - Iterates through each column in the DataFrame.
+            - Checks if the column has only one unique non-null value.
+            - Drops the column if it is redundant.
+
+        Notes:
+            - Columns with all null values are not considered redundant.
+        """
         for column in df.columns: #Remove redundant columns
             unique_values = df[column].dropna().unique() 
             if len(unique_values) == 1:
@@ -54,54 +131,110 @@ class Data_processor():
         return df
 
     @staticmethod
-    def __impute_categorical_mode(df, X, Y):
-        # Group by the columns X and calculate the most common value (mode) in the column Y for each group
+    def __impute_categorical_mode(df: pd.DataFrame, X: str, Y: str)->pd.DataFrame:
+        """
+        Imputes missing values in a categorical column based on the mode grouped by another column.
+
+        Parameters:
+            df (pd.DataFrame): The input DataFrame.
+            X (str): The column used to group the data.
+            Y (str): The target column in which missing values are imputed.
+
+        Returns:
+            pd.DataFrame: The DataFrame with missing values in the target column imputed.
+
+        Process:
+            - Groups the DataFrame by the column `X` and calculates the mode of column `Y` for each group.
+            - Joins the calculated modes back to the DataFrame.
+            - Fills missing values in `Y` with the corresponding mode from the grouped data.
+            - Removes the temporary mode column after imputation.
+
+        Notes:
+            - If a group in `X` has no non-null values in `Y`, the mode for that group will be `None`.
+        """
         modes = df.groupby(X, observed=False)[Y].agg(
             lambda x: x.dropna().mode()[0] if not x.dropna().empty else None
         )
-
-        # Keep modes as a Series with the group as its index
         modes.name = 'Mode'
-
-        # Join the original DataFrame with the modes found using the index from groupby
         df = df.join(modes, on=X, how='left')
-
-        # Impute NaN values in Y using the most common value from its group
         df[Y] = df.apply(lambda row: row['Mode'] if pd.isna(row[Y]) else row[Y], axis=1)
-
-        # Remove the auxiliary 'Mode' column added for imputation
-        df.drop('Mode', axis=1, inplace=True)
-        
+        df.drop('Mode', axis=1, inplace=True)      
         return df
 
     @staticmethod
-    def impute_categorical_mode(df, X, Y):
+    def impute_categorical_mode(df: pd.DataFrame, X: list, Y: str)->pd.DataFrame:
+        """
+        Iteratively imputes missing values in a categorical column based on the mode grouped by multiple columns.
+
+        Parameters:
+            df (pd.DataFrame): The input DataFrame.
+            X (list): A list of columns to use iteratively for grouping.
+            Y (str): The target column in which missing values are imputed.
+
+        Returns:
+            pd.DataFrame: The DataFrame with missing values in the target column imputed.
+
+        Process:
+            - Iterates through the list `X` to group the data and impute missing values in `Y` using modes.
+            - After each iteration, the last column in `X` is removed, and the process continues with the remaining columns.
+            - Remaining missing values in `Y` after all iterations are filled with the string "unknown".
+
+        Notes:
+            - Ensures that any unhandled missing values in `Y` are filled with "unknown".
+        """
         for i in range(len(X)):
             df = Data_processor.__impute_categorical_mode(df, X, Y)
             X.pop(len(X)-1)
-        df[Y] = df[Y].fillna("unkown") #If is a unique car
+            missing_count = df[Y].isna().sum()
+        print(f"Number of missing values in '{Y}' before filling with 'unknown': {missing_count}")
+        df[Y] = df[Y].fillna("unknown")
         return df
 
     @staticmethod
-    def CA (categorical_columns, col_x, col_y):
+    def CA (categorical_columns: pd.DataFrame, col_x: str, col_y: str)->pd.DataFrame:
+        """
+        Performs Correspondence Analysis (CA) on two categorical columns and plots the results.
+
+        Parameters:
+            categorical_columns (pd.DataFrame): The DataFrame containing the categorical columns.
+            col_x (str): The name of the first categorical column.
+            col_y (str): The name of the second categorical column.
+
+        Process:
+            1. Creates a contingency table of the two categorical columns.
+            2. Calculates the probability matrix (P) from the contingency table.
+            3. Derives row and column mass matrices (D_r and D_c).
+            4. Normalizes the probability matrix and applies Singular Value Decomposition (SVD) to obtain:
+            - Row coordinates: Position of row categories in reduced space.
+            - Column coordinates: Position of column categories in reduced space.
+            5. Calls `CAplot` to visualize the results.
+
+        Notes:
+            - Uses TruncatedSVD for dimensionality reduction to two components.
+            - Requires a method `CAplot` to handle the visualization of row and column coordinates.
+
+        Returns:
+            None. The function plots the results using `CAplot`.
+
+        Dependencies:
+            - numpy for matrix calculations.
+            - pandas for creating contingency tables.
+            - sklearn's TruncatedSVD for dimensionality reduction.
+        """
+            
         contingency_table = pd.crosstab(categorical_columns[col_x], categorical_columns[col_y])
-
         P = contingency_table / contingency_table.values.sum()
-
-        # Calcular los perfiles de fila y columna (matrices D_r y D_c)
         D_r = np.diag(1 / P.sum(axis=1))
         D_c = np.diag(1 / P.sum(axis=0))
-
-        # Calcular la matriz S (correspondencia ajustada)
         S = np.sqrt(D_r).dot(P).dot(np.sqrt(D_c))
-
-        # Aplicar SVD
         svd = TruncatedSVD(n_components=2)
         svd.fit(S)
-        row_coordinates = svd.transform(S)  # Coordenadas de las filas
-        col_coordinates = svd.components_.T  # Coordenadas de las columnas
+        row_coordinates = svd.transform(S) 
+        col_coordinates = svd.components_.T  
+        Data_processor.CAplot(contingency_table, row_coordinates, col_coordinates)
 
-        # Visualización
+    @staticmethod
+    def CAplot(contingency_table, row_coordinates, col_coordinates):
         plt.figure(figsize=(8, 8))
         for i, label in enumerate(contingency_table.index):
             plt.scatter(row_coordinates[i, 0], row_coordinates[i, 1], color='blue')
@@ -117,7 +250,36 @@ class Data_processor():
         plt.show()
 
     @staticmethod
-    def chi_square_test(categorical_columns: pd.DataFrame, column_y: str):
+    def chi_square_test(categorical_columns: pd.DataFrame, column_y: str) -> pd.DataFrame:
+        """
+        Performs a Chi-Square test for independence between categorical features and a target column.
+
+        Parameters:
+            categorical_columns (pd.DataFrame): The DataFrame containing categorical columns.
+            column_y (str): The target column for the Chi-Square test.
+
+        Returns:
+            pd.DataFrame: A DataFrame containing:
+                - Feature: The feature names.
+                - Chi2 Stat: The Chi-Square statistic for each feature.
+                - p-value: The p-value for each feature.
+
+        Process:
+            1. Encodes categorical columns into numerical form using LabelEncoder.
+            2. Splits the DataFrame into predictors (X) and the target (y).
+            3. Computes the Chi-Square statistic and p-values using `chi2`.
+            4. Stores the results in a DataFrame and plots the results using `BarChart`.
+
+        Notes:
+            - This method assumes all columns except `column_y` are predictors.
+            - A lower p-value indicates a stronger association between the feature and the target column.
+
+        Dependencies:
+            - sklearn's LabelEncoder for encoding categorical data.
+            - sklearn's chi2 for Chi-Square computation.
+            - pandas for result storage and manipulation.
+            - `BarChart` method for visualization of the results.
+        """
         encoded_df = categorical_columns.copy()
         label_encoder = LabelEncoder()
         for col in categorical_columns.columns:
@@ -125,18 +287,19 @@ class Data_processor():
 
         X = encoded_df.drop(columns=[column_y])
         y = encoded_df[column_y]
-
-        # Realizar la prueba de chi-cuadrado
         chi2_stat, p_values = chi2(X, y)
 
-        # Crear un DataFrame para mostrar los resultados
         results = pd.DataFrame({
             'Feature': X.columns,
             'Chi2 Stat': chi2_stat,
             'p-value': p_values
         })
 
-        # Ordenar los resultados por el valor p
+        Data_processor.BarChart(results)
+        return results
+
+    @staticmethod
+    def BarChart(results):
         results.sort_values('p-value', inplace=True)
 
         plt.figure(figsize=(10, 6))
@@ -146,12 +309,30 @@ class Data_processor():
         plt.title('Chi-Square Test Results')
         plt.gca().invert_yaxis()  # Invertir el eje y para que la característica con menor p-value esté arriba
         plt.show()
-
-        # Mostrar el DataFrame de resultados
-        return results
     
     @staticmethod
     def chi_square_filter(categorical_columns: pd.DataFrame, column_y: str, p_value_filter: float) -> pd.DataFrame:
+        """
+        Filters categorical features based on the Chi-Square test and a p-value threshold.
+
+        Parameters:
+            categorical_columns (pd.DataFrame): The DataFrame containing categorical features.
+            column_y (str): The target column for the Chi-Square test.
+            p_value_filter (float): The threshold for the p-value to select features.
+
+        Returns:
+            pd.DataFrame: A DataFrame containing only the features with p-values below or equal to the threshold, 
+                        along with the target column ("price_categ").
+
+        Process:
+            1. Performs the Chi-Square test on all categorical features against the target column.
+            2. Filters features with p-values less than or equal to the specified threshold.
+            3. Retains the target column "price_categ" regardless of the test results.
+
+        Notes:
+            - Assumes the target column "price_categ" is always retained in the filtered DataFrame.
+            - Utilizes the `chi_square_test` method to compute Chi-Square statistics and p-values.
+        """
         result = Data_processor.chi_square_test(categorical_columns=categorical_columns, column_y=column_y)
         columns = list(result[ result["p-value"] <= p_value_filter ]["Feature"])
         columns.append("price_categ")
