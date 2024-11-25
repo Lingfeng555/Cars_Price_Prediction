@@ -137,7 +137,6 @@ class Evaluator:
         plt.tight_layout()  # Adjust layout to not cut off elements
         plt.show()
 
-
     @staticmethod
     def plot_bar_chart(data: dict, title="Bar Chart", xlabel="Keys", ylabel="Values"):
         keys = list(data.keys())
