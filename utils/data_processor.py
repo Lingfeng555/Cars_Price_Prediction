@@ -85,6 +85,7 @@ class Data_processor:
         Notes:
             - If there are no missing values in `y_column`, no imputation is performed.
             - Prints the regression MAPE to evaluate model accuracy.
+            - Use only the most correlated columns
         """
         df_with_target = data.dropna(subset=[y_column])
         df_without_target = data[data[y_column].isna()]

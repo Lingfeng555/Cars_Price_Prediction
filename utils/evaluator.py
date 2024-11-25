@@ -1,17 +1,62 @@
-from sklearn.metrics import mean_absolute_error, r2_score, accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, roc_auc_score
+from sklearn.metrics import (
+    mean_absolute_error, 
+    r2_score, 
+    accuracy_score, 
+    precision_score, 
+    recall_score, 
+    f1_score, 
+    confusion_matrix, 
+    roc_auc_score
+)
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
 
-class Evaluator():
+class Evaluator:
+    """
+    A utility class for evaluating predictions from regression, classification, and ordinal classification models.
+
+    Description:
+        - This class provides static methods to evaluate model predictions using common performance metrics.
+        - It is designed to handle 1-dimensional `np.array` inputs for both predictions and ground truth (`X` and `y`).
+        - Includes functionality to save evaluation summaries into `.tex` files for reporting purposes.
+
+    Main Methods:
+        1. `eval_regression`: Evaluates regression models using metrics like MAE and R².
+        2. `eval_classification`: Evaluates classification models using metrics like accuracy, precision, recall, F1-score, and confusion matrix.
+        3. `eval_ordinal_classification`: Evaluates ordinal classification models with a focus on specialized metrics for ordinal data.
+
+    Additional Features:
+        - If `regressor_name` or `classifier_name` is provided as a parameter, the evaluation is registered internally for further processing or saving.
+        - The `save()` method allows exporting all evaluations into a LaTeX `.tex` file for inclusion in scientific reports or papers.
+
+    Requirements:
+        1. **Python Libraries**:
+            - `sklearn`: For evaluation metrics like `mean_absolute_error`, `r2_score`, `accuracy_score`, etc.
+            - `numpy`: For handling arrays and numerical computations.
+            - `pandas`: For managing evaluation results in tabular format.
+            - `matplotlib`: For visualizing metrics or results if needed.
+            - `os`: For file management when saving `.tex` files.
+
+        2. **Inputs**:
+            - All `X` (predicted values) and `y` (true values) must be 1-dimensional `np.array`.
+
+        3. **Outputs**:
+            - Methods return evaluation metrics as dictionaries or DataFrames for easy integration into other workflows.
+
+    Intended Usage:
+        - Use the main evaluation methods (`eval_regression`, `eval_classification`, and `eval_ordinal_classification`) to compute relevant metrics.
+        - Store results with optional model names to track performance.
+        - Export evaluation summaries for documentation or reporting using the `save()` method.
+    """
 
     regression_register = {"Algorithm": [], "mae": [], "mse": [], "mape": [] ,"r2": [], "error_mean": [], "error_std_dev": [], "adjuste_r2": []}
     classification_register = {"Algorithm": [], "accuracy": [], "precision": [], "recall": [] ,"f1": [], "roc_auc": []}
 
     @staticmethod
-    def mean_absolute_percentage_error(y_true, y_pred):
+    def mean_absolute_percentage_error(y_true: np.array, y_pred: np.array):
         y_true, y_pred = np.array(y_true), np.array(y_pred)
         return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
@@ -108,7 +153,28 @@ class Evaluator():
         plt.show()
 
     @staticmethod
-    def eval_regression(y_pred, y_true, plot: bool = True, bins = 5, n_features = None, regressor_name = None):
+    def eval_regression(y_pred:np.array, y_true:np.array, plot: bool = True, bins: int = 5, n_features:int = None, regressor_name: str = None):
+        """
+        Evaluates regression model performance using common metrics.
+
+        Parameters:
+            y_pred (np.array): Predicted values.
+            y_true (np.array): True values.
+            plot (bool): If True, plots the regression error distribution. Default is True.
+            bins (int): Number of bins for the error distribution plot. Default is 5.
+            n_features (int): Number of features in the model (for adjusted R²). Optional.
+            regressor_name (str): Name of the regressor for logging results. Optional.
+
+        Metrics:
+            - MAE, MSE, RMSE, R², Adjusted R² (if `n_features` is provided), MAPE.
+            - Error statistics: Mean, Variance, Standard Deviation.
+
+        Returns:
+            Plot or distribution of regression errors if `plot=True`.
+
+        Notes:
+            - Registers metrics if `regressor_name` is provided.
+        """
         mae = mean_absolute_error(y_true, y_pred)
         mse = Evaluator.mean_squared_error(y_true, y_pred)
         rmse = Evaluator.mean_squared_error(y_true, y_pred, squared=False)
@@ -144,11 +210,30 @@ class Evaluator():
         Evaluator.regression_register["adjuste_r2"].append(round(r2_adjusted, 4) if r2_adjusted is not None else None)
 
             
-
     @staticmethod
-    def eval_classfication(y_pred, y_true, binary_classification, average='weighted', classifier_name = None):
+    def eval_classification(
+        y_pred: np.array, 
+        y_true: np.array, 
+        binary_classification: bool, 
+        average: str = 'weighted', 
+        classifier_name: str = None
+    ):
         """
-        Evaluates classification model performance and prints key metrics.
+        Evaluates classification model performance with key metrics.
+
+        Parameters:
+            y_pred (np.array): Predicted labels.
+            y_true (np.array): True labels.
+            binary_classification (bool): If True, computes ROC AUC.
+            average (str): Averaging method for multi-class metrics (default: 'weighted').
+            classifier_name (str): Optional, registers evaluation results if provided.
+
+        Metrics:
+            - Accuracy, Precision, Recall, F1 Score.
+            - Confusion Matrix.
+            - ROC AUC (for binary classification).
+
+        Prints metrics and optionally registers them.
         """
         accuracy = accuracy_score(y_true, y_pred)
         precision = precision_score(y_true, y_pred, average=average)
@@ -176,12 +261,29 @@ class Evaluator():
         Evaluator.classification_register["f1"].append(round(f1, 4))
         Evaluator.classification_register["roc_auc"].append(round(roc_auc, 4) if roc_auc is not None else None)
 
-
     @staticmethod
-    def eval_ordinal_classification(diff, plot = True):
-        '''
-        This function receives a numerical array of the absolute difference between the prediction and the actual value
-        '''
+    def eval_ordinal_classification(diff:np.array, plot = True):
+        """
+        Evaluates regression model performance using common metrics.
+
+        Parameters:
+            y_pred (np.array): Predicted values.
+            y_true (np.array): True values.
+            plot (bool): If True, plots the regression error distribution. Default is True.
+            bins (int): Number of bins for the error distribution plot. Default is 5.
+            n_features (int): Number of features in the model (for adjusted R²). Optional.
+            regressor_name (str): Name of the regressor for logging results. Optional.
+
+        Metrics:
+            - MAE, MSE, RMSE, R², Adjusted R² (if `n_features` is provided), MAPE.
+            - Error statistics: Mean, Variance, Standard Deviation.
+
+        Returns:
+            Plot or distribution of regression errors if `plot=True`.
+
+        Notes:
+            - Registers metrics if `regressor_name` is provided.
+        """
         errors = Evaluator.equal_depth_binning(diff[diff > 0])
 
         if plot : Evaluator.plot_bar_chart(data=errors, title="Error frequeancies", xlabel="Range", ylabel="Frequency")
@@ -191,7 +293,7 @@ class Evaluator():
         print("Overall mean:", np.mean(diff))
     
     @staticmethod
-    def save(name):
+    def save(name: str):
         """
         Saves the regression_register and classification_register as CSV files.
 
