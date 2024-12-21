@@ -32,6 +32,7 @@ class ClassifierGenerator:
         self.y = target_column
         self.use_cuml = use_cuml and CUML_AVAILABLE
         self.X_train, self.X_val, self.y_train, self.y_val = train_test_split(self.X, self.y, test_size=0.2, random_state=42)
+        self.results = None  # Store the results from generate()
 
     def _objective(self, trial, method):
         """
@@ -147,30 +148,33 @@ class ClassifierGenerator:
         dict: A dictionary with methods as keys and their results as values.
         """
         methods = ["decision_tree", "random_forest", "svc"]
-        results = {}
+        self.results = {}
 
         for method in methods:
             try:
                 print(f"Optimizing method: {method}")
                 result = self.find_best_classifier(method, n_trials=n_trials)
                 evaluation_metrics = self.evaluate(result["model"])
-                results[method] = {
+                self.results[method] = {
                     "best_params": result["best_params"],
                     "metrics": evaluation_metrics,
                 }
             except Exception as e:
                 print(f"Error with method {method}: {e}")
-                results[method] = {"error": str(e)}
+                self.results[method] = {"error": str(e)}
 
-        return results
+        return self.results
 
     def save(self, name: str):
         """
-        Save evaluation results to .tex files.
+        Save evaluation results to .tex files. Uses previously generated results.
 
         Parameters:
         name (str): Name of the directory to save the .tex files.
         """
+        if self.results is None:
+            raise ValueError("No results to save. Please run generate() first.")
+
         directory_path = "evaluation"
         dir = f"{directory_path}/{name}"
 
@@ -179,7 +183,7 @@ class ClassifierGenerator:
             os.makedirs(dir)
 
         # Save results for each method
-        for method, result in self.generate().items():
+        for method, result in self.results.items():
             if "metrics" in result:
                 metrics_df = pd.DataFrame([result["metrics"]])
                 metrics_df.to_latex(f"{dir}/{method}_evaluation.tex", index=False)
