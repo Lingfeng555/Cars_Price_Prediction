@@ -1,5 +1,5 @@
 import pandas as pd
-from .classifier_generator import ClassifierGenerator
+from .classifierGenerator import ClassifierGenerator
 from .cluster_generator import ClusterGenerator
 from .regressor_generator import RegressionGenerator
 
