@@ -67,7 +67,7 @@ class RegressionGenerator:
             max_depth = trial.suggest_int("max_depth", 200, 500)
             min_samples_split = trial.suggest_int("min_samples_split", 2, 20)
             min_samples_leaf = trial.suggest_int("min_samples_leaf", 1, 10)
-            max_features = trial.suggest_categorical("max_features", ["auto", "sqrt", "log2", None])
+            max_features = trial.suggest_categorical("max_features", ["sqrt", "log2", None])
             bootstrap = trial.suggest_categorical("bootstrap", [True, False])
 
             if self.use_cuml:
