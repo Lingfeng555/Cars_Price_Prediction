@@ -152,7 +152,7 @@ class RegressionGenerator:
 
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
-        return Evaluator.mean_absolute_percentage_erro(y_test, y_pred)
+        return Evaluator.mean_absolute_percentage_error(y_test, y_pred)
 
     def find_best_model(self, algorithm, n_trials=50):
         """
