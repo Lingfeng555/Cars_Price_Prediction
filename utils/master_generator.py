@@ -1,5 +1,5 @@
 import pandas as pd
-from .classifierGenerator import ClassifierGenerator
+from .classifier_generator import ClassifierGenerator
 from .cluster_generator import ClusterGenerator
 from .regressor_generator import RegressionGenerator
 
@@ -19,7 +19,7 @@ class MasterGenerator:
         regression_generator.save(self.name)
 
     def _classification_generate(self):
-        classifier_generator = ClassifierGenerator(dataset=self.X, target_column=self.y_categ, use_cuml=self.CUML)
+        classifier_generator = ClassifierGenerator(dataset=self.X, target_column=self.y_categ.values.ravel(), use_cuml=self.CUML)
         classifier_generator.generate(n_trials=self.n_tries)
         classifier_generator.save(self.name)
 
