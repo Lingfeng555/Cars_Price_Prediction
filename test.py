@@ -3,6 +3,7 @@ sys.path.insert(1, '../')
 from utils.loader import Loader
 from utils.evaluator import Evaluator
 
+from sklearn.metrics import mean_squared_error
 import tensorflow as tf
 import pandas as pd
 import numpy as np
@@ -11,12 +12,10 @@ import re
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from tensorflow.keras.models import Sequential, Model
-from tensorflow.keras.layers import Dense, Embedding, Flatten, Input, Concatenate, LSTM, Bidirectional, Attention, Flatten
-from tensorflow.keras import regularizers
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from transformers import TFAutoModel, AutoTokenizer
+import torch
+from torchmetrics import MeanSquaredError
+from torch.utils.data import Dataset
+from transformers import AutoTokenizer, Trainer, TrainingArguments, BertModel
 import nltk
 from nltk.corpus import stopwords
 import matplotlib.pyplot as plt
@@ -30,7 +29,7 @@ spanish_stopwords = set(stopwords.words('spanish'))
 
 print("¿GPU disponible?:", tf.config.list_physical_devices('GPU'))
 
-train = Loader.load_NLP()
+train = Loader.load_NLP() [:2000]
 
 def custom_concat(row, cols):
     # Construir la descripción con lógica condicional basada en el valor de la celda
@@ -62,95 +61,102 @@ train["km"] = km_scaler.fit_transform(train["km"].to_numpy().reshape(-1, 1))
 price_scaler = StandardScaler()
 train["price"] = price_scaler.fit_transform(train["price"].to_numpy().reshape(-1, 1))
 
-#Parameters
-verb_size = 150
+verb_size = 128
+model_name = 'dccuchile/bert-base-spanish-wwm-cased'  # BETO
 
-spanish_model_path = Path("~/resource/w2v/models/complete_vectors.bin").expanduser()
-spanish_model_kv = KeyedVectors.load_word2vec_format(str(spanish_model_path), binary=True)
+train_texts, val_texts, train_labels, val_labels, train_km, val_km = train_test_split(
+    train["full_description"],
+    train["price"],
+    train["km"],
+    test_size=0.2,
+    random_state=42,
+)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-# Load data (assuming df is your DataFrame containing the required columns)
-texts = train['full_description'].values  # descriptions
-# Tokenization and sequence padding
-tokenizer = Tokenizer(num_words=verb_size)
-tokenizer.fit_on_texts(texts)
-sequences = tokenizer.texts_to_sequences(texts)
-data = pad_sequences(sequences,  maxlen=verb_size, padding='post')
+train_encodings = tokenizer(
+    list(train_texts), truncation=True, padding=True, max_length=verb_size
+)
+val_encodings = tokenizer(
+    list(val_texts), truncation=True, padding=True, max_length=verb_size
+)
 
-# Load data (assuming df is your DataFrame containing the required columns)
-texts = train['full_description'].values  # descriptions
-# Tokenization and sequence padding
-tokenizer = Tokenizer(num_words=verb_size)
-tokenizer.fit_on_texts(texts)
-sequences = tokenizer.texts_to_sequences(texts)
-data = pad_sequences(sequences,  maxlen=verb_size, padding='post')
+class RegressionDataset(Dataset):
+    def __init__(self, encodings, labels, km_values):
+        self.encodings = encodings
+        self.labels = labels.astype(np.float32)  # Ensure labels are float
+        self.km_values = torch.tensor(km_values, dtype=torch.float32)
 
-#A integrar
-tokenizer = AutoTokenizer.from_pretrained("dccuchile/bert-base-spanish-wwm-uncased")
-beto_model = TFAutoModel.from_pretrained("dccuchile/bert-base-spanish-wwm-uncased")
+    def __getitem__(self, idx):
+        item = {key: torch.tensor(val[idx]) for key, val in self.encodings.items()}
+        item['labels'] = torch.tensor(self.labels.iloc[idx])
+        item['km'] = self.km_values[idx]
+        return item
 
-# Text input branch
-text_input = Input(shape=(train_data.shape[1],), dtype='int32')
+    def __len__(self):
+        return len(self.labels)
+    
+train_dataset = RegressionDataset(train_encodings, train_labels, train_km.values)
+val_dataset = RegressionDataset(val_encodings, val_labels, val_km.values)
 
-# Capa de Embedding
-text_embed_layer = Embedding(input_dim=train_data.shape[1], 
-                             output_dim=spanish_model_kv.vector_size, 
-                             input_length=train_data.shape[1],
-                             weights=[embedding_matrix],
-                             trainable=False)
-text_embed = text_embed_layer(text_input)
+class CustomRegressionModel(torch.nn.Module):
+    def __init__(self, bert_model_name, km_dim=1):
+        super(CustomRegressionModel, self).__init__()
+        self.bert = BertModel.from_pretrained(bert_model_name)
+        self.km_layer = torch.nn.Linear(km_dim, 16)  # Process km separately
+        self.regressor = torch.nn.Linear(self.bert.config.hidden_size + 16, 1)  # Combine BERT and km outputs
 
-# Primera capa LSTM bidireccional con 'return_sequences=True' para permitir apilar más capas
-lstm_out = Bidirectional(LSTM(128, return_sequences=True))(text_embed)
-#lstm_out = Dropout(0.5)(lstm_out)
+    def forward(self, input_ids, attention_mask, km):
+        # BERT outputs
+        outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
+        bert_cls_output = outputs.pooler_output  # [CLS] token representation (batch_size, hidden_size)
 
-# Segunda capa LSTM
-lstm_out = LSTM(64, return_sequences=True)(lstm_out)
-#lstm_out = Dropout(0.5)(lstm_out)
+        # Process km
+        if len(km.shape) == 1:  # Ensure km has two dimensions
+            km = km.unsqueeze(1)  # Shape becomes (batch_size, 1)
 
-# Capa de Atención
-attention_out = Attention()([lstm_out, lstm_out])
+        km_output = self.km_layer(km)  # Shape becomes (batch_size, 16)
 
-# Aplanamos la salida de la atención
-flatten = Flatten()(attention_out)
+        # Concatenate and pass to regression head
+        combined_output = torch.cat((bert_cls_output, km_output), dim=1)  # (batch_size, hidden_size + 16)
+        logits = self.regressor(combined_output)  # Output shape: (batch_size, 1)
+        return logits
+model = CustomRegressionModel(model_name)
 
-# Embedding input branch
+mse_metric = MeanSquaredError()
 
-# KM branch
-input_km = Input(shape=(1,), name='km_input')
-km_processed = Dense(32, activation='linear')(input_km)
 
-# Concatenate both branches
-concat = Concatenate()([flatten, km_processed])
-hidden = Dense(256, activation='relu')(concat)
-output = Dense(1, activation='linear')(hidden)  # Output layer for price prediction
+def compute_metrics(pred):
+    predictions = torch.tensor(pred.predictions.flatten())  # Convert predictions to tensor
+    labels = torch.tensor(pred.label_ids)  # Convert labels to tensor
+    mse = mse_metric(predictions, labels)  # Compute Mean Squared Error
+    ret = {'eval_mse': mse.item(), 'mse': mse.item()}  # Return as dictionary
+    print(f"Metrics: {ret}")  # Debug print
+    return ret
 
-model = Model(inputs=[text_input, input_km], outputs=output)
-model.summary()
 
-optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
-model.compile(optimizer=optimizer, loss='huber', metrics=['mean_absolute_error', "mean_absolute_percentage_error"])
+training_args = TrainingArguments(
+    output_dir='./results',
+    evaluation_strategy='steps',  # Ensure evaluation happens during training
+    eval_steps=500,  # Evaluate every 500 steps
+    save_strategy='steps',
+    save_steps=500,
+    num_train_epochs=3,
+    per_device_train_batch_size=64,
+    per_device_eval_batch_size=64,
+    load_best_model_at_end=True,
+    metric_for_best_model='eval_mse',  # Match key in compute_metrics
+    logging_dir='./logs',
+    logging_steps=500,
+)
 
-# Train the model
-print("COMIENZA EL ENTRENAMIENTO...")
-history = model.fit([train_data, train_km], train_prices,
-          validation_data=([test_data, test_km], test_prices),
-          epochs=30, batch_size=128)
-print("TERMINA EL ENTRENAMIENTO...")
-
-plt.xlabel("# Epoca")
-plt.ylabel("Loss magnitude")
-plt.plot(history.history["loss"])
-
-predicted_prices = model.predict([test_data, test_km])
-
-# Assuming test_prices is a 1D array, we can convert it to a DataFrame
-results_df = pd.DataFrame({
-    'Actual_Price': price_scaler.inverse_transform(np.array(test_prices).reshape(-1,1)).flatten(),
-    'Predicted_Price': price_scaler.inverse_transform(predicted_prices).flatten(),  # Flatten in case it's a 2D array
-    'km' : km_scaler.inverse_transform(test_km.to_numpy().reshape(-1, 1)).flatten()
-})
-
-# Display the first few rows of the DataFrame
-print(results_df.head())
-
-Evaluator.eval_regression(results_df["Predicted_Price"], results_df["Actual_Price"], plot=True, bins=5)
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=val_dataset,
+    compute_metrics=compute_metrics
+)
+print(compute_metrics)
+print(trainer.compute_metrics)
+metrics = trainer.evaluate()
+print("Returned metrics:", metrics)
