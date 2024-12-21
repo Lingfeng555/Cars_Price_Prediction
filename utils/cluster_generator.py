@@ -73,7 +73,7 @@ class ClusterGenerator:
             covariance_type = trial.suggest_categorical("covariance_type", ["full", "tied", "diag", "spherical"])
             tol = trial.suggest_float("tol", 1e-4, 1e-2, log=True)
             reg_covar = trial.suggest_float("reg_covar", 1e-6, 1e-2, log=True)
-            max_iter = trial.suggest_int("max_iter", 100, 500)
+            max_iter = trial.suggest_int("max_iter", 100, 200)
             model = GaussianMixture(n_components=n_components, covariance_type=covariance_type, tol=tol, reg_covar=reg_covar, max_iter=max_iter, random_state=42)
         else:
             raise ValueError(f"Unsupported clustering method: {method}")
