@@ -12,6 +12,7 @@ try:
     import cuml
     from cuml.ensemble import RandomForestClassifier as cuRandomForestClassifier
     from cuml.tree import DecisionTreeClassifier as cuDecisionTreeClassifier
+    from cuml.svm import SVC as cuSVC
     CUML_AVAILABLE = True
 except ImportError:
     CUML_AVAILABLE = False
@@ -108,7 +109,10 @@ class ClassifierGenerator:
                 model = RandomForestClassifier(**best_params, random_state=42)
 
         elif method == "svc":
-            model = SVC(**best_params, random_state=42)
+            if self.use_cuml:
+                model = cuSVC(**best_params)
+            else:
+                model = SVC(**best_params)
 
         else:
             raise ValueError(f"Unsupported classification method: {method}")
