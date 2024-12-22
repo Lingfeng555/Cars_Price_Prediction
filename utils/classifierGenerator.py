@@ -1,4 +1,5 @@
 import os
+from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier
@@ -91,8 +92,9 @@ class ClassifierGenerator:
         dict: The best parameters and corresponding metrics.
         """
         study = optuna.create_study(direction="maximize")
-        study.optimize(lambda trial: self._objective(trial, method), n_trials=n_trials)
-
+        n_jobs=-1
+        with ThreadPoolExecutor(max_workers=n_jobs if n_jobs > 0 else None) as executor:
+            study.optimize(lambda trial: self._objective(trial, method), n_trials=n_trials, n_jobs=n_jobs)
         best_params = study.best_params
 
         # Train the final model with the best parameters
