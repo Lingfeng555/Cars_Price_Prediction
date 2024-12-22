@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+from concurrent.futures import ThreadPoolExecutor
 from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN, Birch, OPTICS
 from sklearn.mixture import GaussianMixture
 from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
@@ -97,8 +98,9 @@ class ClusterGenerator:
         dict: The best parameters and corresponding metrics.
         """
         study = optuna.create_study(direction="maximize")
-        study.optimize(lambda trial: self._objective(trial, method), n_trials=n_trials)
-
+        n_jobs=-1
+        with ThreadPoolExecutor(max_workers=n_jobs if n_jobs > 0 else None) as executor:
+            study.optimize(lambda trial: self._objective(trial, method), n_trials=n_trials, n_jobs=n_jobs)
         best_params = study.best_params
 
         # Train the final model with the best parameters
