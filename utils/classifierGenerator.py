@@ -48,19 +48,19 @@ class ClassifierGenerator:
         """
 
         if method == "decision_tree":
-            max_depth = trial.suggest_int("max_depth", 2, 20)
-            min_samples_split = trial.suggest_int("min_samples_split", 2, 10)
-            min_samples_leaf = trial.suggest_int("min_samples_leaf", 1, 5)
+            max_depth = trial.suggest_int("max_depth", 2, 30)
+            min_samples_split = trial.suggest_int("min_samples_split", 2, 20)
+            min_samples_leaf = trial.suggest_int("min_samples_leaf", 1, 10)
             if self.use_cuml:
                 model = cuDecisionTreeClassifier(max_depth=max_depth)
             else:
                 model = DecisionTreeClassifier(max_depth=max_depth, min_samples_split=min_samples_split, min_samples_leaf=min_samples_leaf, random_state=42)
 
         elif method == "random_forest":
-            n_estimators = trial.suggest_int("n_estimators", 50, 200)
-            max_depth = trial.suggest_int("max_depth", 2, 20)
-            min_samples_split = trial.suggest_int("min_samples_split", 2, 10)
-            min_samples_leaf = trial.suggest_int("min_samples_leaf", 1, 5)
+            n_estimators = trial.suggest_int("n_estimators", 50, 500, step=50)
+            max_depth = trial.suggest_int("max_depth", 200, 500)
+            min_samples_split = trial.suggest_int("min_samples_split", 2, 20)
+            min_samples_leaf = trial.suggest_int("min_samples_leaf", 1, 10)
             if self.use_cuml:
                 model = cuRandomForestClassifier(n_estimators=n_estimators, max_depth=max_depth)
             else:
