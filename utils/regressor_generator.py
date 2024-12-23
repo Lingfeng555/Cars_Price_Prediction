@@ -64,8 +64,8 @@ class RegressionGenerator:
 
         elif algorithm == "random_forest":
             # Hiperparámetros adicionales para RandomForestRegressor
-            n_estimators = trial.suggest_int("n_estimators", 50, 500, step=50)
-            max_depth = trial.suggest_int("max_depth", 200, 500)
+            n_estimators = trial.suggest_int("n_estimators", 20, 50, step=50)
+            max_depth = trial.suggest_int("max_depth", 20, 50)
             min_samples_split = trial.suggest_int("min_samples_split", 2, 20)
             min_samples_leaf = trial.suggest_int("min_samples_leaf", 1, 10)
             max_features = trial.suggest_categorical("max_features", ["sqrt", "log2", None])
