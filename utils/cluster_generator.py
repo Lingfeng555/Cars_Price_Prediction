@@ -154,6 +154,58 @@ class ClusterGenerator:
             "completeness_score": completeness_score(ground_truth, labels),
             "v_measure_score": v_measure_score(ground_truth, labels)
         }
+        
+    def custom_clustering(self, method, **params):
+        """
+        Generate a clustering model using specific parameters provided by the user.
+
+        Parameters:
+        method (str): Clustering method (e.g., 'kmeans', 'agglomerative', 'dbscan', 'birch', 'optics', 'gmm').
+        params (dict): Specific parameters for the clustering method.
+
+        Returns:
+        dict: Contains the generated labels, internal metrics, and the trained model.
+        """
+        if method == "kmeans":
+            model = cuKMeans(**params, random_state=42) if self.use_cuml else KMeans(**params, random_state=42)
+
+        elif method == "agglomerative":
+            model = AgglomerativeClustering(**params)
+
+        elif method == "dbscan":
+            model = cuDBSCAN(**params) if self.use_cuml else DBSCAN(**params)
+
+        elif method == "birch":
+            model = Birch(**params)
+
+        elif method == "optics":
+            model = OPTICS(**params)
+
+        elif method == "gmm":
+            model = GaussianMixture(**params, random_state=42)
+
+        else:
+            raise ValueError(f"Unsupported clustering method: {method}")
+
+        # Entrenar y predecir etiquetas
+        labels = model.fit_predict(self.dataset) if hasattr(model, 'fit_predict') else model.fit(self.dataset).predict(self.dataset)
+
+        # Calcular métricas internas
+        if len(set(labels)) > 1:  # Asegurarse de que hay más de un clúster
+            metrics = {
+                "silhouette_score": silhouette_score(self.dataset, labels),
+                "calinski_harabasz_score": calinski_harabasz_score(self.dataset, labels),
+                "davies_bouldin_score": davies_bouldin_score(self.dataset, labels),
+            }
+        else:
+            metrics = {
+                "silhouette_score": -1.0,
+                "calinski_harabasz_score": -1.0,
+                "davies_bouldin_score": float("inf"),
+            }
+
+        return {"labels": labels, "metrics": metrics, "model": model}
+
     
     def generate(self, ground_truth=None, n_trials=50):
         """
