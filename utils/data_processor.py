@@ -1,8 +1,9 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.manifold import TSNE
 from sklearn.preprocessing import LabelEncoder
-from sklearn.decomposition import PCA,TruncatedSVD
+from sklearn.decomposition import PCA,TruncatedSVD, NMF, FastICA
 from sklearn.linear_model import LinearRegression
 from sklearn.feature_selection import chi2
 import matplotlib.pyplot as plt
@@ -342,12 +343,12 @@ class Data_processor:
     @staticmethod
     def reduce_dimensionality(dataframe: pd.DataFrame, n_components: int = 2, method: str = "svd"):
         """
-        Reduces the dimensionality of numerical and dummy columns in a DataFrame using Truncated SVD or PCA.
+        Reduces the dimensionality of numerical and dummy columns in a DataFrame using various methods.
 
         Parameters:
         - dataframe (pd.DataFrame): Input DataFrame with numerical and dummy columns.
         - n_components (int): Number of components for dimensionality reduction. Default is 2.
-        - method (str): Dimensionality reduction method, either "svd" or "pca". Default is "svd".
+        - method (str): Dimensionality reduction method, options include "svd", "pca", "nmf", "ica", or "tsne". Default is "svd".
 
         Returns:
         - pd.DataFrame: DataFrame with reduced dimensions.
@@ -364,21 +365,33 @@ class Data_processor:
             reducer = TruncatedSVD(n_components=n_components, random_state=42)
         elif method == "pca":
             reducer = PCA(n_components=n_components, random_state=42)
+        elif method == "nmf":
+            reducer = NMF(n_components=n_components, random_state=42, init='random')
+        elif method == "ica":
+            reducer = FastICA(n_components=n_components, random_state=42)
+        elif method == "tsne":
+            reducer = TSNE(n_components=n_components, random_state=42)
         else:
-            raise ValueError("Method must be either 'svd' or 'pca'.")
+            raise ValueError("Method must be one of 'svd', 'pca', 'nmf', 'ica', or 'tsne'.")
 
-        # Scaling
-        scaler = StandardScaler()
-        scaled_data = scaler.fit_transform(dataframe)
+        # Scaling (skip for t-SNE as it works better with raw data)
+        if method != "tsne":
+            scaler = StandardScaler()
+            scaled_data = scaler.fit_transform(dataframe)
+        else:
+            scaled_data = dataframe.values
 
         # Apply the reducer
         reduced_data = reducer.fit_transform(scaled_data)
 
-        # Print explained variance ratio
-        explained_variance = reducer.explained_variance_ratio_
-        total_explained_variance = explained_variance.sum() * 100
-        print(f"Explained variance by each component: {explained_variance * 100}")
-        print(f"Total explained variance: {total_explained_variance}%")
+        # Print explained variance ratio if available
+        if hasattr(reducer, 'explained_variance_ratio_'):
+            explained_variance = reducer.explained_variance_ratio_
+            total_explained_variance = explained_variance.sum() * 100
+            print(f"Explained variance by each component: {explained_variance * 100}")
+            print(f"Total explained variance: {total_explained_variance}%")
+        else:
+            print(f"Dimensionality reduction with {method} does not provide explained variance.")
 
         # Convert to DataFrame
         reduced_df = pd.DataFrame(
