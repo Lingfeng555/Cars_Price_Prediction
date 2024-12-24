@@ -21,7 +21,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-
 class Evaluator:
     """
     A utility class for evaluating predictions from regression, classification, and ordinal classification models.

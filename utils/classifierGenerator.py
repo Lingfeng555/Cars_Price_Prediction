@@ -157,7 +157,6 @@ class ClassifierGenerator:
         model.fit(self.X, self.y)
         return {"best_params": best_params, "model": model}
 
-
     def generate(self, n_trials=20):
         """
         Generate classification results for a list of methods.
