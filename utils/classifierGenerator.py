@@ -20,6 +20,40 @@ except ImportError:
     CUML_AVAILABLE = False
 
 class ClassifierGenerator:
+    """
+    The ClassifierGenerator class provides functionality to generate, tune, and evaluate classification models
+    using various algorithms. It supports hyperparameter optimization with Optuna and allows exporting results
+    into LaTeX files for further documentation.
+
+    Attributes:
+    ------------
+    dataset : pd.DataFrame
+        The input dataset for classification.
+
+    target_column : str
+        The name of the target column in the dataset.
+
+    use_cuml : bool
+        Whether to use cuML for GPU-accelerated computations if available.
+
+    X_train, X_val : pd.DataFrame
+        Training and validation feature sets, respectively.
+
+    y_train, y_val : np.array
+        Training and validation target sets, respectively.
+
+    Methods:
+    --------
+    find_best_classifier(method, n_trials):
+        Optimizes the classification algorithm and finds the best parameters.
+
+    generate(n_trials):
+        Generates classification models and evaluates their performance.
+
+    save(name):
+        Saves internal and external evaluation metrics, as well as the best parameters, to .tex files.
+    """
+        
     def __init__(self, dataset, target_column, use_cuml=False):
         """
         Initialize the ClassifierGenerator class with a dataset and target column.

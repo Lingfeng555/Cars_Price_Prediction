@@ -19,6 +19,34 @@ except ImportError:
     CUML_AVAILABLE = False
 
 class RegressionGenerator:
+    """
+    The RegressionGenerator class provides functionality to generate, tune, and evaluate regression models
+    using various algorithms. It supports hyperparameter optimization with Optuna and allows exporting results
+    into LaTeX files for further documentation.
+
+    Attributes:
+    ------------
+    X : pd.DataFrame
+        The feature matrix for regression.
+
+    y : np.ndarray
+        The target variable for regression.
+
+    use_cuml : bool
+        Whether to use cuML for GPU-accelerated computations if available.
+
+    Methods:
+    --------
+    find_best_model(algorithm, n_trials):
+        Optimizes the regression algorithm and finds the best hyperparameters.
+
+    generate(algorithms, n_trials):
+        Generates regression results for a list of algorithms.
+
+    save(name):
+        Saves internal and external evaluation metrics, as well as the best parameters, to .tex files.
+    """
+        
     def __init__(self, X: pd.DataFrame, y: np.ndarray, use_cuml=False):
         """
         Initialize the RegressionOptimizer class.

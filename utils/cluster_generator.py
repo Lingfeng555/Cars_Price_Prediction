@@ -4,8 +4,7 @@ import os
 from concurrent.futures import ThreadPoolExecutor
 from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN, Birch, OPTICS
 from sklearn.mixture import GaussianMixture
-from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
-from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score, homogeneity_score, completeness_score, v_measure_score
+from sklearn.metrics import silhouette_score
 import numpy as np
 import optuna
 
@@ -17,6 +16,34 @@ except ImportError:
     CUML_AVAILABLE = False
 
 class ClusterGenerator:
+    """
+    The ClusterGenerator class provides functionality to generate, tune, and evaluate clustering models
+    using various algorithms. It supports hyperparameter optimization with Optuna and allows exporting
+    results into LaTeX files for further documentation.
+
+    Attributes:
+    ------------
+    dataset : pd.DataFrame
+        The input dataset for clustering.
+
+    use_cuml : bool
+        Whether to use cuML for GPU-accelerated computations if available.
+
+    Methods:
+    --------
+    find_best_clustering(method, n_trials):
+        Optimizes the clustering algorithm and finds the best parameters.
+
+    custom_clustering(method, **params):
+        Generates a clustering model using specific parameters provided by the user.
+
+    generate(ground_truth, n_trials):
+        Optimizes and evaluates multiple clustering methods and records results.
+
+    save(name):
+        Saves internal and external evaluation metrics, as well as the best parameters, to .tex files.
+    """
+        
     def __init__(self, dataset, use_cuml=False):
         """
         Initialize the ClusterGenerator class with a dataset.
@@ -168,6 +195,17 @@ class ClusterGenerator:
         return {"labels": labels, "model": model}
 
     def generate(self, ground_truth=None, n_trials=50):
+        """
+        Optimizes and evaluates multiple clustering methods, recording results for each.
+
+        Parameters:
+        -----------
+        ground_truth : np.array, optional
+            The ground truth labels for clustering evaluation.
+
+        n_trials : int, optional
+            The number of optimization trials. Default is 50.
+        """
         methods = ["kmeans", "agglomerative", "dbscan", "birch", "optics", "gmm"]
         self.best_params = {}
         
