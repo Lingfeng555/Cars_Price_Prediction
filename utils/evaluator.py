@@ -1,12 +1,20 @@
 from sklearn.metrics import (
-    mean_absolute_error, 
+    adjusted_rand_score,
+    calinski_harabasz_score,
+    completeness_score,
+    davies_bouldin_score,
+    homogeneity_score,
+    mean_absolute_error,
+    normalized_mutual_info_score, 
     r2_score, 
     accuracy_score, 
     precision_score, 
     recall_score, 
     f1_score, 
     confusion_matrix, 
-    roc_auc_score
+    roc_auc_score,
+    silhouette_score,
+    v_measure_score
 )
 import numpy as np
 import pandas as pd
@@ -52,8 +60,29 @@ class Evaluator:
         - Export evaluation summaries for documentation or reporting using the `save()` method.
     """
 
-    regression_register = {"Algorithm": [], "mae": [], "mse": [], "mape": [] ,"r2": [], "error_mean": [], "error_std_dev": [], "adjuste_r2": []}
-    classification_register = {"Algorithm": [], "accuracy": [], "precision": [], "recall": [] ,"f1": [], "roc_auc": []}
+    regression_register = {"Algorithm": [], 
+                           "mae": [], 
+                           "mse": [], 
+                           "mape": [] ,
+                           "r2": [], 
+                           "error_mean": [], 
+                           "error_std_dev": [], 
+                           "adjuste_r2": []}
+    classification_register = {"Algorithm": [], 
+                               "accuracy": [], 
+                               "precision": [], 
+                               "recall": [] ,
+                               "f1": [], 
+                               "roc_auc": []}
+    clustering_register = {"Algorithm": [], 
+                           "silhouette_score": [], 
+                           "calinski_harabasz_score": [], 
+                           "davies_bouldin_score": [], 
+                           "adjusted_rand_score": [],
+                           "normalized_mutual_info_score": [], 
+                           "homogeneity_score": [],
+                           "completeness_score": [],
+                           "v_measure_score": []}
 
     @staticmethod
     def mean_absolute_percentage_error(y_true: np.array, y_pred: np.array):
@@ -207,7 +236,6 @@ class Evaluator:
         Evaluator.regression_register["error_mean"].append(round(mean, 4))
         Evaluator.regression_register["error_std_dev"].append(round(std_dev, 4))
         Evaluator.regression_register["adjuste_r2"].append(round(r2_adjusted, 4) if r2_adjusted is not None else None)
-
             
     @staticmethod
     def eval_classification(
@@ -292,32 +320,90 @@ class Evaluator:
         print("Overall mean:", np.mean(diff))
     
     @staticmethod
+    def external_evaluation(labels, ground_truth):
+        return {
+            "adjusted_rand_score": adjusted_rand_score(ground_truth, labels),
+            "normalized_mutual_info_score": normalized_mutual_info_score(ground_truth, labels),
+            "homogeneity_score": homogeneity_score(ground_truth, labels),
+            "completeness_score": completeness_score(ground_truth, labels),
+            "v_measure_score": v_measure_score(ground_truth, labels)
+        }
+
+    @staticmethod
+    def internal_evaluation(data, labels):
+        return {
+            "silhouette_score": silhouette_score(data, labels),
+            "calinski_harabasz_score": calinski_harabasz_score(data, labels),
+            "davies_bouldin_score": davies_bouldin_score(data, labels)
+        }
+
+    @staticmethod
+    def eval_clustering(data, labels, ground_truth, algorithm_name):
+        Evaluator.clustering_register["Algorithm"].append(algorithm_name)
+        Evaluator.clustering_register["silhouette_score"].append(silhouette_score(data, labels) if len(set(labels)) > 1 else None)
+        Evaluator.clustering_register["calinski_harabasz_score"].append(calinski_harabasz_score(data, labels) if len(set(labels)) > 1 else None)
+        Evaluator.clustering_register["davies_bouldin_score"].append(davies_bouldin_score(data, labels) if len(set(labels)) > 1 else None)
+        Evaluator.clustering_register["adjusted_rand_score"].append(adjusted_rand_score(ground_truth, labels) if ground_truth is not None else None)
+        Evaluator.clustering_register["normalized_mutual_info_score"].append(normalized_mutual_info_score(ground_truth, labels) if ground_truth is not None else None)
+        Evaluator.clustering_register["homogeneity_score"].append(homogeneity_score(ground_truth, labels) if ground_truth is not None else None)
+        Evaluator.clustering_register["completeness_score"].append(completeness_score(ground_truth, labels) if ground_truth is not None else None)
+        Evaluator.clustering_register["v_measure_score"].append(v_measure_score(ground_truth, labels) if ground_truth is not None else None)
+
+    @staticmethod
     def save(name: str):
-        """
-        Saves the regression_register and classification_register as CSV files.
 
-        Parameters:
-        - file_path: str - Base file path for saving the results (default is "evaluation_results").
-        """
-        directory_path = "evaluation"
-        file_path = f"{directory_path}/{name}"
-
-        # Create the 'evaluation' directory if it doesn't exist
-        os.makedirs(directory_path, exist_ok=True)
-
-        # Define the float format for scientific notation
+        if not os.path.exists(name):
+            os.makedirs(name)
         float_format = "{:.4e}".format
+        Evaluator.save_regression(name, float_format)
+        Evaluator.save_classification(name, float_format)
+        Evaluator.save_clustering(name, float_format)
 
-        # Save the regression register in LaTeX format
-        regression_df = pd.DataFrame(Evaluator.regression_register)
-        regression_latex_path = f"{file_path}_regression.tex"
-        with open(regression_latex_path, "w") as f:
-            f.write(regression_df.to_latex(index=False, float_format=float_format))
-        print(f"Regression results saved to: {regression_latex_path}")
+    @staticmethod
+    def save_clustering(file_path, float_format = "{:.4e}".format):
+        clustering_df = pd.DataFrame(Evaluator.clustering_register)
+        clustering_latex_path = f"{file_path}_clustering.tex"
+        with open(clustering_latex_path, "w") as f:
+            f.write(clustering_df.to_latex(index=False, float_format=float_format))
+        print(f"Clustering results saved to: {clustering_latex_path}")
 
-        # Save the classification register in LaTeX format
+        Evaluator.clustering_register = {"Algorithm": [], 
+                            "silhouette_score": [], 
+                            "calinski_harabasz_score": [], 
+                            "davies_bouldin_score": [], 
+                            "adjusted_rand_score": [],
+                            "normalized_mutual_info_score": [], 
+                            "homogeneity_score": [],
+                            "completeness_score": [],
+                            "v_measure_score": []}
+
+    @staticmethod
+    def save_classification(file_path, float_format = "{:.4e}".format):
         classification_df = pd.DataFrame(Evaluator.classification_register)
         classification_latex_path = f"{file_path}_classification.tex"
         with open(classification_latex_path, "w") as f:
             f.write(classification_df.to_latex(index=False, float_format=float_format))
         print(f"Classification results saved to: {classification_latex_path}")
+
+        Evaluator.classification_register = {"Algorithm": [], 
+                                "accuracy": [], 
+                                "precision": [], 
+                                "recall": [] ,
+                                "f1": [], 
+                                "roc_auc": []}
+
+    @staticmethod
+    def save_regression(file_path, float_format = "{:.4e}".format):
+        regression_df = pd.DataFrame(Evaluator.regression_register)
+        regression_latex_path = f"{file_path}_regression.tex"
+        with open(regression_latex_path, "w") as f:
+            f.write(regression_df.to_latex(index=False, float_format=float_format))
+        print(f"Regression results saved to: {regression_latex_path}")
+        Evaluator.regression_register = {"Algorithm": [], 
+                           "mae": [], 
+                           "mse": [], 
+                           "mape": [] ,
+                           "r2": [], 
+                           "error_mean": [], 
+                           "error_std_dev": [], 
+                           "adjuste_r2": []}

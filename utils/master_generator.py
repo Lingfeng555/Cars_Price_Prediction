@@ -1,11 +1,12 @@
 import pandas as pd
+import numpy as np
 from .classifierGenerator import ClassifierGenerator
 from .cluster_generator import ClusterGenerator
 from .regressor_generator import RegressionGenerator
 
 class MasterGenerator:
 
-    def __init__(self, X, y_categ, y_numeric, name, n_tries, CUML = False):
+    def __init__(self, X:pd.DataFrame, y_categ:np.array, y_numeric: np.array, name:str, n_tries:int, CUML: bool = False):
         self.X = X
         self.y_categ = y_categ
         self.y_numeric = y_numeric
@@ -28,7 +29,7 @@ class MasterGenerator:
         cluster_generator.generate(n_trials=self.n_tries, ground_truth=self.y_categ)
         cluster_generator.save(self.name)
 
-    def generate(self):
+    def generate(self) -> None:
         self._regression_generate()
 
         self._classification_generate()

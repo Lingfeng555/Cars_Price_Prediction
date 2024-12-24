@@ -1,4 +1,5 @@
 import pandas as pd
+from .evaluator import Evaluator
 import os
 from concurrent.futures import ThreadPoolExecutor
 from sklearn.cluster import KMeans, AgglomerativeClustering, DBSCAN, Birch, OPTICS
@@ -53,8 +54,7 @@ class ClusterGenerator:
         elif method == "dbscan":
             eps = trial.suggest_float("eps", 0.1, 5.0, log=True)
             min_samples = trial.suggest_int("min_samples", 3, 20)
-            algorithm = trial.suggest_categorical("algorithm", ["auto", "ball_tree", "brute"])
-            model = cuDBSCAN(eps=eps, min_samples=min_samples) if self.use_cuml else DBSCAN(eps=eps, min_samples=min_samples, algorithm=algorithm)
+            model = cuDBSCAN(eps=eps, min_samples=min_samples) if self.use_cuml else DBSCAN(eps=eps, min_samples=min_samples)
 
         elif method == "birch":
             threshold = trial.suggest_float("threshold", 0.1, 1.0)
@@ -128,32 +128,8 @@ class ClusterGenerator:
         labels = model.fit_predict(self.dataset) if hasattr(model, 'fit_predict') else model.fit(self.dataset).predict(self.dataset)
 
         # Calculate clustering metrics
-        metrics = {
-            "silhouette_score": silhouette_score(self.dataset, labels) if len(set(labels)) > 1 else -1.0,
-            "calinski_harabasz_score": calinski_harabasz_score(self.dataset, labels) if len(set(labels)) > 1 else -1.0,
-            "davies_bouldin_score": davies_bouldin_score(self.dataset, labels) if len(set(labels)) > 1 else float("inf"),
-        }
 
-        return {"best_params": best_params, "metrics": metrics, "labels": labels, "model": model}
-    
-    def external_evaluation(self, labels, ground_truth):
-        """
-        Evaluate clustering performance using external metrics.
-
-        Parameters:
-        labels (array-like): Cluster labels assigned by the algorithm.
-        ground_truth (array-like): Ground truth labels.
-
-        Returns:
-        dict: External evaluation metrics.
-        """
-        return {
-            "adjusted_rand_score": adjusted_rand_score(ground_truth, labels),
-            "normalized_mutual_info_score": normalized_mutual_info_score(ground_truth, labels),
-            "homogeneity_score": homogeneity_score(ground_truth, labels),
-            "completeness_score": completeness_score(ground_truth, labels),
-            "v_measure_score": v_measure_score(ground_truth, labels)
-        }
+        return {"best_params": best_params, "labels": labels, "model": model}
         
     def custom_clustering(self, method, **params):
         """
@@ -189,83 +165,21 @@ class ClusterGenerator:
 
         # Entrenar y predecir etiquetas
         labels = model.fit_predict(self.dataset) if hasattr(model, 'fit_predict') else model.fit(self.dataset).predict(self.dataset)
+        return {"labels": labels, "model": model}
 
-        # Calcular métricas internas
-        if len(set(labels)) > 1:  # Asegurarse de que hay más de un clúster
-            metrics = {
-                "silhouette_score": silhouette_score(self.dataset, labels),
-                "calinski_harabasz_score": calinski_harabasz_score(self.dataset, labels),
-                "davies_bouldin_score": davies_bouldin_score(self.dataset, labels),
-            }
-        else:
-            metrics = {
-                "silhouette_score": -1.0,
-                "calinski_harabasz_score": -1.0,
-                "davies_bouldin_score": float("inf"),
-            }
-
-        return {"labels": labels, "metrics": metrics, "model": model}
-
-    
     def generate(self, ground_truth=None, n_trials=50):
-        """
-        Generate clustering results for a list of methods.
-
-        Parameters:
-        ground_truth (array-like): Ground truth labels for external evaluation (optional).
-        n_trials (int): Number of optimization trials for each method.
-
-        Returns:
-        dict: A dictionary with methods as keys and their results as values.
-        """
         methods = ["kmeans", "agglomerative", "dbscan", "birch", "optics", "gmm"]
-
-        self.externalEvalation = {"Algorithm":[], "adjusted_rand_score": [], "normalized_mutual_info_score": [], "completeness_score": [], "v_measure_score":[]}
-        self.internalEvaluation = {"Algorithm":[], "silhouette_score": [], "calinski_harabasz_score": [], "davies_bouldin_score": []}
         self.best_params = {}
         
         for method in methods:
-            try:
-                self.externalEvalation["Algorithm"].append(method)
-                self.internalEvaluation["Algorithm"].append(method)
+            print(f"Optimizing method: {method}")
+            clustering_result = self.find_best_clustering(method, n_trials=n_trials)
 
-                print(f"Optimizing method: {method}")
-                clustering_result = self.find_best_clustering(method, n_trials=n_trials)
+            # Record best parameters
+            self.best_params[method] = clustering_result["best_params"]
 
-                # Record best parameters
-                self.best_params[method] = clustering_result["best_params"]
-
-                # Record internal metrics
-                self.internalEvaluation["silhouette_score"].append(clustering_result["metrics"]["silhouette_score"])
-                self.internalEvaluation["calinski_harabasz_score"].append(clustering_result["metrics"]["calinski_harabasz_score"])
-                self.internalEvaluation["davies_bouldin_score"].append(clustering_result["metrics"]["davies_bouldin_score"])
-
-                if ground_truth is not None:
-                    # Compute external metrics
-                    external_metrics = self.external_evaluation(clustering_result["labels"], ground_truth)
-                    self.externalEvalation["adjusted_rand_score"].append(external_metrics["adjusted_rand_score"])
-                    self.externalEvalation["normalized_mutual_info_score"].append(external_metrics["normalized_mutual_info_score"])
-                    self.externalEvalation["completeness_score"].append(external_metrics["completeness_score"])
-                    self.externalEvalation["v_measure_score"].append(external_metrics["v_measure_score"])
-                else:
-                    # Fill with None if ground_truth is not provided
-                    self.externalEvalation["adjusted_rand_score"].append(None)
-                    self.externalEvalation["normalized_mutual_info_score"].append(None)
-                    self.externalEvalation["completeness_score"].append(None)
-                    self.externalEvalation["v_measure_score"].append(None)
-
-            except Exception as e:
-                print(f"Error with method {method}: {e}")
-                # Fill with None in case of error
-                self.internalEvaluation["silhouette_score"].append(None)
-                self.internalEvaluation["calinski_harabasz_score"].append(None)
-                self.internalEvaluation["davies_bouldin_score"].append(None)
-                self.externalEvalation["adjusted_rand_score"].append(None)
-                self.externalEvalation["normalized_mutual_info_score"].append(None)
-                self.externalEvalation["completeness_score"].append(None)
-                self.externalEvalation["v_measure_score"].append(None)
-
-        return {"internalEvaluation": self.internalEvaluation, "externalEvaluation": self.externalEvalation, "best_params": self.best_params}
+            # Use evaluator to evaluate the clustering
+            Evaluator.eval_clustering(data=self.dataset, labels=clustering_result["labels"], ground_truth=ground_truth, algorithm_name=method)
 
     def save(self, name: str):
         """
@@ -274,25 +188,19 @@ class ClusterGenerator:
         Parameters:
         name (str): Name of the directory to save the .tex files.
         """
+        if self.best_params is None:
+            raise ValueError("No results to save. Please run generate() first.")
+
         directory_path = "evaluation"
-        dir = f"{directory_path}/{name}"
+        dir = f"{directory_path}/{name}/clustering"
 
         # Create directory if it doesn't exist
         if not os.path.exists(dir):
             os.makedirs(dir)
 
-        # Save internal evaluations
-        if hasattr(self, 'internalEvaluation'):
-            internal_eval_df = pd.DataFrame(self.internalEvaluation)
-            internal_eval_df.to_latex(f"{dir}/internal_evaluation.tex", index=False)
-
-        # Save external evaluations
-        if hasattr(self, 'externalEvalation'):
-            external_eval_df = pd.DataFrame(self.externalEvalation)
-            external_eval_df.to_latex(f"{dir}/external_evaluation.tex", index=False)
-
-        # Save best parameters for each method
         if hasattr(self, 'best_params'):
             for method, params in self.best_params.items():
                 params_df = pd.DataFrame([params])
-                params_df.to_latex(f"{dir}/best_param_{method}.tex", index=False)
+                params_df.to_latex(f"{dir}/regression_best_param_{method}.tex", index=False)
+
+        Evaluator.save_clustering(dir)

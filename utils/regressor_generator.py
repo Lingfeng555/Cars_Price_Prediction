@@ -12,7 +12,7 @@ from sklearn.linear_model import LinearRegression
 from .evaluator import Evaluator
 
 try:
-    from cuml import SVR as cuSVR, LinearSVR as cuLinealSVR
+    from cuml.svm import SVR as cuSVR, LinearSVR as cuLinealSVR
     from cuml.ensemble import RandomForestRegressor as cuRandomForestRegressor
     CUML_AVAILABLE = True
 except ImportError:
@@ -246,7 +246,7 @@ class RegressionGenerator:
         name (str): Name of the file to save the results.
         """
         directory_path = "evaluation"
-        dir = f"{directory_path}/{name}"
+        dir = f"{directory_path}/{name}/regression"
 
         # Create directory if it doesn't exist
         if not os.path.exists(dir):
@@ -256,6 +256,6 @@ class RegressionGenerator:
         if hasattr(self, 'best_params'):
             for method, params in self.best_params.items():
                 params_df = pd.DataFrame([params])
-                params_df.to_latex(f"{dir}/best_param_{method}.tex", index=False)
+                params_df.to_latex(f"{dir}/regression_best_param_{method}.tex", index=False)
 
-        Evaluator.save(name)
+        Evaluator.save(dir)

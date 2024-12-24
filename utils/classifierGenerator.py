@@ -1,4 +1,5 @@
 import os
+from .evaluator import Evaluator
 from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
 import numpy as np
@@ -122,26 +123,6 @@ class ClassifierGenerator:
         model.fit(self.X, self.y)
         return {"best_params": best_params, "model": model}
 
-    def evaluate(self, model):
-        """
-        Evaluate the classifier on various metrics.
-
-        Parameters:
-        model: The trained classification model.
-
-        Returns:
-        dict: A dictionary of evaluation metrics.
-        """
-        y_pred = model.predict(self.X_val)
-
-        metrics = {
-            "accuracy": accuracy_score(self.y_val, y_pred),
-            "precision": precision_score(self.y_val, y_pred, average="weighted"),
-            "recall": recall_score(self.y_val, y_pred, average="weighted"),
-            "f1_score": f1_score(self.y_val, y_pred, average="weighted"),
-            "confusion_matrix": confusion_matrix(self.y_val, y_pred).tolist(),
-        }
-        return metrics
 
     def generate(self, n_trials=20):
         """
@@ -160,10 +141,15 @@ class ClassifierGenerator:
             try:
                 print(f"Optimizing method: {method}")
                 result = self.find_best_classifier(method, n_trials=n_trials)
-                evaluation_metrics = self.evaluate(result["model"])
+
+                Evaluator.eval_classification(y_pred=result["model"].predict(self.X_val), 
+                                              y_true=self.target_column,
+                                              classifier_name=method,
+                                              binary_classification=False
+                                            )
+
                 self.results[method] = {
                     "best_params": result["best_params"],
-                    "metrics": evaluation_metrics,
                 }
             except Exception as e:
                 print(f"Error with method {method}: {e}")
@@ -182,7 +168,7 @@ class ClassifierGenerator:
             raise ValueError("No results to save. Please run generate() first.")
 
         directory_path = "evaluation"
-        dir = f"{directory_path}/{name}"
+        dir = f"{directory_path}/{name}/classification"
 
         # Create directory if it doesn't exist
         if not os.path.exists(dir):
@@ -190,9 +176,8 @@ class ClassifierGenerator:
 
         # Save results for each method
         for method, result in self.results.items():
-            if "metrics" in result:
-                metrics_df = pd.DataFrame([result["metrics"]])
-                metrics_df.to_latex(f"{dir}/{method}_evaluation.tex", index=False)
             if "best_params" in result:
                 params_df = pd.DataFrame([result["best_params"]])
                 params_df.to_latex(f"{dir}/{method}_best_params.tex", index=False)
+
+        Evaluator.save_classification(dir)
