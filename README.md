@@ -48,5 +48,5 @@ This repository contains the implementation of a **machine learning pipeline** f
 - **Feature importance**: Power, mileage, and environmental labels are key indicators of price.
 
 ## 🔗 References
-- 📑 [Project Report](https://github.com/Lingfeng555/Cars_Price_Prediction/blob/main/Machine_Learning_Final-2-1)
+- 📑 [Project Report](https://github.com/Lingfeng555/Cars_Price_Prediction/blob/main/Machine_Learning_Final-2-1.pdf)
 - 📊 [Data Preprocessing](https://github.com/Lingfeng555/Cars_Price_Prediction/blob/main/Preprocessing/)
